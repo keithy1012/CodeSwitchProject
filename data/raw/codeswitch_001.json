@@ -1,0 +1,8 @@
+{
+    "id": 1,
+    "utterance": "",
+    "source": "LLM",
+    "generation_strategy": ["Persona-based", "Few-shot"],
+    "model_name": "GPT-4",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. Act as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, and sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce 5 distinct between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English-Mandarin code-switching** at the **phrase level** (switch after a technical word or phrase).\nMake sure at least one of the following trigger words appears in each dialogue: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues, labeled Dialogue 1–5. Do not repeat the few-shot examples."
+}
