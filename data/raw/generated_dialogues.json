@@ -1,0 +1,992 @@
+[
+  {
+    "id": 1,
+    "utterance": "Li: \"Sarah, 我们的 PR 已经 merge 了，我们要不要赶紧 deploy 到 staging 看一下？\"\nSarah: \"好的，我来 build 一下代码，然后我们可以一起测试看看有没有 bug。\"\nLi: \"Sounds like a plan. 我觉得 deadline 前能把这个 feature 上线是 feasible 的。\"\nSarah: \"是的，我觉得我们可以先 focus on QA，确保没有什么大的问题。\"\nLi: \"对，我们可以先 workaround 一些小问题，然后逐步解决。\"\nSarah: \"没错，我觉得这样可以避免一些大的 headache。\"\nLi: \"好的，那我们赶紧开始吧，别忘了我们下周有 sprint planning meeting.\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 2,
+    "utterance": "Li: \"Sarah, 我们需要在明天之前 deploy the latest changes to production.\"\nSarah: \"好的，我会先 build 一下代码，然后进行 QA 测试。\"\nLi: \"Great. 如果有 bug 我们可以先做一个 temporary workaround，然后再继续 fix.\"\nSarah: \"明白，我会先进行 deploy，然后通知你测试结果。\"\nLi: \"Sounds like a plan. 我们一定要在 deadline 前解决所有问题。\"\nSarah: \"是的，我们会尽最大努力确保代码 merge 后没有任何问题出现。\"\nLi: \"谢谢你的配合，我们一起加油吧！\"\nSarah: \"当然，团队合作一定会让我们顺利完成任务的。\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 3,
+    "utterance": "Li: \"Sarah, have you finished running QA on the latest build?\"\nSarah: \"我刚刚发现了一个bug在login页面上. I'm working on a workaround right now.\"\nLi: \"Okay, let me know once you've fixed it. We need to deploy to staging by EOD.\"\nSarah: \"Got it, I'll make sure to merge my changes before then.\"\nLi: \"Great, we have to meet the deadline for this release.\"\nSarah: \"我们可以尽快解决这个问题. I'll focus on it and let you know once it's ready for deployment.\"\nLi: \"Thanks, Sarah. Your quick response is always appreciated.\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 4,
+    "utterance": "Li: \"我们需要在下周一之前上线这个 feature。\"\nSarah: \"OK，那我们要在周五前 merge 到 develop 分支。\"\nLi: \"我会 deploy 到 staging 环境，然后让 QA 测试一下。\"\nSarah: \"好的，我会快速 build 一个 workaround 解决之前的 bug。\"\nLi: \"谢谢！我们一起努力确保在 deadline 前完成。\"\nSarah: \"没问题，我们一定能够顺利完成任务。\"\nLi: \"有什么问题我们可以及时沟通，一起解决。\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 5,
+    "utterance": "Li: Hey Sarah, have you built the new feature yet?\nSarah: 还没有，我正在debug一个bug. Once that's fixed,我就可以开始build了.\nLi: Sounds good. Let me know if you need any help with the bug.\nSarah: 嗯，谢谢！我觉得很快就可以解决。我们可以一起review代码，然后deploy到staging上测试.\nLi: Sure, sounds like a plan. Once it's on staging, we can do some QA before merging.\nSarah: 对，希望没有什么last-minute issues. Deadline就在眼前了.\nLi: Don't worry, we can always find a workaround if needed. Let's get this done before the merge deadline.\nSarah: 没问题，我们一定能够按时完成这个feature的。 Let's do this!",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 6,
+    "utterance": "Li: \"Sarah, 我们需要在明天的 deadline 前把这个 feature merge 进 master.\"\nSarah: \"Okay, 我会尽快 review 你的 PR, 然后我们可以 deploy 到 staging 环境测试.\"\nLi: \"Sounds good. 有什么 bug 或者 workaround 需要我先 fix 吗?\"\nSarah: \"其实有一个 bug, 就是在 IE 浏览器下的显示有点问题, 你可以先看一下.\"\nLi: \"Got it. 我会马上 build 一个 fix, 然后等你测试完再 deploy 到 staging. 我觉得应该不会影响 deadline.\"\nSarah: \"好的, 谢谢你的帮助. 我会尽快测试并反馈给你.\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 7,
+    "utterance": "Li: \"我们需要在 deadline 前部署这个 feature.\"\nSarah: \"没问题，我会在下午开始 build 和 deploy 到 staging.\"\nLi: \"好，如果有 bug 需要 fix，记得提一个 PR.\"\nSarah: \"明白，我会在 QA 过程中测试所有的 workaround.\"\nLi: \"谢谢，merge 完成后我们可以通知整个团队.\"\nSarah: \"好的，我会确保所有的 changes 都被记录在 issue 里.\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 8,
+    "utterance": "Li: \"Sarah, 我们需要 merge 这个 feature branch 到 master 上去.\"\nSarah: \"好的，我今天下午帮你 merge. 你可以继续 work on the next issue.\"\nLi: \"谢谢！我会开始 build 新的 feature.\"\nSarah: \"如果有 bug 的话，记得提一个 issue.\"\nLi: \"没问题，我会先 QA, 然后 deploy 到 staging.\"\nSarah: \"听起来不错，我们可以在 deadline 前搞定这个 task.\"\nLi: \"是的，我们需要尽快 deploy 到 production.\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 9,
+    "utterance": "Li: \"我们需要今天 deploy 新的 feature 到 staging.\"\nSarah: \"好的，我来 build 一下代码，然后进行 QA 测试.\"\nLi: \"我们发现了一个 bug 在 login 页面上，你能帮忙看一下吗?\"\nSarah: \"没问题，我来 merge 一下你的 PR，然后找出 workaround.\"\nLi: \"非常感谢! 我们必须在 deadline 前解决这个问题.\"\nSarah: \"没问题，我会尽快修复并进行 deploy 到 staging.\"\nLi: \"太好了，我们团队真的很有效率!\"\nSarah: \"是的，合作得很顺畅，希望能保持这样的配合.\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 10,
+    "utterance": "Li: \"我们需要在明天之前部署新的代码到生产环境。你可以开始构建吗？\"\nSarah: \"Sure, 我会先跑一下 tests，然后进行 build。\"\nLi: \"好的，我会把最新的 changes merge 到 master branch。\"\nSarah: \"有个 bug 在之前的 PR 里没解决。有 workaround 吗？\"\nLi: \"我会先看一下 issue，然后找一个 quick fix。\"\nSarah: \"我们还有两天的时间，尽快解决问题，以防错过 deadline。\"\nLi: \"我会尽快 deploy 到 staging 环境测试。我们可以一起进行 QA。\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 11,
+    "utterance": "Li: \"Hey Sarah, have you fixed that bug in the deployment script yet?\"\n\nSarah: \"还没, 我正想 merge 一些新的 changes 进来。不过我需要先 tweak 一下 config.\"\n\nLi: \"好主意，确保 QA 可以顺利 run tests. 我们不能再让这个拖延到下一次 build.\"\n\nSarah: \"对，deadline 就是这周五. 我刚收到 feedback, 他们说有些 test cases fail.\"\n\nLi: \"那我们快点看看 log, 是不是有什么 missing dependency?\"\n\nSarah: \"OK, 我去 check logs. 如果需要, 我会考虑一个 workaround.” \n\nLi: \"Perfect, let’s touch base after you look into it. 我想确保这次 deploy 不出问题。\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 12,
+    "utterance": "Li: \"Hey Sarah, 我们的 latest build 还有几个 bug 需要修复吗？\"\n\nSarah: \"Yeah, 特别是在 checkout 流程中，有一个 issue 在 mobil 网页上。\"\n\nLi: \"我们应该在 PR review 之前先解决这个 bug。不然直接 merge 上去可能会导致更多问题。\"\n\nSarah: \"没错，我已经开始着手修复了。你觉得这个 fix 什么时候可以 deploy 到 staging?\"\n\nLi: \"如果能在明天中午前搞定就好，毕竟 deadline 快到了。\"\n\nSarah: \"好的，我会加快进度，确保 QA 有时间测试。\"\n\nLi: \"谢谢！那我也找时间优化一下 API 响应速度。这样能提高用户体验。\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 13,
+    "utterance": "Li: \"我们准备好了可以 deploy 到 staging 吗？\"\n\nSarah: \"差不多，不过我在 build 那个新组件的时候发现了一个 bug, 需要修复一下。\"\n\nLi: \"什么样的 bug? 我们需要在下个 sprint 之前解决这个问题，有个 deadline。\"\n\nSarah: \"是关于表单 validation 的，用户输入 invalid data 会 crash app。我会先做一个 PR 来 merge 改动。\"\n\nLi: \"好主意！我来帮你做测试, 确认没有其他 issue，然后我们再 push 到生产环境。\"\n\nSarah: \"谢谢！我会把代码 commit 上去，等你 QA 之后就可以 deploy 了。\"\n\nLi: \"听起来不错，我先看看你的 PR。\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 14,
+    "utterance": "Li: \"Hey Sarah, when's the next build scheduled for staging? 我想检查一下新的功能。\"\n\nSarah: \"应该是今天下午，但我们有一个 bug 在 checkout 流程中，必须先修复。\"\n\nLi: \"对，那个 bug 真的影响用户体验。我们先 fix 了再 merge 到 master，怎么样？\"\n\nSarah: \"好的，我会先 branch 出来处理这个 issue。然后晚上可以 deploy 到 staging.\"\n\nLi: \"完美！我们还要保证在这个 deadline 之前能完成所有测试。可能需要安排 QA 早点介入。\"\n\nSarah: \"没问题，我会跟 QA 那边确认一下。这样我们就能在下个 sprint 前稳定下来。\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 15,
+    "utterance": "Li: \"Hey Sarah, ready to 启动 the next build for staging?\"\n\nSarah: \"是的，我刚刚完成了 PR review. 你有 test cases 吗?\"\n\nLi: \"有的，不过发现了一个 bug 在 checkout 流程。\"\n\nSarah: \"哦，真的假的？你看过 console logs 吗？\"\n\nLi: \"还没，先 deploy 之前我想先解决这个 issue.\"\n\nSarah: \"好主意。我们必须在这个 deadline 前确保一切正常。\"\n\nLi: \"没问题，我会尽快合并代码，然后再 run QA tests.\"",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. \nAct as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, \nand sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.\nFew-shot examples:\nExample 1:\nA: \"Can you push the latest styles to staging?\"\nB: \"可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.\"\nExample 2:\nA: \"There's a bug in the login flow after the OAuth change.\"\nB: \"看一下 redirect URI, scope 好像没有 properly 设置.\"\nExample 3:\nA: \"We need to ship before Friday's deadline.\"\nB: \"好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.\"\nNow: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.\nRequirements:\nUse **English–Mandarin code-switching** at the **phrase level**.\nInclude at least one trigger word: **deploy, build, bug, deadline, merge**.\nTarget ~35–50% Mandarin tokens per dialogue.\nUse natural engineering register (issue, PR, deploy, QA, staging, workaround).\nKeep turns short-to-medium.\nOutput only the dialogues. Do not repeat the few-shot examples."
+  },
+  {
+    "id": 16,
+    "utterance": "Li: Hey Sarah, I noticed a bug in the latest deployment. 有点问题。\n\nSarah: Oh no, what seems to be the issue? 怎么回事？\n\nLi: It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。\n\nSarah: Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？\n\nLi: Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。\n\nSarah: We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。\n\nLi: Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。\n\nSarah: Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 17,
+    "utterance": "Li: Hey Sarah, I noticed a bug in our latest deployment. 我们需要尽快解决这个问题.\n\nSarah: Yeah, I saw that too. Let's take a look at the code changes that were merged. 可能是最近合并的代码引起了这个bug.\n\nLi: I think it might be related to the build process. 我觉得我们可能要检查一下构建过程中是否有什么问题.\n\nSarah: That's a good point. Let's check the logs to see if there were any errors during the deployment. 我们也可以看一下日志，看看部署过程中是否出现了任何错误.\n\nLi: I'll also reach out to the team to see if anyone else has encountered this issue. 我们可以问问团队其他成员是否遇到过这个问题.\n\nSarah: Sounds like a plan. Let's try to resolve this bug before the deadline. 我们一定要在截止日期之前解决这个bug.\n\nLi: Agreed. I'll update you on any progress I make. 我会及时告诉你我取得的进展.\n\nSarah: Great, thanks Li. Let's work together to fix this issue as soon as possible. 谢谢你的帮助，我们一起努力尽快解决这个问题.",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 18,
+    "utterance": "Li: Hey Sarah, I think we have a bug in the latest deployment. 有可能是 merge 的问题。\n\nSarah: Oh really? Let me take a look. 我来看看是什么问题。    \n\nLi: I believe it's related to the build process. 我看看我们的 build 脚本可能有点问题。\n\nSarah: Yeah, I see what you mean. 我也注意到了。我们要尽快解决，deadline 就快到了。\n\nLi: I agree. 我们赶紧修复，然后重新 deploy。我们不能让这个 bug 影响用户体验。\n\nSarah: Definitely. 我们一起合作，很快就能搞定。 Let's divide and conquer. \n\nLi: Sounds like a plan! 我们分头工作，互相沟通。我会先修复 bug，你可以查看 build 过程。\n\nSarah: Perfect. 我开始查看了。一起努力，我们能够按时完成任务。",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 19,
+    "utterance": "Li: Hey Sarah, I found a bug during deployment today.\n嘿Sarah，我今天在部署过程中发现一个bug。\n\nSarah: Oh no, that's not good. What does the bug affect?\n哦不，那不太好。这个bug影响了什么？\n\nLi: It's causing the application to crash whenever users try to input special characters.\n每当用户尝试输入特殊字符时，该bug会导致应用程序崩溃。\n\nSarah: We need to fix that as soon as possible before the deadline. \n我们必须在截止日期之前尽快解决这个问题。\n\nLi: I'll start looking into the code and see if I can find the source of the issue.\n我会开始查看代码，看看是否能找到问题的根源。\n\nSarah: Great, let's collaborate on a fix and then merge it into the main branch.\n太好了，让我们共同解决这个问题，然后将其合并到主分支中。\n\nLi: Sounds like a plan. I'll keep you updated on my progress.\n听起来不错。我会随时向你报告我的进展。",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 20,
+    "utterance": "Sarah: Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?\nLi: 有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。\nSarah: Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。\nLi: Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。\nSarah: Absolutely. 我会看看修复后是否需要重新部署，然后通知你。\nLi: Sounds good. 谢谢你的合作，我们工作配合得很好。\nSarah: No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。\nLi: 没错，let's get this deployment bug fixed and deployed asap!",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 21,
+    "utterance": "Li: Hey Sarah, I noticed a bug in the latest deployment. 你能看一下吗？\n\nSarah: Sure, 我来看一下。Let me check the logs first 看看有什么异常。\n\nLi: Sounds good. 我觉得可能是我们 merge 的时候出了问题。\n\nSarah: Yeah, 我看到了，似乎是某个文件没有被正确地 merged 进去。\n\nLi: OK, 那我们需要重新 build 一下然后再 deploy 一次。\n\nSarah: Right, 我会尽快处理。我们有 deadline，我们得尽快解决这个问题。\n\nLi: Agreed. 谢谢你的帮助，我们一定要保证代码质量。\n\nSarah: No problem, teamwork makes the dream work！Let's get this bug fixed ASAP.",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 22,
+    "utterance": "Li: Hey Sarah, I think we've hit a snag with the deployment. 你知道吗？(Do you know?)  \nSarah: Oh no, what's going on? 什么问题出现了？(What problem has come up?)  \nLi: It looks like there's a bug causing the build to fail. 我们必须尽快解决它。(We need to fix it as soon as possible.)  \nSarah: Have you been able to identify where the bug is coming from? 我们需要找到根源。(We need to find the root cause.)  \nLi: Not yet, I'm still digging into the code. 但我们不能耽搁太久。(But we can't delay too long.)  \nSarah: I agree, the deadline for this deployment is approaching fast. 我们一定要尽快解决。(We must resolve this quickly.)  \nLi: Let's collaborate and try to merge our changes to see if that fixes it. 或许问题会解决。(Maybe the problem will be fixed.)",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 23,
+    "utterance": "Li: Hey Sarah, have you had a chance to test the latest build before we deploy it?\nSarah: 嗯，我有一点问题。There seems to be a bug in the new feature we merged yesterday.\nLi: Oh no, let's take a look at the code and see if we can identify the issue.\nSarah: 对，我觉得问题可能在我们的新函数里。I think it might be related to the new function we added.\nLi: Let's roll back the merge and see if the bug is still there in the previous build. \nSarah: 好的，我来把之前的代码部署上去。I'll revert the merge and deploy the old code.\nLi: Once we confirm the bug is gone, we can work on fixing it before the deadline.\nSarah: 嗯，我们必须尽快修复这个 bug 才能按时发布。We need to fix this bug quickly in order to meet the deadline.\nLi: Great, let's divide and conquer - I'll work on debugging the function, you can start testing other parts of the build.\nSarah: 好的，我们分工合作肯定会成功。Let's do this!",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 24,
+    "utterance": "Li: Hey Sarah, I ran into a bug during deployment今天. Can you take a look?\n\nSarah: Sure, let me pull the latest代码 and see what's going on.\n\nLi: 谢谢! I think it might be related to the merge我们 did yesterday.\n\nSarah: Yeah, I noticed some conflicts during the merge合并. Let me try to fix them.\n\nLi: Great, we have a deadline截止日期 coming up, so we need to resolve this quickly.\n\nSarah: I agree. Let's build重新构建 the project and see if the bug is still there.\n\nLi: OK, I'll wait for your updates. Thanks for your help!\n\nSarah: No problem, we're a team团队. We'll get this resolved together.",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 25,
+    "utterance": "Li: Hey Sarah, I think we have a bug in the latest deployment. 我们需要赶紧解决它 before the deadline.\n\nSarah: Yeah, I noticed that too. 我们可以先看看最近的merge有没有问题. Let's pull up the code and see what's going on.\n\nLi: I agree. 我们要快点找到问题, so we can build a fix and deploy it ASAP.\n\nSarah: I'll start looking through the code. 你可以跟QA team确认一下他们有没有发现这个bug.\n\nLi: Sure thing, I'll reach out to them right now. Hopefully we can resolve this before the deadline. 加油!\n\nSarah: 加油! Let's get this bug fixed and the deployment back on track.",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 26,
+    "utterance": "**Li:** Hey Sarah, 我们今天的 deployment 似乎有个 bug，能帮我看一下吗?  \n\n**Sarah:** Sure, what’s the error message you’re getting? 我刚刚在本地 build 了一下, everything was fine.  \n\n**Li:** It says something about merge conflicts, 你觉得可能是因为我们没有同步最新的代码吗?  \n\n**Sarah:** Could be! Let me check if I pulled the latest from main. 你在线上的 deadline 还好吗?  \n\n**Li:** Yeah, I’m okay for now. 如果我们能解决这个 bug 今天就能准时 deploy。  \n\n**Sarah:** Got it, I’ll take a look at our branches. 谢谢你提醒我! Let’s fix this!  \n\n**Li:** No problem! 先找到 bug, 再一起搞定 deployment!",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 27,
+    "utterance": "**Li:** Hey Sarah, 我们的 deployment 出了点问题. 你能帮我看看吗?\n\n**Sarah:** Sure! 你有什么错误信息吗? 这个 bug 是在 build 过程中发生的吗?\n\n**Li:** 对，错误信息说“merge conflict”。我觉得可能是上次的代码没处理好.\n\n**Sarah:** Ah, got it. 你要不要先 pull latest changes 然后再试一次?\n\n**Li:** 好主意! 我会再看一下 deadline. 我们不能再拖了.\n\n**Sarah:** 对，我们得快点! 如果你需要我帮忙，我可以 join a call 来 troubleshoot.\n\n**Li:** Thanks! 我会先试试. 如果不行, 我再叫你.",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 28,
+    "utterance": "Li: Hey Sarah, 我们的部署出问题了, the latest build broke something.\n\nSarah: Oh no, which part? 你看过日志吗？\n\nLi: Yeah, 我看到有一个 merge conflict in the code. We need to resolve it fast, deadline is tomorrow.\n\nSarah: Got it. 你需要我帮忙吗？ 我可以帮你检查一下。\n\nLi: Please! 我觉得 bug 在这个模块里, maybe it's affecting the main function.\n\nSarah: I’ll take a look. 通过 run tests 一下, 看看能不能找到问题源头。\n\nLi: Perfect, 我先更新一下我的 local repository, then I’ll try to replicate the issue.\n\nSarah: Good plan! 让我们一起解决这个问题。",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 29,
+    "utterance": "Li: Hey Sarah, 我刚刚发现一个 bug 在我们的最新 build 里. \n\nSarah: Oh no! 什么问题? Is it something related to the deployment? \n\nLi: 是的, 部署后，页面加载得很慢. 我觉得可能是我们 merge 了太多代码. \n\nSarah: That makes sense. 我们的 deadline 快到了，要尽快解决这个问题. \n\nLi: 对，我想先 rollback the last merge. 你觉得这样可以吗？ \n\nSarah: Sounds good. Let's try that. 然后我们可以再做一下性能测试确认问题. \n\nLi: 好主意，我马上着手。希望能快点搞定这个 bug!",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 30,
+    "utterance": "**Li:** Hey Sarah, 我发现了在最近的部署里有一个 bug，尤其是在用户登录的部分。\n\n**Sarah:** Oh really? 你能具体说说是什么问题吗? Is it causing a crash?\n\n**Li:** 对，应用在登录时有时会闪退. 我 think it might be related to the new build we merged last week.\n\n**Sarah:** That's possible. Can you check the logs? 我们可能需要回退那个合并. \n\n**Li:** Good idea. 我这就去查看一下，看看能不能找到具体的错误信息. What’s our deadline for this fix?\n\n**Sarah:** We need to resolve it by Friday. 所以我们得快点加油!\n\n**Li:** 知道了! 我会尽快更新你， or we can do a quick sync later if needed?",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. \nUse reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, \nthen output only the conversation (5–7 turns). \nMix Mandarin and English at the phrase level, like real bilingual speech.\nInclude at least one of: deploy, build, bug, deadline, merge.\nUse casual engineering tone, short to medium turns, 35–50% Mandarin content."
+  },
+  {
+    "id": 31,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the new feature on our QA server? 我们需要debug一下前端问题。\nSarah: Hi Li, yes I saw the bug you logged. Let me pull the code and take a look. 我们应该在staging环境测试一下。\nLi: Great, let me know if you need any help with the debugging process. 我们的deadline快要到了，我们需要尽快deploy这个feature。\nSarah: I agree, we need to make sure the fix is solid before we merge it to the main branch. 我们还需要确认这个问题已经解决了。\nLi: Absolutely, we don't want to deploy any code with unresolved bugs. 我们应该赶快build出一个新的版本。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 32,
+    "utterance": "Li: Hey Sarah, have you had a chance to QA the latest build?\nSarah: Actually, I found a bug when testing the staging site 昨天. 它部分地破坏了前端.\nLi: Oh no, let me take a look. I'll debug it and then we can deploy the fix.\nSarah: Sounds good. I think we have a deadline approaching, so we need to merge the changes soon 我们否则会落后.\nLi: Definitely, let's prioritize this issue and make sure it gets resolved before we deploy to production.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 33,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the bug on the QA site?\n你好Sarah，你有没有时间去看QA网站上的bug了吗？\n\nSarah: Yes, I saw it earlier today. It looks like a front-end issue that might be related to the recent deploy.\n是的，我今天早些时候看到了。看起来是一个前端问题，可能与最近的部署有关。\n\nLi: That makes sense. I think we need to do some debugging on staging before we deploy any fixes.\n有道理。我觉得在部署修复之前，我们需要在staging上进行一些调试。\n\nSarah: Agreed. Let's build a checklist of possible causes and test them on staging before we merge any changes.\n同意。让我们建立一个可能原因的清单，并在staging上测试它们，然后再合并任何更改。\n\nLi: Good idea. I'll start looking into the code to see if I can identify the root cause of the issue.\n好主意。我会开始查看代码，看看能否找出问题的根本原因。\n\nSarah: Sounds good. Let me know if you need any help. We have a tight deadline for this fix.\n好的。如果你需要帮助，请告诉我。我们对这个修复有一个紧迫的截止日期。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 34,
+    "utterance": "Li: Hey Sarah, have you checked the latest QA build for the front-end issue?\nSarah: 是的，我已经检查了。There seems to be a bug with the responsive design on mobile devices.\nLi: 我们需要在 staging 上测试修复了吗？\nSarah: Yes, let's deploy the fix to staging and see if it resolves the issue.\nLi: 好的，我会赶紧部署新代码到 staging 平台。\nSarah: Great, once we confirm it's fixed on staging, we can merge the changes to master and deploy to production.\nLi: Sounds like a plan. 我们要尽快解决这个问题，因为我们接近 deadline 了。\nSarah: Absolutely, let's aim to have it resolved before the deadline hits.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 35,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the issue on the front-end?\nSarah: 是的，我刚刚看了一下，可能是在QA阶段出现了问题。\nLi: Oh, that's strange. I thought everything was fine in staging.\nSarah: 是的，但是可能有一些问题在部署的过程中出现了。\nLi: Okay, 我们应该尽快解决这个bug，因为我们的deadline快要到了。\nSarah: Yes, let's do a quick build and then merge the changes to see if that fixes it. \nLi: Sounds like a plan. 我们可以跟QA团队合作，确保一切顺利。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 36,
+    "utterance": "Li: Hey Sarah, have you checked the QA environment for the front-end bug?\nSarah: 是的，我刚刚检查了，但是我还是发现了一个问题。\nLi: What issue did you encounter? Maybe we can fix it before we deploy to staging.\nSarah: 我觉得这可能是由于我们上一个版本的代码合并时出现了一些问题。\nLi: That makes sense. Let's review the changes and see if we missed anything in the merge.\nSarah: 好的，我会快速检查一下代码，然后我们可以构建一个新的版本测试在staging环境。\nLi: Great idea. Once we confirm the fix, we can deploy it to production before the deadline.\nSarah: 好的，我会尽快解决问题，这样我们就可以按计划部署了。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 37,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the QA feedback on the staging site? 你看到我们前端页面出了点问题吗？\n\nSarah: Yeah, I noticed a bug in the header section. 我看到了，我们需要修复这个bug before we can deploy to production.\n\nLi: Let me take a look at the code and see if I can find the issue. 让我来看看代码，也许我能找到问题。\n\nSarah: Sounds good, I'll create a new branch for us to work on. 我会建一个新的分支来处理这个问题。\n\nLi: Great, we can merge our changes once we have everything fixed. 我们修复完问题后可以合并修改。\n\nSarah: We should aim to deploy the fix before the deadline. 希望在截止日期前能部署修复方案。\n\nLi: Agreed, let's prioritize this issue and get it resolved quickly. 让我们把这个问题放在重要位置，快速解决。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 38,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the latest QA results for the front-end issue?最近QA的结果有没有看？在前端问题上。\nSarah: Yes, I just finished reviewing them. It seems like there's a bug causing the page to not load properly.我觉得有一个bug导致页面加载有问题。\nLi: That's not good. Let's debug it on the staging server first before we deploy any changes.我们先在staging服务器上debug，然后再deploy任何更改。\nSarah: Agreed. I'll start by checking the console logs for any error messages.我会检查一下console logs看看有没有错误信息。\nLi: Great idea. Once we identify the issue, we can build a fix and merge it into the codebase.很好的建议。一旦我们确定问题，我们就可以构建一个修复，并将其合并到代码库中。\nSarah: Sounds like a plan. Let's aim to have this resolved before the deadline.计划听起来不错。在deadline之前我们来解决这个问题。\nLi: Definitely, we'll prioritize getting this resolved as soon as possible.我们肯定会优先解决这个问题。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 39,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the QA feedback for our latest build? \n李：嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？\n\nSarah: Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。\n\nLi: Oh no, that's not good. Do you think we can fix it before the deadline? \n李：噢，那不好。 你觉得我们能在截止日期前修复它吗？\n\nSarah: I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。\n\nLi: Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。\n\nSarah: Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 40,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the QA feedback for the latest build?\n\nSarah: 是的，我看了一下，它显示有一些bug在staging环境中。\n\nLi: That's not good. Let's debug those issues before we deploy to production. 你可以帮我看一下哪些地方可能出了问题吗？\n\nSarah: 当然，我们不能在deadline之前merge这些代码，否则用户会遇到问题。\n\nLi: Absolutely, let's schedule some time to work on this together later. 我们可以在下午会议结束之后开始吗？\n\nSarah: Sounds good to me. 我们可以一起build一个新版本并测试它是否稳定。\n\nLi: Great idea. 谢谢你的帮助，Sarah。我们会尽快解决这个问题。\n\nSarah: 没问题，我们一起努力。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 41,
+    "utterance": "**Li:** Hey Sarah, 我们今天需要检查一下那个 front-end issue，特别是关于 QA 的部分。\n\n**Sarah:** Sure! I think it might be related to the last build we deployed. \n\n**Li:** 我也是这样想的。我们需要确认一下 staging 环境中的代码，是不是在 merge 的时候出了问题。\n\n**Sarah:** Right, let’s check if there were any bugs reported in staging before the deadline. \n\n**Li:** 好主意! 我们可以使用一些日志工具来帮助我们找到问题所在。\n\n**Sarah:** Agreed! Once we identify the bug, we can fix it before the next deploy.\n\n**Li:** 没错！然后我们可以在 QA 环境中测试，确保一切正常。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 42,
+    "utterance": "**Li:** Hey Sarah, I just noticed a bug in the latest build.  \n\n**Sarah:** 你说的是哪个新版本？Does it affect the QA environment?  \n\n**Li:** Yes, it’s in the staging build. We need to check if it’ll impact our deploy this Friday.  \n\n**Sarah:** 好的，我会先看一下代码。Do you remember when we last merged the changes?  \n\n**Li:** It was last week, before the deadline for the demo. We should go through the changes.  \n\n**Sarah:** 对啊， 我记得。Let’s compare the latest commit with the previous one to find the issue.  \n\n**Li:** Great idea! 如果我们能修好这个bug, we should be clear for deployment.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 43,
+    "utterance": "**Li:** Hey Sarah, I just noticed a bug in the QA environment. 你能帮我看看吗？\n\n**Sarah:** Sure! What kind of issue are you facing? Is it related to the latest build?\n\n**Li:** Yes, it seems like a rendering problem on the staging site. 我们的组件没有正确加载。\n\n**Sarah:** That’s strange. Did you merge the latest changes from the main branch?\n\n**Li:** I did, but I think there might be a conflict we missed. 我们有个战斗的deadline，下次推送之前我们需要先解决这个问题。\n\n**Sarah:** Right! Let’s check the console for any errors. 如果有需要，我们可以回滚到之前的版本。\n\n**Li:** Good idea! We should definitely test it before we deploy again. 这样可以避免在生产环境中出现问题。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 44,
+    "utterance": "**Li:** Hey Sarah, I noticed a bug in the latest build after the last merge.  \n\n**Sarah:** 真的吗？What issue are you seeing?\n\n**Li:** The QA environment is displaying an empty state on the dashboard.  \n\n**Sarah:** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?  \n\n**Li:** Yes, I did. I think it might be related to our latest deploy.  \n\n**Sarah:** 那我们仔细检查一下，看看是不是其中一个新组件有问题。  \n\n**Li:** Good idea! Let's pull the latest staging to see if we can replicate the issue.  \n\n**Sarah:** 好的，我们的deadline快到了，我们得快速解决这个问题！",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 45,
+    "utterance": "**Li:** Hey Sarah, 我们有一个问题在前端，代码的构建(Build)似乎有个bug。\n\n**Sarah:** Yeah, I noticed that too during QA. Can you show me where it’s happening?\n\n**Li:** 当然，我在我们的 staging 环境里看到了错误信息。它在 loading 的时候崩溃了。\n\n**Sarah:** That’s strange. Have you tried merging the latest changes? Sometimes old code can cause issues.\n\n**Li:** 我刚刚做了 merge，到了 staging 后发现问题依然存在。我们有个 deadline 下周要部署(deploy)新版本。\n\n**Sarah:** I know, we need to fix this fast. Let’s check the console for any errors.\n\n**Li:** 好主意! 让我们找出这个 bug，尽快解决。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write \na 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. \nReference QA, staging, and deploy naturally.\nInclude at least one trigger word (deploy, build, bug, deadline, merge).\nSwitch languages mid-sentence, around technical phrases. \nOutput only the dialogue."
+  },
+  {
+    "id": 46,
+    "utterance": "Li: Hey Sarah, have you resolved the merge conflict on that feature branch yet?\nSarah: 还没有，我正在看review comments，然后push一下changes。\nLi: Cool, once you push, I'll review it and we can create a pull request for staging.\nSarah: Sounds good. I'll let you know when I'm ready to deploy to staging.\nLi: Great, I'll keep an eye out for the PR. We have that deadline coming up soon.\nSarah: 是的，我们需要确保在deadline之前完成所有的bug fix。\nLi: Absolutely, we can do it. Let's stay focused on getting this build deployed on time.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 47,
+    "utterance": "Li: Hey Sarah, have you taken a look at our latest PR on GitHub? There seems to be a merge conflict.\nSarah: 是的，我已经看到了。我会解决它。我已经在staging上部署了一个新版本。\nLi: Great, let me know if you need any help resolving the conflict. The deadline for this feature is coming up soon.\nSarah: 我们必须尽快解决这个bug，并部署新版本。我会尽快处理这个问题。\nLi: Sounds good. Let's prioritize fixing the bug and getting the new version deployed before the deadline.\nSarah: 好的，我会尽快处理。我们必须在截止日期之前完成这个任务。\nLi: I trust your coding skills, Sarah. Let's work together to build a successful product by the deadline.\nSarah: 谢谢你的信任，Li。我们一定会按时完成任务。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 48,
+    "utterance": "Li: Hey Sarah, have you resolved the merge conflict on our latest PR?\nSarah: 还没有，我正在跟master branch进行rebase。应该不会有大问题。\nLi: Great, let me know if you need any help。我们的deadline马上就要到了。\nSarah: 是的，我知道。我会尽快处理好这个merge conflict并提交PR。\nLi: 好的，我们快点解决吧，然后可以部署到staging环境做测试。\nSarah: 没问题，一旦merge完成，我会开始build并上传到staging。\nLi: Sounds like a plan. 我们一起努力，赶在deadline之前完成这个feature。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 49,
+    "utterance": "Li: Hey Sarah, I noticed a merge conflict in our latest PR. 我们需要解决这个问题 before we can deploy to staging.\n\nSarah: 嗯，我觉得这个bug可能是由于我的代码改动引起的。我会尽快解决。Let's address this merge conflict together.\n\nLi: Sounds good. 我们可以用GitHub的工具来解决这个冲突。我们得确保代码能够顺利地build和deploy。\n\nSarah: 对的，我们也要记得测试所有的changes在staging环境里 before we deploy to production. 我们已经接近deadline了。\n\nLi: 是的，我们必须确保最终的代码质量。有了自动化测试，我们就能更容易地发现问题。\n\nSarah: 嗯，我同意。Let's work together to resolve this merge conflict quickly so we can meet our deadline 吧。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 50,
+    "utterance": "Li: Hey Sarah, have you resolved the merge conflict on our latest PR?\n\nSarah: 还没有，我在看代码然后解决，应该很快。\n\nLi: Ok, let me know if you need any help. We have a tight deadline for the deploy on Friday.\n\nSarah: 明白，我会加快速度。我们的staging环境还有bug需要修复。\n\nLi: Got it, we should prioritize fixing those bugs before the deploy. Once we're done, we can create a new branch for future features.\n\nSarah: 好的，我马上开始修复bug。我们会尽快完成deploy前的工作。\n\nLi: Great, let's aim to build and deploy by Thursday at the latest. I'll keep an eye on the progress and assist wherever needed.\n\nSarah: 好的，感谢你的帮助。一起努力来完成项目！",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 51,
+    "utterance": "Li: Hey Sarah, have you resolved that merge conflict on our latest pull request?\nSarah: Yeah, I think I got it fixed in my local branch. I'll push the changes up to GitHub soon.\nLi: Great, I'll review and approve your PR once you push. We have a tight deadline for this feature.\nSarah: Sounds good, I'll make sure to deploy to staging for testing before merging to master.\nLi: Good idea, we don't want any last-minute bugs slipping through. Let's aim to deploy by end of day.\nSarah: Agreed, I'll build the necessary changes and run some tests to ensure everything works smoothly.\nLi: Perfect, let's stay proactive and communicate any issues that come up. Deadline is approaching fast.\nSarah: Understood, I'll keep you updated on the progress. Let's make sure to meet the deadline with a stable deploy.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 52,
+    "utterance": "Li: Hey Sarah, have you resolved that merge conflict in our latest PR on GitHub?\nSarah: Oh, not yet. I'm still trying to figure out which changes to keep. 这个conflict有点tricky。\nLi: Yeah, it can be tricky sometimes. Let me take a look and see if I can help. 我们要赶在deadline之前解决这个bug。\nSarah: That would be great, thanks! We really need to deploy the changes to staging soon. 我们要确保没有bug。\nLi: Agreed. Once we resolve the conflict, we can build and test on staging before deploying. 觉得我们需要赶快解决这个merge。\nSarah: Absolutely. I'll focus on resolving the conflict while you work on building the deployment pipeline. 我们要合作完成任务！",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 53,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the PR I opened for that feature update?\nSarah: Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.\nLi: Oh man, not another one! Let's resolve it right away before we deploy to staging.\nSarah: Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.\nLi: Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.\nSarah: Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.\nLi: Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 54,
+    "utterance": "Li: Hey Sarah, did you see the merge conflict on our GitHub repo?\nSarah: 是的，我注意到了。我已经创建了一个PR来解决它了。\nLi: Great, let me take a look and review it. 我们的deadline快到了，我们需要尽快deploy这个feature。\nSarah: 没问题，我已经在staging环境上测试通过了。只需要等你approve了我的PR，我们就可以部署了。\nLi: Sounds good. 我看一下再给你回复。\nSarah: 谢谢！这个feature修复了一个bug，所以我们必须尽快部署上线。\nLi: 明白，我会尽快review你的PR。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 55,
+    "utterance": "Li: Hey Sarah, have you resolved the merge conflict in our latest PR on GitHub?\nSarah: Oh shoot, not yet. I will work on it now. 我去 pull 一下最新的 code。\nLi: Okay, let me know if you need any help. Are we still on track to deploy by the deadline?\nSarah: Yes, we should be fine as long as we can merge everything cleanly. 希望没有太多的 bug。\nLi: Agreed, let's make sure to thoroughly test on staging before we deploy to production. 要四处发现 bug。\nSarah: Definitely, we don't want any last-minute surprises. 我们要稳健的 deploy。\nLi: I'll keep an eye on the deadline and notify the team if anything comes up. 不要等到最后一刻才 build。\nSarah: Sounds good, let's push through and get this feature out on time. 加油！",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 56,
+    "utterance": "**Li:** 你看到最近的 PR 了吗？我们有个 merge conflict 要解决。\n\n**Sarah:** Yeah, I just checked it. 我觉得是因为我们都改了同一个组件. \n\n**Li:** 对，可能是那个按钮的样式。我想快速在 staging 测试一下修复。\n\n**Sarah:** Sounds good. 但是我们的 deadline 就快到了，我们得快点解决这个 bug。\n\n**Li:** Totally. 一旦我们 resolve 了 conflict， 我们就可以 merge，然后 deploy 到生产环境。\n\n**Sarah:** 没错！我会先处理我的部分，你把你的那块儿也搞定。我们一起 push 到 GitHub。\n\n**Li:** 好的，等会儿见。我们得确保这一切能顺利 build！",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 57,
+    "utterance": "**Li:** Hey Sarah, 我刚发现我们在PR里面有一个merge conflict。你有时间看一下吗？\n\n**Sarah:** Sure! 我们的更新有冲突，我会先在本地拉取一下最新的代码，看看哪里出问题了。\n\n**Li:** 好的，我前面有些bug修好之后就push上去了。我们得在这个deadline前搞定它。\n\n**Sarah:** 嗯，我觉得我们可以先在staging环境测试一下，确保没有其他问题再deploy到生产环境。\n\n**Li:** 对的，我也觉得。我们能够在今晚之前解决这个merge conflict吗？\n\n**Sarah:** 有可能！我会尽快处理，有任何进展我会在GitHub上更新。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 58,
+    "utterance": "**Li:** Hey Sarah, 你今天解决了那个 merge conflict 吗？\n\n**Sarah:** 还没呢，我在 GitHub 上看了 PR，但有些 files 好像重复了。\n\n**Li:** 对，我在我的分支上也遇到了 bug。我们是不是要再沟通一下，确认一下改动？\n\n**Sarah:** 嗯，没问题。我们可以在 staging 上测试一下，看最终效果。\n\n**Li:** 好主意！我们得抓紧时间，deadline 快到了。加油！\n\n**Sarah:** Definitely! 一起来把 code build through 来，确保那个 deploy 没问题。\n\n**Li:** 听起来不错，我马上去处理那部分！",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 59,
+    "utterance": "Li: Hey Sarah, 你觉得我们那个 PR 要怎么解决 merge conflict 呢？ \n\nSarah: 我刚看过，似乎是因为我们都改了同一个文件。可以用 GitHub 的 compare tool 来找出问题吗？\n\nLi: 对，可以查看一下。如果能理清楚，赶紧 merge，这样我们就能在 staging 上测试了。\n\nSarah: 是啊，我有点担心那个 deadline。我们需要尽快 deploy 才行。\n\nLi: 对！我现在先处理这个 conflict，然后你帮我检查一下新功能的 bug，好吗？\n\nSarah: 好的，等你 merge 了之后，我就开始测。希望我们能赶上这个 deadline！",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 60,
+    "utterance": "**Li:** Hey Sarah, have you checked out the merge conflict on GitHub? 我觉得我们可能需要重新审查一下代码。\n\n**Sarah:** Yeah, I saw that. It’s in the user authentication section. 你能把你的最新代码推到 staging 吗？\n\n**Li:** Sure, I’ll push it up now. 然后我们再看看哪里出问题了。 \n\n**Sarah:** Perfect! I noticed a bug in the login flow, too. We have a deadline coming up, so we need to fix it fast.\n\n**Li:** 对，我会在今天的 deploy 前把这个解决掉。 \n\n**Sarah:** Good call! Let’s review the PR together once the conflict is resolved, so we’re on the same page.\n\n**Li:** Sounds like a plan! 处理完后我再通知你。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing \na merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. \nReference tools like GitHub, PRs, staging, and deploy. \nInclude one trigger word: deploy, build, bug, deadline, or merge. \nKeep turns concise (5–7 exchanges total). Output only the dialogue."
+  },
+  {
+    "id": 61,
+    "utterance": "Li: Hey Sarah, have you had a chance to review the PR for the upcoming deploy?\nSarah: Hi Li, yes I took a look and everything seems good to go. Just noticed a small bug in one of the functions.\nLi: Oh no, can you fix it before the deadline?\nSarah: Yep, I'll make the changes and merge it back in. Should be quick.\nLi: Great, thanks for catching that. Let's make sure the build is clean before we deploy.\nSarah: Definitely, I'll keep an eye on it. Should be smooth sailing though.\nLi: Awesome, appreciate your quick response on this. Deployment day is always a bit nerve-wracking.\nSarah: No problem, we got this. Let's get this deploy out the door!",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 62,
+    "utterance": "Li: 你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?\n\nSarah: Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.\n\nLi: 好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?\n\nSarah: The deadline is tomorrow at noon, so we need to get it fixed and merged before then.\n\nLi: 好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?\n\nSarah: I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.\n\nLi: Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 63,
+    "utterance": "Li: Hey Sarah, have you had a chance to review the PR for the deploy?\nSarah: Hey Li, yeah I took a look, but I found a bug in the build process.\nLi: Oh no, really? We are already close to the deadline.\nSarah: Yeah, I know, but we can't merge this code with that bug in it.\nLi: True, let's fix it ASAP then.\nSarah: I'll work on it now and let you know once it's ready for review again.\nLi: Sounds good, thanks for catching that!",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 64,
+    "utterance": "Li: 你好 Sarah, have you checked the latest PR before我们 deploy it?\nSarah: Hey Li, yeah I've been looking at it. I think we need to fix a bug before we deploy.\nLi: Okay, let me take a look. 我觉得我们还有两天的 deadline right?\nSarah: Yeah, that's right. We need to fix the bug and then we can build and merge the code.\nLi: Got it. I'll work on fixing the bug now. Thanks for catching that before we deploy.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 65,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the PR for the new feature? \nSarah: Hey Li, yes I just finished reviewing it. Looks good overall, but there are a couple of bugs that need to be fixed before we deploy.\nLi: Got it, I'll take care of those before the deadline. \nSarah: Great, thanks. Also, we need to make sure the build passes before we merge. \nLi: Understood, I'll double check everything before merging the code. \nSarah: Perfect, let me know if you need any help. \nLi: Will do, thanks for your input. Teamwork makes the dream work, right?",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 66,
+    "utterance": "Li: Hey Sarah, have you had a chance to review the PR for the upcoming deploy?\n\nSarah: Hi Li, I just finished going through it. Looks good overall, but there's a bug in the build process that needs fixing.\n\nLi: Thanks for catching that. I'll take a look and merge the changes before the deadline.\n\nSarah: Great, let me know if you need any help with testing before we deploy to production.\n\nLi: Will do, I appreciate your attention to detail. We want to make sure everything is solid before we go live.\n\nSarah: Absolutely, quality is key when it comes to deployments. Let's work together to get this build ready for release.\n\nLi: Agreed, teamwork makes the dream work. Thanks for your input, Sarah. Let's aim for a smooth deployment process.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 67,
+    "utterance": "Li: Hey Sarah, have you had a chance to check out the latest PR for the deploy?\n\nSarah: Yeah, I took a quick look and it seems like everything is good to go. Just a couple of minor bugs that need to be fixed before we can merge.\n\nLi: Okay, I'll take care of those bugs before we build the final version. What's the deadline for this deploy again?\n\nSarah: The deadline is tomorrow afternoon, so we need to make sure everything is ready to go by then.\n\nLi: Got it, I'll make sure to prioritize fixing those bugs and testing the build thoroughly before we merge the changes.\n\nSarah: Sounds good, let me know if you need any help with testing or anything else. We want to make sure this deploy goes out smoothly.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 68,
+    "utterance": "Li: 嘿 Sarah, have you had a chance to 看看 the PR I sent over for review?\nSarah: Hey Li! Yes, I just finished reviewing it. Overall looks good, but I found a small bug in the code that we need to fix before deploy.\nLi: 好的, let me take a look at that bug and 看看 if I can resolve it quickly.\nSarah: Great, thanks! We're getting close to the deadline for this sprint, so we need to make sure everything is ready for deploy on time.\nLi: I agree, we can't afford any delays. Did you also check the latest build to see if the bug is still present?\nSarah: Yes, I tested the build and the bug is still there. Let's coordinate with the team to get this fixed before merge to the master branch.\nLi: Sounds like a plan. I'll reach out to the team and see if we can get this sorted out quickly. Thanks for catching that bug, Sarah.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 69,
+    "utterance": "Li: 嗨 Sarah, 我看完了这个 PR，还有什么需要调整的地方吗？(Hi Sarah, I've reviewed this PR, is there anything that needs to be adjusted?)\n\nSarah: Hey Li, thanks for checking! I think we just need to fix a few bugs before we can deploy it. \n\nLi: 好的，我马上看看，希望这些问题很快就能解决。(Ok, I'll take a look right away, hopefully these issues can be resolved quickly.)\n\nSarah: Great, I trust your coding skills! We have a tight deadline for this release, so we need to ensure everything is smooth before merging.\n\nLi: 没问题，我会尽快处理并确保代码无误。(No problem, I will handle it as soon as possible and make sure the code is error-free.)\n\nSarah: 谢谢你的努力，我们一起努力让这次部署成功！(Thank you for your efforts, let's work together to make this deployment a success!)",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 70,
+    "utterance": "Li: Hey Sarah, have you had a chance to review the PR I sent you?\nSarah: Hey Li! Yes, I just finished looking over it. Everything looks good, but I found a small bug in the code.\nLi: Really? Let me take a look. Can you walk me through where you found it?\nSarah: Sure, it's in the build process when we deploy to the staging environment.\nLi: Got it, I see the issue now. Thanks for catching that. Do you think we can fix it before the deadline?\nSarah: I think so, if we merge in the changes soon. I can help with that if you want.\nLi: That would be great, let's work together to get this resolved. Thanks for your help, Sarah.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 71,
+    "utterance": "**Li**: Hey Sarah, 有时间吗？I wanted to go over the PR before we do the deploy.\n\n**Sarah**: Sure, Li! I just finished reviewing the build. 你觉得这个代码有问题吗？\n\n**Li**: There’s a small bug I noticed in the authentication module. 我觉得我们应该在 merge 之前修复它。\n\n**Sarah**: Good catch! 这会影响我们的 deadline, but it’s better to fix it now.\n\n**Li**: Exactly. 我会尽快修改。Do you think we can still meet the deadline after that?\n\n**Sarah**: If we work together, 我相信我们能做到！Let’s prioritize this fix and then do a quick run through before the merge.\n\n**Li**: Sounds like a plan! 让我开始处理这个 bug，然后再跟你更新。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 72,
+    "utterance": "**Li:** Hey Sarah, 我刚看完你的 PR，感觉这个 build 很不错。  \n  \n**Sarah:** Thanks, Li! I tried to fix that bug we found last week, but I’m not sure if it’s completely resolved.  \n\n**Li:** 我明白。我们需要在部署前确认一下。 你觉得 deadline 够不够？  \n\n**Sarah:** The deadline is tight, but I believe we can merge it if you do a quick review.  \n\n**Li:** 好的，我会尽快检查。 你是不是还想加一些单元测试？  \n\n**Sarah:** Yes, I think adding tests will help catch any edge cases before we deploy.  \n\n**Li:** 完全同意！我马上开始审查，你也可以再看看有没有其他需要改进的地方。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 73,
+    "utterance": "**Li:** Hey Sarah, 我刚刚看完你的 PR，想确认一下这个 build 是不是 ready for deploy?\n\n**Sarah:** Yeah, I think it’s good to go, but I found a bug in the latest commit. \n\n**Li:** 哦，哪个部分有问题? 我们的 deadline 是星期五，不能再耽搁了。\n\n**Sarah:** It’s in the user authentication module. I’ll fix it before we merge. \n\n**Li:** 好的，那我等你修复完再review一次。你觉得这个能在今天解决吗？\n\n**Sarah:** Absolutely! 我会尽快把更新 push 上去。 Once I do, can you check it quickly?\n\n**Li:** Sure! 期待看到你的更新，我们一起加油！",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 74,
+    "utterance": "**Li:** Hey Sarah, I just finished reviewing the latest PR. 你觉得这个 build 可行吗？\n\n**Sarah:** I think it looks good overall, but I found a bug in the API response. 我们需要修复这个问题在 deploy 之前。\n\n**Li:** Good catch! 具体而言，哪个接口有问题？ \n\n**Sarah:** The user details endpoint. It seems like the merging of data is incorrect. 我们需要确保所有字段都能正确返回。\n\n**Li:** Right, I can fix that. 但是我们要尽快，因为 deadline 是后天。\n\n**Sarah:** Agreed! Let’s prioritize this. 你打算什么时候提交修改的代码？\n\n**Li:** I’ll aim to have it ready by the end of today. 这样我们就能在晚上进行重审，确保一切顺利 merge。",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 75,
+    "utterance": "**Li:** Hey Sarah, 我们准备好进行 deployment 吗？  \n\n**Sarah:** Almost! I just found a bug in the latest build. 你有空帮我看一下吗？  \n\n**Li:** Sure! 你说的哪个部分有问题？  \n\n**Sarah:** The function for user authentication. It keeps throwing an error when we try to merge it with the main branch.  \n\n**Li:** Ah, that’s not good. 我们得在 deadline 前解决这个问题。  \n\n**Sarah:** Exactly, we need to push this PR today. Can you check the logs from the last build?  \n\n**Li:** Will do! 如果有需要我再 ping 你.  \n\n**Sarah:** Sounds good. Let’s fix this and get ready for the deploy!",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between \nLi and Sarah, two engineers reviewing a PR before a deploy. \nUse code-switching between Mandarin and English at phrase level (within sentences).\nAt least one of these words must appear: deploy, build, bug, deadline, merge. \nFollow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack."
+  },
+  {
+    "id": 76,
+    "utterance": "Li: Hey Sarah, are you ready for the Friday deploy?\n\nSarah: Yeah, I've been working on the build all week. How's the bug fixing going?\n\nLi: It's been a bit rough. I found a few more issues during testing that we need to address before the deadline.\n\nSarah: No problem, I can help you with that. Let's merge our changes and run some final tests before deploying.\n\nLi: Sounds good. I'll make sure to double check everything before we push the changes out.\n\nSarah: Great, let's aim to deploy by Friday morning so we have time to address any last minute issues.\n\nLi: Agreed. Thanks for the help, Sarah. Let's get this deploy done smoothly.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 77,
+    "utterance": "Li: Hey Sarah, are we all set for the Friday deploy?\n\nSarah: Almost! We just need to test the latest build to make sure it's bug-free before merging it into the production branch.\n\nLi: Sounds good. Let's schedule a deadline for testing and make sure all the features are working properly.\n\nSarah: I agree. We can't afford any last-minute surprises on deploy day.\n\nLi: Definitely. I'll start running some tests now while you double check the code for any potential issues.\n\nSarah: Perfect. Once everything looks good, we can go ahead and merge the changes into the main branch.\n\nLi: Let's aim to finish the merge by tomorrow so we have enough time to handle any unexpected problems that may come up.\n\nSarah: Sounds like a plan. I'll keep an eye out for any issues and let you know if I run into any roadblocks.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 78,
+    "utterance": "Li: Hey Sarah, how's the build looking for Friday's deploy? 你觉得我们能按时完成吗？\n\nSarah: Hey Li, I think we're on track for the deadline. 我们当前的代码状态挺好的。Just need to merge a couple of branches and run some tests. \n\nLi: Sounds good, let's make sure to squash any bugs before we push to production. 我们一定要确保没有漏掉任何bug。\n\nSarah: Definitely, I'll go through the codebase one more time before the deploy. 我们不能在最后一刻发现问题。\n\nLi: Agreed, it's better to catch any issues now than deal with them later. 我们还有几天时间，要充分利用。\n\nSarah: Absolutely, we can't afford any last-minute surprises. 我们要提前考虑一切可能的问题。\n\nLi: I'll keep an eye on the server during the deploy to make sure everything goes smoothly. 我会在部署过程中密切关注服务器状态。\n\nSarah: Sounds like a plan, let's get this deploy done right. 我们一起努力，一定要成功！",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 79,
+    "utterance": "Li: Hey Sarah, are you ready for the deploy on Friday?\n\nSarah: 嗯，我已经开始build代码了。我发现了一个bug，但是我正在尝试解决它。\n\nLi: Great, let me know if you need any help. We have a tight deadline for this deploy.\n\nSarah: 谢谢！你能帮我merge我的代码吗？我觉得它已经准备好了。\n\nLi: 当然可以。我们需要确保所有的code都被review过。\n\nSarah: 没问题，我已经让其他人检查过了。我们需要确保没有bug存在。\n\nLi: 是的，我们不能让任何bug通过。我会再看一遍你的代码，然后我们就可以进行deploy了。\n\nSarah: Sounds good. 谢谢你的帮助，我觉得这次deploy会很顺利。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 80,
+    "utterance": "Li: Hey Sarah, are you ready for our Friday deploy?\n李：嗨Sarah，你准备好周五部署了吗？\n\nSarah: Hey Li, almost there. Just need to finish up the final build and then we can start testing.\n萨拉：嗨Li，差不多了。只需完成最后一个构建，然后我们就可以开始测试了。\n\nLi: Great, I'll make sure our changes are merged properly before pushing to production.\n李：太好了，我会确保我们的更改在推送到生产环境之前正确合并。\n\nSarah: Sounds good. Let's aim for the deadline and iron out any bugs during testing.\n萨拉：听起来不错。让我们朝着截止日期努力，并在测试期间排除任何错误。\n\nLi: Agreed. It's crucial that everything runs smoothly for this deploy.\n李：同意。这次部署非常重要，一切都必须顺利进行。\n\nSarah: Absolutely. Let's give it our all and make sure it's a successful deployment.\n萨拉：绝对没问题。让我们全力以赴，确保部署成功。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 81,
+    "utterance": "Li: Hey Sarah, have you finished building the latest feature for our Friday deploy?\n李：嘿，Sarah，你把最新功能创建完了吗？我们周五要上线的。\n\nSarah: Yes, I just merged my branch with the main codebase. It should be ready for testing.\nSarah：好的，我刚把我的分支合并到主代码库上，应该已经准备好测试了。\n\nLi: Great, let's run some tests to make sure there are no bugs before the deadline.\n李：太好了，让我们进行一些测试，以确保在截止日期之前没有bug。\n\nSarah: I agree. We don't want any last-minute surprises during deployment.\nSarah：我同意，我们不希望在部署过程中出现任何最后一刻的意外。\n\nLi: Once the testing is done, we can deploy it to the production server.\n李：测试完成后，我们就可以将其部署到生产服务器上。\n\nSarah: Sounds like a plan. Let's aim to deploy by Thursday to have a buffer in case we encounter any issues.\nSarah：听起来是个好计划。我们的目标是在星期四部署，以防遇到任何问题。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 82,
+    "utterance": "Li: Hey Sarah, are you ready for the deploy on Friday?\nSarah: Yes, I think so. We just need to make sure the build is stable.\n李: 对，我们还得处理一下merge conflicts。\nSarah: Right, I'll take care of that. Have you found and fixed all the bugs?\n李: 我还在处理一个deadline bug，应该很快就搞定。\nSarah: Great, let me know if you need any help with that. We can't afford any issues during the deploy.\n李: 没问题，我会尽快处理好的。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 83,
+    "utterance": "Li: Hey Sarah, are you ready for the Friday deploy?\n\nSarah: 嗯，我觉得我们差不多了。我们的代码已经build成功了吗?\n\nLi: Yeah, everything is built and tested. I just merged in the final feature set.\n\nSarah: 太好了。我们还有任何bugs需要解决吗？\n\nLi: I think we're pretty good. Just a few minor issues left to address before the deadline.\n\nSarah: 我会继续测试，确保一切都没问题。\n\nLi: Sounds good. I'll start the deployment process and monitor everything closely.\n\nSarah: 谢谢你的帮助，我们一起合作真的很顺利。\n\nLi: No problem, teamwork makes the dream work. Let's crush this deploy!",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 84,
+    "utterance": "Li: 嘿，Sarah，我们周五要部署这个新功能，你觉得我们现在需要先构建一下吗？\n\nSarah: Yeah, I think we should do a build now to make sure everything is working properly before the deploy.\n\nLi: 嗯，我刚才在代码里发现了一个小 bug，要不要先修复一下再构建？\n\nSarah: Let's fix that bug first and then merge our changes before the build.\n\nLi: 好主意，我会尽快修复这个 bug，然后我们可以一起合并代码。\n\nSarah: Sounds like a plan. We still have some time before the deadline on Friday, so we should be able to get everything done.\n\nLi: 没问题，我会尽快解决 bug，确保部署顺利进行。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 85,
+    "utterance": "Li: Hey Sarah, are you ready for the Friday deploy?\n李：嘿，Sarah，你准备好周五部署了吗？\n\nSarah: Hey Li, yeah I think we're good to go. Just need to do a final build and merge the code.\n莎拉：嘿李，是的，我觉得我们已经准备就绪了。只需进行最终构建和合并代码。\n\nLi: Great, I'll handle the build process. Did you manage to fix that bug we found yesterday?\n李：太好了，我来处理构建过程。你昨天找到的那个bug修复了吗？\n\nSarah: Yes, I was able to track down the issue and fix it. It was a quick fix thankfully.\n莎拉：是的，我找到了问题并修复了它。幸运的是，这是一个快速解决。\n\nLi: That's a relief. We can't afford any delays with the deadline approaching.\n李：太好了。截止日期临近，我们不能承受任何延迟。\n\nSarah: Agreed, we need to make sure everything is thoroughly tested before the deploy.\n莎拉：同意，我们必须确保在部署之前进行了彻底测试。\n\nLi: Absolutely, let's run some final tests tomorrow to double-check everything.\n李：绝对，让我们明天运行最后的测试，仔细检查一切。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 86,
+    "utterance": "**Li:** Hey Sarah, have you finished the build for the new feature we’re deploying today?  \n\n**Sarah:** Almost! I just need to fix a couple of bugs I found during testing。你觉得我们能按时完成吗？  \n\n**Li:** 我相信我们可以。Just make sure to merge your changes before the deadline at 4 PM.  \n\n**Sarah:** 当然。我会在 lunch break 之前完成这个。Did you check the main branch for any conflicts?  \n\n**Li:** Yes, I did. Everything looks good on my end. Just remember，部署之后我们还得监测一下数据。  \n\n**Sarah:** Absolutely, I’ll keep an eye on it. 有问题再找你！",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 87,
+    "utterance": "**Li:** Hey Sarah, are we ready for the deploy on Friday?\n\n**Sarah:** I think we’re close, but we need to make sure the build is stable before we push.\n\n**Li:** 对，我们需要先解决那个 bug。它影响了用户的体验。\n\n**Sarah:** Right, I spotted it during testing. Did you merge the latest changes from the main branch?\n\n**Li:** Not yet, I was waiting for your confirmation. I don't want to introduce any new issues just before the deadline.\n\n**Sarah:** Good call. Let’s run some tests on the current version and then we can do the merge.\n\n**Li:** Sounds like a plan. 我们还有时间，在 deploy 前再检查一下所有功能。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 88,
+    "utterance": "**Li:** Hey Sarah, are we ready for the deploy today? 我们的代码都合并好了吧？\n\n**Sarah:** Almost! I just need to fix a bug in the API response. The build from last night had some issues. \n\n**Li:** 真的啊? What kind of issues did you find? 我记得你的最后一个提交很重要。\n\n**Sarah:** Yeah, it was. The data format was inconsistent, which caused a failure in our unit tests. 我们的deadline快到了，我需要加快进度。\n\n**Li:** No worries, I'll help you out after lunch. 先把bug修好，我们可以再进行一次merge。如果没问题，我们下午就可以deploy了。\n\n**Sarah:** Sounds good! If we can finish up by 3 PM, we should make the deploy without issues. 你觉得试运行会顺利吗？\n\n**Li:** I think so! 只要测试没问题，我们应该可以按时完成。 Let's aim for a smooth deployment!",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 89,
+    "utterance": "Li: Hey Sarah, are we all set for the deploy this afternoon? 我们的代码都合并完了吗？\n\nSarah: Yeah, I just finished the final build. 我还发现了一些小bug，不过我已经修复好了。\n\nLi: Great! What about the integration tests? 我们的测试通过吗？\n\nSarah: Almost. I’m running the last few checks now. 我希望能在截止日期之前完成。\n\nLi: Fingers crossed! 一旦测试通过，我们能否立即进行merge？\n\nSarah: Absolutely. Just need your approval first. 你能帮我看一下最后的结果吗？ \n\nLi: Sure thing! 我们一起确保没有遗漏。 Let's crush this deploy!",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  },
+  {
+    "id": 90,
+    "utterance": "Li: Hey Sarah, the build looks good, but I just found a bug in the latest merge.\n\nSarah: 是吗？在哪个模块发现的？ \n\nLi: It’s in the authentication module. I think it’s related to the new features we added last week.\n\nSarah: 我们还有时间在周五发布之前修复吗？\n\nLi: I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。\n\nSarah: Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.\n\nLi: That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。 \n\nSarah: Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) \npreparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. \nInclude at least one of: deploy, build, bug, deadline, merge.\nTarget ~40% Mandarin content, switch languages mid-sentence around technical terms.\nEach dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue."
+  }
+]

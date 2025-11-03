@@ -1,86 +1,71 @@
 # !pip install datasets scikit-learn torch
-
-from datasets import load_dataset
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, roc_auc_score, classification_report
 import numpy as np
-import re
-import torch
 from typing import List, Dict
 from sklearn.model_selection import train_test_split
-
+import pandas as pd
+import ast
+import re
 # ----------------------------------------------------------
-# 1. Load and preprocess ASCEND dataset (only transcription)
+# 1. Load and preprocess  dataset (only transcription)
 # ----------------------------------------------------------
-def load_ascend_data(debug=False, num_samples=None):
-    if debug:
-        data = [
-            {"tokens": ["你好", "hello", "world", "再见"], "labels": ["zh", "en", "en", "zh"]},
-            {"tokens": ["This", "is", "a", "test"], "labels": ["en", "en", "en", "en"]},
-            {"tokens": ["测试", "is", "done"], "labels": ["zh", "en", "en"]},
-        ]
-        return data
+def load_local_data(csv_path):
+    df = pd.read_csv(csv_path)
+    
+    # If tokens are saved as stringified lists, convert them back
+    if isinstance(df.loc[0, "tokens"], str) and df.loc[0, "tokens"].startswith("["):
+        df["tokens"] = df["tokens"].apply(ast.literal_eval)
+    else:
+        # Otherwise split by space if they’re space-separated
+        df["tokens"] = df["tokens"].apply(lambda x: x.split() if isinstance(x, str) else x)
 
-    dataset = load_dataset("CAiRE/ASCEND", split="train")
-
-    # Tokenize transcription into words and label each token as en/zh
-    def tokenize_and_label(text):
-        pattern = re.compile(r'[\u4e00-\u9fff]|[a-zA-Z]+|\d+|[^\w\s]')
-        tokens = pattern.findall(text)
-        labels = []
-        for token in tokens:
-            if re.fullmatch(r'[\u4e00-\u9fff]', token):
-                labels.append('zh')
-            elif re.fullmatch(r'[a-zA-Z]+', token):
-                labels.append('en')
-            else:
-                labels.append('other')
-        return tokens, labels
-
-    data = []
-    for ex in dataset:
-        tokens, labels = tokenize_and_label(ex['transcription'])
-        if len(tokens) > 1:
-            data.append({'tokens': tokens, 'labels': labels})
-    if num_samples:
-        data = data[:num_samples]
-    return data
-
+    return df
 
 # --------------------------------------------------------
 # 2. Create switch prediction labels
 # --------------------------------------------------------
-def create_switch_prediction_labels(data: List[Dict]) -> List[Dict]:
-    for example in data:
-        switch_labels = []
-        for i in range(len(example['labels']) - 1):
-            switch_labels.append(1 if example['labels'][i] != example['labels'][i + 1] else 0)
-        example["switch_labels"] = switch_labels
-    return data
+def create_switch_prediction_labels(df):
+    data = []
+    for _, row in df.iterrows():
+        tokens = row["tokens"]
+        # Heuristic: label each token as English or Chinese
+        labels = []
+        for token in tokens:
+            if re.fullmatch(r"[\u4e00-\u9fff]", token):
+                labels.append("zh")
+            elif re.fullmatch(r"[a-zA-Z]+", token):
+                labels.append("en")
+            else:
+                labels.append("other")
 
+        switch_labels = [
+            1 if labels[i] != labels[i + 1] else 0 for i in range(len(labels) - 1)
+        ]
+        data.append({"tokens": tokens, "labels": labels, "switch_labels": switch_labels})
+    return data
 
 # --------------------------------------------------------
 # 3. Prepare token-level context data for ML model
 # --------------------------------------------------------
-def flatten_examples(data: List[Dict]):
+def flatten_examples(data):
     contexts, labels = [], []
     for ex in data:
-        tokens = ex['tokens']
-        switch_labels = ex['switch_labels']
+        tokens = ex["tokens"]
+        switch_labels = ex["switch_labels"]
         for i in range(len(switch_labels)):
-            context = " ".join(tokens[:i+1])  # context up to current token
+            context = " ".join(tokens[: i + 1])  # cumulative context
             contexts.append(context)
             labels.append(switch_labels[i])
     return contexts, labels
 
-
 # --------------------------------------------------------
 # 4. Train and evaluate Logistic Regression model
 # --------------------------------------------------------
-def train_logreg_model(debug=False):
-    print("Loading ASCEND data...")
-    data = load_ascend_data(debug=debug, num_samples=200 if debug else 10000)
+def train_logreg_model(csv_path):
+    print("Loading our data...")
+    data = load_local_data(csv_path)
     data = create_switch_prediction_labels(data)
     contexts, labels = flatten_examples(data)
 
@@ -114,7 +99,9 @@ def train_logreg_model(debug=False):
     print(f"ROC-AUC:   {auc:.3f}")
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred, target_names=["no_switch", "switch"]))
+    # Return both classifier and vectorizer so callers can reuse them
+    return clf, vectorizer
 
 
 if __name__ == "__main__":
-    train_logreg_model(debug=True)
+    clf, vectorizer = train_logreg_model("data/processed/processed_dataset.csv")
