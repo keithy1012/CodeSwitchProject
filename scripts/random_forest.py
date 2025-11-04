@@ -9,6 +9,7 @@ import torch
 from typing import List, Dict
 from sklearn.model_selection import train_test_split
 import pandas as pd
+import ast
 # ----------------------------------------------------------
 # 1. Load and preprocess  dataset (only transcription)
 # ----------------------------------------------------------
@@ -105,7 +106,7 @@ def train_random_forest_model(csv_path):
     print(f"ROC-AUC:   {auc:.3f}")
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred, target_names=["no_switch", "switch"]))
-    return clf
+    return clf, vectorizer
 
 if __name__ == "__main__":
     clf, vectorizer = train_random_forest_model("data/processed/processed_dataset.csv")
