@@ -124,7 +124,7 @@ def compute_mixed_utterance_rate(df):
 
 compute_mixed_utterance_rate(df)
 
-# Apply trained logistic regression switch-prediction model to our dataset
+# Apply trained switch-prediction model to our dataset
 def apply_switch_model_to_df(df, clf, vectorizer, threshold=0.5):
     """Apply a token-level switch predictor to the DataFrame.
 
@@ -157,13 +157,26 @@ def apply_switch_model_to_df(df, clf, vectorizer, threshold=0.5):
     return df
 
 
-# Train or load model
+# Train or load logistic regression model
 print("Training logistic regression switch model ...")
-clf, vectorizer = train_logreg_model(processed_dir / "processed_dataset.csv")
+lg_clf, lg_vectorizer = train_logreg_model(processed_dir / "processed_dataset.csv")
 
-# Apply model
-df = apply_switch_model_to_df(df, clf, vectorizer, threshold=0.5)
+# Train or load random forest model
+print("Training random forest switch model ...")
+rf_clf, rf_vectorizer = train_random_forest_model(processed_dir / "processed_dataset.csv")
+
+# Apply logistic regression model
+lg_df = apply_switch_model_to_df(df, lg_clf, lg_vectorizer, threshold=0.5)
+
+# Apply random forest model
+rf_df = apply_switch_model_to_df(df, rf_clf, rf_vectorizer, threshold=0.5)
+
 # Summary statistics
-total_pred_mixed = df['predicted_mixed_pred'].sum()
-predicted_mixed_rate = total_pred_mixed / len(df) if len(df) > 0 else 0.0
-print(f"Predicted mixed-utterance rate (model): {predicted_mixed_rate*100:.2f}% ({total_pred_mixed}/{len(df)})")
+total_pred_mixed_lg = lg_df['predicted_mixed_pred'].sum()
+predicted_mixed_rate_lg = total_pred_mixed_lg / len(df) if len(df) > 0 else 0.0
+
+total_pred_mixed_rf = rf_df['predicted_mixed_pred'].sum()
+predicted_mixed_rate_rf = total_pred_mixed_rf / len(df) if len(df) > 0 else 0.0
+
+print(f"Predicted mixed-utterance rate (logistic regression): {predicted_mixed_rate_lg*100:.2f}% ({total_pred_mixed_lg}/{len(df)})")
+print(f"Predicted mixed-utterance rate (random forest): {predicted_mixed_rate_rf*100:.2f}% ({total_pred_mixed_rf}/{len(df)})")
