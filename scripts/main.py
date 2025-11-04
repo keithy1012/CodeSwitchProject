@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import date
 import re
 from logistic_regression import train_logreg_model
+from random_forest import train_random_forest_model
 
 pd.set_option('display.max_colwidth', 500)
 # Load spaCy English model
