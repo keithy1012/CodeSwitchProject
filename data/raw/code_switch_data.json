@@ -3716,5 +3716,269 @@
     ],
     "model_name": "gpt-4o-mini",
     "prompt_text": "生成一个完全中文的工程师工作对话，人物是李伟（后端）和王珊（前端）。\n语气自然、真实、有一点职场紧迫感。\n讨论内容可以包括部署、合并、修复漏洞、赶截止日期等。\n不要使用任何英文单词或混合语言，所有技术词汇请用中文表达。\n生成 5–7 轮对话，只输出对话\n\n"
+  },
+ {
+    "id": 339,
+    "utterance": "Sarah: Hey Li, did you merge your code into the main branch yet?\nLi: Yeah, I just did that. Ready for deployment.\nSarah: Awesome, let's build the new version and deploy it to production.\nLi: Sounds good. Do we have a deadline for this deployment?\nSarah: Not a strict one, but let's aim for end of day today.\nLi: Got it. I'll keep an eye out for any bugs post-deployment.\nSarah: Perfect. Let's make sure to run thorough testing before we push to production.\nLi: Agreed. We don't want any last-minute issues popping up.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert dataset generator for workplace English dialogues between software engineers. \nAct as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. \nKeep the entire conversation in English (no Chinese characters). \nThe tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.\nInclude at least one of these trigger words: deploy, build, bug, deadline, merge.\nFew-shot examples:\nA: “Can you push the fix to staging?”\nB: “Yeah, I’ll deploy right after lunch.”\nA: “Cool, I’ll run QA on the build then.”\nNow: produce a 5–7 turn dialogue between Li and Sarah, fully in English.\nOutput only the dialogue."
+  },
+  {
+    "id": 340,
+    "utterance": "Li: Hey Sarah, did you see that bug ticket I assigned to you?\nSarah: Yes, I saw it. I just finished fixing it. Can you review the code?\nLi: Sure thing. I'll take a look now.\nSarah: Let me know if you spot any issues. I want to merge it before the deadline.\nLi: Looks good to me. Let's merge it to master and deploy it to production.\nSarah: Great. I'll start the build process right away.\nLi: Awesome. Thanks for fixing that bug quickly.\nSarah: No problem. Teamwork makes the dream work!",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are an expert dataset generator for workplace English dialogues between software engineers. \nAct as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. \nKeep the entire conversation in English (no Chinese characters). \nThe tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.\nInclude at least one of these trigger words: deploy, build, bug, deadline, merge.\nFew-shot examples:\nA: “Can you push the fix to staging?”\nB: “Yeah, I’ll deploy right after lunch.”\nA: “Cool, I’ll run QA on the build then.”\nNow: produce a 5–7 turn dialogue between Li and Sarah, fully in English.\nOutput only the dialogue."
+  },
+  {
+    "id": 341,
+    "utterance": "Sarah: Hey Li, did you see that bug report about the checkout page?\nLi: Yeah, I noticed it too. I think it's a backend issue.\nSarah: Could you take a look and see if it's something we need to fix before the deadline?\nLi: Sure, I'll debug it and let you know.\nSarah: Thanks. If you find the bug, we can merge it into the next release.\nLi: Sounds good. I'll get started on it now. \nSarah: Great, I'll run some tests on the current build to see if it's affecting anything else. \nLi: Let's aim to deploy the fix before the end of the day. \nSarah: Agreed, let's make sure to communicate any updates on Slack.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert dataset generator for workplace English dialogues between software engineers. \nAct as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. \nKeep the entire conversation in English (no Chinese characters). \nThe tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.\nInclude at least one of these trigger words: deploy, build, bug, deadline, merge.\nFew-shot examples:\nA: “Can you push the fix to staging?”\nB: “Yeah, I’ll deploy right after lunch.”\nA: “Cool, I’ll run QA on the build then.”\nNow: produce a 5–7 turn dialogue between Li and Sarah, fully in English.\nOutput only the dialogue."
+  },
+  {
+    "id": 342,
+    "utterance": "Sarah: Hey Li, I just found a bug in the new feature you built.\nLi: Oh no, what's the issue?\nSarah: It's causing the app to crash on iOS devices.\nLi: Okay, let me take a look at the code and see if I can find the problem.\nSarah: Thanks, we need to fix this before the deadline tomorrow.\nLi: I'll work on it right away and let you know once I've pushed the fix to the branch.\nSarah: Sounds good, I'll be ready to merge the changes once you're done. \nLi: Perfect, I'll ping you once the code is ready for review.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are an expert dataset generator for workplace English dialogues between software engineers. \nAct as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. \nKeep the entire conversation in English (no Chinese characters). \nThe tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.\nInclude at least one of these trigger words: deploy, build, bug, deadline, merge.\nFew-shot examples:\nA: “Can you push the fix to staging?”\nB: “Yeah, I’ll deploy right after lunch.”\nA: “Cool, I’ll run QA on the build then.”\nNow: produce a 5–7 turn dialogue between Li and Sarah, fully in English.\nOutput only the dialogue."
+  },
+  {
+    "id": 343,
+    "utterance": "Sarah: “Hey Li, did you get a chance to look at that bug in the API response?”\n\nLi: “Yes, I found the issue. It was a missing validation check. I’ll fix it now.”\n\nSarah: “Great! Can you merge it into the feature branch when you’re done?”\n\nLi: “Sure, I’ll do that. When’s our deadline for this release?”\n\nSarah: “We need to deploy by Friday, so let’s aim to have everything merged by Thursday.”\n\nLi: “Got it. I’ll make sure to run tests after the fix and before merging.”\n\nSarah: “Perfect! I’ll be on the frontend, just ping me if you need anything.”",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert dataset generator for workplace English dialogues between software engineers. \nAct as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. \nKeep the entire conversation in English (no Chinese characters). \nThe tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.\nInclude at least one of these trigger words: deploy, build, bug, deadline, merge.\nFew-shot examples:\nA: “Can you push the fix to staging?”\nB: “Yeah, I’ll deploy right after lunch.”\nA: “Cool, I’ll run QA on the build then.”\nNow: produce a 5–7 turn dialogue between Li and Sarah, fully in English.\nOutput only the dialogue."
+  },
+  {
+    "id": 344,
+    "utterance": "Sarah: “Hey Li, did you see that bug in the API response? It’s throwing errors in the frontend.”  \nLi: “Yeah, I spotted it this morning. I’m working on a fix right now.”  \nSarah: “Awesome. Any idea when you’ll have it ready to merge?”  \nLi: “I should have it done by the end of the day. Then I can deploy it to staging.”  \nSarah: “Perfect! I’ll start prepping the build for QA as soon as you merge it.”  \nLi: “Great! Let’s aim to have it all done before the deadline tomorrow.”  \nSarah: “Sounds good! Just ping me when it’s ready.”",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "few-shot"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are an expert dataset generator for workplace English dialogues between software engineers. \nAct as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. \nKeep the entire conversation in English (no Chinese characters). \nThe tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.\nInclude at least one of these trigger words: deploy, build, bug, deadline, merge.\nFew-shot examples:\nA: “Can you push the fix to staging?”\nB: “Yeah, I’ll deploy right after lunch.”\nA: “Cool, I’ll run QA on the build then.”\nNow: produce a 5–7 turn dialogue between Li and Sarah, fully in English.\nOutput only the dialogue."
+  },
+  {
+    "id": 345,
+    "utterance": "Li: Hey Sarah, I noticed we have a merge conflict on the master branch. Have you had a chance to review it?\n\nSarah: Hi Li, yes I saw that too. I checked the changes and it looks like we need to resolve it before we can deploy to production.\n\nLi: That's right. We're planning to deploy a new feature by the end of the week so we can't afford any delays. Do you think we can resolve the conflict quickly?\n\nSarah: I'll try to resolve it as soon as possible. Once that's done, I'll push the changes and trigger a staging build to make sure everything works as expected.\n\nLi: Sounds good. Let me know if you need any help with the merge conflict. I'll keep an eye on the staging build and help with testing if needed.\n\nSarah: Thanks, Li. Once the staging build is successful, we can deploy to production. I'll also keep track of any potential blockers that may come up during the deployment process.\n\nLi: Perfect. We can also prepare a hotfix in case there are any post-deployment issues. It's always good to have a backup plan.\n\nSarah: Agreed. Let's stay on top of this and make sure we meet our deadline for the new feature release. Thanks for your help, Li.\n\nLi: No problem, Sarah. Let's work together to get this done smoothly. Keep me updated on your progress with the merge conflict and I'll be ready to assist with the deployment process.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 346,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the merge conflict on our latest pull request?\nSarah: Hi Li, yes I saw it. I am working on resolving it right now. It's a tricky one.\nLi: Thanks for tackling it. Once it's resolved, we can push it to staging for testing.\nSarah: Definitely, I'll keep you posted on my progress. Do you know if the staging build is ready for deployment?\nLi: I checked earlier today and it seems like there are still some blockers. We might need to address those before deploying.\nSarah: Okay, I'll also look into the blockers once I'm done with the merge conflict. We can't miss the deadline for this release.\nLi: Agreed, we need to ensure a smooth deployment process without any bugs slipping through.\nSarah: I'll reach out to the team to coordinate a plan to address the blockers and get everything in place for deployment.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 347,
+    "utterance": "Li: Hey Sarah, I noticed there's a merge conflict on our main branch. Have you been able to resolve it yet?\nSarah: Hey Li, yes I'm working on resolving it now. It's taking longer than expected though.\nLi: No worries, just let me know if you need any help. We need to get this sorted before we can deploy the latest changes.\nSarah: Definitely, I'll keep you updated on my progress. We don't want any deployment blockers.\nLi: Agreed, we're on a tight deadline for this release so we can't afford any delays.\nSarah: I understand, I'll prioritize getting this merge conflict sorted out as soon as possible.\nLi: Great, thanks for staying on top of it. Once we have a clean build we can push it to staging for testing.\nSarah: Sounds good, I'll make sure to get this resolved quickly so we can move forward with deployment.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 348,
+    "utterance": "Li: Hey Sarah, I noticed there's a merge conflict in the feature branch. \nSarah: Yeah, I saw that too. I'm trying to resolve it now, but it's trickier than I thought. \nLi: Do you need any help with that? \nSarah: That would be great, actually. Let's work on it together. \nLi: Sounds good. Once we resolve the conflict, we'll need to do a staging build to test it out. \nSarah: Agreed. Hopefully, we can deploy it soon and not miss the deadline. \nLi: Definitely. Let's focus on getting this bug fixed and merged as soon as possible. \nSarah: I'll make sure to keep you updated on our progress. Thanks for the help, Li.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 349,
+    "utterance": "Li: Hey Sarah, I just ran into a merge conflict on the feature branch. We need to resolve it before we can deploy to staging.\n\nSarah: Got it. What’s the conflict about? Is it related to the new API endpoints we added?\n\nLi: Yeah, exactly. It looks like there are some overlapping changes with the users' module. I’ll pull the latest changes and try to fix it.\n\nSarah: Sounds good. Just let me know if you need help. We’re on a tight deadline for this deployment, and I want to avoid any blockers.\n\nLi: Absolutely. Once I get it sorted, I’ll run a new build to ensure everything is still functioning, especially after that hotfix we applied last week.\n\nSarah: Perfect. If we can get this merge done today, we’ll be in a good spot to push to production by the end of the week. Just keep an eye on any bugs that might come up with the merged code.\n\nLi: Will do. I’ll keep you updated on the progress.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 350,
+    "utterance": "**Li:** Hey Sarah, did you see the merge conflict in the PR for the new feature branch? It’s blocking our staging build.\n\n**Sarah:** Yeah, I noticed that. It looks like there were some changes to the same file in the main branch. We need to resolve that before we can deploy to staging.\n\n**Li:** Exactly. Do you think you can take a look at it? If we push this to production without fixing the bug, it could cause issues.\n\n**Sarah:** I can prioritize that. We also have the deadline for the demo coming up, so we can’t afford any hiccups.\n\n**Li:** Agreed. Once we resolve the conflict, let’s run a full build to ensure everything is stable before the deploy.\n\n**Sarah:** Sounds good! I’ll keep you updated if I run into anything else while merging. \n\n**Li:** Perfect, thanks! I’ll be on standby if you need a second pair of eyes.",
+    "source": "LLM",
+    "generation_strategy": [
+      "persona-based",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 351,
+    "utterance": "Li: Hi Sarah, how's it going? Are you ready for the deployment on Friday?\nSarah: Hey Li, I'm good! I've been working on merging our code changes. How about you?\nLi: That's great to hear! I've been building and testing new features, making sure everything is bug-free.\nSarah: Awesome, I'll run some final tests after the merge. Can you check the deployment schedule for Friday?\nLi: Sure thing, I'll double-check the timing and make sure everything is in place for a smooth deployment.\nSarah: Thanks Li, let's make sure we communicate any last-minute changes and work together to hit our deadline.\nLi: Absolutely, teamwork is key in situations like this. I'm confident we'll get everything deployed successfully on Friday.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.\nKeep tone friendly but work-focused.\nInclude words like deploy, merge, bug, or build naturally in context.\nEach dialogue should have 5–7 turns.\nOutput only the dialogue.\n"
+  },
+  {
+    "id": 352,
+    "utterance": "Li: Hey Sarah, how's it going? We have a lot on our plate today to get this deployment ready by Friday.\n\nSarah: Hi Li, I'm doing well! Yes, we definitely have a tight deadline to meet. I'm currently working on merging the latest code changes into our main branch.\n\nLi: Good to hear that. I just finished building the new feature, but I noticed a few bugs that need to be fixed before we can deploy.\n\nSarah: Thanks for letting me know. I'll take a look at those bugs and see if I can get them resolved quickly. We can't afford any issues during the deployment.\n\nLi: Absolutely, we need to make sure everything is running smoothly before we push the code out. I'll start testing the new feature to make sure it's working as expected.\n\nSarah: Sounds like a plan. Let's communicate regularly and keep each other updated on our progress. We need to work together to make sure we hit that Friday deadline.\n\nLi: Agreed. We'll get this deployment out on time, no matter what it takes. Let's stay focused and keep pushing forward.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.\nKeep tone friendly but work-focused.\nInclude words like deploy, merge, bug, or build naturally in context.\nEach dialogue should have 5–7 turns.\nOutput only the dialogue.\n"
+  },
+  {
+    "id": 353,
+    "utterance": "Li: Hey Sarah, how's the merge process going for the new feature?\nSarah: Hey Li, it's going smoothly so far. I just need to fix a few bugs before we can deploy it.\nLi: Great to hear! I'll make sure to double check everything before the build goes out.\nSarah: Sounds good. Let me know if you need any help with testing or debugging.\nLi: Will do. I'll reach out to you if I run into any issues.\nSarah: Perfect. We're on the home stretch now, just a few more steps until the deployment on Friday.\nLi: I agree, let's keep up the momentum and make sure everything is running smoothly by then.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.\nKeep tone friendly but work-focused.\nInclude words like deploy, merge, bug, or build naturally in context.\nEach dialogue should have 5–7 turns.\nOutput only the dialogue.\n"
+  },
+  {
+    "id": 354,
+    "utterance": "Li: Hey Sarah, how are you feeling about our progress towards the deployment deadline on Friday?\n\nSarah: Hey Li, I think we're on track, but we still have a few bugs to iron out before we merge the code.\n\nLi: I agree, I've been working on fixing those bugs and building some new features to deploy alongside the updates.\n\nSarah: That's great to hear. I've been doing some testing to make sure everything works smoothly once we deploy.\n\nLi: That's awesome, thanks for taking care of that. Let's touch base again tomorrow to see where we're at with the deployment process.\n\nSarah: Sounds good, I'll make sure to keep you updated on my progress. Let's make sure we hit our deadline on Friday.",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.\nKeep tone friendly but work-focused.\nInclude words like deploy, merge, bug, or build naturally in context.\nEach dialogue should have 5–7 turns.\nOutput only the dialogue.\n"
+  },
+  {
+    "id": 355,
+    "utterance": "Li: Hey Sarah, have you finished merging your latest branch? I want to make sure everything is integrated before our Friday deployment. \n\nSarah: Not yet, I’m still squashing a couple of bugs. I found one that’s causing issues with the user interface. How’s your end looking?\n\nLi: I wrapped up my build last night, but I ran into some deployment issues on the staging server. I spent a couple of hours troubleshooting but should have it sorted soon.\n\nSarah: Good to hear! Once you have that fixed, we can test the entire flow together. I just want to make sure there are no surprises when we go live.\n\nLi: Absolutely, I agree! I’ll keep you updated on the server situation. If you need more time for your bugs, let me know so we can adjust our timeline.\n\nSarah: Thanks! That would be helpful. I’ll shoot for a final round of testing this afternoon. Let’s catch up later to see where we both stand.\n\nLi: Sounds like a plan. Let’s make this deployment a success!",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.\nKeep tone friendly but work-focused.\nInclude words like deploy, merge, bug, or build naturally in context.\nEach dialogue should have 5–7 turns.\nOutput only the dialogue.\n"
+  },
+  {
+    "id": 356,
+    "utterance": "**Li:** Hey Sarah, how's the build looking for the deployment tonight?  \n\n**Sarah:** Pretty good! I just finished merging the last set of changes, but I found a small bug in the user interface. I'm working on a fix now.  \n\n**Li:** Great catch! Hopefully, it’s an easy fix. Once it’s resolved, do you want to run a final round of tests before we deploy?  \n\n**Sarah:** Absolutely. I think it's important to ensure everything is solid. How's your part of the project going?  \n\n**Li:** I completed the backend integration this morning. Just waiting for your changes to go live so I can finalize the API endpoints.  \n\n**Sarah:** Perfect! I should wrap up this bug fix in the next hour, then we can proceed with the tests and prepare for the deployment.  \n\n**Li:** Sounds like a plan! Let’s touch base again in an hour to check our progress. Keep up the great work!",
+    "source": "LLM",
+    "generation_strategy": [
+      "few-shot",
+      "chain-of-thought"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.\nKeep tone friendly but work-focused.\nInclude words like deploy, merge, bug, or build naturally in context.\nEach dialogue should have 5–7 turns.\nOutput only the dialogue.\n"
+  },
+  {
+    "id": 357,
+    "utterance": "Li: Hey Sarah, did you take a look at the staging build? It looks like there's a merge conflict that needs to be resolved before we can deploy.\n\nSarah: Yeah, I saw that. I'm currently working on fixing it. Just need to make sure the changes don't introduce any new bugs.\n\nLi: Sounds good. Let me know if you need any help with that. We have a pretty tight deadline for this deployment.\n\nSarah: Thanks, I'll definitely reach out if I run into any issues. Do you know if there are any other deployment blockers that we need to address?\n\nLi: Other than the merge conflict, everything else seems to be on track. I'll keep an eye on the build pipeline to make sure everything is running smoothly.\n\nSarah: Great, thanks for keeping an eye on that. Once we resolve the merge conflict, I'll kick off a new build so we can test for any potential bugs.\n\nLi: Sounds like a plan. Let's aim to get this resolved and deployed by end of day so we can meet our deadline.\n\nSarah: Agreed. I'll prioritize getting this merge conflict sorted out so we can move forward with the deployment. Thanks for the heads up, Li. I feel more confident with you keeping an eye on the build pipeline.",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 358,
+    "utterance": "Li: Hey Sarah, I noticed there's a merge conflict in the latest pull request for the feature branch. Did you have a chance to look into it?\n\nSarah: Yeah, I saw that too. I've been trying to resolve it but it's a bit tricky. Have you run into this kind of issue before?\n\nLi: Yeah, merge conflicts can be a pain sometimes. I usually try to resolve them by pulling the latest changes from the main branch and then resolving conflicts locally.\n\nSarah: That's a good approach. I'll give that a try and see if I can get it sorted out. Hopefully we can merge the changes soon and get it deployed to staging.\n\nLi: Agreed. We have that tight deadline coming up so we really need to get this feature out for testing. Let me know if you need any help with resolving the conflicts.\n\nSarah: Thanks, I appreciate that. Hopefully we can get this sorted out quickly so we can build and deploy the staging environment for testing.\n\nLi: I'll keep an eye on the progress and make sure everything is running smoothly on the build and deployment side. Let me know if you run into any other blockers.\n\nSarah: Will do, thanks Li. I'll keep you updated on my progress with resolving the conflicts. Let's aim to get this feature deployed to staging by end of day.",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 359,
+    "utterance": "Li: Hey Sarah, have you had a chance to look at the merge conflict I mentioned earlier?\n\nSarah: Hey Li, yes I did. I'm working on resolving it now. Looks like there's a conflict in the CSS files.\n\nLi: Okay, let me know if you need any help with that. We need to get this fixed before our deadline next week.\n\nSarah: Definitely. Once I've resolved the conflict, I'll start a new staging build to test it thoroughly.\n\nLi: Sounds good. Just make sure to notify the team once it's ready for testing. We can't afford any deployment blockers at this stage.\n\nSarah: Agreed. I'll keep everyone in the loop. Hopefully, we can deploy the fix without any issues.\n\nLi: Fingers crossed. Remember, if we encounter any major issues, we might need to consider a hotfix to meet our deadline.\n\nSarah: Understood. I'll do my best to get this resolved promptly. Thanks for the heads up, Li.",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 360,
+    "utterance": "Li: Hey Sarah, I noticed there's a merge conflict with the latest feature branch. Have you had a chance to take a look?\nSarah: Yeah, I saw that too. I'm working on resolving it now. I think it's causing a deployment blocker for our staging build.\nLi: Okay, let me know if you need any help merging the changes. We have a deadline coming up, so we need to get this resolved quickly.\nSarah: Will do. I'll try to get it fixed before the end of the day. \nLi: Great, thanks. I'll keep an eye on the staging build in the meantime. \nSarah: Sounds good. I'll keep you updated on my progress. \nLi: Perfect, let's try to avoid any last-minute hotfixes this time. It always adds extra stress during deployment. \nSarah: Agreed. Let's aim for a smooth deployment this time around.",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-3.5-turbo-16k",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 361,
+    "utterance": "**Li:** Hey Sarah, I just ran into a merge conflict on the feature branch. It's blocking the deployment to staging. \n\n**Sarah:** Ugh, that’s frustrating. What’s the conflict about? Is it something we can resolve easily?\n\n**Li:** It’s mainly around the user profile component. I think there are changes in both branches that are conflicting. I’ll need to pull your latest changes to see where we can align.\n\n**Sarah:** Sounds good. Once we resolve that, we should also check for any bugs that might have popped up in the staging build. We’re on a tight deadline for this release.\n\n**Li:** Definitely. I’ll handle the merge and run some tests afterward. If we can get this all sorted out, we can prepare a hotfix if needed before the next deployment.\n\n**Sarah:** Perfect. Let me know when you’ve merged it, and I can help with testing. We should aim to finalize everything by tomorrow.\n\n**Li:** Agreed! I’ll keep you updated on the progress. Thanks for the help!",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
+  },
+  {
+    "id": 362,
+    "utterance": "**Li:** Hey Sarah, I noticed there’s a merge conflict on the feature branch. Have you had a chance to look at it yet?\n\n**Sarah:** Yeah, I saw that pop up during the last build. It seems like two of us were changing the same file, which is causing some headaches. \n\n**Li:** Got it. We need to resolve that ASAP to avoid holding up the deployment. Do you think you can tackle it after lunch?\n\n**Sarah:** I can do that. I’ll also check for any related bugs that might have crept in. I don’t want to push anything unstable to production.\n\n**Li:** Good call. We’re already close to the deadline for this release, so let’s make sure we have a clean staging build ready to go.\n\n**Sarah:** Absolutely. Once I resolve the conflict, I'll run all the tests. Hopefully, we can smooth out that hotfix before the end of the day. \n\n**Li:** Sounds like a plan. Let me know if you need any help with the merge or if you spot something tricky!",
+    "source": "LLM",
+    "generation_strategy": [
+      "chain-of-thought",
+      "persona-based"
+    ],
+    "model_name": "gpt-4o-mini",
+    "prompt_text": "You are a senior software engineer roleplaying natural English workplace chat. \nLi and Sarah are discussing a merge conflict and deployment blockers. \nKeep the tone pragmatic and realistic — no Chinese text at all. \nUse natural conversational phrasing like \"staging build\" or \"hotfix\".\nEach dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.\nOutput only the conversation.\n"
   }
 ]

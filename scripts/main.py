@@ -14,8 +14,8 @@ nlp = spacy.load("en_core_web_sm")
 
 # Step 4: Load JSON and convert to CSV
 json_path = 'data/raw/code_switch_data.json'
-csv_path = 'data/processed/processed_dataset.csv'
-processed_dir = Path('data/processed')
+csv_path = f'data/processed/{date.today().strftime("%Y-%m-%d")}/processed_dataset.csv'
+processed_dir = Path(f'data/processed/{date.today().strftime("%Y-%m-%d")}')
 processed_dir.mkdir(parents=True, exist_ok=True)
 
 with open(json_path, 'r', encoding='utf-8') as f:
@@ -54,6 +54,8 @@ print(f"Processed CSV saved to: {csv_path}")
 #print(df[['id', 'utterance', 'tokens', 'pos_tags']].head(5))
 
 # Step 8: Create README
+Path(processed_dir).mkdir(parents=True, exist_ok=True)
+
 readme_path = processed_dir / 'README.md'
 with open(readme_path, 'w', encoding='utf-8') as f:
     f.write(f"# Processed Dataset\n")
@@ -72,12 +74,14 @@ with open(readme_path, 'w', encoding='utf-8') as f:
 print(f"README.md saved to: {readme_path}")
 
 # Count totals
-total_tokens = set()
+total_tokens = []
+total_distinct_tokens = set()
 for tokens in df["tokens"]:
     for token in tokens:
-        total_tokens.add(token)
-print(f"Total number of distinct tokens in dataset: {len(total_tokens)}")
-
+        total_tokens.append(token)
+        total_distinct_tokens.add(token)
+print(f"Total number of tokens in dataset: {len(total_tokens)}")
+print(f"Total number of distinct tokens in dataset: {len(total_distinct_tokens)}")
 # Count total utterances
 total_utt = 0
 for dialogue in df["utterance"]:
@@ -98,7 +102,6 @@ def _detect_langs(text):
     return list(langs)
 
 df['labels'] = df['utterance'].apply(_detect_langs)
-df.to_csv("temp.csv")
 # Mixed utterance rate
 def compute_mixed_utterance_rate(df):
     """Compute and print the percentage of examples containing both 'en' and 'zh' labels.
@@ -156,11 +159,10 @@ def apply_switch_model_to_df(df, clf, vectorizer, threshold=0.5):
 
 # Train or load model
 print("Training logistic regression switch model ...")
-clf, vectorizer = train_logreg_model("data/processed/processed_dataset.csv")
+clf, vectorizer = train_logreg_model(processed_dir / "processed_dataset.csv")
 
 # Apply model
 df = apply_switch_model_to_df(df, clf, vectorizer, threshold=0.5)
-
 # Summary statistics
 total_pred_mixed = df['predicted_mixed_pred'].sum()
 predicted_mixed_rate = total_pred_mixed / len(df) if len(df) > 0 else 0.0
