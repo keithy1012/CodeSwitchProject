@@ -1,7 +1,8 @@
 import spacy
 import pandas as pd
+import re
 from typing import List, Dict, Tuple, Any
-
+import jieba
 # --- Configuration and Setup ---
 
 # Load the English spaCy model. This line assumes the model 'en_core_web_sm' is downloaded.
@@ -57,20 +58,76 @@ def parse_dialogue(raw_text: str) -> List[Dict[str, str]]:
 
 def analyze_text_en(utterance: str, turn_id: int) -> List[Dict[str, Any]]:
     """
-    Applies tokenization and English POS tagging using spaCy.
-    """
-    # Process the text with the loaded spaCy model
-    doc = NLP_EN(utterance)
-    analysis_results = []
+    Tokenization and POS tagging that supports both English and Chinese text.
 
+    - If the utterance contains CJK characters, tokenization is done with a regex that
+      groups consecutive Chinese characters into runs and also captures Latin words, numbers, and punctuation.
+    - Chinese tokens are labeled with a simple POS tag 'CJK' because the English spaCy model does not provide Chinese POS.
+    - Latin tokens are analyzed with the loaded English spaCy model to obtain lemma, POS and stopword flags.
+    """
+    analysis_results = []
+    if utterance is None:
+        return analysis_results
+
+    # If the text contains any CJK Unified Ideographs, use regex-based tokenization that groups CJK runs
+    if re.search(r"[\u4e00-\u9fff]", utterance):
+        pattern = re.compile(r"[\u4e00-\u9fff]+|[A-Za-z]+|\d+|[^\w\s]", re.UNICODE)
+        tokens = pattern.findall(utterance)
+        for tok in tokens:
+            if re.fullmatch(r"[\u4e00-\u9fff]+", tok):
+                subtokens = list(jieba.cut(tok))
+                for sub in subtokens:
+                    analysis_results.append({
+                        'Turn ID': turn_id,
+                        'Token': sub,
+                        'Lemma': sub,
+                        'POS Tag': 'CJK',
+                        'Syntactic Dependency': '',
+                        'Is Stopword': False
+                    })
+            elif re.fullmatch(r"[A-Za-z]+", tok):
+                # use spaCy for English tokens
+                doc = NLP_EN(tok)
+                t = doc[0]
+                analysis_results.append({
+                    'Turn ID': turn_id,
+                    'Token': t.text,
+                    'Lemma': t.lemma_,
+                    'POS Tag': t.pos_,
+                    'Syntactic Dependency': t.dep_,
+                    'Is Stopword': t.is_stop
+                })
+            elif re.fullmatch(r"\d+", tok):
+                analysis_results.append({
+                    'Turn ID': turn_id,
+                    'Token': tok,
+                    'Lemma': tok,
+                    'POS Tag': 'NUM',
+                    'Syntactic Dependency': '',
+                    'Is Stopword': False
+                })
+            else:
+                # punctuation or symbols
+                analysis_results.append({
+                    'Turn ID': turn_id,
+                    'Token': tok,
+                    'Lemma': tok,
+                    'POS Tag': 'PUNCT',
+                    'Syntactic Dependency': '',
+                    'Is Stopword': False
+                })
+        return analysis_results
+
+    # Fallback: no CJK detected — use spaCy English pipeline as before
+    doc = NLP_EN(utterance)
     for token in doc:
         analysis_results.append({
             'Turn ID': turn_id,
             'Token': token.text,
-            'Lemma': token.lemma_, # Base form of the word
-            'POS Tag': token.pos_,  # Universal POS Tag (e.g., NOUN, VERB)
-            'Syntactic Dependency': token.dep_, # Grammatical relationship
-            'Is Stopword': token.is_stop # Common words (a, the, in, etc.)
+            'Lemma': token.lemma_,
+            'POS Tag': token.pos_,
+            'Syntactic Dependency': token.dep_,
+            'Is Stopword': token.is_stop
         })
 
     return analysis_results
