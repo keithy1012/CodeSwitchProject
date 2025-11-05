@@ -1,51 +1,20 @@
-import json
 import pandas as pd
-import spacy
 from pathlib import Path
-from datetime import date
-import re
 from logistic_regression import train_logreg_model
 from random_forest import train_random_forest_model
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pos_extraction
-from utils import count_en_zh_tokens, create_readme, countTokens, countUtterances, detect_langs, compute_mixed_utterance_rate
+from utils import count_en_zh_tokens, create_readme, countTokens, countUtterances, compute_mixed_utterance_rate, detect_token_languages, addPOSandToken, load_data
 
 # Load JSON and convert to CSV
-json_path = 'data/raw/code_switch_data.json'
-csv_path = f'data/processed/{date.today().strftime("%Y-%m-%d")}/processed_dataset.csv'
-processed_dir = Path(f'data/processed/{date.today().strftime("%Y-%m-%d")}')
-processed_dir.mkdir(parents=True, exist_ok=True)
-
-with open(json_path, 'r', encoding='utf-8') as f:
-    data = json.load(f)
-
+csv_path, processed_dir, data = load_data()
 df = pd.json_normalize(data)
 
 # Add initial linguistic features (tokens + POS) using pos_extraction utilities
-tokens_list = []
-pos_tags_list = []
-
-for i, utterance in enumerate(df['utterance']):
-    try:
-        analysis = pos_extraction.analyze_text_en(utterance, i+1)
-        tokens = [item.get('Token') for item in analysis]
-        pos_tags = [item.get('POS Tag') for item in analysis]
-    except Exception as e:
-        print(f"Warning: POS extraction failed for row {i} (id={df.loc[i,'id']}): {e}")
-        tokens = []
-        pos_tags = []
-
-    tokens_list.append(tokens)
-    pos_tags_list.append(pos_tags)
+tokens_list, pos_tags_list = addPOSandToken(df)
 
 df['tokens'] = tokens_list
 df['pos_tags'] = pos_tags_list
-
-# Create README
-Path(processed_dir).mkdir(parents=True, exist_ok=True)
-readme_path = processed_dir / 'README.md'
-create_readme(readme_path, df)
 
 # Count totals tokens
 total_tokens, total_distinct_tokens = countTokens(df)
@@ -57,31 +26,19 @@ total_utt = countUtterances(df)
 print(f"Total utterances in dataset: {total_utt}")
 
 # Create `labels` column by script-based language detection
-df['labels'] = df['utterance'].apply(detect_langs)
-
-
-def detect_token_languages(tokens):
-    """Return a list of language labels ('en', 'zh', 'other') for the given token list."""
-    if not isinstance(tokens, list):
-        return []
-    labels = []
-    for token in tokens:
-        if not isinstance(token, str):
-            labels.append('other')
-            continue
-        if re.search(r"[\u4e00-\u9fff]", token):
-            labels.append('zh')
-        elif re.search(r"[A-Za-z]", token):
-            labels.append('en')
-        else:
-            labels.append('other')
-    return labels
-
-df['Language'] = df['tokens'].apply(detect_token_languages)
+languages = df['tokens'].apply(detect_token_languages)
+set_of_languages = languages.apply(set)
+df['labels'] = set_of_languages
+df['Language'] = languages
 
 # Save to CSV
 df.to_csv(csv_path, index=False, encoding='utf-8')
 print(f"Processed CSV saved to: {csv_path}")
+
+# Create README
+Path(processed_dir).mkdir(parents=True, exist_ok=True)
+readme_path = processed_dir / 'README.md'
+create_readme(readme_path, df)
 
 # Mixed utterance rate
 compute_mixed_utterance_rate(df)
@@ -160,7 +117,7 @@ plt.title("Language Composition of Utterances")
 plt.savefig(fig_dir / "language_proportion_pie.png", dpi=300)
 plt.close()
 
-print(f"Saved language proportion pie chart to {fig_dir / 'language_proportion_pie.png'}")
+print("Saved language proportion pie chart")
 
 # --- 2. Histogram of switch-point locations ---
 switch_positions = []
@@ -178,7 +135,7 @@ plt.tight_layout()
 plt.savefig(fig_dir / "switch_point_histogram.png", dpi=300)
 plt.close()
 
-print(f"Saved switch-point histogram to {fig_dir / 'switch_point_histogram.png'}")
+print("Saved switch-point histogram")
 
 # --- 3. Distribution of utterance lengths ---
 df['utterance_length'] = df['tokens'].apply(lambda x: len(x) if isinstance(x, list) else 0)
@@ -190,7 +147,7 @@ plt.ylabel("Count")
 plt.tight_layout()
 plt.savefig(fig_dir / "utterance_length_distribution.png", dpi=300)
 plt.close()
-print(f"Saved utterance length distribution to {fig_dir / 'utterance_length_distribution.png'}")
+print("Saved utterance length distribution")
 
 # --- 4. Optional: Boxplot of predicted switch probabilities ---
 all_probs = [p for probs in df['predicted_switch_probs'] for p in probs]
@@ -201,11 +158,9 @@ plt.xlabel("Switch Probability")
 plt.tight_layout()
 plt.savefig(fig_dir / "switch_prob_boxplot.png", dpi=300)
 plt.close()
-print(f"Saved predicted switch probability boxplot to {fig_dir / 'switch_prob_boxplot.png'}")
+print("Saved predicted switch probability boxplot")
 
 # --- 5. Token-level language proportion pie chart ---
-
-
 total_en = 0
 total_zh = 0
 
@@ -224,4 +179,4 @@ plt.title("Token-Level Language Proportion (English vs Chinese)")
 plt.savefig(fig_dir / "token_language_pie.png", dpi=300)
 plt.close()
 
-print(f"Saved token-level language proportion pie chart to {fig_dir / 'token_language_pie.png'}")
+print("Saved token-level language proportion pie chart")

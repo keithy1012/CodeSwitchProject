@@ -3,6 +3,16 @@ from pathlib import Path
 from typing import List, Dict, Optional
 import re
 from datetime import date
+import pos_extraction
+
+def load_data():
+    json_path = 'data/raw/code_switch_data.json'
+    csv_path = f'data/processed/{date.today().strftime("%Y-%m-%d")}/processed_dataset.csv'
+    processed_dir = Path(f'data/processed/{date.today().strftime("%Y-%m-%d")}')
+    processed_dir.mkdir(parents=True, exist_ok=True)
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return csv_path, processed_dir, data
 
 def create_readme(path, df):
     with open(path, 'w', encoding='utf-8') as f:
@@ -37,6 +47,25 @@ def countUtterances(df):
         total_utt += count_turns
     return total_utt
 
+def addPOSandToken(df):
+    tokens_list = []
+    pos_tags_list = []
+
+    for i, utterance in enumerate(df['utterance']):
+        try:
+            analysis = pos_extraction.analyze_text_en(utterance, i+1)
+            tokens = [item.get('Token') for item in analysis]
+            pos_tags = [item.get('POS Tag') for item in analysis]
+        except Exception as e:
+            print(f"Warning: POS extraction failed for row {i} (id={df.loc[i,'id']}): {e}")
+            tokens = []
+            pos_tags = []
+
+        tokens_list.append(tokens)
+        pos_tags_list.append(pos_tags)
+    return tokens_list, pos_tags_list
+
+'''
 def detect_langs(text):
     """Return a list of language labels detected in the text. Currently detects 'zh' (CJK) and 'en' (Latin letters)."""
     if not isinstance(text, str):
@@ -47,6 +76,24 @@ def detect_langs(text):
     if re.search(r"[A-Za-z]", text):
         langs.add('en')
     return list(langs)
+'''
+
+def detect_token_languages(tokens):
+    """Return a list of language labels ('en', 'zh', 'other') for the given token list."""
+    if not isinstance(tokens, list):
+        return []
+    labels = []
+    for token in tokens:
+        if not isinstance(token, str):
+            labels.append('other')
+            continue
+        if re.search(r"[\u4e00-\u9fff]", token):
+            labels.append('zh')
+        elif re.search(r"[A-Za-z]", token):
+            labels.append('en')
+        else:
+            labels.append('other')
+    return labels
 
 def count_en_zh_tokens(tokens):
     """Return counts of English and Chinese tokens from a token list."""
@@ -78,7 +125,7 @@ def compute_mixed_utterance_rate(df):
             mixed += 1
     rate = mixed / total if total > 0 else 0.0
     print(f"Mixed-utterance rate: {rate*100:.2f}%")
-    
+
 def change_ids_in_json(file_path: str, start_id: int = 0, output_path: Optional[str] = None) -> List[Dict]:
     """Read a JSON file containing a list of objects and rewrite their 'id' fields.
 
