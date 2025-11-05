@@ -5,10 +5,41 @@ from random_forest import train_random_forest_model
 import matplotlib.pyplot as plt
 import seaborn as sns
 from utils import count_en_zh_tokens, create_readme, countTokens, countUtterances, compute_mixed_utterance_rate, detect_token_languages, addPOSandToken, load_data
+import re
 
 # Load JSON and convert to CSV
 csv_path, processed_dir, data = load_data()
-df = pd.json_normalize(data)
+raw_df = pd.json_normalize(data)
+
+# Expand each dialogue into individual turns (rows)
+rows = []
+for _, r in raw_df.iterrows():
+    dialog_text = r.get('utterance', '')
+    # Split on line breaks and drop empty lines
+    lines = [ln.strip() for ln in re.split(r"\r?\n", dialog_text) if ln.strip()]
+    for i, ln in enumerate(lines):
+        speaker = None
+        turn_text = ln
+        # Try to extract speaker like 'Li: text' or 'Li：text'
+        m = re.match(r'^([^:：]+)[:：]\s*(.*)$', ln)
+        if m:
+            speaker = m.group(1).strip()
+            turn_text = m.group(2).strip()
+        # Create a new row copying metadata from original dialogue row
+        new_row = r.to_dict()
+        # Provide original dialogue id and per-turn index. Keep dialogue_text.
+        orig_id = r.get('id', '')
+        new_row.update({
+            'dialogue_text': dialog_text,
+            'dialogue_id': orig_id if orig_id != '' else None,
+            'turn_index': i+1,
+            'speaker': speaker,
+            'utterance': turn_text
+        })
+        rows.append(new_row)
+
+# Build DataFrame where each row is a dialogue turn
+df = pd.DataFrame(rows)
 
 # Add initial linguistic features (tokens + POS) using pos_extraction utilities
 tokens_list, pos_tags_list = addPOSandToken(df)
@@ -149,7 +180,7 @@ plt.savefig(fig_dir / "utterance_length_distribution.png", dpi=300)
 plt.close()
 print("Saved utterance length distribution")
 
-# --- 4. Optional: Boxplot of predicted switch probabilities ---
+# --- 4. Boxplot of predicted switch probabilities ---
 all_probs = [p for probs in df['predicted_switch_probs'] for p in probs]
 plt.figure(figsize=(6, 4))
 sns.boxplot(x=all_probs, color='#55A868')

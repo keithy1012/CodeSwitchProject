@@ -7,7 +7,7 @@ Version: 1.0
 - Few-shot
 - Chain-of-Thought
 
-## Number of utterances collected: 362
+## Number of utterances collected: 1779
 
 ## Preprocessing Notes
 - JSON normalized into flat tabular structure
