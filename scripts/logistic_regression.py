@@ -46,6 +46,7 @@ def create_switch_prediction_labels(df):
         data.append({"tokens": tokens, "labels": labels, "switch_labels": switch_labels})
     return data
 
+
 # --------------------------------------------------------
 # 3. Prepare token-level context data for ML model
 # --------------------------------------------------------
@@ -59,6 +60,8 @@ def flatten_examples(data):
             contexts.append(context)
             labels.append(switch_labels[i])
     return contexts, labels
+
+
 
 # --------------------------------------------------------
 # 4. Train and evaluate Logistic Regression model

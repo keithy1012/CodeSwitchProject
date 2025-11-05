@@ -31,7 +31,6 @@ for _, r in raw_df.iterrows():
         orig_id = r.get('id', '')
         new_row.update({
             'dialogue_text': dialog_text,
-            'dialogue_id': orig_id if orig_id != '' else None,
             'turn_index': i+1,
             'speaker': speaker,
             'utterance': turn_text
@@ -78,32 +77,65 @@ compute_mixed_utterance_rate(df)
 def apply_switch_model_to_df(df, clf, vectorizer, threshold=0.5):
     """Apply a token-level switch predictor to the DataFrame.
 
-    Produces three new columns on the DataFrame:
+    Produces new columns on the DataFrame:
     - predicted_switch_probs: list of probabilities for switch at each token boundary (len = n_tokens-1)
     - predicted_switches: list of binary predictions (0/1) using threshold
-    - predicted_mixed_pred: boolean; True if any predicted switch==1 in the dialogue
+    - actual_switches: ground-truth switch labels computed from token-level `Language` (or regex fallback)
+    - switch_match_rate: fraction of token boundaries where predicted == actual (0-1)
     """
     probs_list = []
     preds_list = []
-    mixed_pred_list = []
+    actual_list = []
+    match_rate_list = []
 
-    for tokens in df['tokens']:
+    def infer_lang_for_token(tok: str) -> str:
+        if isinstance(tok, str) and re.fullmatch(r"[\u4e00-\u9fff]+", tok):
+            return 'zh'
+        if isinstance(tok, str) and re.fullmatch(r"[A-Za-z]+", tok):
+            return 'en'
+        return 'other'
+
+    # iterate rows so we can access tokens and the precomputed Language column
+    for tokens, langs in zip(df['tokens'], df.get('Language', [None] * len(df))):
         if not isinstance(tokens, list) or len(tokens) < 2:
             probs_list.append([])
             preds_list.append([])
-            mixed_pred_list.append(False)
+            actual_list.append([])
+            match_rate_list.append(0.0)
             continue
-        contexts = [" ".join(tokens[:i+1]) for i in range(len(tokens)-1)]
+
+        # Predicted
+        contexts = [" ".join(tokens[: i + 1]) for i in range(len(tokens) - 1)]
         X = vectorizer.transform(contexts)
         probs = clf.predict_proba(X)[:, 1].tolist()
         preds = [1 if p >= threshold else 0 for p in probs]
+        
+        actuals = []
+        if isinstance(langs, list) and len(langs) == len(tokens):
+            actuals = [1 if langs[i] != langs[i + 1] else 0 for i in range(len(langs) - 1)]
+        else:
+            # fallback: infer token language with simple regex rules
+            inferred = [infer_lang_for_token(t) for t in tokens]
+            actuals = [1 if inferred[i] != inferred[i + 1] else 0 for i in range(len(inferred) - 1)]
+
+        # compute match rate between predicted and actual (only over positions existing in both)
+        matches = 0
+        denom = min(len(preds), len(actuals))
+        if denom > 0:
+            matches = sum(1 for a, p in zip(actuals, preds) if a == p)
+            match_rate = matches / denom
+        else:
+            match_rate = 0.0
+
         probs_list.append(probs)
         preds_list.append(preds)
-        mixed_pred_list.append(any(preds))
+        actual_list.append(actuals)
+        match_rate_list.append(match_rate)
 
     df['predicted_switch_probs'] = probs_list
     df['predicted_switches'] = preds_list
-    df['predicted_mixed_pred'] = mixed_pred_list
+    df['actual_switches'] = actual_list
+    df['switch_match_rate'] = match_rate_list
     return df
 
 # Train or load logistic regression model
@@ -116,14 +148,10 @@ rf_clf, rf_vectorizer = train_random_forest_model(processed_dir / "processed_dat
 
 # Apply logistic regression model
 lg_df = apply_switch_model_to_df(df, lg_clf, lg_vectorizer, threshold=0.5)
-
+lg_df.to_csv(processed_dir/"lg_df.csv")
 # Apply random forest model
 rf_df = apply_switch_model_to_df(df, rf_clf, rf_vectorizer, threshold=0.5)
-
-# Summary statistics
-total_pred_mixed = df['predicted_mixed_pred'].sum()
-predicted_mixed_rate = total_pred_mixed / len(df) if len(df) > 0 else 0.0
-print(f"Predicted mixed-utterance rate (model): {predicted_mixed_rate*100:.2f}% ({total_pred_mixed}/{len(df)})")
+rf_df.to_csv(processed_dir/"rf_df.csv")
 
 # Create figures directory
 fig_dir = processed_dir / "figures"
