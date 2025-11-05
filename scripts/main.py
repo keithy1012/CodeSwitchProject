@@ -55,6 +55,7 @@ print(f"Total number of distinct tokens in dataset: {len(total_distinct_tokens)}
 total_utt = countUtterances(df)
 print(f"Total utterances in dataset: {total_utt}")
 
+
 # Create `labels` column by script-based language detection
 languages = df['tokens'].apply(detect_token_languages)
 set_of_languages = languages.apply(set)
@@ -72,7 +73,7 @@ create_readme(readme_path, df)
 
 # Mixed utterance rate
 compute_mixed_utterance_rate(df)
-
+'''
 # Apply trained switch-prediction model to our dataset
 def apply_switch_model_to_df(df, clf, vectorizer, threshold=0.5):
     """Apply a token-level switch predictor to the DataFrame.
@@ -109,7 +110,7 @@ def apply_switch_model_to_df(df, clf, vectorizer, threshold=0.5):
         X = vectorizer.transform(contexts)
         probs = clf.predict_proba(X)[:, 1].tolist()
         preds = [1 if p >= threshold else 0 for p in probs]
-        
+
         actuals = []
         if isinstance(langs, list) and len(langs) == len(tokens):
             actuals = [1 if langs[i] != langs[i + 1] else 0 for i in range(len(langs) - 1)]
@@ -239,3 +240,4 @@ plt.savefig(fig_dir / "token_language_pie.png", dpi=300)
 plt.close()
 
 print("Saved token-level language proportion pie chart")
+'''
