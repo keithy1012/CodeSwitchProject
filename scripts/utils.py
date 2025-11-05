@@ -53,6 +53,7 @@ def addPOSandToken(df):
 
     for i, utterance in enumerate(df['utterance']):
         try:
+            utterance = re.sub(r"\b(Li|Sarah)\s*:\s*", "", utterance)
             analysis = pos_extraction.analyze_text_en(utterance, i+1)
             tokens = [item.get('Token') for item in analysis]
             pos_tags = [item.get('POS Tag') for item in analysis]
@@ -91,6 +92,8 @@ def detect_token_languages(tokens):
             labels.append('zh')
         elif re.search(r"[A-Za-z]", token):
             labels.append('en')
+        elif token in {'"', "'", '“', '”', '。', '.', ',', '：', ':', '？'}:
+            labels.append('punct')
         else:
             labels.append('other')
     return labels

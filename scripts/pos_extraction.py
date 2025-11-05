@@ -1,19 +1,16 @@
 import spacy
 import re
 import jieba
+import jieba.posseg as pseg
 from typing import List, Dict, Any
 
-# Load English spaCy model once
-try:
-    NLP_EN = spacy.load("en_core_web_sm", disable=["ner"])
-    print("spaCy English model loaded successfully.")
-except OSError:
-    raise RuntimeError("spaCy model 'en_core_web_sm' not found. Run: python -m spacy download en_core_web_sm")
+# Load English model
+NLP_EN = spacy.load('en_core_web_sm')
 
 def analyze_text_en(utterance: str, turn_id: int) -> List[Dict[str, Any]]:
     """
     Tokenize and analyze mixed English–Chinese utterances with POS tagging.
-    Uses spaCy for English and jieba for Chinese. Handles code-switching gracefully.
+    Uses spaCy for English and jieba.posseg for Chinese. Handles code-switching gracefully.
     """
     if not utterance:
         return []
@@ -32,10 +29,10 @@ def analyze_text_en(utterance: str, turn_id: int) -> List[Dict[str, Any]]:
         pattern = re.compile(r"[\u4e00-\u9fff]+|[A-Za-z]+|\d+|[^\w\s]", re.UNICODE)
         tokens = pattern.findall(text_spaced)
 
-        # Combine results from jieba + spaCy
+        # Combine results from jieba.posseg + spaCy
         english_buffer = []
         for tok in tokens:
-            # CJK run → segment with jieba
+            # CJK run → segment with jieba.posseg for POS
             if re.fullmatch(r"[\u4e00-\u9fff]+", tok):
                 # Flush pending English tokens first
                 if english_buffer:
@@ -52,16 +49,18 @@ def analyze_text_en(utterance: str, turn_id: int) -> List[Dict[str, Any]]:
                         })
                     english_buffer.clear()
 
-                for sub in jieba.cut(tok):
+                # Chinese tokenization with POS
+                for word, flag in pseg.cut(tok):
                     results.append({
                         "Turn ID": turn_id,
-                        "Token": sub,
-                        "Lemma": sub,
-                        "POS Tag": "CJK",
+                        "Token": word,
+                        "Lemma": word,
+                        "POS Tag": flag,          # jieba POS
                         "Syntactic Dependency": "",
                         "Is Stopword": False,
                         "Lang": "zh"
                     })
+
             elif re.fullmatch(r"[A-Za-z]+", tok):
                 english_buffer.append(tok)
             elif re.fullmatch(r"\d+", tok):
