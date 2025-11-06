@@ -73,7 +73,7 @@ create_readme(readme_path, df)
 
 # Mixed utterance rate
 compute_mixed_utterance_rate(df)
-'''
+
 # Apply trained switch-prediction model to our dataset
 def apply_switch_model_to_df(df, clf, vectorizer, threshold=0.5):
     """Apply a token-level switch predictor to the DataFrame.
@@ -240,4 +240,3 @@ plt.savefig(fig_dir / "token_language_pie.png", dpi=300)
 plt.close()
 
 print("Saved token-level language proportion pie chart")
-'''
