@@ -66,19 +66,6 @@ def addPOSandToken(df):
         pos_tags_list.append(pos_tags)
     return tokens_list, pos_tags_list
 
-'''
-def detect_langs(text):
-    """Return a list of language labels detected in the text. Currently detects 'zh' (CJK) and 'en' (Latin letters)."""
-    if not isinstance(text, str):
-        return []
-    langs = set()
-    if re.search(r"[\u4e00-\u9fff]", text):
-        langs.add('zh')
-    if re.search(r"[A-Za-z]", text):
-        langs.add('en')
-    return list(langs)
-'''
-
 def detect_token_languages(tokens):
     """Return a list of language labels ('en', 'zh', 'other') for the given token list."""
     if not isinstance(tokens, list):
@@ -128,6 +115,55 @@ def compute_mixed_utterance_rate(df):
             mixed += 1
     rate = mixed / total if total > 0 else 0.0
     print(f"Mixed-utterance rate: {rate*100:.2f}%")
+
+
+def classify_lang_mix(langs):
+    if not isinstance(langs, list):
+        return "unknown"
+    langs_set = set(l for l in langs if l in ["en", "zh"])
+    if langs_set == {"en"}:
+        return "en_only"
+    elif langs_set == {"zh"}:
+        return "zh_only"
+    elif langs_set == {"en", "zh"}:
+        return "mixed"
+    else:
+        return "other"
+    
+def detect_switch_type(df):
+    """
+    Adds a 'switch_type' column with values:
+      - 'intra' for within-utterance language switches
+      - 'inter' for switches between utterances only
+      - 'none' for monolingual utterances with no switches
+    """
+    switch_types = []
+
+    for i, row in df.iterrows():
+        langs = row.get('Language', [])
+        if not isinstance(langs, list) or len(langs) == 0:
+            switch_types.append('none')
+            continue
+
+        # Normalize to only en/zh
+        langs = [l for l in langs if l in ('en', 'zh')]
+        if len(set(langs)) > 1:
+            # Multiple langs in the same utterance → intra-sentential
+            switch_types.append('intra')
+        else:
+            # Check inter-sentential: different from previous utterance
+            if i > 0:
+                prev_langs = df.iloc[i - 1].get('Language', [])
+                prev_langs = [l for l in prev_langs if l in ('en', 'zh')]
+                if prev_langs and len(set(prev_langs)) == 1 and prev_langs[0] != langs[0]:
+                    switch_types.append('inter')
+                else:
+                    switch_types.append('none')
+            else:
+                switch_types.append('none')
+
+    df['switch_type'] = switch_types
+    return df
 
 def change_ids_in_json(file_path: str, start_id: int = 0, output_path: Optional[str] = None) -> List[Dict]:
     """Read a JSON file containing a list of objects and rewrite their 'id' fields.

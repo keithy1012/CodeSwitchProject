@@ -4,7 +4,7 @@ from logistic_regression import train_logreg_model
 from random_forest import train_random_forest_model
 import matplotlib.pyplot as plt
 import seaborn as sns
-from utils import count_en_zh_tokens, create_readme, countTokens, countUtterances, compute_mixed_utterance_rate, detect_token_languages, addPOSandToken, load_data
+from utils import count_en_zh_tokens, create_readme, countTokens, countUtterances, compute_mixed_utterance_rate, detect_token_languages, addPOSandToken, load_data, detect_switch_type, classify_lang_mix
 import re
 
 # Load JSON and convert to CSV
@@ -166,154 +166,112 @@ fig_dir = processed_dir / "figures"
 fig_dir.mkdir(parents=True, exist_ok=True)
 
 # --- 1. Language proportion chart ---
-lang_counts = {'en_only': 0, 'zh_only': 0, 'mixed': 0}
-for langs in df['labels']:
-    if not langs:
-        continue
-    lset = set(langs)
-    if 'en' in lset and 'zh' in lset:
-        lang_counts['mixed'] += 1
-    elif 'en' in lset:
-        lang_counts['en_only'] += 1
-    elif 'zh' in lset:
-        lang_counts['zh_only'] += 1
+def language_proportion_by_utterance():
+    lang_counts = {'en_only': 0, 'zh_only': 0, 'mixed': 0}
+    for langs in df['labels']:
+        if not langs:
+            continue
+        lset = set(langs)
+        if 'en' in lset and 'zh' in lset:
+            lang_counts['mixed'] += 1
+        elif 'en' in lset:
+            lang_counts['en_only'] += 1
+        elif 'zh' in lset:
+            lang_counts['zh_only'] += 1
 
-plt.figure(figsize=(6, 6))
-plt.pie(lang_counts.values(), labels=lang_counts.keys(), autopct='%1.1f%%', colors=['#4C72B0', '#55A868', '#C44E52'])
-plt.title("Language Composition of Utterances")
-plt.savefig(fig_dir / "language_proportion_pie.png", dpi=300)
-plt.close()
+    plt.figure(figsize=(6, 6))
+    plt.pie(lang_counts.values(), labels=lang_counts.keys(), autopct='%1.1f%%', colors=['#4C72B0', '#55A868', '#C44E52'])
+    plt.title("Language Composition of Utterances")
+    plt.savefig(fig_dir / "language_proportion_pie.png", dpi=300)
+    plt.close()
 
-print("Saved language proportion pie chart")
+    print("Saved language proportion pie chart")
+language_proportion_by_utterance()
 
 # --- 2. Histogram of switch-point locations ---
-switch_positions = []
-for switches in df['actual_switches']:
-    for i, switch in enumerate(switches):
-        if switch == 1:
-            switch_positions.append(i+1)
+def switch_point_histogram():
+    switch_positions = []
+    for switches in df['actual_switches']:
+        for i, switch in enumerate(switches):
+            if switch == 1:
+                switch_positions.append(i+1)
 
-plt.figure(figsize=(8, 5))
-sns.histplot(switch_positions, bins=20, kde=False, color='#C44E52')
-plt.title("Distribution of Predicted Switch Positions (Token Index)")
-plt.xlabel("Token Index of Switch")
-plt.ylabel("Frequency")
-plt.tight_layout()
-plt.savefig(fig_dir / "switch_point_histogram.png", dpi=300)
-plt.close()
+    plt.figure(figsize=(8, 5))
+    sns.histplot(switch_positions, bins=20, kde=False, color='#C44E52')
+    plt.title("Distribution of Predicted Switch Positions (Token Index)")
+    plt.xlabel("Token Index of Switch")
+    plt.ylabel("Frequency")
+    plt.tight_layout()
+    plt.savefig(fig_dir / "switch_point_histogram.png", dpi=300)
+    plt.close()
 
-print("Saved switch-point histogram")
+    print("Saved switch-point histogram")
 
+switch_point_histogram()
 # --- 3. Distribution of utterance lengths ----
-df['utterance_length'] = df['tokens'].apply(lambda x: len(x) if isinstance(x, list) else 0)
+def utterance_length_distribution():
+    df['utterance_length'] = df['tokens'].apply(lambda x: len(x) if isinstance(x, list) else 0)
 
-def classify_lang_mix(langs):
-    if not isinstance(langs, list):
-        return "unknown"
-    langs_set = set(l for l in langs if l in ["en", "zh"])
-    if langs_set == {"en"}:
-        return "en_only"
-    elif langs_set == {"zh"}:
-        return "zh_only"
-    elif langs_set == {"en", "zh"}:
-        return "mixed"
-    else:
-        return "other"
+    df['utterance_type'] = df['Language'].apply(classify_lang_mix)
 
-df['utterance_type'] = df['Language'].apply(classify_lang_mix)
+    plt.figure(figsize=(9, 6))
+    sns.histplot(data=df[df['utterance_type'] == 'en_only'], x='utterance_length', bins=30, color='#4C72B0', label='English Only', kde=True, alpha=0.5)
+    sns.histplot(data=df[df['utterance_type'] == 'zh_only'], x='utterance_length', bins=30, color='#55A868', label='Chinese Only', kde=True, alpha=0.5)
+    sns.histplot(data=df[df['utterance_type'] == 'mixed'], x='utterance_length', bins=30, color='#C44E52', label='Mixed (EN+ZH)', kde=True, alpha=0.5)
 
-plt.figure(figsize=(9, 6))
-sns.histplot(data=df[df['utterance_type'] == 'en_only'], x='utterance_length', bins=30, color='#4C72B0', label='English Only', kde=True, alpha=0.5)
-sns.histplot(data=df[df['utterance_type'] == 'zh_only'], x='utterance_length', bins=30, color='#55A868', label='Chinese Only', kde=True, alpha=0.5)
-sns.histplot(data=df[df['utterance_type'] == 'mixed'], x='utterance_length', bins=30, color='#C44E52', label='Mixed (EN+ZH)', kde=True, alpha=0.5)
-
-plt.title("Distribution of Utterance Lengths by Language Composition")
-plt.xlabel("Number of Tokens")
-plt.ylabel("Count")
-plt.legend()
-plt.tight_layout()
-plt.savefig(fig_dir / "utterance_length_by_language_type.png", dpi=300)
-plt.close()
-print("Saved utterance length distribution by language type")
-
+    plt.title("Distribution of Utterance Lengths by Language Composition")
+    plt.xlabel("Number of Tokens")
+    plt.ylabel("Count")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(fig_dir / "utterance_length_by_language_type.png", dpi=300)
+    plt.close()
+    print("Saved utterance length distribution by language type")
+utterance_length_distribution()
 # --- 4. Boxplot of predicted switch probabilities ---
-all_probs = [p for probs in df['predicted_switch_probs'] for p in probs]
-plt.figure(figsize=(6, 4))
-sns.boxplot(x=all_probs, color='#55A868')
-plt.title("Distribution of Predicted Switch Probabilities")
-plt.xlabel("Switch Probability")
-plt.tight_layout()
-plt.savefig(fig_dir / "switch_prob_boxplot.png", dpi=300)
-plt.close()
-print("Saved predicted switch probability boxplot")
-
+def predicted_switch_probability_boxplot():
+    all_probs = [p for probs in df['predicted_switch_probs'] for p in probs]
+    plt.figure(figsize=(6, 4))
+    sns.boxplot(x=all_probs, color='#55A868')
+    plt.title("Distribution of Predicted Switch Probabilities")
+    plt.xlabel("Switch Probability")
+    plt.tight_layout()
+    plt.savefig(fig_dir / "switch_prob_boxplot.png", dpi=300)
+    plt.close()
+    print("Saved predicted switch probability boxplot")
+predicted_switch_probability_boxplot()
 # --- 5. Token-level language proportion pie chart ---
-total_en = 0
-total_zh = 0
+def language_proportion_by_token():
+    total_en = 0
+    total_zh = 0
 
-for tokens in df['tokens']:
-    en_c, zh_c = count_en_zh_tokens(tokens)
-    total_en += en_c
-    total_zh += zh_c
+    for tokens in df['tokens']:
+        en_c, zh_c = count_en_zh_tokens(tokens)
+        total_en += en_c
+        total_zh += zh_c
 
-# Plot pie chart
-plt.figure(figsize=(6, 6))
-plt.pie([total_en, total_zh],
-        labels=['English Tokens', 'Chinese Tokens'],
-        autopct='%1.1f%%',
-        colors=['#4C72B0', '#C44E52'])
-plt.title("Token-Level Language Proportion (English vs Chinese)")
-plt.savefig(fig_dir / "token_language_pie.png", dpi=300)
-plt.close()
+    # Plot pie chart
+    plt.figure(figsize=(6, 6))
+    plt.pie([total_en, total_zh],
+            labels=['English Tokens', 'Chinese Tokens'],
+            autopct='%1.1f%%',
+            colors=['#4C72B0', '#C44E52'])
+    plt.title("Token-Level Language Proportion (English vs Chinese)")
+    plt.savefig(fig_dir / "token_language_pie.png", dpi=300)
+    plt.close()
 
-print("Saved token-level language proportion pie chart")
+    print("Saved token-level language proportion pie chart")
+language_proportion_by_token()
 
-
-def detect_switch_type(df):
-    """
-    Adds a 'switch_type' column with values:
-      - 'intra' for within-utterance language switches
-      - 'inter' for switches between utterances only
-      - 'none' for monolingual utterances with no switches
-    """
-    switch_types = []
-
-    for i, row in df.iterrows():
-        langs = row.get('Language', [])
-        if not isinstance(langs, list) or len(langs) == 0:
-            switch_types.append('none')
-            continue
-
-        # Normalize to only en/zh
-        langs = [l for l in langs if l in ('en', 'zh')]
-        if len(set(langs)) > 1:
-            # Multiple langs in the same utterance → intra-sentential
-            switch_types.append('intra')
-        else:
-            # Check inter-sentential: different from previous utterance
-            if i > 0:
-                prev_langs = df.iloc[i - 1].get('Language', [])
-                prev_langs = [l for l in prev_langs if l in ('en', 'zh')]
-                if prev_langs and len(set(prev_langs)) == 1 and prev_langs[0] != langs[0]:
-                    switch_types.append('inter')
-                else:
-                    switch_types.append('none')
-            else:
-                switch_types.append('none')
-
-    df['switch_type'] = switch_types
-    return df
-
-df = detect_switch_type(df)
-
-# Check distribution of switch types
-print(df['switch_type'].value_counts())
-
-plt.figure(figsize=(6,4))
-sns.countplot(data=df, x='switch_type', palette='Set2')
-plt.title("Distribution of Code-Switching Types")
-plt.xlabel("Switch Type")
-plt.ylabel("Count")
-plt.savefig(fig_dir/"distribution_code_switching_types.png", dpi=300)
-plt.close()
-print("Saved code-switching type distribution chart")
+# --- 6. Count of Code Switching ---
+def code_switch_type():
+    new_df = detect_switch_type(df)
+    plt.figure(figsize=(6,4))
+    sns.countplot(data=new_df, x='switch_type', palette='Set2')
+    plt.title("Distribution of Code-Switching Types")
+    plt.xlabel("Switch Type")
+    plt.ylabel("Count")
+    plt.savefig(fig_dir/"distribution_code_switching_types.png", dpi=300)
+    plt.close()
+    print("Saved code-switching type distribution chart")
+code_switch_type()
