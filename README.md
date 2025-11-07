@@ -11,8 +11,6 @@ This repository contains tools to:
 - Build token-level cumulative contexts and labels for predicting language switch points at token boundaries.
 - Train lightweight TF-IDF + classifiers (Logistic Regression, Random Forest) to detect switch points and apply them to dialogues.
 
-Intended use: research experiments, dataset generation and preprocessing, baseline modeling for switch-point detection.
-
 ## Quick start
 
 1. Create and activate a virtual environment (Python 3.8+ recommended):
@@ -26,11 +24,7 @@ source .venv/bin/activate   # macOS / Linux (use the appropriate command on Wind
 
 ```bash
 pip install -r requirements.txt
-# if you don't have a requirements.txt, at minimum install:
-pip install pandas scikit-learn spacy joblib
 python -m spacy download en_core_web_sm
-# Optional (recommended for better Chinese segmentation):
-pip install jieba
 ```
 
 3. Run the end-to-end pipeline:
@@ -71,33 +65,3 @@ This will read dialogues from `data/raw/code_switch_data.json`, produce a per-tu
   - `predicted_switches` — binary predictions derived by threshold (default 0.5).
   - `actual_switches` — ground-truth 0/1 list derived from `Language` (or fallback rules).
   - `switch_match_rate` — fraction of boundaries where predicted == actual for that row.
-
-## Tips & recommendations
-
-- Install `jieba` for better Chinese segmentation — without it the pipeline falls back to character-level tokenization for CJK runs.
-- Persist trained models with `joblib.dump()` if you plan to reuse models without retraining. Consider adding a CLI flag to `main.py` to load persisted models.
-- Ensure tokenization used during training matches inference exactly (the pipeline now constructs contexts in `main.py` and passes splits to the training functions to guarantee consistency).
-
-## Reproducibility
-
-- `main.py` saves `train_contexts.csv` and `test_contexts.csv` under the processed directory for reproducible train/eval runs.
-- If you need deterministic LLM outputs for data generation, set a fixed random seed in generation scripts or record the RNG/model variants used.
-
-## Troubleshooting
-
-- spaCy model errors: run `python -m spacy download en_core_web_sm`.
-- Missing packages: install the dependencies listed above or create a `requirements.txt` from your environment.
-- Chinese tokens appear as single characters: install `jieba`.
-- If model predictions are poor: check tokenization alignment between training and inference, inspect `switch_match_rate` and label balance, and consider training with more data.
-
-## Next steps (ideas)
-
-- Add model persistence and a `--load-model` flag in `main.py`.
-- Expand QA and manual annotation steps for higher-quality ground truth.
-- Add unit tests around tokenization and label creation.
-
-## Contact
-
-Project lead: Keith Yao — keith@example.com
-
-License: MIT (adjust as needed)
