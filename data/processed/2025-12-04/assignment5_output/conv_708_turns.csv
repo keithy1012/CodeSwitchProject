@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+708,"** Hey Sarah, I was looking at the staging site, and there’s a bug when I try to load the dashboard.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I was looking at the staging site, and there’s a bug when I try to load the dashboard.
+
+**Sarah:** Oh no, that’s not good. Did you check the console for any errors? 你有没有看到任何错误信息？
+
+**Li:** Yes, there’s a 404 error for the API endpoint. 我觉得可能是上次 merge 的时候出了问题。
+
+**Sarah:** That could be it. Did we make sure all the endpoints are correctly pointed in the last build? 我们应该确认一下。
+
+**Li:** Right, I’ll check the QA environment next. 如果在QA环境没问题，那我们可以继续准备 deploy。
+
+**Sarah:** Exactly! Once it’s fixed, we should do a final round of testing before the deadline. 
+
+**Li:** Agreed! Let’s meet in an hour after I debug this, and maybe we can finalize the deploy together.",1,**Li,"['*', '*', 'Hey', 'Sarah', ',', 'I', 'was', 'looking', 'at', 'the', 'staging', 'site', ',', 'and', 'there', '’s', 'a', 'bug', 'when', 'I', 'try', 'to', 'load', 'the', 'dashboard', '.']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT', 'CCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Hey Sarah, I was looking at the staging site, and there’s a bug when I try to load the dashboard.",1,708,"['*', '*', 'Hey', 'Sarah', ',', 'I', 'was', 'looking', 'at', 'the', 'staging', 'site', ',', 'and', 'there', '’s', 'a', 'bug', 'when', 'I', 'try', 'to', 'load', 'the', 'dashboard', '.']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+708,"** Oh no, that’s not good. Did you check the console for any errors? 你有没有看到任何错误信息？",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I was looking at the staging site, and there’s a bug when I try to load the dashboard.
+
+**Sarah:** Oh no, that’s not good. Did you check the console for any errors? 你有没有看到任何错误信息？
+
+**Li:** Yes, there’s a 404 error for the API endpoint. 我觉得可能是上次 merge 的时候出了问题。
+
+**Sarah:** That could be it. Did we make sure all the endpoints are correctly pointed in the last build? 我们应该确认一下。
+
+**Li:** Right, I’ll check the QA environment next. 如果在QA环境没问题，那我们可以继续准备 deploy。
+
+**Sarah:** Exactly! Once it’s fixed, we should do a final round of testing before the deadline. 
+
+**Li:** Agreed! Let’s meet in an hour after I debug this, and maybe we can finalize the deploy together.",2,**Sarah,"['*', '*', ',', '’', '.', '?', 'Oh', 'no', 'that', 's', 'not', 'good', 'Did', 'you', 'check', 'the', 'console', 'for', 'any', 'errors', '你', '有没有', '看到', '任何', '错误信息', '？']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'INTJ', 'PRON', 'VERB', 'PART', 'ADJ', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'r', 'v', 'v', 'r', 'i', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","** Oh no, that’s not good. Did you check the console for any errors? 你有没有看到任何错误信息？",2,708,"['*', '*', ',', '’', '.', '?', 'Oh', 'no', 'that', 's', 'not', 'good', 'Did', 'you', 'check', 'the', 'console', 'for', 'any', 'errors', '你', '有没有', '看到', '任何', '错误信息', '？']","['other', 'other', 'punct', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+708,"** Yes, there’s a 404 error for the API endpoint. 我觉得可能是上次 merge 的时候出了问题。",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I was looking at the staging site, and there’s a bug when I try to load the dashboard.
+
+**Sarah:** Oh no, that’s not good. Did you check the console for any errors? 你有没有看到任何错误信息？
+
+**Li:** Yes, there’s a 404 error for the API endpoint. 我觉得可能是上次 merge 的时候出了问题。
+
+**Sarah:** That could be it. Did we make sure all the endpoints are correctly pointed in the last build? 我们应该确认一下。
+
+**Li:** Right, I’ll check the QA environment next. 如果在QA环境没问题，那我们可以继续准备 deploy。
+
+**Sarah:** Exactly! Once it’s fixed, we should do a final round of testing before the deadline. 
+
+**Li:** Agreed! Let’s meet in an hour after I debug this, and maybe we can finalize the deploy together.",3,**Li,"['*', '*', ',', '’', '404', '.', 'Yes', 'there', 's', 'a', 'error', 'for', 'the', 'API', 'endpoint', '我', '觉得', '可能', '是', '上次', 'merge', '的', '时候', '出', '了', '问题', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'NUM', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'r', 'v', 'v', 'v', 't', 'VERB', 'uj', 'n', 'v', 'ul', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","** Yes, there’s a 404 error for the API endpoint. 我觉得可能是上次 merge 的时候出了问题。",3,708,"['*', '*', ',', '’', '404', '.', 'Yes', 'there', 's', 'a', 'error', 'for', 'the', 'API', 'endpoint', '我', '觉得', '可能', '是', '上次', 'merge', '的', '时候', '出', '了', '问题', '。']","['other', 'other', 'punct', 'other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,2,0,True
+708,** That could be it. Did we make sure all the endpoints are correctly pointed in the last build? 我们应该确认一下。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I was looking at the staging site, and there’s a bug when I try to load the dashboard.
+
+**Sarah:** Oh no, that’s not good. Did you check the console for any errors? 你有没有看到任何错误信息？
+
+**Li:** Yes, there’s a 404 error for the API endpoint. 我觉得可能是上次 merge 的时候出了问题。
+
+**Sarah:** That could be it. Did we make sure all the endpoints are correctly pointed in the last build? 我们应该确认一下。
+
+**Li:** Right, I’ll check the QA environment next. 如果在QA环境没问题，那我们可以继续准备 deploy。
+
+**Sarah:** Exactly! Once it’s fixed, we should do a final round of testing before the deadline. 
+
+**Li:** Agreed! Let’s meet in an hour after I debug this, and maybe we can finalize the deploy together.",4,**Sarah,"['*', '*', '.', '?', 'That', 'could', 'be', 'it', 'Did', 'we', 'make', 'sure', 'all', 'the', 'endpoints', 'are', 'correctly', 'pointed', 'in', 'the', 'last', 'build', '我们', '应该', '确认', '一下', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'AUX', 'AUX', 'PRON', 'AUX', 'PRON', 'VERB', 'ADJ', 'DET', 'DET', 'NOUN', 'AUX', 'ADV', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'r', 'v', 'v', 'm', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",** That could be it. Did we make sure all the endpoints are correctly pointed in the last build? 我们应该确认一下。,4,708,"['*', '*', '.', '?', 'That', 'could', 'be', 'it', 'Did', 'we', 'make', 'sure', 'all', 'the', 'endpoints', 'are', 'correctly', 'pointed', 'in', 'the', 'last', 'build', '我们', '应该', '确认', '一下', '。']","['other', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,1,0,True
+708,"** Right, I’ll check the QA environment next. 如果在QA环境没问题，那我们可以继续准备 deploy。",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I was looking at the staging site, and there’s a bug when I try to load the dashboard.
+
+**Sarah:** Oh no, that’s not good. Did you check the console for any errors? 你有没有看到任何错误信息？
+
+**Li:** Yes, there’s a 404 error for the API endpoint. 我觉得可能是上次 merge 的时候出了问题。
+
+**Sarah:** That could be it. Did we make sure all the endpoints are correctly pointed in the last build? 我们应该确认一下。
+
+**Li:** Right, I’ll check the QA environment next. 如果在QA环境没问题，那我们可以继续准备 deploy。
+
+**Sarah:** Exactly! Once it’s fixed, we should do a final round of testing before the deadline. 
+
+**Li:** Agreed! Let’s meet in an hour after I debug this, and maybe we can finalize the deploy together.",5,**Li,"['*', '*', ',', '’', '.', 'Right', 'I', 'll', 'check', 'the', 'QA', 'environment', 'next', '如果', '在', 'QA', '环境', '没', '问题', '，', '那', '我们', '可以', '继续', '准备', '。', 'deploy']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PRON', 'AUX', 'VERB', 'DET', 'PROPN', 'NOUN', 'ADV', 'c', 'p', 'PROPN', 'n', 'v', 'n', 'PUNCT', 'r', 'r', 'c', 'v', 'v', 'PUNCT', 'VERB']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']","** Right, I’ll check the QA environment next. 如果在QA环境没问题，那我们可以继续准备 deploy。",5,708,"['*', '*', ',', '’', '.', 'Right', 'I', 'll', 'check', 'the', 'QA', 'environment', 'next', '如果', '在', 'QA', '环境', '没', '问题', '，', '那', '我们', '可以', '继续', '准备', '。', 'deploy']","['other', 'other', 'punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,2,0,True
+708,"** Exactly! Once it’s fixed, we should do a final round of testing before the deadline.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I was looking at the staging site, and there’s a bug when I try to load the dashboard.
+
+**Sarah:** Oh no, that’s not good. Did you check the console for any errors? 你有没有看到任何错误信息？
+
+**Li:** Yes, there’s a 404 error for the API endpoint. 我觉得可能是上次 merge 的时候出了问题。
+
+**Sarah:** That could be it. Did we make sure all the endpoints are correctly pointed in the last build? 我们应该确认一下。
+
+**Li:** Right, I’ll check the QA environment next. 如果在QA环境没问题，那我们可以继续准备 deploy。
+
+**Sarah:** Exactly! Once it’s fixed, we should do a final round of testing before the deadline. 
+
+**Li:** Agreed! Let’s meet in an hour after I debug this, and maybe we can finalize the deploy together.",6,**Sarah,"['*', '*', 'Exactly', '!', 'Once', 'it', '’s', 'fixed', ',', 'we', 'should', 'do', 'a', 'final', 'round', 'of', 'testing', 'before', 'the', 'deadline', '.']","['PUNCT', 'PUNCT', 'ADV', 'PUNCT', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Exactly! Once it’s fixed, we should do a final round of testing before the deadline.",6,708,"['*', '*', 'Exactly', '!', 'Once', 'it', '’s', 'fixed', ',', 'we', 'should', 'do', 'a', 'final', 'round', 'of', 'testing', 'before', 'the', 'deadline', '.']","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+708,"** Agreed! Let’s meet in an hour after I debug this, and maybe we can finalize the deploy together.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I was looking at the staging site, and there’s a bug when I try to load the dashboard.
+
+**Sarah:** Oh no, that’s not good. Did you check the console for any errors? 你有没有看到任何错误信息？
+
+**Li:** Yes, there’s a 404 error for the API endpoint. 我觉得可能是上次 merge 的时候出了问题。
+
+**Sarah:** That could be it. Did we make sure all the endpoints are correctly pointed in the last build? 我们应该确认一下。
+
+**Li:** Right, I’ll check the QA environment next. 如果在QA环境没问题，那我们可以继续准备 deploy。
+
+**Sarah:** Exactly! Once it’s fixed, we should do a final round of testing before the deadline. 
+
+**Li:** Agreed! Let’s meet in an hour after I debug this, and maybe we can finalize the deploy together.",7,**Li,"['*', '*', 'Agreed', '!', 'Let', '’s', 'meet', 'in', 'an', 'hour', 'after', 'I', 'debug', 'this', ',', 'and', 'maybe', 'we', 'can', 'finalize', 'the', 'deploy', 'together', '.']","['PUNCT', 'PUNCT', 'VERB', 'PUNCT', 'VERB', 'NOUN', 'VERB', 'ADP', 'DET', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'PRON', 'PUNCT', 'CCONJ', 'ADV', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADV', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Agreed! Let’s meet in an hour after I debug this, and maybe we can finalize the deploy together.",7,708,"['*', '*', 'Agreed', '!', 'Let', '’s', 'meet', 'in', 'an', 'hour', 'after', 'I', 'debug', 'this', ',', 'and', 'maybe', 'we', 'can', 'finalize', 'the', 'deploy', 'together', '.']","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False

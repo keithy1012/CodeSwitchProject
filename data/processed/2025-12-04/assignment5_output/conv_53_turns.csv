@@ -1,0 +1,78 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+53,"Hey Sarah, have you had a chance to look at the PR I opened for that feature update?",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the PR I opened for that feature update?
+Sarah: Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.
+Li: Oh man, not another one! Let's resolve it right away before we deploy to staging.
+Sarah: Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.
+Li: Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.
+Sarah: Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.
+Li: Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",1,Li,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'PR', 'I', 'opened', 'for', 'that', 'feature', 'update', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'DET', 'NOUN', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, have you had a chance to look at the PR I opened for that feature update?",1,53,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'PR', 'I', 'opened', 'for', 'that', 'feature', 'update', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+53,"Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the PR I opened for that feature update?
+Sarah: Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.
+Li: Oh man, not another one! Let's resolve it right away before we deploy to staging.
+Sarah: Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.
+Li: Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.
+Sarah: Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.
+Li: Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",2,Sarah,"['Yes', ',', 'I', 'saw', 'it', '.', 'Looks', 'good', 'overall', ',', 'but', 'there', ""'s"", 'a', 'merge', 'conflict', 'with', 'the', 'CSS', 'file', '.']","['INTJ', 'PUNCT', 'PRON', 'VERB', 'PRON', 'PUNCT', 'VERB', 'ADJ', 'ADV', 'PUNCT', 'CCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.",2,53,"['Yes', ',', 'I', 'saw', 'it', '.', 'Looks', 'good', 'overall', ',', 'but', 'there', ""'s"", 'a', 'merge', 'conflict', 'with', 'the', 'CSS', 'file', '.']","['en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+53,"Oh man, not another one! Let's resolve it right away before we deploy to staging.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the PR I opened for that feature update?
+Sarah: Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.
+Li: Oh man, not another one! Let's resolve it right away before we deploy to staging.
+Sarah: Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.
+Li: Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.
+Sarah: Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.
+Li: Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",3,Li,"['Oh', 'man', ',', 'not', 'another', 'one', '!', 'Let', ""'s"", 'resolve', 'it', 'right', 'away', 'before', 'we', 'deploy', 'to', 'staging', '.']","['INTJ', 'NOUN', 'PUNCT', 'PART', 'DET', 'NOUN', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'ADV', 'ADV', 'SCONJ', 'PRON', 'VERB', 'ADP', 'VERB', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Oh man, not another one! Let's resolve it right away before we deploy to staging.",3,53,"['Oh', 'man', ',', 'not', 'another', 'one', '!', 'Let', ""'s"", 'resolve', 'it', 'right', 'away', 'before', 'we', 'deploy', 'to', 'staging', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+53,Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the PR I opened for that feature update?
+Sarah: Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.
+Li: Oh man, not another one! Let's resolve it right away before we deploy to staging.
+Sarah: Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.
+Li: Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.
+Sarah: Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.
+Li: Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",4,Sarah,"['Agreed', '.', 'I', ""'ll"", 'take', 'care', 'of', 'the', 'conflict', 'and', 'push', 'the', 'changes', '.', 'Should', 'be', 'ready', 'in', 'a', 'few', 'minutes', '.']","['VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'NOUN', 'ADP', 'DET', 'NOUN', 'CCONJ', 'VERB', 'DET', 'NOUN', 'PUNCT', 'AUX', 'AUX', 'ADJ', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.,4,53,"['Agreed', '.', 'I', ""'ll"", 'take', 'care', 'of', 'the', 'conflict', 'and', 'push', 'the', 'changes', '.', 'Should', 'be', 'ready', 'in', 'a', 'few', 'minutes', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+53,"Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the PR I opened for that feature update?
+Sarah: Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.
+Li: Oh man, not another one! Let's resolve it right away before we deploy to staging.
+Sarah: Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.
+Li: Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.
+Sarah: Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.
+Li: Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",5,Li,"['Great', ',', 'thanks', '.', 'Once', 'the', 'conflict', 'is', 'resolved', ',', 'we', 'can', 'test', 'the', 'changes', 'on', 'staging', 'and', 'make', 'sure', 'everything', 'is', 'working', 'properly', '.']","['ADJ', 'PUNCT', 'NOUN', 'PUNCT', 'SCONJ', 'DET', 'NOUN', 'AUX', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'NOUN', 'CCONJ', 'VERB', 'ADJ', 'PRON', 'AUX', 'VERB', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.",5,53,"['Great', ',', 'thanks', '.', 'Once', 'the', 'conflict', 'is', 'resolved', ',', 'we', 'can', 'test', 'the', 'changes', 'on', 'staging', 'and', 'make', 'sure', 'everything', 'is', 'working', 'properly', '.']","['en', 'punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+53,Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the PR I opened for that feature update?
+Sarah: Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.
+Li: Oh man, not another one! Let's resolve it right away before we deploy to staging.
+Sarah: Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.
+Li: Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.
+Sarah: Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.
+Li: Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",6,Sarah,"['Sounds', 'like', 'a', 'plan', '.', 'We', ""'ll"", 'need', 'to', 'squash', 'any', 'bugs', 'before', 'we', 'hit', 'the', 'deadline', 'for', 'this', 'sprint', '.']","['VERB', 'ADP', 'DET', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.,6,53,"['Sounds', 'like', 'a', 'plan', '.', 'We', ""'ll"", 'need', 'to', 'squash', 'any', 'bugs', 'before', 'we', 'hit', 'the', 'deadline', 'for', 'this', 'sprint', '.']","['en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+53,"Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the PR I opened for that feature update?
+Sarah: Yes, I saw it. Looks good overall, but there's a merge conflict with the CSS file.
+Li: Oh man, not another one! Let's resolve it right away before we deploy to staging.
+Sarah: Agreed. I'll take care of the conflict and push the changes. Should be ready in a few minutes.
+Li: Great, thanks. Once the conflict is resolved, we can test the changes on staging and make sure everything is working properly.
+Sarah: Sounds like a plan. We'll need to squash any bugs before we hit the deadline for this sprint.
+Li: Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",7,Li,"['Definitely', ',', 'we', 'ca', ""n't"", 'afford', 'any', 'delays', '.', 'Let', ""'s"", 'stay', 'focused', 'and', 'get', 'this', 'build', 'out', 'on', 'time', '.']","['ADV', 'PUNCT', 'PRON', 'AUX', 'PART', 'VERB', 'DET', 'NOUN', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADJ', 'CCONJ', 'VERB', 'PRON', 'NOUN', 'ADP', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Definitely, we can't afford any delays. Let's stay focused and get this build out on time.",7,53,"['Definitely', ',', 'we', 'ca', ""n't"", 'afford', 'any', 'delays', '.', 'Let', ""'s"", 'stay', 'focused', 'and', 'get', 'this', 'build', 'out', 'on', 'time', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False

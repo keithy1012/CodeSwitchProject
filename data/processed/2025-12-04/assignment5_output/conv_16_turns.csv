@@ -1,0 +1,161 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+16,"Hey Sarah, I noticed a bug in the latest deployment. 有点问题。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed a bug in the latest deployment. 有点问题。
+
+Sarah: Oh no, what seems to be the issue? 怎么回事？
+
+Li: It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。
+
+Sarah: Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？
+
+Li: Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。
+
+Sarah: We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。
+
+Li: Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。
+
+Sarah: Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。",1,Li,"[',', '.', 'Hey', 'Sarah', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'deployment', '有点', '问题', '。']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'n', 'n', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'punct']","Hey Sarah, I noticed a bug in the latest deployment. 有点问题。",1,16,"[',', '.', 'Hey', 'Sarah', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'deployment', '有点', '问题', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'punct']",mix,2,0,True
+16,"Oh no, what seems to be the issue? 怎么回事？",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed a bug in the latest deployment. 有点问题。
+
+Sarah: Oh no, what seems to be the issue? 怎么回事？
+
+Li: It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。
+
+Sarah: Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？
+
+Li: Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。
+
+Sarah: We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。
+
+Li: Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。
+
+Sarah: Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。",2,Sarah,"[',', '?', 'Oh', 'no', 'what', 'seems', 'to', 'be', 'the', 'issue', '怎么回事', '？']","['PUNCT', 'PUNCT', 'INTJ', 'INTJ', 'PRON', 'VERB', 'PART', 'AUX', 'DET', 'NOUN', 'l', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct']","Oh no, what seems to be the issue? 怎么回事？",2,16,"[',', '?', 'Oh', 'no', 'what', 'seems', 'to', 'be', 'the', 'issue', '怎么回事', '？']","['punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct']",mix,0,0,True
+16,It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed a bug in the latest deployment. 有点问题。
+
+Sarah: Oh no, what seems to be the issue? 怎么回事？
+
+Li: It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。
+
+Sarah: Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？
+
+Li: Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。
+
+Sarah: We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。
+
+Li: Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。
+
+Sarah: Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。",3,Li,"[""'"", '.', 'It', 'looks', 'like', 'some', 'files', 'didn', 't', 'merge', 'correctly', 'during', 'the', 'build', 'process', '构建', '过程', '中', '有', '一些', '文件', '没有', '正确', '合并', '。']","['PUNCT', 'PUNCT', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'PROPN', 'NOUN', 'VERB', 'ADV', 'ADP', 'DET', 'NOUN', 'NOUN', 'v', 'n', 'f', 'v', 'm', 'n', 'v', 'ad', 'v', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。,3,16,"[""'"", '.', 'It', 'looks', 'like', 'some', 'files', 'didn', 't', 'merge', 'correctly', 'during', 'the', 'build', 'process', '构建', '过程', '中', '有', '一些', '文件', '没有', '正确', '合并', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,2,0,True
+16,"Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed a bug in the latest deployment. 有点问题。
+
+Sarah: Oh no, what seems to be the issue? 怎么回事？
+
+Li: It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。
+
+Sarah: Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？
+
+Li: Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。
+
+Sarah: We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。
+
+Li: Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。
+
+Sarah: Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。",4,Sarah,"[',', '.', 'Hmm', 'that', 'could', 'explain', 'the', 'unexpected', 'behavior', '我们', '得查', '一下', '。', '?', 'Did', 'you', 'try', 'deploying', 'again', '重新部署', '了', '吗', '？']","['PUNCT', 'PUNCT', 'INTJ', 'PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'r', 'v', 'm', 'PUNCT', 'PUNCT', 'AUX', 'PRON', 'VERB', 'VERB', 'ADV', 'n', 'ul', 'y', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct']","Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？",4,16,"[',', '.', 'Hmm', 'that', 'could', 'explain', 'the', 'unexpected', 'behavior', '我们', '得查', '一下', '。', '?', 'Did', 'you', 'try', 'deploying', 'again', '重新部署', '了', '吗', '？']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+16,"Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed a bug in the latest deployment. 有点问题。
+
+Sarah: Oh no, what seems to be the issue? 怎么回事？
+
+Li: It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。
+
+Sarah: Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？
+
+Li: Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。
+
+Sarah: We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。
+
+Li: Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。
+
+Sarah: Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。",5,Li,"[',', '.', 'Yeah', 'but', 'the', 'bug', 'still', 'persists', '我', '重复', '部署', '了', '一次', '，', '但', '问题', '仍然', '存在', '。']","['PUNCT', 'PUNCT', 'INTJ', 'CCONJ', 'DET', 'NOUN', 'ADV', 'VERB', 'r', 'd', 'n', 'ul', 'm', 'PUNCT', 'c', 'n', 'd', 'v', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']","Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。",5,16,"[',', '.', 'Yeah', 'but', 'the', 'bug', 'still', 'persists', '我', '重复', '部署', '了', '一次', '，', '但', '问题', '仍然', '存在', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,1,0,True
+16,"We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed a bug in the latest deployment. 有点问题。
+
+Sarah: Oh no, what seems to be the issue? 怎么回事？
+
+Li: It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。
+
+Sarah: Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？
+
+Li: Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。
+
+Sarah: We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。
+
+Li: Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。
+
+Sarah: Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。",6,Sarah,"[',', '.', 'We', 'have', 'a', 'deadline', 'coming', 'up', 'so', 'we', 'need', 'to', 'resolve', 'this', 'quickly', '我们', '有', '一个', '截止', '日期', '，', '所以', '我们', '需要', '尽快', '解决', '这个', '问题', '。']","['PUNCT', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'VERB', 'ADP', 'ADV', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'ADV', 'r', 'v', 'm', 'v', 't', 'PUNCT', 'c', 'r', 'v', 'd', 'v', 'r', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。",6,16,"[',', '.', 'We', 'have', 'a', 'deadline', 'coming', 'up', 'so', 'we', 'need', 'to', 'resolve', 'this', 'quickly', '我们', '有', '一个', '截止', '日期', '，', '所以', '我们', '需要', '尽快', '解决', '这个', '问题', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,1,0,True
+16,Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed a bug in the latest deployment. 有点问题。
+
+Sarah: Oh no, what seems to be the issue? 怎么回事？
+
+Li: It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。
+
+Sarah: Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？
+
+Li: Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。
+
+Sarah: We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。
+
+Li: Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。
+
+Sarah: Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。",7,Li,"['.', ""'"", '.', 'Agreed', 'Let', 's', 'go', 'through', 'the', 'code', 'together', 'to', 'pinpoint', 'where', 'the', 'error', 'might', 'be', '我们', '一起', '看看', '代码', '，', '找到', '错误', '可能', '出现', '的', '地方', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'ADV', 'PART', 'VERB', 'SCONJ', 'DET', 'NOUN', 'AUX', 'AUX', 'r', 'm', 'v', 'n', 'PUNCT', 'v', 'n', 'v', 'v', 'uj', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。,7,16,"['.', ""'"", '.', 'Agreed', 'Let', 's', 'go', 'through', 'the', 'code', 'together', 'to', 'pinpoint', 'where', 'the', 'error', 'might', 'be', '我们', '一起', '看看', '代码', '，', '找到', '错误', '可能', '出现', '的', '地方', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,1,0,True
+16,Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed a bug in the latest deployment. 有点问题。
+
+Sarah: Oh no, what seems to be the issue? 怎么回事？
+
+Li: It looks like some files didn't merge correctly during the build process. 构建过程中有一些文件没有正确合并。
+
+Sarah: Hmm, that could explain the unexpected behavior. 我们得查一下。Did you try deploying again? 重新部署了吗？
+
+Li: Yeah, but the bug still persists. 我重复部署了一次，但问题仍然存在。
+
+Sarah: We have a deadline coming up, so we need to resolve this quickly. 我们有一个截止日期，所以我们需要尽快解决这个问题。
+
+Li: Agreed. Let's go through the code together to pinpoint where the error might be. 我们一起看看代码，找到错误可能出现的地方。
+
+Sarah: Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。",8,Sarah,"['.', ""'"", '.', 'Sounds', 'like', 'a', 'plan', 'Let', 's', 'schedule', 'a', 'meeting', 'to', 'discuss', 'this', 'further', '我们', '安排', '个', '会议', '来', '进一步', '讨论', '吧', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'ADP', 'DET', 'NOUN', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'PRON', 'ADV', 'r', 'v', 'q', 'n', 'v', 'd', 'v', 'y', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Sounds like a plan. Let's schedule a meeting to discuss this further. 我们安排个会议来进一步讨论吧。,8,16,"['.', ""'"", '.', 'Sounds', 'like', 'a', 'plan', 'Let', 's', 'schedule', 'a', 'meeting', 'to', 'discuss', 'this', 'further', '我们', '安排', '个', '会议', '来', '进一步', '讨论', '吧', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True

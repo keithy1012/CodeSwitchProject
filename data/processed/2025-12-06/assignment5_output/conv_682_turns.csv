@@ -1,0 +1,161 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+682,"Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。
+
+Sarah: Oh no, what's the issue? 我们还有多长时间才到 deadline？
+
+Li: The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。
+
+Sarah: Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。
+
+Li: Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。
+
+Sarah: Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。
+
+Li: Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。
+
+Sarah: Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",1,Li,"[',', '.', 'Hey', 'Sarah', 'so', 'I', 'found', 'a', 'bug', 'during', 'the', 'deployment', 'last', 'night', '我们', '需要', '解决', '一下', '。']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'ADV', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADJ', 'NOUN', 'r', 'v', 'v', 'm', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']","Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。",1,682,"[',', '.', 'Hey', 'Sarah', 'so', 'I', 'found', 'a', 'bug', 'during', 'the', 'deployment', 'last', 'night', '我们', '需要', '解决', '一下', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.849,0.819,0.816,2,True
+682,"Oh no, what's the issue? 我们还有多长时间才到 deadline？",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。
+
+Sarah: Oh no, what's the issue? 我们还有多长时间才到 deadline？
+
+Li: The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。
+
+Sarah: Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。
+
+Li: Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。
+
+Sarah: Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。
+
+Li: Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。
+
+Sarah: Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",2,Sarah,"[',', ""'"", '?', 'Oh', 'no', 'what', 's', 'the', 'issue', '我们', '还有', '多长时间', '才', '到', '？', 'deadline']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'INTJ', 'PRON', 'VERB', 'DET', 'NOUN', 'r', 'v', 'n', 'd', 'v', 'PUNCT', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['punct', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']","Oh no, what's the issue? 我们还有多长时间才到 deadline？",2,682,"[',', ""'"", '?', 'Oh', 'no', 'what', 's', 'the', 'issue', '我们', '还有', '多长时间', '才', '到', '？', 'deadline']","['punct', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0.834,0.826,0.824,1,True
+682,The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。
+
+Sarah: Oh no, what's the issue? 我们还有多长时间才到 deadline？
+
+Li: The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。
+
+Sarah: Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。
+
+Li: Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。
+
+Sarah: Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。
+
+Li: Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。
+
+Sarah: Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",3,Li,"['.', 'The', 'app', 'crashes', 'when', 'users', 'try', 'to', 'merge', 'accounts', '很', '紧急', '，', '我们', '需要', '尽快', '修复', '。']","['PUNCT', 'DET', 'NOUN', 'VERB', 'SCONJ', 'NOUN', 'VERB', 'PART', 'VERB', 'NOUN', 'zg', 'a', 'PUNCT', 'r', 'v', 'd', 'v', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。,3,682,"['.', 'The', 'app', 'crashes', 'when', 'users', 'try', 'to', 'merge', 'accounts', '很', '紧急', '，', '我们', '需要', '尽快', '修复', '。']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.851,0.822,0.824,1,True
+682,"Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。
+
+Sarah: Oh no, what's the issue? 我们还有多长时间才到 deadline？
+
+Li: The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。
+
+Sarah: Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。
+
+Li: Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。
+
+Sarah: Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。
+
+Li: Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。
+
+Sarah: Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",4,Sarah,"[',', ""'"", '.', 'Ok', 'let', 's', 'investigate', 'the', 'code', 'and', 'see', 'where', 'the', 'bug', 'is', 'coming', 'from', '我们', '可以', '先', 'pull', '下', '最新', '的', 'code', '然后', '重新', 'build', '一次', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'CCONJ', 'VERB', 'SCONJ', 'DET', 'NOUN', 'AUX', 'VERB', 'ADP', 'r', 'c', 'd', 'VERB', 'f', 'd', 'uj', 'NOUN', 'c', 'a', 'VERB', 'm', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'en', 'zh', 'punct']","Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。",4,682,"[',', ""'"", '.', 'Ok', 'let', 's', 'investigate', 'the', 'code', 'and', 'see', 'where', 'the', 'bug', 'is', 'coming', 'from', '我们', '可以', '先', 'pull', '下', '最新', '的', 'code', '然后', '重新', 'build', '一次', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'en', 'zh', 'punct']",mix,0.875,0.837,0.837,5,True
+682,"Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。
+
+Sarah: Oh no, what's the issue? 我们还有多长时间才到 deadline？
+
+Li: The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。
+
+Sarah: Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。
+
+Li: Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。
+
+Sarah: Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。
+
+Li: Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。
+
+Sarah: Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",5,Li,"[',', ""'"", '.', 'Sounds', 'good', 'I', 'll', 'start', 'looking', 'into', 'the', 'codebase', 'now', '你', '可以', '检查一下', '最近', '的', 'merge', 'request', '是不是', '有', '冲突', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'ADJ', 'PRON', 'AUX', 'VERB', 'VERB', 'ADP', 'DET', 'NOUN', 'ADV', 'r', 'c', 'n', 'f', 'uj', 'VERB', 'NOUN', 'l', 'v', 'vn', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'en', 'zh', 'zh', 'zh', 'punct']","Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。",5,682,"[',', ""'"", '.', 'Sounds', 'good', 'I', 'll', 'start', 'looking', 'into', 'the', 'codebase', 'now', '你', '可以', '检查一下', '最近', '的', 'merge', 'request', '是不是', '有', '冲突', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'en', 'zh', 'zh', 'zh', 'punct']",mix,0.866,0.833,0.831,2,True
+682,"Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。
+
+Sarah: Oh no, what's the issue? 我们还有多长时间才到 deadline？
+
+Li: The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。
+
+Sarah: Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。
+
+Li: Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。
+
+Sarah: Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。
+
+Li: Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。
+
+Sarah: Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",6,Sarah,"[',', ""'"", '.', 'Sure', 'I', 'll', 'take', 'a', 'look', 'at', 'the', 'merge', 'requests', 'and', 'see', 'if', 'there', 'are', 'any', 'conflicts', '我们', '要', '确保', '每个', 'branch', '的', '代码', '都', '是', '最新', '的', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'CCONJ', 'VERB', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'r', 'v', 'v', 'r', 'NOUN', 'uj', 'n', 'd', 'v', 'd', 'uj', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。",6,682,"[',', ""'"", '.', 'Sure', 'I', 'll', 'take', 'a', 'look', 'at', 'the', 'merge', 'requests', 'and', 'see', 'if', 'there', 'are', 'any', 'conflicts', '我们', '要', '确保', '每个', 'branch', '的', '代码', '都', '是', '最新', '的', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.854,0.818,0.818,2,True
+682,"Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。
+
+Sarah: Oh no, what's the issue? 我们还有多长时间才到 deadline？
+
+Li: The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。
+
+Sarah: Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。
+
+Li: Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。
+
+Sarah: Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。
+
+Li: Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。
+
+Sarah: Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",7,Li,"[',', ""'"", '.', 'Definitely', 'let', 's', 'make', 'sure', 'everything', 'is', 'up', 'to', 'date', 'before', 'we', 'deploy', 'again', '不然', '再', '出现', 'bug', '我们', '就', '更', '麻烦', '了', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'ADV', 'VERB', 'PRON', 'VERB', 'ADJ', 'PRON', 'AUX', 'ADP', 'ADP', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'ADV', 'c', 'd', 'v', 'NOUN', 'r', 'd', 'd', 'an', 'ul', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。",7,682,"[',', ""'"", '.', 'Definitely', 'let', 's', 'make', 'sure', 'everything', 'is', 'up', 'to', 'date', 'before', 'we', 'deploy', 'again', '不然', '再', '出现', 'bug', '我们', '就', '更', '麻烦', '了', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.853,0.821,0.829,2,True
+682,"Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, so I found a bug during the deployment last night. 我们需要解决一下。
+
+Sarah: Oh no, what's the issue? 我们还有多长时间才到 deadline？
+
+Li: The app crashes when users try to merge accounts. 很紧急，我们需要尽快修复。
+
+Sarah: Ok, let's investigate the code and see where the bug is coming from. 我们可以先 pull 下最新的 code 然后重新 build 一次。
+
+Li: Sounds good, I'll start looking into the codebase now. 你可以检查一下最近的 merge request 是不是有冲突。
+
+Sarah: Sure, I'll take a look at the merge requests and see if there are any conflicts. 我们要确保每个 branch 的代码都是最新的。
+
+Li: Definitely, let's make sure everything is up to date before we deploy again. 不然再出现 bug 我们就更麻烦了。
+
+Sarah: Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",8,Sarah,"[',', ""'"", '.', 'Agreed', 'let', 's', 'work', 'quickly', 'but', 'also', 'carefully', 'to', 'prevent', 'any', 'more', 'issues', '我们', '一定', '要', '在', 'deadline', '前', '解决', '这个', '问题', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PROPN', 'VERB', 'PRON', 'VERB', 'ADV', 'CCONJ', 'ADV', 'ADV', 'PART', 'VERB', 'DET', 'ADJ', 'NOUN', 'r', 'd', 'v', 'p', 'NOUN', 'f', 'v', 'r', 'n', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']","Agreed, let's work quickly but also carefully to prevent any more issues. 我们一定要在 deadline 前解决这个问题。",8,682,"[',', ""'"", '.', 'Agreed', 'let', 's', 'work', 'quickly', 'but', 'also', 'carefully', 'to', 'prevent', 'any', 'more', 'issues', '我们', '一定', '要', '在', 'deadline', '前', '解决', '这个', '问题', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.853,0.832,0.832,1,True

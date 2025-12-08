@@ -1,0 +1,85 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+465,"Good morning, Sarah! How are you feeling about our deadline on Friday?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Good morning, Sarah! How are you feeling about our deadline on Friday? 
+Sarah: Good morning, Li! I'm feeling pretty good about it. I think we just need to make sure all our changes merge smoothly. 
+Li: Agreed. I'll start working on deploying the latest build to our testing environment. 
+Sarah: Sounds good. I'll keep an eye out for any last-minute bugs that might pop up. 
+Li: Great. Let's touch base later today to make sure everything is on track. 
+Sarah: Definitely. I'll be ready to tackle any issues that come up. 
+Li: Perfect. We've got this, Sarah. Just a few more days to go.",1,Li,"['Good', 'morning', ',', 'Sarah', '!', 'How', 'are', 'you', 'feeling', 'about', 'our', 'deadline', 'on', 'Friday', '?']","['ADJ', 'NOUN', 'PUNCT', 'PROPN', 'PUNCT', 'SCONJ', 'AUX', 'PRON', 'VERB', 'ADP', 'PRON', 'NOUN', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Good morning, Sarah! How are you feeling about our deadline on Friday?",1,465,"['Good', 'morning', ',', 'Sarah', '!', 'How', 'are', 'you', 'feeling', 'about', 'our', 'deadline', 'on', 'Friday', '?']","['en', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.786,0.768,0.787,1,False
+465,"Good morning, Li! I'm feeling pretty good about it. I think we just need to make sure all our changes merge smoothly.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Good morning, Sarah! How are you feeling about our deadline on Friday? 
+Sarah: Good morning, Li! I'm feeling pretty good about it. I think we just need to make sure all our changes merge smoothly. 
+Li: Agreed. I'll start working on deploying the latest build to our testing environment. 
+Sarah: Sounds good. I'll keep an eye out for any last-minute bugs that might pop up. 
+Li: Great. Let's touch base later today to make sure everything is on track. 
+Sarah: Definitely. I'll be ready to tackle any issues that come up. 
+Li: Perfect. We've got this, Sarah. Just a few more days to go.",2,Sarah,"['Good', 'morning', ',', 'Li', '!', 'I', ""'m"", 'feeling', 'pretty', 'good', 'about', 'it', '.', 'I', 'think', 'we', 'just', 'need', 'to', 'make', 'sure', 'all', 'our', 'changes', 'merge', 'smoothly', '.']","['ADJ', 'NOUN', 'PUNCT', 'PROPN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADV', 'ADJ', 'ADP', 'PRON', 'PUNCT', 'PRON', 'VERB', 'PRON', 'ADV', 'VERB', 'PART', 'VERB', 'ADJ', 'DET', 'PRON', 'NOUN', 'VERB', 'ADV', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Good morning, Li! I'm feeling pretty good about it. I think we just need to make sure all our changes merge smoothly.",2,465,"['Good', 'morning', ',', 'Li', '!', 'I', ""'m"", 'feeling', 'pretty', 'good', 'about', 'it', '.', 'I', 'think', 'we', 'just', 'need', 'to', 'make', 'sure', 'all', 'our', 'changes', 'merge', 'smoothly', '.']","['en', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.787,0.766,0.786,1,False
+465,Agreed. I'll start working on deploying the latest build to our testing environment.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Good morning, Sarah! How are you feeling about our deadline on Friday? 
+Sarah: Good morning, Li! I'm feeling pretty good about it. I think we just need to make sure all our changes merge smoothly. 
+Li: Agreed. I'll start working on deploying the latest build to our testing environment. 
+Sarah: Sounds good. I'll keep an eye out for any last-minute bugs that might pop up. 
+Li: Great. Let's touch base later today to make sure everything is on track. 
+Sarah: Definitely. I'll be ready to tackle any issues that come up. 
+Li: Perfect. We've got this, Sarah. Just a few more days to go.",3,Li,"['Agreed', '.', 'I', ""'ll"", 'start', 'working', 'on', 'deploying', 'the', 'latest', 'build', 'to', 'our', 'testing', 'environment', '.']","['VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'VERB', 'ADP', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'PRON', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Agreed. I'll start working on deploying the latest build to our testing environment.,3,465,"['Agreed', '.', 'I', ""'ll"", 'start', 'working', 'on', 'deploying', 'the', 'latest', 'build', 'to', 'our', 'testing', 'environment', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.838,0.77,0.777,1,False
+465,Sounds good. I'll keep an eye out for any last-minute bugs that might pop up.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Good morning, Sarah! How are you feeling about our deadline on Friday? 
+Sarah: Good morning, Li! I'm feeling pretty good about it. I think we just need to make sure all our changes merge smoothly. 
+Li: Agreed. I'll start working on deploying the latest build to our testing environment. 
+Sarah: Sounds good. I'll keep an eye out for any last-minute bugs that might pop up. 
+Li: Great. Let's touch base later today to make sure everything is on track. 
+Sarah: Definitely. I'll be ready to tackle any issues that come up. 
+Li: Perfect. We've got this, Sarah. Just a few more days to go.",4,Sarah,"['Sounds', 'good', '.', 'I', ""'ll"", 'keep', 'an', 'eye', 'out', 'for', 'any', 'last', '-', 'minute', 'bugs', 'that', 'might', 'pop', 'up', '.']","['VERB', 'ADJ', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'ADP', 'DET', 'ADJ', 'PUNCT', 'NOUN', 'NOUN', 'PRON', 'AUX', 'VERB', 'ADV', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Sounds good. I'll keep an eye out for any last-minute bugs that might pop up.,4,465,"['Sounds', 'good', '.', 'I', ""'ll"", 'keep', 'an', 'eye', 'out', 'for', 'any', 'last', '-', 'minute', 'bugs', 'that', 'might', 'pop', 'up', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.808,0.773,0.786,0,False
+465,Great. Let's touch base later today to make sure everything is on track.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Good morning, Sarah! How are you feeling about our deadline on Friday? 
+Sarah: Good morning, Li! I'm feeling pretty good about it. I think we just need to make sure all our changes merge smoothly. 
+Li: Agreed. I'll start working on deploying the latest build to our testing environment. 
+Sarah: Sounds good. I'll keep an eye out for any last-minute bugs that might pop up. 
+Li: Great. Let's touch base later today to make sure everything is on track. 
+Sarah: Definitely. I'll be ready to tackle any issues that come up. 
+Li: Perfect. We've got this, Sarah. Just a few more days to go.",5,Li,"['Great', '.', 'Let', ""'s"", 'touch', 'base', 'later', 'today', 'to', 'make', 'sure', 'everything', 'is', 'on', 'track', '.']","['ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'NOUN', 'ADV', 'NOUN', 'PART', 'VERB', 'ADJ', 'PRON', 'AUX', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Great. Let's touch base later today to make sure everything is on track.,5,465,"['Great', '.', 'Let', ""'s"", 'touch', 'base', 'later', 'today', 'to', 'make', 'sure', 'everything', 'is', 'on', 'track', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.814,0.782,0.796,0,False
+465,Definitely. I'll be ready to tackle any issues that come up.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Good morning, Sarah! How are you feeling about our deadline on Friday? 
+Sarah: Good morning, Li! I'm feeling pretty good about it. I think we just need to make sure all our changes merge smoothly. 
+Li: Agreed. I'll start working on deploying the latest build to our testing environment. 
+Sarah: Sounds good. I'll keep an eye out for any last-minute bugs that might pop up. 
+Li: Great. Let's touch base later today to make sure everything is on track. 
+Sarah: Definitely. I'll be ready to tackle any issues that come up. 
+Li: Perfect. We've got this, Sarah. Just a few more days to go.",6,Sarah,"['Definitely', '.', 'I', ""'ll"", 'be', 'ready', 'to', 'tackle', 'any', 'issues', 'that', 'come', 'up', '.']","['ADV', 'PUNCT', 'PRON', 'AUX', 'AUX', 'ADJ', 'PART', 'VERB', 'DET', 'NOUN', 'PRON', 'VERB', 'ADP', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Definitely. I'll be ready to tackle any issues that come up.,6,465,"['Definitely', '.', 'I', ""'ll"", 'be', 'ready', 'to', 'tackle', 'any', 'issues', 'that', 'come', 'up', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.812,0.784,0.783,0,False
+465,"Perfect. We've got this, Sarah. Just a few more days to go.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Good morning, Sarah! How are you feeling about our deadline on Friday? 
+Sarah: Good morning, Li! I'm feeling pretty good about it. I think we just need to make sure all our changes merge smoothly. 
+Li: Agreed. I'll start working on deploying the latest build to our testing environment. 
+Sarah: Sounds good. I'll keep an eye out for any last-minute bugs that might pop up. 
+Li: Great. Let's touch base later today to make sure everything is on track. 
+Sarah: Definitely. I'll be ready to tackle any issues that come up. 
+Li: Perfect. We've got this, Sarah. Just a few more days to go.",7,Li,"['Perfect', '.', 'We', ""'ve"", 'got', 'this', ',', 'Sarah', '.', 'Just', 'a', 'few', 'more', 'days', 'to', 'go', '.']","['ADJ', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'PUNCT', 'PROPN', 'PUNCT', 'ADV', 'DET', 'ADJ', 'ADJ', 'NOUN', 'PART', 'VERB', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Perfect. We've got this, Sarah. Just a few more days to go.",7,465,"['Perfect', '.', 'We', ""'ve"", 'got', 'this', ',', 'Sarah', '.', 'Just', 'a', 'few', 'more', 'days', 'to', 'go', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.798,0.784,0.795,0,False

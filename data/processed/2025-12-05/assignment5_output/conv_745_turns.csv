@@ -1,0 +1,337 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+745,"Hey Sarah, are we all set for the deploy on Friday?",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",1,Li,"['Hey', 'Sarah', ',', 'are', 'we', 'all', 'set', 'for', 'the', 'deploy', 'on', 'Friday', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, are we all set for the deploy on Friday?",1,745,"['Hey', 'Sarah', ',', 'are', 'we', 'all', 'set', 'for', 'the', 'deploy', 'on', 'Friday', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.813,0.771,0.774,1,False
+745,嘿，Sarah，我们周五的部署准备好了吗？,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",2,李,"['嘿', '，', '，', 'Sarah', '我们', '周五', '的', '部署', '准备', '好了吗', '？']","['e', 'PUNCT', 'PUNCT', 'PROPN', 'r', 't', 'uj', 'n', 'v', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",嘿，Sarah，我们周五的部署准备好了吗？,2,745,"['嘿', '，', '，', 'Sarah', '我们', '周五', '的', '部署', '准备', '好了吗', '？']","['zh', 'other', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.844,0.823,0.812,0,True
+745,"I think so, just need to double check the latest build to make sure all bugs are fixed.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",3,Sarah,"['I', 'think', 'so', ',', 'just', 'need', 'to', 'double', 'check', 'the', 'latest', 'build', 'to', 'make', 'sure', 'all', 'bugs', 'are', 'fixed', '.']","['PRON', 'VERB', 'ADV', 'PUNCT', 'ADV', 'VERB', 'PART', 'VERB', 'VERB', 'DET', 'ADJ', 'NOUN', 'PART', 'VERB', 'ADJ', 'DET', 'NOUN', 'AUX', 'VERB', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","I think so, just need to double check the latest build to make sure all bugs are fixed.",3,745,"['I', 'think', 'so', ',', 'just', 'need', 'to', 'double', 'check', 'the', 'latest', 'build', 'to', 'make', 'sure', 'all', 'bugs', 'are', 'fixed', '.']","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.808,0.763,0.785,1,False
+745,我想是的，只需要再检查最新的构建，确保所有的错误都已修复。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",4,Sarah,"['我', '想', '是', '的', '，', '只', '需要', '再', '检查', '最新', '的', '构建', '，', '确保', '所有', '的', '错误', '都', '已', '修复', '。']","['r', 'v', 'v', 'uj', 'PUNCT', 'd', 'v', 'd', 'vn', 'd', 'uj', 'v', 'PUNCT', 'v', 'b', 'uj', 'n', 'd', 'd', 'v', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",我想是的，只需要再检查最新的构建，确保所有的错误都已修复。,4,745,"['我', '想', '是', '的', '，', '只', '需要', '再', '检查', '最新', '的', '构建', '，', '确保', '所有', '的', '错误', '都', '已', '修复', '。']","['zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.87,0.841,0.838,0,False
+745,"Agreed, we can't afford any issues slipping through before the deadline.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",5,Li,"['Agreed', ',', 'we', 'ca', ""n't"", 'afford', 'any', 'issues', 'slipping', 'through', 'before', 'the', 'deadline', '.']","['VERB', 'PUNCT', 'PRON', 'AUX', 'PART', 'VERB', 'DET', 'NOUN', 'VERB', 'ADV', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Agreed, we can't afford any issues slipping through before the deadline.",5,745,"['Agreed', ',', 'we', 'ca', ""n't"", 'afford', 'any', 'issues', 'slipping', 'through', 'before', 'the', 'deadline', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.804,0.77,0.769,1,False
+745,同意，我们不能在最后期限之前出现任何问题。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",6,李,"['同意', '，', '我们', '不能', '在', '最后', '期限', '之前', '出现', '任何', '问题', '。']","['d', 'PUNCT', 'r', 'v', 'p', 'f', 'n', 'f', 'v', 'r', 'n', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",同意，我们不能在最后期限之前出现任何问题。,6,745,"['同意', '，', '我们', '不能', '在', '最后', '期限', '之前', '出现', '任何', '问题', '。']","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.852,0.844,0.843,0,False
+745,I'll do one last merge of the code branches today to ensure everything is in sync.,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",7,Sarah,"['I', ""'ll"", 'do', 'one', 'last', 'merge', 'of', 'the', 'code', 'branches', 'today', 'to', 'ensure', 'everything', 'is', 'in', 'sync', '.']","['PRON', 'AUX', 'VERB', 'NUM', 'ADJ', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'NOUN', 'PART', 'VERB', 'PRON', 'AUX', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",I'll do one last merge of the code branches today to ensure everything is in sync.,7,745,"['I', ""'ll"", 'do', 'one', 'last', 'merge', 'of', 'the', 'code', 'branches', 'today', 'to', 'ensure', 'everything', 'is', 'in', 'sync', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.796,0.752,0.774,2,False
+745,我今天会最后合并一次代码分支，确保所有内容同步。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",8,Sarah,"['我', '今天', '会', '最后', '合并', '一次', '代码', '分支', '，', '确保', '所有', '内容', '同步', '。']","['r', 't', 'v', 'f', 'v', 'm', 'n', 'n', 'PUNCT', 'v', 'b', 'n', 'd', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",我今天会最后合并一次代码分支，确保所有内容同步。,8,745,"['我', '今天', '会', '最后', '合并', '一次', '代码', '分支', '，', '确保', '所有', '内容', '同步', '。']","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.871,0.835,0.838,0,False
+745,"Perfect, let's also make sure the QA team gives us the green light before the deploy.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",9,Li,"['Perfect', ',', 'let', ""'s"", 'also', 'make', 'sure', 'the', 'QA', 'team', 'gives', 'us', 'the', 'green', 'light', 'before', 'the', 'deploy', '.']","['ADJ', 'PUNCT', 'VERB', 'PRON', 'ADV', 'VERB', 'ADJ', 'DET', 'PROPN', 'NOUN', 'VERB', 'PRON', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Perfect, let's also make sure the QA team gives us the green light before the deploy.",9,745,"['Perfect', ',', 'let', ""'s"", 'also', 'make', 'sure', 'the', 'QA', 'team', 'gives', 'us', 'the', 'green', 'light', 'before', 'the', 'deploy', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.826,0.764,0.783,2,False
+745,太好了，让我们确保在部署之前质量保证团队通过。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",10,李,"['太好了', '，', '让', '我们', '确保', '在', '部署', '之前', '质量保证', '团队', '通过', '。']","['l', 'PUNCT', 'v', 'r', 'v', 'p', 'n', 'f', 'n', 'n', 'p', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",太好了，让我们确保在部署之前质量保证团队通过。,10,745,"['太好了', '，', '让', '我们', '确保', '在', '部署', '之前', '质量保证', '团队', '通过', '。']","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.862,0.837,0.83,0,False
+745,"Definitely, we want a smooth rollout with no surprises.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",11,Sarah,"['Definitely', ',', 'we', 'want', 'a', 'smooth', 'rollout', 'with', 'no', 'surprises', '.']","['ADV', 'PUNCT', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Definitely, we want a smooth rollout with no surprises.",11,745,"['Definitely', ',', 'we', 'want', 'a', 'smooth', 'rollout', 'with', 'no', 'surprises', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.801,0.771,0.796,0,False
+745,当然，我们希望顺利部署，没有任何意外。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",12,Sarah,"['当然', '，', '我们', '希望', '顺利', '部署', '，', '没有', '任何', '意外', '。']","['d', 'PUNCT', 'r', 'v', 'ad', 'n', 'PUNCT', 'v', 'r', 'a', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",当然，我们希望顺利部署，没有任何意外。,12,745,"['当然', '，', '我们', '希望', '顺利', '部署', '，', '没有', '任何', '意外', '。']","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",zh,0.85,0.822,0.836,0,False
+745,"Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",13,Li,"['Great', ',', 'thanks', 'for', 'double', '-', 'checking', 'everything', ',', 'Sarah', '.', 'I', ""'ll"", 'be', 'on', 'standby', 'on', 'Friday', 'just', 'in', 'case', '.']","['ADJ', 'PUNCT', 'NOUN', 'ADP', 'ADV', 'PUNCT', 'VERB', 'PRON', 'PUNCT', 'PROPN', 'PUNCT', 'PRON', 'AUX', 'AUX', 'ADP', 'NOUN', 'ADP', 'PROPN', 'ADV', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'en', 'other', 'en', 'en', 'punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.",13,745,"['Great', ',', 'thanks', 'for', 'double', '-', 'checking', 'everything', ',', 'Sarah', '.', 'I', ""'ll"", 'be', 'on', 'standby', 'on', 'Friday', 'just', 'in', 'case', '.']","['en', 'punct', 'en', 'en', 'en', 'other', 'en', 'en', 'punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.79,0.767,0.785,0,False
+745,太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are we all set for the deploy on Friday?
+李：嘿，Sarah，我们周五的部署准备好了吗？
+
+Sarah: I think so, just need to double check the latest build to make sure all bugs are fixed.
+Sarah：我想是的，只需要再检查最新的构建，确保所有的错误都已修复。
+
+Li: Agreed, we can't afford any issues slipping through before the deadline.
+李：同意，我们不能在最后期限之前出现任何问题。
+
+Sarah: I'll do one last merge of the code branches today to ensure everything is in sync.
+Sarah：我今天会最后合并一次代码分支，确保所有内容同步。
+
+Li: Perfect, let's also make sure the QA team gives us the green light before the deploy.
+李：太好了，让我们确保在部署之前质量保证团队通过。
+
+Sarah: Definitely, we want a smooth rollout with no surprises.
+Sarah：当然，我们希望顺利部署，没有任何意外。
+
+Li: Great, thanks for double-checking everything, Sarah. I'll be on standby on Friday just in case.
+李：太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。",14,李,"['太好了', '，', '感谢', '你', '再次', '检查', '所有', '内容', '，', '。', 'Sarah', '周五', '时', '我会', '准备', '好', '待命', '。']","['l', 'PUNCT', 'v', 'r', 'd', 'vn', 'b', 'n', 'PUNCT', 'PUNCT', 'PROPN', 't', 'n', 'n', 'v', 'a', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",太好了，感谢你再次检查所有内容，Sarah。周五时我会准备好待命。,14,745,"['太好了', '，', '感谢', '你', '再次', '检查', '所有', '内容', '，', '。', 'Sarah', '周五', '时', '我会', '准备', '好', '待命', '。']","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.849,0.84,0.84,0,True

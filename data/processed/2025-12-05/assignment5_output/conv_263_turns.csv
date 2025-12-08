@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+263,"** Hey Sarah, 我刚刚发现一个 bug 在我们的 latest deployment.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hey Sarah, 我刚刚发现一个 bug 在我们的 latest deployment. 
+
+**Sarah:** Oh no, what’s the issue? 我需要知道具体的细节才能帮忙。
+
+**Li:** 主要是 build fail 了, 我怀疑是由于最近的 merge 造成的. 
+
+**Sarah:** Got it. 你在哪里看到了错误信息? 我看看能不能复现。
+
+**Li:** 在 CI logs, 看到一个关于依赖的错误. 真的希望在我们的 deadline 前能解决这个问题. 
+
+**Sarah:** Same here. Let’s debug it together. 你觉得我们可以先从依赖入手吗?
+
+**Li:** 对，没问题！把日志发给你，看看能不能找到解决方案。",1,**Li,"['*', '*', ',', 'Hey', 'Sarah', '我', '刚刚', '发现', '一个', 'bug', '在', '我们', '的', '.', 'latest', 'deployment']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'r', 'd', 'v', 'm', 'NOUN', 'p', 'r', 'uj', 'PUNCT', 'ADJ', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'en', 'en']","** Hey Sarah, 我刚刚发现一个 bug 在我们的 latest deployment.",1,263,"['*', '*', ',', 'Hey', 'Sarah', '我', '刚刚', '发现', '一个', 'bug', '在', '我们', '的', '.', 'latest', 'deployment']","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'en', 'en']",mix,0.825,0.797,0.804,2,True
+263,"** Oh no, what’s the issue? 我需要知道具体的细节才能帮忙。",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hey Sarah, 我刚刚发现一个 bug 在我们的 latest deployment. 
+
+**Sarah:** Oh no, what’s the issue? 我需要知道具体的细节才能帮忙。
+
+**Li:** 主要是 build fail 了, 我怀疑是由于最近的 merge 造成的. 
+
+**Sarah:** Got it. 你在哪里看到了错误信息? 我看看能不能复现。
+
+**Li:** 在 CI logs, 看到一个关于依赖的错误. 真的希望在我们的 deadline 前能解决这个问题. 
+
+**Sarah:** Same here. Let’s debug it together. 你觉得我们可以先从依赖入手吗?
+
+**Li:** 对，没问题！把日志发给你，看看能不能找到解决方案。",2,**Sarah,"['*', '*', ',', '’', '?', 'Oh', 'no', 'what', 's', 'the', 'issue', '我', '需要', '知道', '具体', '的', '细节', '才能', '帮忙', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'INTJ', 'PRON', 'VERB', 'DET', 'NOUN', 'r', 'v', 'v', 'a', 'uj', 'n', 'v', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","** Oh no, what’s the issue? 我需要知道具体的细节才能帮忙。",2,263,"['*', '*', ',', '’', '?', 'Oh', 'no', 'what', 's', 'the', 'issue', '我', '需要', '知道', '具体', '的', '细节', '才能', '帮忙', '。']","['other', 'other', 'punct', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.849,0.836,0.847,0,True
+263,"** 主要是 build fail 了, 我怀疑是由于最近的 merge 造成的.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hey Sarah, 我刚刚发现一个 bug 在我们的 latest deployment. 
+
+**Sarah:** Oh no, what’s the issue? 我需要知道具体的细节才能帮忙。
+
+**Li:** 主要是 build fail 了, 我怀疑是由于最近的 merge 造成的. 
+
+**Sarah:** Got it. 你在哪里看到了错误信息? 我看看能不能复现。
+
+**Li:** 在 CI logs, 看到一个关于依赖的错误. 真的希望在我们的 deadline 前能解决这个问题. 
+
+**Sarah:** Same here. Let’s debug it together. 你觉得我们可以先从依赖入手吗?
+
+**Li:** 对，没问题！把日志发给你，看看能不能找到解决方案。",3,**Li,"['*', '*', '主要', '是', 'build', 'fail', '了', ',', '我', '怀疑', '是', '由于', '最近', '的', 'merge', '造成', '的', '.']","['PUNCT', 'PUNCT', 'b', 'v', 'VERB', 'NOUN', 'ul', 'PUNCT', 'r', 'v', 'v', 'c', 'f', 'uj', 'VERB', 'v', 'uj', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'en', 'en', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']","** 主要是 build fail 了, 我怀疑是由于最近的 merge 造成的.",3,263,"['*', '*', '主要', '是', 'build', 'fail', '了', ',', '我', '怀疑', '是', '由于', '最近', '的', 'merge', '造成', '的', '.']","['other', 'other', 'zh', 'zh', 'en', 'en', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",mix,0.846,0.819,0.812,2,True
+263,** Got it. 你在哪里看到了错误信息? 我看看能不能复现。,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hey Sarah, 我刚刚发现一个 bug 在我们的 latest deployment. 
+
+**Sarah:** Oh no, what’s the issue? 我需要知道具体的细节才能帮忙。
+
+**Li:** 主要是 build fail 了, 我怀疑是由于最近的 merge 造成的. 
+
+**Sarah:** Got it. 你在哪里看到了错误信息? 我看看能不能复现。
+
+**Li:** 在 CI logs, 看到一个关于依赖的错误. 真的希望在我们的 deadline 前能解决这个问题. 
+
+**Sarah:** Same here. Let’s debug it together. 你觉得我们可以先从依赖入手吗?
+
+**Li:** 对，没问题！把日志发给你，看看能不能找到解决方案。",4,**Sarah,"['*', '*', '.', 'Got', 'it', '你', '在', '哪里', '看到', '了', '错误信息', '?', '我', '看看', '能', '不能', '复现', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'r', 'p', 'r', 'v', 'ul', 'i', 'PUNCT', 'r', 'v', 'v', 'v', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** Got it. 你在哪里看到了错误信息? 我看看能不能复现。,4,263,"['*', '*', '.', 'Got', 'it', '你', '在', '哪里', '看到', '了', '错误信息', '?', '我', '看看', '能', '不能', '复现', '。']","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.85,0.834,0.845,0,True
+263,"** 在 CI logs, 看到一个关于依赖的错误. 真的希望在我们的 deadline 前能解决这个问题.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hey Sarah, 我刚刚发现一个 bug 在我们的 latest deployment. 
+
+**Sarah:** Oh no, what’s the issue? 我需要知道具体的细节才能帮忙。
+
+**Li:** 主要是 build fail 了, 我怀疑是由于最近的 merge 造成的. 
+
+**Sarah:** Got it. 你在哪里看到了错误信息? 我看看能不能复现。
+
+**Li:** 在 CI logs, 看到一个关于依赖的错误. 真的希望在我们的 deadline 前能解决这个问题. 
+
+**Sarah:** Same here. Let’s debug it together. 你觉得我们可以先从依赖入手吗?
+
+**Li:** 对，没问题！把日志发给你，看看能不能找到解决方案。",5,**Li,"['*', '*', '在', ',', 'CI', 'logs', '看到', '一个', '关于', '依赖', '的', '错误', '.', '真的', '希望', '在', '我们', '的', 'deadline', '前能', '解决', '这个', '问题', '.']","['PUNCT', 'PUNCT', 'p', 'PUNCT', 'PROPN', 'NOUN', 'v', 'm', 'p', 'v', 'uj', 'n', 'PUNCT', 'd', 'v', 'p', 'r', 'uj', 'NOUN', 'v', 'v', 'r', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']","** 在 CI logs, 看到一个关于依赖的错误. 真的希望在我们的 deadline 前能解决这个问题.",5,263,"['*', '*', '在', ',', 'CI', 'logs', '看到', '一个', '关于', '依赖', '的', '错误', '.', '真的', '希望', '在', '我们', '的', 'deadline', '前能', '解决', '这个', '问题', '.']","['other', 'other', 'zh', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.843,0.826,0.818,2,True
+263,** Same here. Let’s debug it together. 你觉得我们可以先从依赖入手吗?,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hey Sarah, 我刚刚发现一个 bug 在我们的 latest deployment. 
+
+**Sarah:** Oh no, what’s the issue? 我需要知道具体的细节才能帮忙。
+
+**Li:** 主要是 build fail 了, 我怀疑是由于最近的 merge 造成的. 
+
+**Sarah:** Got it. 你在哪里看到了错误信息? 我看看能不能复现。
+
+**Li:** 在 CI logs, 看到一个关于依赖的错误. 真的希望在我们的 deadline 前能解决这个问题. 
+
+**Sarah:** Same here. Let’s debug it together. 你觉得我们可以先从依赖入手吗?
+
+**Li:** 对，没问题！把日志发给你，看看能不能找到解决方案。",6,**Sarah,"['*', '*', '.', '’', '.', 'Same', 'here', 'Let', 's', 'debug', 'it', 'together', '你', '觉得', '我们', '可以', '先', '从', '依赖', '入手', '吗', '?']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'ADJ', 'ADV', 'VERB', 'PRON', 'VERB', 'PRON', 'ADV', 'r', 'v', 'r', 'c', 'd', 'p', 'v', 'v', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other']",** Same here. Let’s debug it together. 你觉得我们可以先从依赖入手吗?,6,263,"['*', '*', '.', '’', '.', 'Same', 'here', 'Let', 's', 'debug', 'it', 'together', '你', '觉得', '我们', '可以', '先', '从', '依赖', '入手', '吗', '?']","['other', 'other', 'punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other']",mix,0.856,0.836,0.829,1,True
+263,** 对，没问题！把日志发给你，看看能不能找到解决方案。,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hey Sarah, 我刚刚发现一个 bug 在我们的 latest deployment. 
+
+**Sarah:** Oh no, what’s the issue? 我需要知道具体的细节才能帮忙。
+
+**Li:** 主要是 build fail 了, 我怀疑是由于最近的 merge 造成的. 
+
+**Sarah:** Got it. 你在哪里看到了错误信息? 我看看能不能复现。
+
+**Li:** 在 CI logs, 看到一个关于依赖的错误. 真的希望在我们的 deadline 前能解决这个问题. 
+
+**Sarah:** Same here. Let’s debug it together. 你觉得我们可以先从依赖入手吗?
+
+**Li:** 对，没问题！把日志发给你，看看能不能找到解决方案。",7,**Li,"['*', '*', '对', '，', '没', '问题', '！', '把', '日志', '发给你', '，', '看看', '能', '不能', '找到', '解决方案', '。']","['PUNCT', 'PUNCT', 'p', 'PUNCT', 'v', 'n', 'PUNCT', 'p', 'ns', 'l', 'PUNCT', 'v', 'v', 'v', 'v', 'n', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'other', 'zh', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 对，没问题！把日志发给你，看看能不能找到解决方案。,7,263,"['*', '*', '对', '，', '没', '问题', '！', '把', '日志', '发给你', '，', '看看', '能', '不能', '找到', '解决方案', '。']","['other', 'other', 'zh', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.861,0.847,0.842,0,False

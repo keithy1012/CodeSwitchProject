@@ -1,0 +1,253 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+310,"Hey Sarah, are you ready for the deploy on Friday?",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",1,Li,"['Hey', 'Sarah', ',', 'are', 'you', 'ready', 'for', 'the', 'deploy', 'on', 'Friday', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'ADJ', 'ADP', 'DET', 'NOUN', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, are you ready for the deploy on Friday?",1,310,"['Hey', 'Sarah', ',', 'are', 'you', 'ready', 'for', 'the', 'deploy', 'on', 'Friday', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.808,0.768,0.773,1,False
+310,嘿，Sarah，你准备好星期五的部署了吗？,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",2,李,"['嘿', '，', '，', 'Sarah', '你', '准备', '好', '星期五', '的', '部署', '了', '吗', '？']","['e', 'PUNCT', 'PUNCT', 'PROPN', 'r', 'v', 'a', 't', 'uj', 'n', 'ul', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",嘿，Sarah，你准备好星期五的部署了吗？,2,310,"['嘿', '，', '，', 'Sarah', '你', '准备', '好', '星期五', '的', '部署', '了', '吗', '？']","['zh', 'other', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.841,0.823,0.813,0,True
+310,"Hi Li, I think so. We just need to do one last build and then merge the code.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",3,Sarah,"['Hi', 'Li', ',', 'I', 'think', 'so', '.', 'We', 'just', 'need', 'to', 'do', 'one', 'last', 'build', 'and', 'then', 'merge', 'the', 'code', '.']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'VERB', 'ADV', 'PUNCT', 'PRON', 'ADV', 'VERB', 'PART', 'VERB', 'NUM', 'ADJ', 'NOUN', 'CCONJ', 'ADV', 'VERB', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hi Li, I think so. We just need to do one last build and then merge the code.",3,310,"['Hi', 'Li', ',', 'I', 'think', 'so', '.', 'We', 'just', 'need', 'to', 'do', 'one', 'last', 'build', 'and', 'then', 'merge', 'the', 'code', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.806,0.76,0.769,3,False
+310,嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",4,莎拉,"['嗨', '，', 'Li', '我', '想', '是', '的', '。', '我们', '只', '需要', '做', '最后', '一次', '构建', '，', '然后', '合并', '代码', '。']","['e', 'PUNCT', 'PROPN', 'r', 'v', 'v', 'uj', 'PUNCT', 'r', 'd', 'v', 'v', 'f', 'm', 'v', 'PUNCT', 'c', 'v', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。,4,310,"['嗨', '，', 'Li', '我', '想', '是', '的', '。', '我们', '只', '需要', '做', '最后', '一次', '构建', '，', '然后', '合并', '代码', '。']","['zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",mix,0.868,0.831,0.835,0,True
+310,I noticed a bug in the latest build. Do you think we can fix it before the deadline?,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",5,Li,"['I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'build', '.', 'Do', 'you', 'think', 'we', 'can', 'fix', 'it', 'before', 'the', 'deadline', '?']","['PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'PRON', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",I noticed a bug in the latest build. Do you think we can fix it before the deadline?,5,310,"['I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'build', '.', 'Do', 'you', 'think', 'we', 'can', 'fix', 'it', 'before', 'the', 'deadline', '?']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.798,0.758,0.782,3,False
+310,我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",6,李,"['我', '注意', '到', '了', '最新', '构建', '中', '的', '一个', '。', 'bug', '你', '觉得', '我们', '能', '在', '截止', '日期', '前', '修复', '吗', '？']","['r', 'v', 'v', 'ul', 'd', 'v', 'f', 'uj', 'm', 'PUNCT', 'NOUN', 'r', 'v', 'r', 'v', 'p', 'v', 't', 'f', 'v', 'y', 'PUNCT']","{'en', 'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？,6,310,"['我', '注意', '到', '了', '最新', '构建', '中', '的', '一个', '。', 'bug', '你', '觉得', '我们', '能', '在', '截止', '日期', '前', '修复', '吗', '？']","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.864,0.838,0.835,0,True
+310,"Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",7,Sarah,"['Let', 'me', 'take', 'a', 'look', 'at', 'the', 'bug', '.', 'If', 'it', ""'s"", 'a', 'quick', 'fix', ',', 'we', 'can', 'definitely', 'make', 'it', 'in', 'time', '.']","['VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT', 'SCONJ', 'PRON', 'AUX', 'DET', 'ADJ', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'ADV', 'VERB', 'PRON', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.",7,310,"['Let', 'me', 'take', 'a', 'look', 'at', 'the', 'bug', '.', 'If', 'it', ""'s"", 'a', 'quick', 'fix', ',', 'we', 'can', 'definitely', 'make', 'it', 'in', 'time', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.813,0.775,0.792,1,False
+310,让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",8,莎拉,"['让', '我', '看看', '这个', '。', 'bug', '如果', '是', '一个', '快速', '修复', '，', '我们', '肯定', '能', '在', '时间', '内', '完成', '。']","['v', 'r', 'v', 'r', 'PUNCT', 'NOUN', 'c', 'v', 'm', 'd', 'v', 'PUNCT', 'r', 'v', 'v', 'p', 'n', 'n', 'v', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['zh', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。,8,310,"['让', '我', '看看', '这个', '。', 'bug', '如果', '是', '一个', '快速', '修复', '，', '我们', '肯定', '能', '在', '时间', '内', '完成', '。']","['zh', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.867,0.843,0.85,0,True
+310,"Great, I'll start working on merging the code then. Let me know if you need any help with the bug.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",9,Li,"['Great', ',', 'I', ""'ll"", 'start', 'working', 'on', 'merging', 'the', 'code', 'then', '.', 'Let', 'me', 'know', 'if', 'you', 'need', 'any', 'help', 'with', 'the', 'bug', '.']","['ADJ', 'PUNCT', 'PRON', 'AUX', 'VERB', 'VERB', 'ADP', 'VERB', 'DET', 'NOUN', 'ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, I'll start working on merging the code then. Let me know if you need any help with the bug.",9,310,"['Great', ',', 'I', ""'ll"", 'start', 'working', 'on', 'merging', 'the', 'code', 'then', '.', 'Let', 'me', 'know', 'if', 'you', 'need', 'any', 'help', 'with', 'the', 'bug', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.814,0.761,0.786,2,False
+310,太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",10,李,"['太好了', '，', '我会', '开始', '合并', '代码', '。', '如果', '你', '在', 'bug', '方面', '需要', '帮助', '，', '请', '告诉', '我', '。']","['l', 'PUNCT', 'n', 'v', 'v', 'n', 'PUNCT', 'c', 'r', 'p', 'NOUN', 'n', 'v', 'v', 'PUNCT', 'v', 'v', 'r', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。,10,310,"['太好了', '，', '我会', '开始', '合并', '代码', '。', '如果', '你', '在', 'bug', '方面', '需要', '帮助', '，', '请', '告诉', '我', '。']","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",mix,0.866,0.831,0.838,0,True
+310,Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",11,Sarah,"['Sounds', 'good', '.', 'I', ""'ll"", 'let', 'you', 'know', 'if', 'I', 'run', 'into', 'any', 'issues', '.', 'Thanks', 'for', 'offering', 'to', 'help', '!']","['VERB', 'ADJ', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT', 'NOUN', 'ADP', 'VERB', 'PART', 'VERB', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other']",Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!,11,310,"['Sounds', 'good', '.', 'I', ""'ll"", 'let', 'you', 'know', 'if', 'I', 'run', 'into', 'any', 'issues', '.', 'Thanks', 'for', 'offering', 'to', 'help', '!']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.803,0.777,0.78,0,False
+310,好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the deploy on Friday?
+李：嘿，Sarah，你准备好星期五的部署了吗？
+
+Sarah: Hi Li, I think so. We just need to do one last build and then merge the code.
+莎拉：嗨Li，我想是的。我们只需要做最后一次构建，然后合并代码。
+
+Li: I noticed a bug in the latest build. Do you think we can fix it before the deadline?
+李：我注意到了最新构建中的一个bug。你觉得我们能在截止日期前修复吗？
+
+Sarah: Let me take a look at the bug. If it's a quick fix, we can definitely make it in time.
+莎拉：让我看看这个bug。如果是一个快速修复，我们肯定能在时间内完成。
+
+Li: Great, I'll start working on merging the code then. Let me know if you need any help with the bug.
+李：太好了，我会开始合并代码。如果你在bug方面需要帮助，请告诉我。
+
+Sarah: Sounds good. I'll let you know if I run into any issues. Thanks for offering to help!
+莎拉：好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！",12,莎拉,"['好', '的', '。', '如果', '我', '遇到', '任何', '问题', '，', '我会', '告诉', '你', '的', '。', '谢谢', '你', '愿意', '帮助', '！']","['a', 'uj', 'PUNCT', 'c', 'r', 'v', 'r', 'n', 'PUNCT', 'n', 'v', 'r', 'uj', 'PUNCT', 'nr', 'r', 'v', 'v', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'other']",好的。如果我遇到任何问题，我会告诉你的。谢谢你愿意帮助！,12,310,"['好', '的', '。', '如果', '我', '遇到', '任何', '问题', '，', '我会', '告诉', '你', '的', '。', '谢谢', '你', '愿意', '帮助', '！']","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'other']",zh,0.856,0.835,0.841,0,False

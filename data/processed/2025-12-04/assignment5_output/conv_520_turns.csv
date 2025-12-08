@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+520,"Hey Sarah, 我们有个新的部署 bug。Looks like the last merge broke something.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 我们有个新的部署 bug。Looks like the last merge broke something. 
+
+Sarah: Ah, 我也注意到了! What’s the error message you're seeing?
+
+Li: It says there’s a missing dependency in the build. 我觉得可能是版本不对。 
+
+Sarah: 明白了. Can you check if we have the correct package version in the config?
+
+Li: I’ll do that now. 如果没问题, 我们可以在今天之前解决吗? The deadline is coming up.
+
+Sarah: Sure! Let’s aim for it. 如果我们能把这个 bug 修复了, 我们就能顺利 deploy 了。 
+
+Li: Perfect! 我立刻检查一下，然后再跟你更新。",1,Li,"[',', 'Hey', 'Sarah', '我们', '有个', '新', '的', '部署', '。', '.', 'bug', 'Looks', 'like', 'the', 'last', 'merge', 'broke', 'something']","['PUNCT', 'INTJ', 'PROPN', 'r', 'r', 'a', 'uj', 'n', 'PUNCT', 'PUNCT', 'NOUN', 'VERB', 'SCONJ', 'DET', 'ADJ', 'NOUN', 'VERB', 'PRON']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Hey Sarah, 我们有个新的部署 bug。Looks like the last merge broke something.",1,520,"[',', 'Hey', 'Sarah', '我们', '有个', '新', '的', '部署', '。', '.', 'bug', 'Looks', 'like', 'the', 'last', 'merge', 'broke', 'something']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True
+520,"Ah, 我也注意到了! What’s the error message you're seeing?",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 我们有个新的部署 bug。Looks like the last merge broke something. 
+
+Sarah: Ah, 我也注意到了! What’s the error message you're seeing?
+
+Li: It says there’s a missing dependency in the build. 我觉得可能是版本不对。 
+
+Sarah: 明白了. Can you check if we have the correct package version in the config?
+
+Li: I’ll do that now. 如果没问题, 我们可以在今天之前解决吗? The deadline is coming up.
+
+Sarah: Sure! Let’s aim for it. 如果我们能把这个 bug 修复了, 我们就能顺利 deploy 了。 
+
+Li: Perfect! 我立刻检查一下，然后再跟你更新。",2,Sarah,"[',', 'Ah', '我', '也', '注意', '到', '了', '!', '’', ""'"", '?', 'What', 's', 'the', 'error', 'message', 'you', 're', 'seeing']","['PUNCT', 'INTJ', 'r', 'd', 'v', 'v', 'ul', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'PRON', 'ADP', 'VERB']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Ah, 我也注意到了! What’s the error message you're seeing?",2,520,"[',', 'Ah', '我', '也', '注意', '到', '了', '!', '’', ""'"", '?', 'What', 's', 'the', 'error', 'message', 'you', 're', 'seeing']","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0,0,True
+520,It says there’s a missing dependency in the build. 我觉得可能是版本不对。,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 我们有个新的部署 bug。Looks like the last merge broke something. 
+
+Sarah: Ah, 我也注意到了! What’s the error message you're seeing?
+
+Li: It says there’s a missing dependency in the build. 我觉得可能是版本不对。 
+
+Sarah: 明白了. Can you check if we have the correct package version in the config?
+
+Li: I’ll do that now. 如果没问题, 我们可以在今天之前解决吗? The deadline is coming up.
+
+Sarah: Sure! Let’s aim for it. 如果我们能把这个 bug 修复了, 我们就能顺利 deploy 了。 
+
+Li: Perfect! 我立刻检查一下，然后再跟你更新。",3,Li,"['’', '.', 'It', 'says', 'there', 's', 'a', 'missing', 'dependency', 'in', 'the', 'build', '我', '觉得', '可能', '是', '版本', '不', '对', '。']","['PUNCT', 'PUNCT', 'PRON', 'VERB', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'NOUN', 'r', 'v', 'v', 'v', 'n', 'd', 'p', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",It says there’s a missing dependency in the build. 我觉得可能是版本不对。,3,520,"['’', '.', 'It', 'says', 'there', 's', 'a', 'missing', 'dependency', 'in', 'the', 'build', '我', '觉得', '可能', '是', '版本', '不', '对', '。']","['other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,2,0,True
+520,明白了. Can you check if we have the correct package version in the config?,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 我们有个新的部署 bug。Looks like the last merge broke something. 
+
+Sarah: Ah, 我也注意到了! What’s the error message you're seeing?
+
+Li: It says there’s a missing dependency in the build. 我觉得可能是版本不对。 
+
+Sarah: 明白了. Can you check if we have the correct package version in the config?
+
+Li: I’ll do that now. 如果没问题, 我们可以在今天之前解决吗? The deadline is coming up.
+
+Sarah: Sure! Let’s aim for it. 如果我们能把这个 bug 修复了, 我们就能顺利 deploy 了。 
+
+Li: Perfect! 我立刻检查一下，然后再跟你更新。",4,Sarah,"['明白', '了', '.', '?', 'Can', 'you', 'check', 'if', 'we', 'have', 'the', 'correct', 'package', 'version', 'in', 'the', 'config']","['nr', 'ul', 'PUNCT', 'PUNCT', 'AUX', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'NOUN', 'ADP', 'DET', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",明白了. Can you check if we have the correct package version in the config?,4,520,"['明白', '了', '.', '?', 'Can', 'you', 'check', 'if', 'we', 'have', 'the', 'correct', 'package', 'version', 'in', 'the', 'config']","['zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True
+520,"I’ll do that now. 如果没问题, 我们可以在今天之前解决吗? The deadline is coming up.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 我们有个新的部署 bug。Looks like the last merge broke something. 
+
+Sarah: Ah, 我也注意到了! What’s the error message you're seeing?
+
+Li: It says there’s a missing dependency in the build. 我觉得可能是版本不对。 
+
+Sarah: 明白了. Can you check if we have the correct package version in the config?
+
+Li: I’ll do that now. 如果没问题, 我们可以在今天之前解决吗? The deadline is coming up.
+
+Sarah: Sure! Let’s aim for it. 如果我们能把这个 bug 修复了, 我们就能顺利 deploy 了。 
+
+Li: Perfect! 我立刻检查一下，然后再跟你更新。",5,Li,"['’', '.', 'I', 'll', 'do', 'that', 'now', '如果', '没', '问题', ',', '我们', '可以', '在', '今天', '之前', '解决', '吗', '?', '.', 'The', 'deadline', 'is', 'coming', 'up']","['PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'ADV', 'c', 'v', 'n', 'PUNCT', 'r', 'c', 'p', 't', 'f', 'v', 'y', 'PUNCT', 'PUNCT', 'DET', 'NOUN', 'AUX', 'VERB', 'ADP']","{'other', 'en', 'zh', 'punct'}","['other', 'punct', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'punct', 'en', 'en', 'en', 'en', 'en']","I’ll do that now. 如果没问题, 我们可以在今天之前解决吗? The deadline is coming up.",5,520,"['’', '.', 'I', 'll', 'do', 'that', 'now', '如果', '没', '问题', ',', '我们', '可以', '在', '今天', '之前', '解决', '吗', '?', '.', 'The', 'deadline', 'is', 'coming', 'up']","['other', 'punct', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'punct', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True
+520,"Sure! Let’s aim for it. 如果我们能把这个 bug 修复了, 我们就能顺利 deploy 了。",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 我们有个新的部署 bug。Looks like the last merge broke something. 
+
+Sarah: Ah, 我也注意到了! What’s the error message you're seeing?
+
+Li: It says there’s a missing dependency in the build. 我觉得可能是版本不对。 
+
+Sarah: 明白了. Can you check if we have the correct package version in the config?
+
+Li: I’ll do that now. 如果没问题, 我们可以在今天之前解决吗? The deadline is coming up.
+
+Sarah: Sure! Let’s aim for it. 如果我们能把这个 bug 修复了, 我们就能顺利 deploy 了。 
+
+Li: Perfect! 我立刻检查一下，然后再跟你更新。",6,Sarah,"['!', '’', '.', 'Sure', 'Let', 's', 'aim', 'for', 'it', '如果', '我们', '能', '把', '这个', 'bug', '修复', '了', ',', '我们', '就', '能', '顺利', 'deploy', '了', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'VERB', 'PRON', 'VERB', 'ADP', 'PRON', 'c', 'r', 'v', 'p', 'r', 'NOUN', 'v', 'ul', 'PUNCT', 'r', 'd', 'v', 'ad', 'VERB', 'ul', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']","Sure! Let’s aim for it. 如果我们能把这个 bug 修复了, 我们就能顺利 deploy 了。",6,520,"['!', '’', '.', 'Sure', 'Let', 's', 'aim', 'for', 'it', '如果', '我们', '能', '把', '这个', 'bug', '修复', '了', ',', '我们', '就', '能', '顺利', 'deploy', '了', '。']","['other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']",mix,2,0,True
+520,Perfect! 我立刻检查一下，然后再跟你更新。,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 我们有个新的部署 bug。Looks like the last merge broke something. 
+
+Sarah: Ah, 我也注意到了! What’s the error message you're seeing?
+
+Li: It says there’s a missing dependency in the build. 我觉得可能是版本不对。 
+
+Sarah: 明白了. Can you check if we have the correct package version in the config?
+
+Li: I’ll do that now. 如果没问题, 我们可以在今天之前解决吗? The deadline is coming up.
+
+Sarah: Sure! Let’s aim for it. 如果我们能把这个 bug 修复了, 我们就能顺利 deploy 了。 
+
+Li: Perfect! 我立刻检查一下，然后再跟你更新。",7,Li,"['!', 'Perfect', '我', '立刻', '检查一下', '，', '然后', '再', '跟', '你', '更新', '。']","['PUNCT', 'VERB', 'r', 'd', 'n', 'PUNCT', 'c', 'd', 'p', 'r', 'd', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Perfect! 我立刻检查一下，然后再跟你更新。,7,520,"['!', 'Perfect', '我', '立刻', '检查一下', '，', '然后', '再', '跟', '你', '更新', '。']","['other', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True

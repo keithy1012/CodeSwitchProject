@@ -1,0 +1,105 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+257,"Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?
+Sarah: 有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.
+Li: Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.
+Sarah: 好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.
+Li: Sounds good. Once you fix it, we can deploy the updated version to the testing environment.
+Sarah: 明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.
+Li: Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.
+Sarah: 嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",1,Li,"['Hi', 'Sarah', '!', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'deployment', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'into', 'it', '?']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'PRON', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?",1,257,"['Hi', 'Sarah', '!', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'deployment', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'into', 'it', '?']","['en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+257,"有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?
+Sarah: 有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.
+Li: Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.
+Sarah: 好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.
+Li: Sounds good. Once you fix it, we can deploy the updated version to the testing environment.
+Sarah: 明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.
+Li: Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.
+Sarah: 嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",2,Sarah,"['有', '！', ',', ""'"", '.', ""'"", '.', 'I', 'found', 'the', 'issue', 'it', 's', 'due', 'to', 'a', 'conflict', 'in', 'our', 'recent', 'merge', 'I', 'm', 'working', 'on', 'fixing', 'it', 'now']","['v', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'PRON', 'VERB', 'ADJ', 'ADP', 'DET', 'NOUN', 'ADP', 'PRON', 'ADJ', 'NOUN', 'PRON', 'AUX', 'VERB', 'ADP', 'VERB', 'PRON', 'ADV']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'punct', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.",2,257,"['有', '！', ',', ""'"", '.', ""'"", '.', 'I', 'found', 'the', 'issue', 'it', 's', 'due', 'to', 'a', 'conflict', 'in', 'our', 'recent', 'merge', 'I', 'm', 'working', 'on', 'fixing', 'it', 'now']","['zh', 'other', 'punct', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True
+257,"Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?
+Sarah: 有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.
+Li: Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.
+Sarah: 好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.
+Li: Sounds good. Once you fix it, we can deploy the updated version to the testing environment.
+Sarah: 明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.
+Li: Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.
+Sarah: 嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",3,Li,"['Great', ',', 'let', 'me', 'know', 'if', 'you', 'need', 'any', 'help', 'with', 'debugging', '.', 'The', 'deadline', 'for', 'this', 'deployment', 'is', 'coming', 'up', 'soon', '.']","['ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'NOUN', 'PUNCT', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'AUX', 'VERB', 'ADP', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.",3,257,"['Great', ',', 'let', 'me', 'know', 'if', 'you', 'need', 'any', 'help', 'with', 'debugging', '.', 'The', 'deadline', 'for', 'this', 'deployment', 'is', 'coming', 'up', 'soon', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+257,好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?
+Sarah: 有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.
+Li: Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.
+Sarah: 好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.
+Li: Sounds good. Once you fix it, we can deploy the updated version to the testing environment.
+Sarah: 明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.
+Li: Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.
+Sarah: 嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",4,Sarah,"['好', '的', '，', '.', '.', 'I', 'think', 'I', 'can', 'resolve', 'it', 'before', 'the', 'deadline', 'I', 'just', 'need', 'to', 'rebuild', 'the', 'affected', 'modules']","['a', 'uj', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'PRON', 'ADP', 'DET', 'NOUN', 'PRON', 'ADV', 'VERB', 'PART', 'VERB', 'DET', 'ADJ', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.,4,257,"['好', '的', '，', '.', '.', 'I', 'think', 'I', 'can', 'resolve', 'it', 'before', 'the', 'deadline', 'I', 'just', 'need', 'to', 'rebuild', 'the', 'affected', 'modules']","['zh', 'zh', 'other', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True
+257,"Sounds good. Once you fix it, we can deploy the updated version to the testing environment.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?
+Sarah: 有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.
+Li: Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.
+Sarah: 好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.
+Li: Sounds good. Once you fix it, we can deploy the updated version to the testing environment.
+Sarah: 明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.
+Li: Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.
+Sarah: 嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",5,Li,"['Sounds', 'good', '.', 'Once', 'you', 'fix', 'it', ',', 'we', 'can', 'deploy', 'the', 'updated', 'version', 'to', 'the', 'testing', 'environment', '.']","['VERB', 'ADJ', 'PUNCT', 'ADV', 'PRON', 'VERB', 'PRON', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'VERB', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Sounds good. Once you fix it, we can deploy the updated version to the testing environment.",5,257,"['Sounds', 'good', '.', 'Once', 'you', 'fix', 'it', ',', 'we', 'can', 'deploy', 'the', 'updated', 'version', 'to', 'the', 'testing', 'environment', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+257,"明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?
+Sarah: 有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.
+Li: Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.
+Sarah: 好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.
+Li: Sounds good. Once you fix it, we can deploy the updated version to the testing environment.
+Sarah: 明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.
+Li: Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.
+Sarah: 嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",6,Sarah,"['明白', '！', ""'"", '.', ',', ""'"", '.', 'I', 'll', 'let', 'you', 'know', 'once', 'the', 'fix', 'is', 'ready', 'for', 'testing', 'Hopefully', 'it', 'doesn', 't', 'cause', 'any', 'other', 'bugs']","['nr', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'VERB', 'SCONJ', 'DET', 'NOUN', 'AUX', 'ADJ', 'ADP', 'VERB', 'ADV', 'PRON', 'PROPN', 'NOUN', 'VERB', 'DET', 'ADJ', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'punct', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.",6,257,"['明白', '！', ""'"", '.', ',', ""'"", '.', 'I', 'll', 'let', 'you', 'know', 'once', 'the', 'fix', 'is', 'ready', 'for', 'testing', 'Hopefully', 'it', 'doesn', 't', 'cause', 'any', 'other', 'bugs']","['zh', 'other', 'punct', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0,0,True
+257,"Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?
+Sarah: 有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.
+Li: Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.
+Sarah: 好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.
+Li: Sounds good. Once you fix it, we can deploy the updated version to the testing environment.
+Sarah: 明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.
+Li: Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.
+Sarah: 嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",7,Li,"['Yeah', ',', 'fingers', 'crossed', '!', 'Let', ""'s"", 'aim', 'to', 'deploy', 'the', 'fix', 'by', 'tomorrow', 'so', 'we', 'have', 'time', 'to', 'test', 'it', 'thoroughly', 'before', 'the', 'deadline', '.']","['INTJ', 'PUNCT', 'NOUN', 'VERB', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'NOUN', 'ADV', 'PRON', 'VERB', 'NOUN', 'PART', 'VERB', 'PRON', 'ADV', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.",7,257,"['Yeah', ',', 'fingers', 'crossed', '!', 'Let', ""'s"", 'aim', 'to', 'deploy', 'the', 'fix', 'by', 'tomorrow', 'so', 'we', 'have', 'time', 'to', 'test', 'it', 'thoroughly', 'before', 'the', 'deadline', '.']","['en', 'punct', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,3,0,False
+257,"嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hi Sarah! I noticed a bug in the latest deployment, have you had a chance to look into it?
+Sarah: 有！I found the issue, it's due to a conflict in our recent merge. I'm working on fixing it now.
+Li: Great, let me know if you need any help with debugging. The deadline for this deployment is coming up soon.
+Sarah: 好的，I think I can resolve it before the deadline. I just need to rebuild the affected modules.
+Li: Sounds good. Once you fix it, we can deploy the updated version to the testing environment.
+Sarah: 明白！I'll let you know once the fix is ready for testing. Hopefully, it doesn't cause any other bugs.
+Li: Yeah, fingers crossed! Let's aim to deploy the fix by tomorrow so we have time to test it thoroughly before the deadline.
+Sarah: 嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",8,Sarah,"['嗯', '，', ""'"", '.', ',', '.', 'I', 'll', 'work', 'on', 'it', 'tonight', 'so', 'we', 'can', 'meet', 'the', 'deadline', 'Thanks', 'for', 'bringing', 'this', 'to', 'my', 'attention', 'Li']","['e', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADP', 'PRON', 'NOUN', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'NOUN', 'ADP', 'VERB', 'PRON', 'ADP', 'PRON', 'NOUN', 'PROPN']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","嗯，I'll work on it tonight so we can meet the deadline. Thanks for bringing this to my attention, Li.",8,257,"['嗯', '，', ""'"", '.', ',', '.', 'I', 'll', 'work', 'on', 'it', 'tonight', 'so', 'we', 'can', 'meet', 'the', 'deadline', 'Thanks', 'for', 'bringing', 'this', 'to', 'my', 'attention', 'Li']","['zh', 'other', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True

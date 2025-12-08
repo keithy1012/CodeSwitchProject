@@ -1,0 +1,97 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+700,"Hey Sarah, I noticed a bug on the QA环节 of our front-end. Have you checked the staging环境?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the QA环节 of our front-end. Have you checked the staging环境?
+
+Sarah: Yes, I saw it too. It seems to be a styling问题. I fixed it on my local build, but we need to test it on staging.
+
+Li: Great, I'll deploy the latest changes to staging环境. Let's test it together before we merge it to the master branch.
+
+Sarah: Sounds good.我们需要确保这个bug在deadline前被解决.
+
+Li: Absolutely, let's aim to resolve it before the merge. Once it's fixed, we can deploy it to production环境.
+
+Sarah: Perfect, let's get this sorted out ASAP.",1,Li,"[',', 'Hey', 'Sarah', 'I', 'noticed', 'a', 'bug', 'on', 'the', 'QA', '环节', '-', '.', 'of', 'our', 'front', 'end', 'Have', 'you', 'checked', 'the', 'staging', '环境', '?']","['PUNCT', 'INTJ', 'PROPN', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'PROPN', 'n', 'PUNCT', 'PUNCT', 'ADP', 'PRON', 'ADJ', 'NOUN', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other']","Hey Sarah, I noticed a bug on the QA环节 of our front-end. Have you checked the staging环境?",1,700,"[',', 'Hey', 'Sarah', 'I', 'noticed', 'a', 'bug', 'on', 'the', 'QA', '环节', '-', '.', 'of', 'our', 'front', 'end', 'Have', 'you', 'checked', 'the', 'staging', '环境', '?']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other']",mix,1,0,True
+700,"Yes, I saw it too. It seems to be a styling问题. I fixed it on my local build, but we need to test it on staging.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the QA环节 of our front-end. Have you checked the staging环境?
+
+Sarah: Yes, I saw it too. It seems to be a styling问题. I fixed it on my local build, but we need to test it on staging.
+
+Li: Great, I'll deploy the latest changes to staging环境. Let's test it together before we merge it to the master branch.
+
+Sarah: Sounds good.我们需要确保这个bug在deadline前被解决.
+
+Li: Absolutely, let's aim to resolve it before the merge. Once it's fixed, we can deploy it to production环境.
+
+Sarah: Perfect, let's get this sorted out ASAP.",2,Sarah,"[',', '.', 'Yes', 'I', 'saw', 'it', 'too', 'It', 'seems', 'to', 'be', 'a', 'styling', '问题', '.', ',', '.', 'I', 'fixed', 'it', 'on', 'my', 'local', 'build', 'but', 'we', 'need', 'to', 'test', 'it', 'on', 'staging']","['PUNCT', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'PRON', 'ADV', 'PRON', 'VERB', 'PART', 'AUX', 'DET', 'NOUN', 'n', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'VERB', 'PRON', 'ADP', 'PRON', 'ADJ', 'NOUN', 'CCONJ', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'ADP', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Yes, I saw it too. It seems to be a styling问题. I fixed it on my local build, but we need to test it on staging.",2,700,"[',', '.', 'Yes', 'I', 'saw', 'it', 'too', 'It', 'seems', 'to', 'be', 'a', 'styling', '问题', '.', ',', '.', 'I', 'fixed', 'it', 'on', 'my', 'local', 'build', 'but', 'we', 'need', 'to', 'test', 'it', 'on', 'staging']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,3,0,True
+700,"Great, I'll deploy the latest changes to staging环境. Let's test it together before we merge it to the master branch.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the QA环节 of our front-end. Have you checked the staging环境?
+
+Sarah: Yes, I saw it too. It seems to be a styling问题. I fixed it on my local build, but we need to test it on staging.
+
+Li: Great, I'll deploy the latest changes to staging环境. Let's test it together before we merge it to the master branch.
+
+Sarah: Sounds good.我们需要确保这个bug在deadline前被解决.
+
+Li: Absolutely, let's aim to resolve it before the merge. Once it's fixed, we can deploy it to production环境.
+
+Sarah: Perfect, let's get this sorted out ASAP.",3,Li,"[',', ""'"", 'Great', 'I', 'll', 'deploy', 'the', 'latest', 'changes', 'to', 'staging', '环境', '.', ""'"", '.', 'Let', 's', 'test', 'it', 'together', 'before', 'we', 'merge', 'it', 'to', 'the', 'master', 'branch']","['PUNCT', 'PUNCT', 'ADJ', 'PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'VERB', 'n', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'ADV', 'SCONJ', 'PRON', 'VERB', 'PRON', 'ADP', 'DET', 'NOUN', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Great, I'll deploy the latest changes to staging环境. Let's test it together before we merge it to the master branch.",3,700,"[',', ""'"", 'Great', 'I', 'll', 'deploy', 'the', 'latest', 'changes', 'to', 'staging', '环境', '.', ""'"", '.', 'Let', 's', 'test', 'it', 'together', 'before', 'we', 'merge', 'it', 'to', 'the', 'master', 'branch']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,4,0,True
+700,Sounds good.我们需要确保这个bug在deadline前被解决.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the QA环节 of our front-end. Have you checked the staging环境?
+
+Sarah: Yes, I saw it too. It seems to be a styling问题. I fixed it on my local build, but we need to test it on staging.
+
+Li: Great, I'll deploy the latest changes to staging环境. Let's test it together before we merge it to the master branch.
+
+Sarah: Sounds good.我们需要确保这个bug在deadline前被解决.
+
+Li: Absolutely, let's aim to resolve it before the merge. Once it's fixed, we can deploy it to production环境.
+
+Sarah: Perfect, let's get this sorted out ASAP.",4,Sarah,"['.', 'Sounds', 'good', '我们', '需要', '确保', '这个', 'bug', '在', 'deadline', '前', '被', '解决', '.']","['PUNCT', 'VERB', 'ADJ', 'r', 'v', 'v', 'r', 'NOUN', 'p', 'NOUN', 'f', 'p', 'v', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']",Sounds good.我们需要确保这个bug在deadline前被解决.,4,700,"['.', 'Sounds', 'good', '我们', '需要', '确保', '这个', 'bug', '在', 'deadline', '前', '被', '解决', '.']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+700,"Absolutely, let's aim to resolve it before the merge. Once it's fixed, we can deploy it to production环境.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the QA环节 of our front-end. Have you checked the staging环境?
+
+Sarah: Yes, I saw it too. It seems to be a styling问题. I fixed it on my local build, but we need to test it on staging.
+
+Li: Great, I'll deploy the latest changes to staging环境. Let's test it together before we merge it to the master branch.
+
+Sarah: Sounds good.我们需要确保这个bug在deadline前被解决.
+
+Li: Absolutely, let's aim to resolve it before the merge. Once it's fixed, we can deploy it to production环境.
+
+Sarah: Perfect, let's get this sorted out ASAP.",5,Li,"[',', ""'"", '.', ""'"", ',', 'Absolutely', 'let', 's', 'aim', 'to', 'resolve', 'it', 'before', 'the', 'merge', 'Once', 'it', 's', 'fixed', 'we', 'can', 'deploy', 'it', 'to', 'production', '环境', '.']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'ADV', 'VERB', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'ADP', 'DET', 'NOUN', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PRON', 'AUX', 'VERB', 'PRON', 'ADP', 'NOUN', 'n', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct']","Absolutely, let's aim to resolve it before the merge. Once it's fixed, we can deploy it to production环境.",5,700,"[',', ""'"", '.', ""'"", ',', 'Absolutely', 'let', 's', 'aim', 'to', 'resolve', 'it', 'before', 'the', 'merge', 'Once', 'it', 's', 'fixed', 'we', 'can', 'deploy', 'it', 'to', 'production', '环境', '.']","['punct', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct']",mix,2,0,True
+700,"Perfect, let's get this sorted out ASAP.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the QA环节 of our front-end. Have you checked the staging环境?
+
+Sarah: Yes, I saw it too. It seems to be a styling问题. I fixed it on my local build, but we need to test it on staging.
+
+Li: Great, I'll deploy the latest changes to staging环境. Let's test it together before we merge it to the master branch.
+
+Sarah: Sounds good.我们需要确保这个bug在deadline前被解决.
+
+Li: Absolutely, let's aim to resolve it before the merge. Once it's fixed, we can deploy it to production环境.
+
+Sarah: Perfect, let's get this sorted out ASAP.",6,Sarah,"['Perfect', ',', 'let', ""'s"", 'get', 'this', 'sorted', 'out', 'ASAP', '.']","['ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'VERB', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Perfect, let's get this sorted out ASAP.",6,700,"['Perfect', ',', 'let', ""'s"", 'get', 'this', 'sorted', 'out', 'ASAP', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False

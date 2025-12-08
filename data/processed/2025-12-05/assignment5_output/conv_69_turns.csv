@@ -1,0 +1,91 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+69,"嗨 Sarah, 我看完了这个 PR，还有什么需要调整的地方吗？(Hi Sarah, I've reviewed this PR, is there anything that needs to be adjusted?)",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 嗨 Sarah, 我看完了这个 PR，还有什么需要调整的地方吗？(Hi Sarah, I've reviewed this PR, is there anything that needs to be adjusted?)
+
+Sarah: Hey Li, thanks for checking! I think we just need to fix a few bugs before we can deploy it. 
+
+Li: 好的，我马上看看，希望这些问题很快就能解决。(Ok, I'll take a look right away, hopefully these issues can be resolved quickly.)
+
+Sarah: Great, I trust your coding skills! We have a tight deadline for this release, so we need to ensure everything is smooth before merging.
+
+Li: 没问题，我会尽快处理并确保代码无误。(No problem, I will handle it as soon as possible and make sure the code is error-free.)
+
+Sarah: 谢谢你的努力，我们一起努力让这次部署成功！(Thank you for your efforts, let's work together to make this deployment a success!)",1,Li,"['嗨', ',', 'Sarah', '我', '看', '完', '了', '这个', '，', 'PR', '还有', '什么', '需要', '调整', '的', '地方', '吗', '？', '(', ',', ""'"", ',', '?', ')', 'Hi', 'Sarah', 'I', 've', 'reviewed', 'this', 'PR', 'is', 'there', 'anything', 'that', 'needs', 'to', 'be', 'adjusted']","['e', 'PUNCT', 'PROPN', 'r', 'v', 'v', 'ul', 'r', 'PUNCT', 'NOUN', 'v', 'r', 'v', 'vn', 'uj', 'n', 'y', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'AUX', 'ADV', 'PRON', 'PRON', 'VERB', 'PART', 'AUX', 'VERB']","{'en', 'zh', 'punct', 'other'}","['zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'punct', 'punct', 'punct', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","嗨 Sarah, 我看完了这个 PR，还有什么需要调整的地方吗？(Hi Sarah, I've reviewed this PR, is there anything that needs to be adjusted?)",1,69,"['嗨', ',', 'Sarah', '我', '看', '完', '了', '这个', '，', 'PR', '还有', '什么', '需要', '调整', '的', '地方', '吗', '？', '(', ',', ""'"", ',', '?', ')', 'Hi', 'Sarah', 'I', 've', 'reviewed', 'this', 'PR', 'is', 'there', 'anything', 'that', 'needs', 'to', 'be', 'adjusted']","['zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'punct', 'punct', 'punct', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.839,0.83,0.826,2,True
+69,"Hey Li, thanks for checking! I think we just need to fix a few bugs before we can deploy it.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 嗨 Sarah, 我看完了这个 PR，还有什么需要调整的地方吗？(Hi Sarah, I've reviewed this PR, is there anything that needs to be adjusted?)
+
+Sarah: Hey Li, thanks for checking! I think we just need to fix a few bugs before we can deploy it. 
+
+Li: 好的，我马上看看，希望这些问题很快就能解决。(Ok, I'll take a look right away, hopefully these issues can be resolved quickly.)
+
+Sarah: Great, I trust your coding skills! We have a tight deadline for this release, so we need to ensure everything is smooth before merging.
+
+Li: 没问题，我会尽快处理并确保代码无误。(No problem, I will handle it as soon as possible and make sure the code is error-free.)
+
+Sarah: 谢谢你的努力，我们一起努力让这次部署成功！(Thank you for your efforts, let's work together to make this deployment a success!)",2,Sarah,"['Hey', 'Li', ',', 'thanks', 'for', 'checking', '!', 'I', 'think', 'we', 'just', 'need', 'to', 'fix', 'a', 'few', 'bugs', 'before', 'we', 'can', 'deploy', 'it', '.']","['INTJ', 'PROPN', 'PUNCT', 'NOUN', 'ADP', 'VERB', 'PUNCT', 'PRON', 'VERB', 'PRON', 'ADV', 'VERB', 'PART', 'VERB', 'DET', 'ADJ', 'NOUN', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PRON', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hey Li, thanks for checking! I think we just need to fix a few bugs before we can deploy it.",2,69,"['Hey', 'Li', ',', 'thanks', 'for', 'checking', '!', 'I', 'think', 'we', 'just', 'need', 'to', 'fix', 'a', 'few', 'bugs', 'before', 'we', 'can', 'deploy', 'it', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.826,0.764,0.769,1,False
+69,"好的，我马上看看，希望这些问题很快就能解决。(Ok, I'll take a look right away, hopefully these issues can be resolved quickly.)",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 嗨 Sarah, 我看完了这个 PR，还有什么需要调整的地方吗？(Hi Sarah, I've reviewed this PR, is there anything that needs to be adjusted?)
+
+Sarah: Hey Li, thanks for checking! I think we just need to fix a few bugs before we can deploy it. 
+
+Li: 好的，我马上看看，希望这些问题很快就能解决。(Ok, I'll take a look right away, hopefully these issues can be resolved quickly.)
+
+Sarah: Great, I trust your coding skills! We have a tight deadline for this release, so we need to ensure everything is smooth before merging.
+
+Li: 没问题，我会尽快处理并确保代码无误。(No problem, I will handle it as soon as possible and make sure the code is error-free.)
+
+Sarah: 谢谢你的努力，我们一起努力让这次部署成功！(Thank you for your efforts, let's work together to make this deployment a success!)",3,Li,"['好', '的', '，', '我', '马上', '看看', '，', '希望', '这些', '问题', '很快', '就', '能', '解决', '。', '(', ',', ""'"", ',', '.', ')', 'Ok', 'I', 'll', 'take', 'a', 'look', 'right', 'away', 'hopefully', 'these', 'issues', 'can', 'be', 'resolved', 'quickly']","['a', 'uj', 'PUNCT', 'r', 'd', 'v', 'PUNCT', 'v', 'r', 'n', 'd', 'd', 'v', 'v', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADV', 'ADV', 'ADV', 'DET', 'NOUN', 'AUX', 'AUX', 'VERB', 'ADV']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'punct', 'punct', 'punct', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","好的，我马上看看，希望这些问题很快就能解决。(Ok, I'll take a look right away, hopefully these issues can be resolved quickly.)",3,69,"['好', '的', '，', '我', '马上', '看看', '，', '希望', '这些', '问题', '很快', '就', '能', '解决', '。', '(', ',', ""'"", ',', '.', ')', 'Ok', 'I', 'll', 'take', 'a', 'look', 'right', 'away', 'hopefully', 'these', 'issues', 'can', 'be', 'resolved', 'quickly']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'punct', 'punct', 'punct', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.849,0.831,0.833,0,True
+69,"Great, I trust your coding skills! We have a tight deadline for this release, so we need to ensure everything is smooth before merging.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 嗨 Sarah, 我看完了这个 PR，还有什么需要调整的地方吗？(Hi Sarah, I've reviewed this PR, is there anything that needs to be adjusted?)
+
+Sarah: Hey Li, thanks for checking! I think we just need to fix a few bugs before we can deploy it. 
+
+Li: 好的，我马上看看，希望这些问题很快就能解决。(Ok, I'll take a look right away, hopefully these issues can be resolved quickly.)
+
+Sarah: Great, I trust your coding skills! We have a tight deadline for this release, so we need to ensure everything is smooth before merging.
+
+Li: 没问题，我会尽快处理并确保代码无误。(No problem, I will handle it as soon as possible and make sure the code is error-free.)
+
+Sarah: 谢谢你的努力，我们一起努力让这次部署成功！(Thank you for your efforts, let's work together to make this deployment a success!)",4,Sarah,"['Great', ',', 'I', 'trust', 'your', 'coding', 'skills', '!', 'We', 'have', 'a', 'tight', 'deadline', 'for', 'this', 'release', ',', 'so', 'we', 'need', 'to', 'ensure', 'everything', 'is', 'smooth', 'before', 'merging', '.']","['ADJ', 'PUNCT', 'PRON', 'VERB', 'PRON', 'NOUN', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT', 'SCONJ', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'AUX', 'ADJ', 'ADP', 'VERB', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, I trust your coding skills! We have a tight deadline for this release, so we need to ensure everything is smooth before merging.",4,69,"['Great', ',', 'I', 'trust', 'your', 'coding', 'skills', '!', 'We', 'have', 'a', 'tight', 'deadline', 'for', 'this', 'release', ',', 'so', 'we', 'need', 'to', 'ensure', 'everything', 'is', 'smooth', 'before', 'merging', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.816,0.775,0.792,2,False
+69,"没问题，我会尽快处理并确保代码无误。(No problem, I will handle it as soon as possible and make sure the code is error-free.)",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 嗨 Sarah, 我看完了这个 PR，还有什么需要调整的地方吗？(Hi Sarah, I've reviewed this PR, is there anything that needs to be adjusted?)
+
+Sarah: Hey Li, thanks for checking! I think we just need to fix a few bugs before we can deploy it. 
+
+Li: 好的，我马上看看，希望这些问题很快就能解决。(Ok, I'll take a look right away, hopefully these issues can be resolved quickly.)
+
+Sarah: Great, I trust your coding skills! We have a tight deadline for this release, so we need to ensure everything is smooth before merging.
+
+Li: 没问题，我会尽快处理并确保代码无误。(No problem, I will handle it as soon as possible and make sure the code is error-free.)
+
+Sarah: 谢谢你的努力，我们一起努力让这次部署成功！(Thank you for your efforts, let's work together to make this deployment a success!)",5,Li,"['没', '问题', '，', '我会', '尽快', '处理', '并', '确保', '代码', '无误', '。', '(', ',', '-', '.', ')', 'No', 'problem', 'I', 'will', 'handle', 'it', 'as', 'soon', 'as', 'possible', 'and', 'make', 'sure', 'the', 'code', 'is', 'error', 'free']","['v', 'n', 'PUNCT', 'n', 'd', 'v', 'c', 'v', 'n', 'v', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'DET', 'NOUN', 'PRON', 'AUX', 'VERB', 'PRON', 'ADV', 'ADV', 'ADP', 'ADJ', 'CCONJ', 'VERB', 'ADJ', 'DET', 'NOUN', 'AUX', 'NOUN', 'ADJ']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'punct', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","没问题，我会尽快处理并确保代码无误。(No problem, I will handle it as soon as possible and make sure the code is error-free.)",5,69,"['没', '问题', '，', '我会', '尽快', '处理', '并', '确保', '代码', '无误', '。', '(', ',', '-', '.', ')', 'No', 'problem', 'I', 'will', 'handle', 'it', 'as', 'soon', 'as', 'possible', 'and', 'make', 'sure', 'the', 'code', 'is', 'error', 'free']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'punct', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.86,0.828,0.836,1,True
+69,"谢谢你的努力，我们一起努力让这次部署成功！(Thank you for your efforts, let's work together to make this deployment a success!)",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 嗨 Sarah, 我看完了这个 PR，还有什么需要调整的地方吗？(Hi Sarah, I've reviewed this PR, is there anything that needs to be adjusted?)
+
+Sarah: Hey Li, thanks for checking! I think we just need to fix a few bugs before we can deploy it. 
+
+Li: 好的，我马上看看，希望这些问题很快就能解决。(Ok, I'll take a look right away, hopefully these issues can be resolved quickly.)
+
+Sarah: Great, I trust your coding skills! We have a tight deadline for this release, so we need to ensure everything is smooth before merging.
+
+Li: 没问题，我会尽快处理并确保代码无误。(No problem, I will handle it as soon as possible and make sure the code is error-free.)
+
+Sarah: 谢谢你的努力，我们一起努力让这次部署成功！(Thank you for your efforts, let's work together to make this deployment a success!)",6,Sarah,"['谢谢', '你', '的', '努力', '，', '我们', '一起', '努力', '让', '这次', '部署', '成功', '！', '(', ',', ""'"", '!', ')', 'Thank', 'you', 'for', 'your', 'efforts', 'let', 's', 'work', 'together', 'to', 'make', 'this', 'deployment', 'a', 'success']","['nr', 'r', 'uj', 'ad', 'PUNCT', 'r', 'm', 'ad', 'v', 'r', 'n', 'a', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'ADP', 'PRON', 'NOUN', 'VERB', 'PRON', 'VERB', 'ADV', 'PART', 'VERB', 'DET', 'NOUN', 'DET', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'other', 'punct', 'punct', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","谢谢你的努力，我们一起努力让这次部署成功！(Thank you for your efforts, let's work together to make this deployment a success!)",6,69,"['谢谢', '你', '的', '努力', '，', '我们', '一起', '努力', '让', '这次', '部署', '成功', '！', '(', ',', ""'"", '!', ')', 'Thank', 'you', 'for', 'your', 'efforts', 'let', 's', 'work', 'together', 'to', 'make', 'this', 'deployment', 'a', 'success']","['zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'other', 'punct', 'punct', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.866,0.843,0.85,1,True

@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+276,"Hey Sarah, I just noticed there’s a bug in the new feature we’re testing in QA.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed there’s a bug in the new feature we’re testing in QA. 
+
+Sarah: Oh really? What’s the issue? 我们的功能应该在staging上运行得很好。
+
+Li: The UI doesn’t update properly when you click the button. I checked the build logs, but nothing stands out.
+
+Sarah: Maybe it’s related to the recent merge we did? 你觉得需要回退到之前的版本吗？
+
+Li: It's possible, but our deadline for the deploy is coming up fast. 我们还可以试着调试一下，再决定。
+
+Sarah: Good plan. Let’s see if we can replicate the issue in staging first. 如果是环境问题可能会比较容易解决。 
+
+Li: Agreed! 如果一切顺利，我们就可以准备好部署了。",1,Li,"['Hey', 'Sarah', ',', 'I', 'just', 'noticed', 'there', '’s', 'a', 'bug', 'in', 'the', 'new', 'feature', 'we', '’re', 'testing', 'in', 'QA', '.']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'ADV', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PRON', 'AUX', 'VERB', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hey Sarah, I just noticed there’s a bug in the new feature we’re testing in QA.",1,276,"['Hey', 'Sarah', ',', 'I', 'just', 'noticed', 'there', '’s', 'a', 'bug', 'in', 'the', 'new', 'feature', 'we', '’re', 'testing', 'in', 'QA', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,3,0,False
+276,Oh really? What’s the issue? 我们的功能应该在staging上运行得很好。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed there’s a bug in the new feature we’re testing in QA. 
+
+Sarah: Oh really? What’s the issue? 我们的功能应该在staging上运行得很好。
+
+Li: The UI doesn’t update properly when you click the button. I checked the build logs, but nothing stands out.
+
+Sarah: Maybe it’s related to the recent merge we did? 你觉得需要回退到之前的版本吗？
+
+Li: It's possible, but our deadline for the deploy is coming up fast. 我们还可以试着调试一下，再决定。
+
+Sarah: Good plan. Let’s see if we can replicate the issue in staging first. 如果是环境问题可能会比较容易解决。 
+
+Li: Agreed! 如果一切顺利，我们就可以准备好部署了。",2,Sarah,"['?', '’', '?', 'Oh', 'really', 'What', 's', 'the', 'issue', '我们', '的', '功能', '应该', '在', 'staging', '上', '运行', '得', '很', '好', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'ADV', 'PRON', 'VERB', 'DET', 'NOUN', 'r', 'uj', 'n', 'v', 'p', 'VERB', 'f', 'v', 'ud', 'd', 'a', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Oh really? What’s the issue? 我们的功能应该在staging上运行得很好。,2,276,"['?', '’', '?', 'Oh', 'really', 'What', 's', 'the', 'issue', '我们', '的', '功能', '应该', '在', 'staging', '上', '运行', '得', '很', '好', '。']","['other', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+276,"The UI doesn’t update properly when you click the button. I checked the build logs, but nothing stands out.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed there’s a bug in the new feature we’re testing in QA. 
+
+Sarah: Oh really? What’s the issue? 我们的功能应该在staging上运行得很好。
+
+Li: The UI doesn’t update properly when you click the button. I checked the build logs, but nothing stands out.
+
+Sarah: Maybe it’s related to the recent merge we did? 你觉得需要回退到之前的版本吗？
+
+Li: It's possible, but our deadline for the deploy is coming up fast. 我们还可以试着调试一下，再决定。
+
+Sarah: Good plan. Let’s see if we can replicate the issue in staging first. 如果是环境问题可能会比较容易解决。 
+
+Li: Agreed! 如果一切顺利，我们就可以准备好部署了。",3,Li,"['The', 'UI', 'does', 'n’t', 'update', 'properly', 'when', 'you', 'click', 'the', 'button', '.', 'I', 'checked', 'the', 'build', 'logs', ',', 'but', 'nothing', 'stands', 'out', '.']","['DET', 'PROPN', 'AUX', 'NOUN', 'VERB', 'ADV', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'PUNCT', 'CCONJ', 'PRON', 'VERB', 'ADP', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct']","The UI doesn’t update properly when you click the button. I checked the build logs, but nothing stands out.",3,276,"['The', 'UI', 'does', 'n’t', 'update', 'properly', 'when', 'you', 'click', 'the', 'button', '.', 'I', 'checked', 'the', 'build', 'logs', ',', 'but', 'nothing', 'stands', 'out', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+276,Maybe it’s related to the recent merge we did? 你觉得需要回退到之前的版本吗？,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed there’s a bug in the new feature we’re testing in QA. 
+
+Sarah: Oh really? What’s the issue? 我们的功能应该在staging上运行得很好。
+
+Li: The UI doesn’t update properly when you click the button. I checked the build logs, but nothing stands out.
+
+Sarah: Maybe it’s related to the recent merge we did? 你觉得需要回退到之前的版本吗？
+
+Li: It's possible, but our deadline for the deploy is coming up fast. 我们还可以试着调试一下，再决定。
+
+Sarah: Good plan. Let’s see if we can replicate the issue in staging first. 如果是环境问题可能会比较容易解决。 
+
+Li: Agreed! 如果一切顺利，我们就可以准备好部署了。",4,Sarah,"['’', '?', 'Maybe', 'it', 's', 'related', 'to', 'the', 'recent', 'merge', 'we', 'did', '你', '觉得', '需要', '回退', '到', '之前', '的', '版本', '吗', '？']","['PUNCT', 'PUNCT', 'ADV', 'PRON', 'VERB', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'PRON', 'VERB', 'r', 'v', 'v', 'v', 'v', 'f', 'uj', 'n', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Maybe it’s related to the recent merge we did? 你觉得需要回退到之前的版本吗？,4,276,"['’', '?', 'Maybe', 'it', 's', 'related', 'to', 'the', 'recent', 'merge', 'we', 'did', '你', '觉得', '需要', '回退', '到', '之前', '的', '版本', '吗', '？']","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,1,0,True
+276,"It's possible, but our deadline for the deploy is coming up fast. 我们还可以试着调试一下，再决定。",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed there’s a bug in the new feature we’re testing in QA. 
+
+Sarah: Oh really? What’s the issue? 我们的功能应该在staging上运行得很好。
+
+Li: The UI doesn’t update properly when you click the button. I checked the build logs, but nothing stands out.
+
+Sarah: Maybe it’s related to the recent merge we did? 你觉得需要回退到之前的版本吗？
+
+Li: It's possible, but our deadline for the deploy is coming up fast. 我们还可以试着调试一下，再决定。
+
+Sarah: Good plan. Let’s see if we can replicate the issue in staging first. 如果是环境问题可能会比较容易解决。 
+
+Li: Agreed! 如果一切顺利，我们就可以准备好部署了。",5,Li,"[""'"", ',', '.', 'It', 's', 'possible', 'but', 'our', 'deadline', 'for', 'the', 'deploy', 'is', 'coming', 'up', 'fast', '我们', '还', '可以', '试', '着', '调试', '一下', '，', '再', '决定', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'VERB', 'ADJ', 'CCONJ', 'PRON', 'NOUN', 'ADP', 'DET', 'NOUN', 'AUX', 'VERB', 'ADP', 'ADV', 'r', 'd', 'c', 'v', 'uz', 'vn', 'm', 'PUNCT', 'd', 'v', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'punct']","It's possible, but our deadline for the deploy is coming up fast. 我们还可以试着调试一下，再决定。",5,276,"[""'"", ',', '.', 'It', 's', 'possible', 'but', 'our', 'deadline', 'for', 'the', 'deploy', 'is', 'coming', 'up', 'fast', '我们', '还', '可以', '试', '着', '调试', '一下', '，', '再', '决定', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'punct']",mix,2,0,True
+276,Good plan. Let’s see if we can replicate the issue in staging first. 如果是环境问题可能会比较容易解决。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed there’s a bug in the new feature we’re testing in QA. 
+
+Sarah: Oh really? What’s the issue? 我们的功能应该在staging上运行得很好。
+
+Li: The UI doesn’t update properly when you click the button. I checked the build logs, but nothing stands out.
+
+Sarah: Maybe it’s related to the recent merge we did? 你觉得需要回退到之前的版本吗？
+
+Li: It's possible, but our deadline for the deploy is coming up fast. 我们还可以试着调试一下，再决定。
+
+Sarah: Good plan. Let’s see if we can replicate the issue in staging first. 如果是环境问题可能会比较容易解决。 
+
+Li: Agreed! 如果一切顺利，我们就可以准备好部署了。",6,Sarah,"['.', '’', '.', 'Good', 'plan', 'Let', 's', 'see', 'if', 'we', 'can', 'replicate', 'the', 'issue', 'in', 'staging', 'first', '如果', '是', '环境', '问题', '可能', '会', '比较', '容易', '解决', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'ADJ', 'NOUN', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'VERB', 'ADV', 'c', 'v', 'n', 'n', 'v', 'v', 'd', 'a', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Good plan. Let’s see if we can replicate the issue in staging first. 如果是环境问题可能会比较容易解决。,6,276,"['.', '’', '.', 'Good', 'plan', 'Let', 's', 'see', 'if', 'we', 'can', 'replicate', 'the', 'issue', 'in', 'staging', 'first', '如果', '是', '环境', '问题', '可能', '会', '比较', '容易', '解决', '。']","['punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,1,0,True
+276,Agreed! 如果一切顺利，我们就可以准备好部署了。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed there’s a bug in the new feature we’re testing in QA. 
+
+Sarah: Oh really? What’s the issue? 我们的功能应该在staging上运行得很好。
+
+Li: The UI doesn’t update properly when you click the button. I checked the build logs, but nothing stands out.
+
+Sarah: Maybe it’s related to the recent merge we did? 你觉得需要回退到之前的版本吗？
+
+Li: It's possible, but our deadline for the deploy is coming up fast. 我们还可以试着调试一下，再决定。
+
+Sarah: Good plan. Let’s see if we can replicate the issue in staging first. 如果是环境问题可能会比较容易解决。 
+
+Li: Agreed! 如果一切顺利，我们就可以准备好部署了。",7,Li,"['!', 'Agreed', '如果', '一切顺利', '，', '我们', '就', '可以', '准备', '好', '部署', '了', '。']","['PUNCT', 'VERB', 'c', 'i', 'PUNCT', 'r', 'd', 'c', 'v', 'a', 'n', 'ul', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Agreed! 如果一切顺利，我们就可以准备好部署了。,7,276,"['!', 'Agreed', '如果', '一切顺利', '，', '我们', '就', '可以', '准备', '好', '部署', '了', '。']","['other', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True

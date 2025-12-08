@@ -1,0 +1,449 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+690,"Hey Sarah, I think I found a bug in the latest deployment.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",1,Li,"['Hey', 'Sarah', ',', 'I', 'think', 'I', 'found', 'a', 'bug', 'in', 'the', 'latest', 'deployment', '.']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hey Sarah, I think I found a bug in the latest deployment.",1,690,"['Hey', 'Sarah', ',', 'I', 'think', 'I', 'found', 'a', 'bug', 'in', 'the', 'latest', 'deployment', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+690,(嘿Sarah，我发现最新部署中有个bug。),LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",2,,"['(', '嘿', '，', 'Sarah', '我', '发现', '最新', '部署', '中', '有个', '。', ')', 'bug']","['PUNCT', 'e', 'PUNCT', 'PROPN', 'r', 'v', 'd', 'n', 'f', 'r', 'PUNCT', 'PUNCT', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['other', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'en']",(嘿Sarah，我发现最新部署中有个bug。),2,690,"['(', '嘿', '，', 'Sarah', '我', '发现', '最新', '部署', '中', '有个', '。', ')', 'bug']","['other', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'en']",mix,0,0,True
+690,"Oh no, what's the issue?",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",3,Sarah,"['Oh', 'no', ',', 'what', ""'s"", 'the', 'issue', '?']","['INTJ', 'INTJ', 'PUNCT', 'PRON', 'AUX', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']","Oh no, what's the issue?",3,690,"['Oh', 'no', ',', 'what', ""'s"", 'the', 'issue', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']",en,0,0,False
+690,(哦不，是什么问题？),LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",4,,"['(', '哦', '不', '，', '是', '什么', '问题', '？', ')']","['PUNCT', 'e', 'd', 'PUNCT', 'v', 'r', 'n', 'PUNCT', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'other']",(哦不，是什么问题？),4,690,"['(', '哦', '不', '，', '是', '什么', '问题', '？', ')']","['other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'other']",zh,0,0,False
+690,It seems like the build process is failing during the deployment.,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",5,Li,"['It', 'seems', 'like', 'the', 'build', 'process', 'is', 'failing', 'during', 'the', 'deployment', '.']","['PRON', 'VERB', 'SCONJ', 'DET', 'NOUN', 'NOUN', 'AUX', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",It seems like the build process is failing during the deployment.,5,690,"['It', 'seems', 'like', 'the', 'build', 'process', 'is', 'failing', 'during', 'the', 'deployment', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+690,(好像在部署过程中构建失败了。),LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",6,,"['(', '好像', '在', '部署', '过程', '中', '构建', '失败', '了', '。', ')']","['PUNCT', 'v', 'p', 'n', 'n', 'f', 'v', 'v', 'ul', 'PUNCT', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",(好像在部署过程中构建失败了。),6,690,"['(', '好像', '在', '部署', '过程', '中', '构建', '失败', '了', '。', ')']","['other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",zh,0,0,False
+690,"Hmm, have you checked the logs for any error messages?",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",7,Sarah,"['Hmm', ',', 'have', 'you', 'checked', 'the', 'logs', 'for', 'any', 'error', 'messages', '?']","['INTJ', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hmm, have you checked the logs for any error messages?",7,690,"['Hmm', ',', 'have', 'you', 'checked', 'the', 'logs', 'for', 'any', 'error', 'messages', '?']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0,0,False
+690,(嗯，你有检查日志看看有没有错误消息吗？),LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",8,,"['(', '嗯', '，', '你', '有', '检查', '日志', '看看', '有没有', '错误', '消息', '吗', '？', ')']","['PUNCT', 'e', 'PUNCT', 'r', 'v', 'vn', 'ns', 'v', 'v', 'n', 'n', 'y', 'PUNCT', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",(嗯，你有检查日志看看有没有错误消息吗？),8,690,"['(', '嗯', '，', '你', '有', '检查', '日志', '看看', '有没有', '错误', '消息', '吗', '？', ')']","['other', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",zh,0,0,False
+690,"Yeah, I found an error related to a merge conflict in one of the files.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",9,Li,"['Yeah', ',', 'I', 'found', 'an', 'error', 'related', 'to', 'a', 'merge', 'conflict', 'in', 'one', 'of', 'the', 'files', '.']","['INTJ', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'VERB', 'ADP', 'DET', 'NOUN', 'NOUN', 'ADP', 'NUM', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, I found an error related to a merge conflict in one of the files.",9,690,"['Yeah', ',', 'I', 'found', 'an', 'error', 'related', 'to', 'a', 'merge', 'conflict', 'in', 'one', 'of', 'the', 'files', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+690,(是的，我找到了一个与一个文件中的合并冲突相关的错误。),LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",10,,"['(', '是', '的', '，', '我', '找到', '了', '一个', '与', '一个', '文件', '中', '的', '合并', '冲突', '相关', '的', '错误', '。', ')']","['PUNCT', 'v', 'uj', 'PUNCT', 'r', 'v', 'ul', 'm', 'p', 'm', 'n', 'f', 'uj', 'v', 'vn', 'v', 'uj', 'n', 'PUNCT', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",(是的，我找到了一个与一个文件中的合并冲突相关的错误。),10,690,"['(', '是', '的', '，', '我', '找到', '了', '一个', '与', '一个', '文件', '中', '的', '合并', '冲突', '相关', '的', '错误', '。', ')']","['other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",zh,0,0,False
+690,Let's resolve the conflict and re-deploy before the deadline.,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",11,Sarah,"['Let', ""'s"", 'resolve', 'the', 'conflict', 'and', 're', '-', 'deploy', 'before', 'the', 'deadline', '.']","['VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'CCONJ', 'VERB', 'VERB', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'punct']",Let's resolve the conflict and re-deploy before the deadline.,11,690,"['Let', ""'s"", 'resolve', 'the', 'conflict', 'and', 're', '-', 'deploy', 'before', 'the', 'deadline', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+690,(让我们在截止日期之前解决冲突并重新部署。),LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",12,,"['(', '让', '我们', '在', '截止', '日期', '之前', '解决', '冲突', '并', '重新部署', '。', ')']","['PUNCT', 'v', 'r', 'p', 'v', 't', 'f', 'v', 'vn', 'c', 'n', 'PUNCT', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",(让我们在截止日期之前解决冲突并重新部署。),12,690,"['(', '让', '我们', '在', '截止', '日期', '之前', '解决', '冲突', '并', '重新部署', '。', ')']","['other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",zh,0,0,False
+690,"Agreed, I'll fix the conflict and trigger a new build.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",13,Li,"['Agreed', ',', 'I', ""'ll"", 'fix', 'the', 'conflict', 'and', 'trigger', 'a', 'new', 'build', '.']","['VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'CCONJ', 'VERB', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Agreed, I'll fix the conflict and trigger a new build.",13,690,"['Agreed', ',', 'I', ""'ll"", 'fix', 'the', 'conflict', 'and', 'trigger', 'a', 'new', 'build', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+690,(同意，我会解决冲突然后触发新的构建。),LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",14,,"['(', '同意', '，', '我会', '解决', '冲突', '然后', '触发', '新', '的', '构建', '。', ')']","['PUNCT', 'd', 'PUNCT', 'n', 'v', 'vn', 'c', 'v', 'a', 'uj', 'v', 'PUNCT', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",(同意，我会解决冲突然后触发新的构建。),14,690,"['(', '同意', '，', '我会', '解决', '冲突', '然后', '触发', '新', '的', '构建', '。', ')']","['other', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",zh,0,0,False
+690,"Great, let's make sure it's all good before pushing to production.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",15,Sarah,"['Great', ',', 'let', ""'s"", 'make', 'sure', 'it', ""'s"", 'all', 'good', 'before', 'pushing', 'to', 'production', '.']","['ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADJ', 'PRON', 'AUX', 'ADV', 'ADJ', 'ADP', 'VERB', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, let's make sure it's all good before pushing to production.",15,690,"['Great', ',', 'let', ""'s"", 'make', 'sure', 'it', ""'s"", 'all', 'good', 'before', 'pushing', 'to', 'production', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+690,(太好了，让我们确保一切顺利再推送到生产环境。),LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo-16k,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think I found a bug in the latest deployment. 
+(嘿Sarah，我发现最新部署中有个bug。)
+
+Sarah: Oh no, what's the issue? 
+(哦不，是什么问题？)
+
+Li: It seems like the build process is failing during the deployment. 
+(好像在部署过程中构建失败了。)
+
+Sarah: Hmm, have you checked the logs for any error messages? 
+(嗯，你有检查日志看看有没有错误消息吗？)
+
+Li: Yeah, I found an error related to a merge conflict in one of the files. 
+(是的，我找到了一个与一个文件中的合并冲突相关的错误。)
+
+Sarah: Let's resolve the conflict and re-deploy before the deadline. 
+(让我们在截止日期之前解决冲突并重新部署。)
+
+Li: Agreed, I'll fix the conflict and trigger a new build. 
+(同意，我会解决冲突然后触发新的构建。)
+
+Sarah: Great, let's make sure it's all good before pushing to production. 
+(太好了，让我们确保一切顺利再推送到生产环境。)",16,,"['(', '太好了', '，', '让', '我们', '确保', '一切顺利', '再', '推送', '到', '生产', '环境', '。', ')']","['PUNCT', 'l', 'PUNCT', 'v', 'r', 'v', 'i', 'd', 'v', 'v', 'vn', 'n', 'PUNCT', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",(太好了，让我们确保一切顺利再推送到生产环境。),16,690,"['(', '太好了', '，', '让', '我们', '确保', '一切顺利', '再', '推送', '到', '生产', '环境', '。', ')']","['other', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other']",zh,0,0,False

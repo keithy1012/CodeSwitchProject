@@ -1,0 +1,78 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+63,"Hey Sarah, have you had a chance to review the PR for the deploy?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy?
+Sarah: Hey Li, yeah I took a look, but I found a bug in the build process.
+Li: Oh no, really? We are already close to the deadline.
+Sarah: Yeah, I know, but we can't merge this code with that bug in it.
+Li: True, let's fix it ASAP then.
+Sarah: I'll work on it now and let you know once it's ready for review again.
+Li: Sounds good, thanks for catching that!",1,Li,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'review', 'the', 'PR', 'for', 'the', 'deploy', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, have you had a chance to review the PR for the deploy?",1,63,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'review', 'the', 'PR', 'for', 'the', 'deploy', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+63,"Hey Li, yeah I took a look, but I found a bug in the build process.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy?
+Sarah: Hey Li, yeah I took a look, but I found a bug in the build process.
+Li: Oh no, really? We are already close to the deadline.
+Sarah: Yeah, I know, but we can't merge this code with that bug in it.
+Li: True, let's fix it ASAP then.
+Sarah: I'll work on it now and let you know once it's ready for review again.
+Li: Sounds good, thanks for catching that!",2,Sarah,"['Hey', 'Li', ',', 'yeah', 'I', 'took', 'a', 'look', ',', 'but', 'I', 'found', 'a', 'bug', 'in', 'the', 'build', 'process', '.']","['INTJ', 'PROPN', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'CCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hey Li, yeah I took a look, but I found a bug in the build process.",2,63,"['Hey', 'Li', ',', 'yeah', 'I', 'took', 'a', 'look', ',', 'but', 'I', 'found', 'a', 'bug', 'in', 'the', 'build', 'process', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+63,"Oh no, really? We are already close to the deadline.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy?
+Sarah: Hey Li, yeah I took a look, but I found a bug in the build process.
+Li: Oh no, really? We are already close to the deadline.
+Sarah: Yeah, I know, but we can't merge this code with that bug in it.
+Li: True, let's fix it ASAP then.
+Sarah: I'll work on it now and let you know once it's ready for review again.
+Li: Sounds good, thanks for catching that!",3,Li,"['Oh', 'no', ',', 'really', '?', 'We', 'are', 'already', 'close', 'to', 'the', 'deadline', '.']","['INTJ', 'INTJ', 'PUNCT', 'ADV', 'PUNCT', 'PRON', 'AUX', 'ADV', 'ADJ', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Oh no, really? We are already close to the deadline.",3,63,"['Oh', 'no', ',', 'really', '?', 'We', 'are', 'already', 'close', 'to', 'the', 'deadline', '.']","['en', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+63,"Yeah, I know, but we can't merge this code with that bug in it.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy?
+Sarah: Hey Li, yeah I took a look, but I found a bug in the build process.
+Li: Oh no, really? We are already close to the deadline.
+Sarah: Yeah, I know, but we can't merge this code with that bug in it.
+Li: True, let's fix it ASAP then.
+Sarah: I'll work on it now and let you know once it's ready for review again.
+Li: Sounds good, thanks for catching that!",4,Sarah,"['Yeah', ',', 'I', 'know', ',', 'but', 'we', 'ca', ""n't"", 'merge', 'this', 'code', 'with', 'that', 'bug', 'in', 'it', '.']","['INTJ', 'PUNCT', 'PRON', 'VERB', 'PUNCT', 'CCONJ', 'PRON', 'AUX', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'PRON', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, I know, but we can't merge this code with that bug in it.",4,63,"['Yeah', ',', 'I', 'know', ',', 'but', 'we', 'ca', ""n't"", 'merge', 'this', 'code', 'with', 'that', 'bug', 'in', 'it', '.']","['en', 'punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,3,0,False
+63,"True, let's fix it ASAP then.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy?
+Sarah: Hey Li, yeah I took a look, but I found a bug in the build process.
+Li: Oh no, really? We are already close to the deadline.
+Sarah: Yeah, I know, but we can't merge this code with that bug in it.
+Li: True, let's fix it ASAP then.
+Sarah: I'll work on it now and let you know once it's ready for review again.
+Li: Sounds good, thanks for catching that!",5,Li,"['True', ',', 'let', ""'s"", 'fix', 'it', 'ASAP', 'then', '.']","['ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'ADV', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","True, let's fix it ASAP then.",5,63,"['True', ',', 'let', ""'s"", 'fix', 'it', 'ASAP', 'then', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+63,I'll work on it now and let you know once it's ready for review again.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy?
+Sarah: Hey Li, yeah I took a look, but I found a bug in the build process.
+Li: Oh no, really? We are already close to the deadline.
+Sarah: Yeah, I know, but we can't merge this code with that bug in it.
+Li: True, let's fix it ASAP then.
+Sarah: I'll work on it now and let you know once it's ready for review again.
+Li: Sounds good, thanks for catching that!",6,Sarah,"['I', ""'ll"", 'work', 'on', 'it', 'now', 'and', 'let', 'you', 'know', 'once', 'it', ""'s"", 'ready', 'for', 'review', 'again', '.']","['PRON', 'AUX', 'VERB', 'ADP', 'PRON', 'ADV', 'CCONJ', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'AUX', 'ADJ', 'ADP', 'NOUN', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",I'll work on it now and let you know once it's ready for review again.,6,63,"['I', ""'ll"", 'work', 'on', 'it', 'now', 'and', 'let', 'you', 'know', 'once', 'it', ""'s"", 'ready', 'for', 'review', 'again', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+63,"Sounds good, thanks for catching that!",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy?
+Sarah: Hey Li, yeah I took a look, but I found a bug in the build process.
+Li: Oh no, really? We are already close to the deadline.
+Sarah: Yeah, I know, but we can't merge this code with that bug in it.
+Li: True, let's fix it ASAP then.
+Sarah: I'll work on it now and let you know once it's ready for review again.
+Li: Sounds good, thanks for catching that!",7,Li,"['Sounds', 'good', ',', 'thanks', 'for', 'catching', 'that', '!']","['VERB', 'ADJ', 'PUNCT', 'NOUN', 'ADP', 'VERB', 'PRON', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']","Sounds good, thanks for catching that!",7,63,"['Sounds', 'good', ',', 'thanks', 'for', 'catching', 'that', '!']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']",en,0,0,False

@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+534,"Hey Sarah, I just noticed a bug on our staging环境. The button isn't responding when clicked.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed a bug on our staging环境. The button isn't responding when clicked. 
+
+Sarah: 哦，真的？Have we tested that feature in QA before the last deploy?
+
+Li: Yes, but it passed QA. Maybe it’s a merge conflict? 
+
+Sarah: 可能是。Should we roll back the last build to check if it works?
+
+Li: That's a good idea. Otherwise, we might miss our 下一步 deadline for the release.
+
+Sarah: 我觉得我们还需要再检查一下所有相关的代码。Could you look into the component files? 
+
+Li: Sure, let’s fix this before we finalize the deploy.",1,Li,"[',', 'Hey', 'Sarah', 'I', 'just', 'noticed', 'a', 'bug', 'on', 'our', 'staging', '环境', '.', ""'"", '.', 'The', 'button', 'isn', 't', 'responding', 'when', 'clicked']","['PUNCT', 'INTJ', 'PROPN', 'PRON', 'ADV', 'VERB', 'DET', 'NOUN', 'ADP', 'PRON', 'NOUN', 'n', 'PUNCT', 'PUNCT', 'PUNCT', 'DET', 'NOUN', 'PROPN', 'NOUN', 'VERB', 'SCONJ', 'VERB']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Hey Sarah, I just noticed a bug on our staging环境. The button isn't responding when clicked.",1,534,"[',', 'Hey', 'Sarah', 'I', 'just', 'noticed', 'a', 'bug', 'on', 'our', 'staging', '环境', '.', ""'"", '.', 'The', 'button', 'isn', 't', 'responding', 'when', 'clicked']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True
+534,哦，真的？Have we tested that feature in QA before the last deploy?,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed a bug on our staging环境. The button isn't responding when clicked. 
+
+Sarah: 哦，真的？Have we tested that feature in QA before the last deploy?
+
+Li: Yes, but it passed QA. Maybe it’s a merge conflict? 
+
+Sarah: 可能是。Should we roll back the last build to check if it works?
+
+Li: That's a good idea. Otherwise, we might miss our 下一步 deadline for the release.
+
+Sarah: 我觉得我们还需要再检查一下所有相关的代码。Could you look into the component files? 
+
+Li: Sure, let’s fix this before we finalize the deploy.",2,Sarah,"['哦', '，', '真的', '？', '?', 'Have', 'we', 'tested', 'that', 'feature', 'in', 'QA', 'before', 'the', 'last', 'deploy']","['zg', 'PUNCT', 'd', 'PUNCT', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'PROPN', 'ADP', 'DET', 'ADJ', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",哦，真的？Have we tested that feature in QA before the last deploy?,2,534,"['哦', '，', '真的', '？', '?', 'Have', 'we', 'tested', 'that', 'feature', 'in', 'QA', 'before', 'the', 'last', 'deploy']","['zh', 'other', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,3,0,True
+534,"Yes, but it passed QA. Maybe it’s a merge conflict?",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed a bug on our staging环境. The button isn't responding when clicked. 
+
+Sarah: 哦，真的？Have we tested that feature in QA before the last deploy?
+
+Li: Yes, but it passed QA. Maybe it’s a merge conflict? 
+
+Sarah: 可能是。Should we roll back the last build to check if it works?
+
+Li: That's a good idea. Otherwise, we might miss our 下一步 deadline for the release.
+
+Sarah: 我觉得我们还需要再检查一下所有相关的代码。Could you look into the component files? 
+
+Li: Sure, let’s fix this before we finalize the deploy.",3,Li,"['Yes', ',', 'but', 'it', 'passed', 'QA', '.', 'Maybe', 'it', '’s', 'a', 'merge', 'conflict', '?']","['INTJ', 'PUNCT', 'CCONJ', 'PRON', 'VERB', 'PROPN', 'PUNCT', 'ADV', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Yes, but it passed QA. Maybe it’s a merge conflict?",3,534,"['Yes', ',', 'but', 'it', 'passed', 'QA', '.', 'Maybe', 'it', '’s', 'a', 'merge', 'conflict', '?']","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+534,可能是。Should we roll back the last build to check if it works?,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed a bug on our staging环境. The button isn't responding when clicked. 
+
+Sarah: 哦，真的？Have we tested that feature in QA before the last deploy?
+
+Li: Yes, but it passed QA. Maybe it’s a merge conflict? 
+
+Sarah: 可能是。Should we roll back the last build to check if it works?
+
+Li: That's a good idea. Otherwise, we might miss our 下一步 deadline for the release.
+
+Sarah: 我觉得我们还需要再检查一下所有相关的代码。Could you look into the component files? 
+
+Li: Sure, let’s fix this before we finalize the deploy.",4,Sarah,"['可能', '是', '。', '?', 'Should', 'we', 'roll', 'back', 'the', 'last', 'build', 'to', 'check', 'if', 'it', 'works']","['v', 'v', 'PUNCT', 'PUNCT', 'AUX', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'PART', 'VERB', 'SCONJ', 'PRON', 'VERB']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",可能是。Should we roll back the last build to check if it works?,4,534,"['可能', '是', '。', '?', 'Should', 'we', 'roll', 'back', 'the', 'last', 'build', 'to', 'check', 'if', 'it', 'works']","['zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True
+534,"That's a good idea. Otherwise, we might miss our 下一步 deadline for the release.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed a bug on our staging环境. The button isn't responding when clicked. 
+
+Sarah: 哦，真的？Have we tested that feature in QA before the last deploy?
+
+Li: Yes, but it passed QA. Maybe it’s a merge conflict? 
+
+Sarah: 可能是。Should we roll back the last build to check if it works?
+
+Li: That's a good idea. Otherwise, we might miss our 下一步 deadline for the release.
+
+Sarah: 我觉得我们还需要再检查一下所有相关的代码。Could you look into the component files? 
+
+Li: Sure, let’s fix this before we finalize the deploy.",5,Li,"[""'"", '.', ',', 'That', 's', 'a', 'good', 'idea', 'Otherwise', 'we', 'might', 'miss', 'our', '下', '一步', '.', 'deadline', 'for', 'the', 'release']","['PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADV', 'PRON', 'AUX', 'VERB', 'PRON', 'f', 'm', 'PUNCT', 'NOUN', 'ADP', 'DET', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en']","That's a good idea. Otherwise, we might miss our 下一步 deadline for the release.",5,534,"[""'"", '.', ',', 'That', 's', 'a', 'good', 'idea', 'Otherwise', 'we', 'might', 'miss', 'our', '下', '一步', '.', 'deadline', 'for', 'the', 'release']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en']",mix,2,0,True
+534,我觉得我们还需要再检查一下所有相关的代码。Could you look into the component files?,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed a bug on our staging环境. The button isn't responding when clicked. 
+
+Sarah: 哦，真的？Have we tested that feature in QA before the last deploy?
+
+Li: Yes, but it passed QA. Maybe it’s a merge conflict? 
+
+Sarah: 可能是。Should we roll back the last build to check if it works?
+
+Li: That's a good idea. Otherwise, we might miss our 下一步 deadline for the release.
+
+Sarah: 我觉得我们还需要再检查一下所有相关的代码。Could you look into the component files? 
+
+Li: Sure, let’s fix this before we finalize the deploy.",6,Sarah,"['我', '觉得', '我们', '还', '需要', '再', '检查一下', '所有', '相关', '的', '代码', '。', '?', 'Could', 'you', 'look', 'into', 'the', 'component', 'files']","['r', 'v', 'r', 'd', 'v', 'd', 'n', 'b', 'v', 'uj', 'n', 'PUNCT', 'PUNCT', 'AUX', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",我觉得我们还需要再检查一下所有相关的代码。Could you look into the component files?,6,534,"['我', '觉得', '我们', '还', '需要', '再', '检查一下', '所有', '相关', '的', '代码', '。', '?', 'Could', 'you', 'look', 'into', 'the', 'component', 'files']","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0,0,True
+534,"Sure, let’s fix this before we finalize the deploy.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I just noticed a bug on our staging环境. The button isn't responding when clicked. 
+
+Sarah: 哦，真的？Have we tested that feature in QA before the last deploy?
+
+Li: Yes, but it passed QA. Maybe it’s a merge conflict? 
+
+Sarah: 可能是。Should we roll back the last build to check if it works?
+
+Li: That's a good idea. Otherwise, we might miss our 下一步 deadline for the release.
+
+Sarah: 我觉得我们还需要再检查一下所有相关的代码。Could you look into the component files? 
+
+Li: Sure, let’s fix this before we finalize the deploy.",7,Li,"['Sure', ',', 'let', '’s', 'fix', 'this', 'before', 'we', 'finalize', 'the', 'deploy', '.']","['INTJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Sure, let’s fix this before we finalize the deploy.",7,534,"['Sure', ',', 'let', '’s', 'fix', 'this', 'before', 'we', 'finalize', 'the', 'deploy', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False

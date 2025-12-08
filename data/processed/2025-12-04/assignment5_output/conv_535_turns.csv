@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+535,"** Hey Sarah, I’m seeing a bug in the new build on staging. Have you tested it yet?",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I’m seeing a bug in the new build on staging. Have you tested it yet?
+
+**Sarah:** 我还没有测试，不过我看到我们需要在 QA 环境里先确认一下。
+
+**Li:** Right. If we can’t reproduce it in QA, then it might be a merge issue. 
+
+**Sarah:** 说得对。我们最好尽快解决这个，因为 the deploy deadline is coming up.
+
+**Li:** Agreed. Let’s go through the latest changes together. I suspect it might be something in the CSS.
+
+**Sarah:** 好的，那我们先检查一下最近的 CSS 文件，有可能是样式冲突导致的。
+
+**Li:** Exactly! If we fix this quickly, we can still hit the deploy schedule.",1,**Li,"['*', '*', 'Hey', 'Sarah', ',', 'I', '’m', 'seeing', 'a', 'bug', 'in', 'the', 'new', 'build', 'on', 'staging', '.', 'Have', 'you', 'tested', 'it', 'yet', '?']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADP', 'NOUN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PRON', 'ADV', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other']","** Hey Sarah, I’m seeing a bug in the new build on staging. Have you tested it yet?",1,535,"['*', '*', 'Hey', 'Sarah', ',', 'I', '’m', 'seeing', 'a', 'bug', 'in', 'the', 'new', 'build', 'on', 'staging', '.', 'Have', 'you', 'tested', 'it', 'yet', '?']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other']",en,3,0,False
+535,** 我还没有测试，不过我看到我们需要在 QA 环境里先确认一下。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I’m seeing a bug in the new build on staging. Have you tested it yet?
+
+**Sarah:** 我还没有测试，不过我看到我们需要在 QA 环境里先确认一下。
+
+**Li:** Right. If we can’t reproduce it in QA, then it might be a merge issue. 
+
+**Sarah:** 说得对。我们最好尽快解决这个，因为 the deploy deadline is coming up.
+
+**Li:** Agreed. Let’s go through the latest changes together. I suspect it might be something in the CSS.
+
+**Sarah:** 好的，那我们先检查一下最近的 CSS 文件，有可能是样式冲突导致的。
+
+**Li:** Exactly! If we fix this quickly, we can still hit the deploy schedule.",2,**Sarah,"['*', '*', '我', '还', '没有', '测试', '，', '不过', '我', '看到', '我们', '需要', '在', 'QA', '环境', '里', '先', '确认', '一下', '。']","['PUNCT', 'PUNCT', 'r', 'd', 'v', 'vn', 'PUNCT', 'c', 'r', 'v', 'r', 'v', 'p', 'PROPN', 'n', 'f', 'd', 'v', 'm', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 我还没有测试，不过我看到我们需要在 QA 环境里先确认一下。,2,535,"['*', '*', '我', '还', '没有', '测试', '，', '不过', '我', '看到', '我们', '需要', '在', 'QA', '环境', '里', '先', '确认', '一下', '。']","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,1,0,True
+535,"** Right. If we can’t reproduce it in QA, then it might be a merge issue.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I’m seeing a bug in the new build on staging. Have you tested it yet?
+
+**Sarah:** 我还没有测试，不过我看到我们需要在 QA 环境里先确认一下。
+
+**Li:** Right. If we can’t reproduce it in QA, then it might be a merge issue. 
+
+**Sarah:** 说得对。我们最好尽快解决这个，因为 the deploy deadline is coming up.
+
+**Li:** Agreed. Let’s go through the latest changes together. I suspect it might be something in the CSS.
+
+**Sarah:** 好的，那我们先检查一下最近的 CSS 文件，有可能是样式冲突导致的。
+
+**Li:** Exactly! If we fix this quickly, we can still hit the deploy schedule.",3,**Li,"['*', '*', 'Right', '.', 'If', 'we', 'ca', 'n’t', 'reproduce', 'it', 'in', 'QA', ',', 'then', 'it', 'might', 'be', 'a', 'merge', 'issue', '.']","['PUNCT', 'PUNCT', 'INTJ', 'PUNCT', 'SCONJ', 'PRON', 'AUX', 'PART', 'VERB', 'PRON', 'ADP', 'PROPN', 'PUNCT', 'ADV', 'PRON', 'AUX', 'AUX', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Right. If we can’t reproduce it in QA, then it might be a merge issue.",3,535,"['*', '*', 'Right', '.', 'If', 'we', 'ca', 'n’t', 'reproduce', 'it', 'in', 'QA', ',', 'then', 'it', 'might', 'be', 'a', 'merge', 'issue', '.']","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+535,** 说得对。我们最好尽快解决这个，因为 the deploy deadline is coming up.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I’m seeing a bug in the new build on staging. Have you tested it yet?
+
+**Sarah:** 我还没有测试，不过我看到我们需要在 QA 环境里先确认一下。
+
+**Li:** Right. If we can’t reproduce it in QA, then it might be a merge issue. 
+
+**Sarah:** 说得对。我们最好尽快解决这个，因为 the deploy deadline is coming up.
+
+**Li:** Agreed. Let’s go through the latest changes together. I suspect it might be something in the CSS.
+
+**Sarah:** 好的，那我们先检查一下最近的 CSS 文件，有可能是样式冲突导致的。
+
+**Li:** Exactly! If we fix this quickly, we can still hit the deploy schedule.",4,**Sarah,"['*', '*', '说得对', '。', '我们', '最好', '尽快', '解决', '这个', '，', '因为', '.', 'the', 'deploy', 'deadline', 'is', 'coming', 'up']","['PUNCT', 'PUNCT', 'v', 'PUNCT', 'r', 'a', 'd', 'v', 'r', 'PUNCT', 'c', 'PUNCT', 'DET', 'NOUN', 'NOUN', 'AUX', 'VERB', 'ADP']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en']",** 说得对。我们最好尽快解决这个，因为 the deploy deadline is coming up.,4,535,"['*', '*', '说得对', '。', '我们', '最好', '尽快', '解决', '这个', '，', '因为', '.', 'the', 'deploy', 'deadline', 'is', 'coming', 'up']","['other', 'other', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True
+535,** Agreed. Let’s go through the latest changes together. I suspect it might be something in the CSS.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I’m seeing a bug in the new build on staging. Have you tested it yet?
+
+**Sarah:** 我还没有测试，不过我看到我们需要在 QA 环境里先确认一下。
+
+**Li:** Right. If we can’t reproduce it in QA, then it might be a merge issue. 
+
+**Sarah:** 说得对。我们最好尽快解决这个，因为 the deploy deadline is coming up.
+
+**Li:** Agreed. Let’s go through the latest changes together. I suspect it might be something in the CSS.
+
+**Sarah:** 好的，那我们先检查一下最近的 CSS 文件，有可能是样式冲突导致的。
+
+**Li:** Exactly! If we fix this quickly, we can still hit the deploy schedule.",5,**Li,"['*', '*', 'Agreed', '.', 'Let', '’s', 'go', 'through', 'the', 'latest', 'changes', 'together', '.', 'I', 'suspect', 'it', 'might', 'be', 'something', 'in', 'the', 'CSS', '.']","['PUNCT', 'PUNCT', 'VERB', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADV', 'PUNCT', 'PRON', 'VERB', 'PRON', 'AUX', 'AUX', 'PRON', 'ADP', 'DET', 'PROPN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** Agreed. Let’s go through the latest changes together. I suspect it might be something in the CSS.,5,535,"['*', '*', 'Agreed', '.', 'Let', '’s', 'go', 'through', 'the', 'latest', 'changes', 'together', '.', 'I', 'suspect', 'it', 'might', 'be', 'something', 'in', 'the', 'CSS', '.']","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+535,** 好的，那我们先检查一下最近的 CSS 文件，有可能是样式冲突导致的。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I’m seeing a bug in the new build on staging. Have you tested it yet?
+
+**Sarah:** 我还没有测试，不过我看到我们需要在 QA 环境里先确认一下。
+
+**Li:** Right. If we can’t reproduce it in QA, then it might be a merge issue. 
+
+**Sarah:** 说得对。我们最好尽快解决这个，因为 the deploy deadline is coming up.
+
+**Li:** Agreed. Let’s go through the latest changes together. I suspect it might be something in the CSS.
+
+**Sarah:** 好的，那我们先检查一下最近的 CSS 文件，有可能是样式冲突导致的。
+
+**Li:** Exactly! If we fix this quickly, we can still hit the deploy schedule.",6,**Sarah,"['*', '*', '好', '的', '，', '那', '我们', '先', '检查一下', '最近', '的', 'CSS', '文件', '，', '有', '可能', '是', '样式', '冲突', '导致', '的', '。']","['PUNCT', 'PUNCT', 'a', 'uj', 'PUNCT', 'r', 'r', 'd', 'n', 'f', 'uj', 'PROPN', 'n', 'PUNCT', 'v', 'v', 'v', 'n', 'vn', 'v', 'uj', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 好的，那我们先检查一下最近的 CSS 文件，有可能是样式冲突导致的。,6,535,"['*', '*', '好', '的', '，', '那', '我们', '先', '检查一下', '最近', '的', 'CSS', '文件', '，', '有', '可能', '是', '样式', '冲突', '导致', '的', '。']","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+535,"** Exactly! If we fix this quickly, we can still hit the deploy schedule.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I’m seeing a bug in the new build on staging. Have you tested it yet?
+
+**Sarah:** 我还没有测试，不过我看到我们需要在 QA 环境里先确认一下。
+
+**Li:** Right. If we can’t reproduce it in QA, then it might be a merge issue. 
+
+**Sarah:** 说得对。我们最好尽快解决这个，因为 the deploy deadline is coming up.
+
+**Li:** Agreed. Let’s go through the latest changes together. I suspect it might be something in the CSS.
+
+**Sarah:** 好的，那我们先检查一下最近的 CSS 文件，有可能是样式冲突导致的。
+
+**Li:** Exactly! If we fix this quickly, we can still hit the deploy schedule.",7,**Li,"['*', '*', 'Exactly', '!', 'If', 'we', 'fix', 'this', 'quickly', ',', 'we', 'can', 'still', 'hit', 'the', 'deploy', 'schedule', '.']","['PUNCT', 'PUNCT', 'ADV', 'PUNCT', 'SCONJ', 'PRON', 'VERB', 'PRON', 'ADV', 'PUNCT', 'PRON', 'AUX', 'ADV', 'VERB', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Exactly! If we fix this quickly, we can still hit the deploy schedule.",7,535,"['*', '*', 'Exactly', '!', 'If', 'we', 'fix', 'this', 'quickly', ',', 'we', 'can', 'still', 'hit', 'the', 'deploy', 'schedule', '.']","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False

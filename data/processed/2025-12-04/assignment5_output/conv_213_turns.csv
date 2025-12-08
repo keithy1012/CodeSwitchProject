@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+213,"** Hey Sarah, have you finished your part of the code for the new feature? We need to merge it by this afternoon if we want to deploy on Friday.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished your part of the code for the new feature? We need to merge it by this afternoon if we want to deploy on Friday.  
+
+**Sarah:** Almost there, Li! I'm just fixing a couple of bugs I found during testing. I should be done in the next hour.  
+
+**Li:** That sounds good. Once you finish, I can review and merge it with my branch. I really want to avoid any last-minute surprises.  
+
+**Sarah:** Totally agree. After merging, we can run a full build to make sure everything works well together. What do you think?  
+
+**Li:** Absolutely! Also, if we could schedule a quick call with the QA team after the build, it’d be great to have their input early on.  
+
+**Sarah:** Good idea! I’ll send them a message once we’ve merged the code. Let’s aim to wrap this up before lunch.  
+
+**Li:** Perfect! Let’s keep each other posted. We’ve got this!",1,**Li,"['*', '*', 'Hey', 'Sarah', ',', 'have', 'you', 'finished', 'your', 'part', 'of', 'the', 'code', 'for', 'the', 'new', 'feature', '?', 'We', 'need', 'to', 'merge', 'it', 'by', 'this', 'afternoon', 'if', 'we', 'want', 'to', 'deploy', 'on', 'Friday', '.']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PRON', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'ADP', 'DET', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'PART', 'VERB', 'ADP', 'PROPN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Hey Sarah, have you finished your part of the code for the new feature? We need to merge it by this afternoon if we want to deploy on Friday.",1,213,"['*', '*', 'Hey', 'Sarah', ',', 'have', 'you', 'finished', 'your', 'part', 'of', 'the', 'code', 'for', 'the', 'new', 'feature', '?', 'We', 'need', 'to', 'merge', 'it', 'by', 'this', 'afternoon', 'if', 'we', 'want', 'to', 'deploy', 'on', 'Friday', '.']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,4,0,False
+213,"** Almost there, Li! I'm just fixing a couple of bugs I found during testing. I should be done in the next hour.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished your part of the code for the new feature? We need to merge it by this afternoon if we want to deploy on Friday.  
+
+**Sarah:** Almost there, Li! I'm just fixing a couple of bugs I found during testing. I should be done in the next hour.  
+
+**Li:** That sounds good. Once you finish, I can review and merge it with my branch. I really want to avoid any last-minute surprises.  
+
+**Sarah:** Totally agree. After merging, we can run a full build to make sure everything works well together. What do you think?  
+
+**Li:** Absolutely! Also, if we could schedule a quick call with the QA team after the build, it’d be great to have their input early on.  
+
+**Sarah:** Good idea! I’ll send them a message once we’ve merged the code. Let’s aim to wrap this up before lunch.  
+
+**Li:** Perfect! Let’s keep each other posted. We’ve got this!",2,**Sarah,"['*', '*', 'Almost', 'there', ',', 'Li', '!', 'I', ""'m"", 'just', 'fixing', 'a', 'couple', 'of', 'bugs', 'I', 'found', 'during', 'testing', '.', 'I', 'should', 'be', 'done', 'in', 'the', 'next', 'hour', '.']","['PUNCT', 'PUNCT', 'ADV', 'ADV', 'PUNCT', 'PROPN', 'PUNCT', 'PRON', 'AUX', 'ADV', 'VERB', 'DET', 'NOUN', 'ADP', 'NOUN', 'PRON', 'VERB', 'ADP', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'AUX', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Almost there, Li! I'm just fixing a couple of bugs I found during testing. I should be done in the next hour.",2,213,"['*', '*', 'Almost', 'there', ',', 'Li', '!', 'I', ""'m"", 'just', 'fixing', 'a', 'couple', 'of', 'bugs', 'I', 'found', 'during', 'testing', '.', 'I', 'should', 'be', 'done', 'in', 'the', 'next', 'hour', '.']","['other', 'other', 'en', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+213,"** That sounds good. Once you finish, I can review and merge it with my branch. I really want to avoid any last-minute surprises.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished your part of the code for the new feature? We need to merge it by this afternoon if we want to deploy on Friday.  
+
+**Sarah:** Almost there, Li! I'm just fixing a couple of bugs I found during testing. I should be done in the next hour.  
+
+**Li:** That sounds good. Once you finish, I can review and merge it with my branch. I really want to avoid any last-minute surprises.  
+
+**Sarah:** Totally agree. After merging, we can run a full build to make sure everything works well together. What do you think?  
+
+**Li:** Absolutely! Also, if we could schedule a quick call with the QA team after the build, it’d be great to have their input early on.  
+
+**Sarah:** Good idea! I’ll send them a message once we’ve merged the code. Let’s aim to wrap this up before lunch.  
+
+**Li:** Perfect! Let’s keep each other posted. We’ve got this!",3,**Li,"['*', '*', 'That', 'sounds', 'good', '.', 'Once', 'you', 'finish', ',', 'I', 'can', 'review', 'and', 'merge', 'it', 'with', 'my', 'branch', '.', 'I', 'really', 'want', 'to', 'avoid', 'any', 'last', '-', 'minute', 'surprises', '.']","['PUNCT', 'PUNCT', 'PRON', 'VERB', 'ADJ', 'PUNCT', 'SCONJ', 'PRON', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'CCONJ', 'VERB', 'PRON', 'ADP', 'PRON', 'NOUN', 'PUNCT', 'PRON', 'ADV', 'VERB', 'PART', 'VERB', 'DET', 'ADJ', 'PUNCT', 'NOUN', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'punct']","** That sounds good. Once you finish, I can review and merge it with my branch. I really want to avoid any last-minute surprises.",3,213,"['*', '*', 'That', 'sounds', 'good', '.', 'Once', 'you', 'finish', ',', 'I', 'can', 'review', 'and', 'merge', 'it', 'with', 'my', 'branch', '.', 'I', 'really', 'want', 'to', 'avoid', 'any', 'last', '-', 'minute', 'surprises', '.']","['other', 'other', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'punct']",en,2,0,False
+213,"** Totally agree. After merging, we can run a full build to make sure everything works well together. What do you think?",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished your part of the code for the new feature? We need to merge it by this afternoon if we want to deploy on Friday.  
+
+**Sarah:** Almost there, Li! I'm just fixing a couple of bugs I found during testing. I should be done in the next hour.  
+
+**Li:** That sounds good. Once you finish, I can review and merge it with my branch. I really want to avoid any last-minute surprises.  
+
+**Sarah:** Totally agree. After merging, we can run a full build to make sure everything works well together. What do you think?  
+
+**Li:** Absolutely! Also, if we could schedule a quick call with the QA team after the build, it’d be great to have their input early on.  
+
+**Sarah:** Good idea! I’ll send them a message once we’ve merged the code. Let’s aim to wrap this up before lunch.  
+
+**Li:** Perfect! Let’s keep each other posted. We’ve got this!",4,**Sarah,"['*', '*', 'Totally', 'agree', '.', 'After', 'merging', ',', 'we', 'can', 'run', 'a', 'full', 'build', 'to', 'make', 'sure', 'everything', 'works', 'well', 'together', '.', 'What', 'do', 'you', 'think', '?']","['PUNCT', 'PUNCT', 'ADV', 'VERB', 'PUNCT', 'ADP', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'PART', 'VERB', 'ADJ', 'PRON', 'VERB', 'ADV', 'ADV', 'PUNCT', 'PRON', 'AUX', 'PRON', 'VERB', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']","** Totally agree. After merging, we can run a full build to make sure everything works well together. What do you think?",4,213,"['*', '*', 'Totally', 'agree', '.', 'After', 'merging', ',', 'we', 'can', 'run', 'a', 'full', 'build', 'to', 'make', 'sure', 'everything', 'works', 'well', 'together', '.', 'What', 'do', 'you', 'think', '?']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']",en,1,0,False
+213,"** Absolutely! Also, if we could schedule a quick call with the QA team after the build, it’d be great to have their input early on.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished your part of the code for the new feature? We need to merge it by this afternoon if we want to deploy on Friday.  
+
+**Sarah:** Almost there, Li! I'm just fixing a couple of bugs I found during testing. I should be done in the next hour.  
+
+**Li:** That sounds good. Once you finish, I can review and merge it with my branch. I really want to avoid any last-minute surprises.  
+
+**Sarah:** Totally agree. After merging, we can run a full build to make sure everything works well together. What do you think?  
+
+**Li:** Absolutely! Also, if we could schedule a quick call with the QA team after the build, it’d be great to have their input early on.  
+
+**Sarah:** Good idea! I’ll send them a message once we’ve merged the code. Let’s aim to wrap this up before lunch.  
+
+**Li:** Perfect! Let’s keep each other posted. We’ve got this!",5,**Li,"['*', '*', 'Absolutely', '!', 'Also', ',', 'if', 'we', 'could', 'schedule', 'a', 'quick', 'call', 'with', 'the', 'QA', 'team', 'after', 'the', 'build', ',', 'it', '’d', 'be', 'great', 'to', 'have', 'their', 'input', 'early', 'on', '.']","['PUNCT', 'PUNCT', 'ADV', 'PUNCT', 'ADV', 'PUNCT', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'PROPN', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'AUX', 'ADJ', 'PART', 'VERB', 'PRON', 'NOUN', 'ADV', 'ADV', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Absolutely! Also, if we could schedule a quick call with the QA team after the build, it’d be great to have their input early on.",5,213,"['*', '*', 'Absolutely', '!', 'Also', ',', 'if', 'we', 'could', 'schedule', 'a', 'quick', 'call', 'with', 'the', 'QA', 'team', 'after', 'the', 'build', ',', 'it', '’d', 'be', 'great', 'to', 'have', 'their', 'input', 'early', 'on', '.']","['other', 'other', 'en', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+213,** Good idea! I’ll send them a message once we’ve merged the code. Let’s aim to wrap this up before lunch.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished your part of the code for the new feature? We need to merge it by this afternoon if we want to deploy on Friday.  
+
+**Sarah:** Almost there, Li! I'm just fixing a couple of bugs I found during testing. I should be done in the next hour.  
+
+**Li:** That sounds good. Once you finish, I can review and merge it with my branch. I really want to avoid any last-minute surprises.  
+
+**Sarah:** Totally agree. After merging, we can run a full build to make sure everything works well together. What do you think?  
+
+**Li:** Absolutely! Also, if we could schedule a quick call with the QA team after the build, it’d be great to have their input early on.  
+
+**Sarah:** Good idea! I’ll send them a message once we’ve merged the code. Let’s aim to wrap this up before lunch.  
+
+**Li:** Perfect! Let’s keep each other posted. We’ve got this!",6,**Sarah,"['*', '*', 'Good', 'idea', '!', 'I', '’ll', 'send', 'them', 'a', 'message', 'once', 'we', '’ve', 'merged', 'the', 'code', '.', 'Let', '’s', 'aim', 'to', 'wrap', 'this', 'up', 'before', 'lunch', '.']","['PUNCT', 'PUNCT', 'ADJ', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'DET', 'NOUN', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'ADP', 'ADP', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** Good idea! I’ll send them a message once we’ve merged the code. Let’s aim to wrap this up before lunch.,6,213,"['*', '*', 'Good', 'idea', '!', 'I', '’ll', 'send', 'them', 'a', 'message', 'once', 'we', '’ve', 'merged', 'the', 'code', '.', 'Let', '’s', 'aim', 'to', 'wrap', 'this', 'up', 'before', 'lunch', '.']","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+213,** Perfect! Let’s keep each other posted. We’ve got this!,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished your part of the code for the new feature? We need to merge it by this afternoon if we want to deploy on Friday.  
+
+**Sarah:** Almost there, Li! I'm just fixing a couple of bugs I found during testing. I should be done in the next hour.  
+
+**Li:** That sounds good. Once you finish, I can review and merge it with my branch. I really want to avoid any last-minute surprises.  
+
+**Sarah:** Totally agree. After merging, we can run a full build to make sure everything works well together. What do you think?  
+
+**Li:** Absolutely! Also, if we could schedule a quick call with the QA team after the build, it’d be great to have their input early on.  
+
+**Sarah:** Good idea! I’ll send them a message once we’ve merged the code. Let’s aim to wrap this up before lunch.  
+
+**Li:** Perfect! Let’s keep each other posted. We’ve got this!",7,**Li,"['*', '*', 'Perfect', '!', 'Let', '’s', 'keep', 'each', 'other', 'posted', '.', 'We', '’ve', 'got', 'this', '!']","['PUNCT', 'PUNCT', 'ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'ADJ', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']",** Perfect! Let’s keep each other posted. We’ve got this!,7,213,"['*', '*', 'Perfect', '!', 'Let', '’s', 'keep', 'each', 'other', 'posted', '.', 'We', '’ve', 'got', 'this', '!']","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']",en,0,0,False

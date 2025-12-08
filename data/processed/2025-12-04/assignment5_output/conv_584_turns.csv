@@ -1,0 +1,145 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+584,"Hey Li, I saw a bug in the latest merge on our branch.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, I saw a bug in the latest merge on our branch.  
+Li: Oh, really? I can take a look and debug it.  
+Sarah: Thanks, I think it's causing the build to fail on Jenkins.  
+Li: Got it, let me check the logs for any errors.  
+Sarah: The deadline for this feature is tomorrow, so we need to fix it asap.  
+Li: I'll work on it now and push the fix once it's sorted out.  
+Sarah: Great, I'll let the product manager know about the delay.  
+Li: Hopefully, we can still deploy on time after the fix.",1,Sarah,"['Hey', 'Li', ',', 'I', 'saw', 'a', 'bug', 'in', 'the', 'latest', 'merge', 'on', 'our', 'branch', '.']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADP', 'PRON', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hey Li, I saw a bug in the latest merge on our branch.",1,584,"['Hey', 'Li', ',', 'I', 'saw', 'a', 'bug', 'in', 'the', 'latest', 'merge', 'on', 'our', 'branch', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,3,0,False
+584,"Oh, really? I can take a look and debug it.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, I saw a bug in the latest merge on our branch.  
+Li: Oh, really? I can take a look and debug it.  
+Sarah: Thanks, I think it's causing the build to fail on Jenkins.  
+Li: Got it, let me check the logs for any errors.  
+Sarah: The deadline for this feature is tomorrow, so we need to fix it asap.  
+Li: I'll work on it now and push the fix once it's sorted out.  
+Sarah: Great, I'll let the product manager know about the delay.  
+Li: Hopefully, we can still deploy on time after the fix.",2,Li,"['Oh', ',', 'really', '?', 'I', 'can', 'take', 'a', 'look', 'and', 'debug', 'it', '.']","['INTJ', 'PUNCT', 'ADV', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'CCONJ', 'VERB', 'PRON', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Oh, really? I can take a look and debug it.",2,584,"['Oh', ',', 'really', '?', 'I', 'can', 'take', 'a', 'look', 'and', 'debug', 'it', '.']","['en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+584,"Thanks, I think it's causing the build to fail on Jenkins.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, I saw a bug in the latest merge on our branch.  
+Li: Oh, really? I can take a look and debug it.  
+Sarah: Thanks, I think it's causing the build to fail on Jenkins.  
+Li: Got it, let me check the logs for any errors.  
+Sarah: The deadline for this feature is tomorrow, so we need to fix it asap.  
+Li: I'll work on it now and push the fix once it's sorted out.  
+Sarah: Great, I'll let the product manager know about the delay.  
+Li: Hopefully, we can still deploy on time after the fix.",3,Sarah,"['Thanks', ',', 'I', 'think', 'it', ""'s"", 'causing', 'the', 'build', 'to', 'fail', 'on', 'Jenkins', '.']","['NOUN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Thanks, I think it's causing the build to fail on Jenkins.",3,584,"['Thanks', ',', 'I', 'think', 'it', ""'s"", 'causing', 'the', 'build', 'to', 'fail', 'on', 'Jenkins', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+584,"Got it, let me check the logs for any errors.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, I saw a bug in the latest merge on our branch.  
+Li: Oh, really? I can take a look and debug it.  
+Sarah: Thanks, I think it's causing the build to fail on Jenkins.  
+Li: Got it, let me check the logs for any errors.  
+Sarah: The deadline for this feature is tomorrow, so we need to fix it asap.  
+Li: I'll work on it now and push the fix once it's sorted out.  
+Sarah: Great, I'll let the product manager know about the delay.  
+Li: Hopefully, we can still deploy on time after the fix.",4,Li,"['Got', 'it', ',', 'let', 'me', 'check', 'the', 'logs', 'for', 'any', 'errors', '.']","['VERB', 'PRON', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Got it, let me check the logs for any errors.",4,584,"['Got', 'it', ',', 'let', 'me', 'check', 'the', 'logs', 'for', 'any', 'errors', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+584,"The deadline for this feature is tomorrow, so we need to fix it asap.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, I saw a bug in the latest merge on our branch.  
+Li: Oh, really? I can take a look and debug it.  
+Sarah: Thanks, I think it's causing the build to fail on Jenkins.  
+Li: Got it, let me check the logs for any errors.  
+Sarah: The deadline for this feature is tomorrow, so we need to fix it asap.  
+Li: I'll work on it now and push the fix once it's sorted out.  
+Sarah: Great, I'll let the product manager know about the delay.  
+Li: Hopefully, we can still deploy on time after the fix.",5,Sarah,"['The', 'deadline', 'for', 'this', 'feature', 'is', 'tomorrow', ',', 'so', 'we', 'need', 'to', 'fix', 'it', 'asap', '.']","['DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'AUX', 'NOUN', 'PUNCT', 'ADV', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","The deadline for this feature is tomorrow, so we need to fix it asap.",5,584,"['The', 'deadline', 'for', 'this', 'feature', 'is', 'tomorrow', ',', 'so', 'we', 'need', 'to', 'fix', 'it', 'asap', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+584,I'll work on it now and push the fix once it's sorted out.,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, I saw a bug in the latest merge on our branch.  
+Li: Oh, really? I can take a look and debug it.  
+Sarah: Thanks, I think it's causing the build to fail on Jenkins.  
+Li: Got it, let me check the logs for any errors.  
+Sarah: The deadline for this feature is tomorrow, so we need to fix it asap.  
+Li: I'll work on it now and push the fix once it's sorted out.  
+Sarah: Great, I'll let the product manager know about the delay.  
+Li: Hopefully, we can still deploy on time after the fix.",6,Li,"['I', ""'ll"", 'work', 'on', 'it', 'now', 'and', 'push', 'the', 'fix', 'once', 'it', ""'s"", 'sorted', 'out', '.']","['PRON', 'AUX', 'VERB', 'ADP', 'PRON', 'ADV', 'CCONJ', 'VERB', 'DET', 'NOUN', 'SCONJ', 'PRON', 'AUX', 'VERB', 'ADP', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",I'll work on it now and push the fix once it's sorted out.,6,584,"['I', ""'ll"", 'work', 'on', 'it', 'now', 'and', 'push', 'the', 'fix', 'once', 'it', ""'s"", 'sorted', 'out', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+584,"Great, I'll let the product manager know about the delay.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, I saw a bug in the latest merge on our branch.  
+Li: Oh, really? I can take a look and debug it.  
+Sarah: Thanks, I think it's causing the build to fail on Jenkins.  
+Li: Got it, let me check the logs for any errors.  
+Sarah: The deadline for this feature is tomorrow, so we need to fix it asap.  
+Li: I'll work on it now and push the fix once it's sorted out.  
+Sarah: Great, I'll let the product manager know about the delay.  
+Li: Hopefully, we can still deploy on time after the fix.",7,Sarah,"['Great', ',', 'I', ""'ll"", 'let', 'the', 'product', 'manager', 'know', 'about', 'the', 'delay', '.']","['ADJ', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'NOUN', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, I'll let the product manager know about the delay.",7,584,"['Great', ',', 'I', ""'ll"", 'let', 'the', 'product', 'manager', 'know', 'about', 'the', 'delay', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+584,"Hopefully, we can still deploy on time after the fix.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, I saw a bug in the latest merge on our branch.  
+Li: Oh, really? I can take a look and debug it.  
+Sarah: Thanks, I think it's causing the build to fail on Jenkins.  
+Li: Got it, let me check the logs for any errors.  
+Sarah: The deadline for this feature is tomorrow, so we need to fix it asap.  
+Li: I'll work on it now and push the fix once it's sorted out.  
+Sarah: Great, I'll let the product manager know about the delay.  
+Li: Hopefully, we can still deploy on time after the fix.",8,Li,"['Hopefully', ',', 'we', 'can', 'still', 'deploy', 'on', 'time', 'after', 'the', 'fix', '.']","['ADV', 'PUNCT', 'PRON', 'AUX', 'ADV', 'VERB', 'ADP', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hopefully, we can still deploy on time after the fix.",8,584,"['Hopefully', ',', 'we', 'can', 'still', 'deploy', 'on', 'time', 'after', 'the', 'fix', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False

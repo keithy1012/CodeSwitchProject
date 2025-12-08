@@ -1,0 +1,153 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+741,"** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","**Li:** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。
+
+**Sarah:** Oh really? What kind of bug did you find in the build?
+
+**Li:** 主要是一个逻辑问题，可能会影响到我们的 deadline。
+
+**Sarah:** Got it. So we should probably fix that before we merge it, right?
+
+**Li:** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。
+
+**Sarah:** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.
+
+**Li:** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!
+
+**Sarah:** Anytime, Li! We’ve got this!",1,**Li,"['*', '*', ',', 'Hey', 'Sarah', '我', '刚刚', '检查', '了', '那个', '，', 'PR', '感觉', '有些', '小', '问题', '需要', '修复', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'r', 'd', 'vn', 'ul', 'r', 'PUNCT', 'NOUN', 'n', 'r', 'a', 'n', 'v', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。",1,741,"['*', '*', ',', 'Hey', 'Sarah', '我', '刚刚', '检查', '了', '那个', '，', 'PR', '感觉', '有些', '小', '问题', '需要', '修复', '。']","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+741,** Oh really? What kind of bug did you find in the build?,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","**Li:** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。
+
+**Sarah:** Oh really? What kind of bug did you find in the build?
+
+**Li:** 主要是一个逻辑问题，可能会影响到我们的 deadline。
+
+**Sarah:** Got it. So we should probably fix that before we merge it, right?
+
+**Li:** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。
+
+**Sarah:** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.
+
+**Li:** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!
+
+**Sarah:** Anytime, Li! We’ve got this!",2,**Sarah,"['*', '*', 'Oh', 'really', '?', 'What', 'kind', 'of', 'bug', 'did', 'you', 'find', 'in', 'the', 'build', '?']","['PUNCT', 'PUNCT', 'INTJ', 'ADV', 'PUNCT', 'PRON', 'NOUN', 'ADP', 'NOUN', 'AUX', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'other', 'en'}","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",** Oh really? What kind of bug did you find in the build?,2,741,"['*', '*', 'Oh', 'really', '?', 'What', 'kind', 'of', 'bug', 'did', 'you', 'find', 'in', 'the', 'build', '?']","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+741,** 主要是一个逻辑问题，可能会影响到我们的 deadline。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","**Li:** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。
+
+**Sarah:** Oh really? What kind of bug did you find in the build?
+
+**Li:** 主要是一个逻辑问题，可能会影响到我们的 deadline。
+
+**Sarah:** Got it. So we should probably fix that before we merge it, right?
+
+**Li:** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。
+
+**Sarah:** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.
+
+**Li:** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!
+
+**Sarah:** Anytime, Li! We’ve got this!",3,**Li,"['*', '*', '主要', '是', '一个', '逻辑', '问题', '，', '可能', '会', '影响', '到', '我们', '的', '。', 'deadline']","['PUNCT', 'PUNCT', 'b', 'v', 'm', 'n', 'n', 'PUNCT', 'v', 'v', 'vn', 'v', 'r', 'uj', 'PUNCT', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",** 主要是一个逻辑问题，可能会影响到我们的 deadline。,3,741,"['*', '*', '主要', '是', '一个', '逻辑', '问题', '，', '可能', '会', '影响', '到', '我们', '的', '。', 'deadline']","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,1,0,True
+741,"** Got it. So we should probably fix that before we merge it, right?",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","**Li:** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。
+
+**Sarah:** Oh really? What kind of bug did you find in the build?
+
+**Li:** 主要是一个逻辑问题，可能会影响到我们的 deadline。
+
+**Sarah:** Got it. So we should probably fix that before we merge it, right?
+
+**Li:** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。
+
+**Sarah:** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.
+
+**Li:** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!
+
+**Sarah:** Anytime, Li! We’ve got this!",4,**Sarah,"['*', '*', 'Got', 'it', '.', 'So', 'we', 'should', 'probably', 'fix', 'that', 'before', 'we', 'merge', 'it', ',', 'right', '?']","['PUNCT', 'PUNCT', 'VERB', 'PRON', 'PUNCT', 'ADV', 'PRON', 'AUX', 'ADV', 'VERB', 'PRON', 'SCONJ', 'PRON', 'VERB', 'PRON', 'PUNCT', 'ADJ', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'other']","** Got it. So we should probably fix that before we merge it, right?",4,741,"['*', '*', 'Got', 'it', '.', 'So', 'we', 'should', 'probably', 'fix', 'that', 'before', 'we', 'merge', 'it', ',', 'right', '?']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'other']",en,1,0,False
+741,** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","**Li:** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。
+
+**Sarah:** Oh really? What kind of bug did you find in the build?
+
+**Li:** 主要是一个逻辑问题，可能会影响到我们的 deadline。
+
+**Sarah:** Got it. So we should probably fix that before we merge it, right?
+
+**Li:** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。
+
+**Sarah:** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.
+
+**Li:** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!
+
+**Sarah:** Anytime, Li! We’ve got this!",5,**Li,"['*', '*', '是', '的', '，', '我会', '在', '今天', '之内', '修改', '。', '之后', '我们', '可以', '再', '一起', 'review', '一遍', '。']","['PUNCT', 'PUNCT', 'v', 'uj', 'PUNCT', 'n', 'p', 't', 'f', 'v', 'PUNCT', 'f', 'r', 'c', 'd', 'm', 'VERB', 'm', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']",** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。,5,741,"['*', '*', '是', '的', '，', '我会', '在', '今天', '之内', '修改', '。', '之后', '我们', '可以', '再', '一起', 'review', '一遍', '。']","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']",mix,0,0,True
+741,"** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","**Li:** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。
+
+**Sarah:** Oh really? What kind of bug did you find in the build?
+
+**Li:** 主要是一个逻辑问题，可能会影响到我们的 deadline。
+
+**Sarah:** Got it. So we should probably fix that before we merge it, right?
+
+**Li:** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。
+
+**Sarah:** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.
+
+**Li:** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!
+
+**Sarah:** Anytime, Li! We’ve got this!",6,**Sarah,"['*', '*', 'Sounds', 'good', '!', 'Let', 'me', 'know', 'when', 'you', 'push', 'the', 'changes', ',', 'so', 'I', 'can', 'take', 'a', 'look', 'before', 'the', 'deploy', '.']","['PUNCT', 'PUNCT', 'VERB', 'ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.",6,741,"['*', '*', 'Sounds', 'good', '!', 'Let', 'me', 'know', 'when', 'you', 'push', 'the', 'changes', ',', 'so', 'I', 'can', 'take', 'a', 'look', 'before', 'the', 'deploy', '.']","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+741,** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","**Li:** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。
+
+**Sarah:** Oh really? What kind of bug did you find in the build?
+
+**Li:** 主要是一个逻辑问题，可能会影响到我们的 deadline。
+
+**Sarah:** Got it. So we should probably fix that before we merge it, right?
+
+**Li:** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。
+
+**Sarah:** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.
+
+**Li:** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!
+
+**Sarah:** Anytime, Li! We’ve got this!",7,**Li,"['*', '*', '好', '的', '，', '我会', '尽快', '把', '它', '推送', '上去', '。', '谢谢', '你', '的', '帮助', '，', '!', 'Sarah']","['PUNCT', 'PUNCT', 'a', 'uj', 'PUNCT', 'n', 'd', 'p', 'r', 'v', 't', 'PUNCT', 'nr', 'r', 'uj', 'v', 'PUNCT', 'PUNCT', 'PROPN']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'other', 'other', 'en']",** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!,7,741,"['*', '*', '好', '的', '，', '我会', '尽快', '把', '它', '推送', '上去', '。', '谢谢', '你', '的', '帮助', '，', '!', 'Sarah']","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'other', 'other', 'en']",mix,0,0,True
+741,"** Anytime, Li! We’ve got this!",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","**Li:** Hey Sarah,我刚刚检查了那个PR，感觉有些小问题需要修复。
+
+**Sarah:** Oh really? What kind of bug did you find in the build?
+
+**Li:** 主要是一个逻辑问题，可能会影响到我们的 deadline。
+
+**Sarah:** Got it. So we should probably fix that before we merge it, right?
+
+**Li:** 是的，我会在今天之内修改。之后我们可以再一起 review 一遍。
+
+**Sarah:** Sounds good! Let me know when you push the changes, so I can take a look before the deploy.
+
+**Li:** 好的，我会尽快把它推送上去。谢谢你的帮助，Sarah!
+
+**Sarah:** Anytime, Li! We’ve got this!",8,**Sarah,"['*', '*', 'Anytime', ',', 'Li', '!', 'We', '’ve', 'got', 'this', '!']","['PUNCT', 'PUNCT', 'ADV', 'PUNCT', 'PROPN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'other']","** Anytime, Li! We’ve got this!",8,741,"['*', '*', 'Anytime', ',', 'Li', '!', 'We', '’ve', 'got', 'this', '!']","['other', 'other', 'en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'other']",en,0,0,False

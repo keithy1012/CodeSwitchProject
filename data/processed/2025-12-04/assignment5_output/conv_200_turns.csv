@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+200,"Hey Sarah, how are we doing on merging all our code changes for the deployment on Friday?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how are we doing on merging all our code changes for the deployment on Friday?
+
+Sarah: Hi Li, we're making good progress. I've merged most of the features, just a few more to go. How are the builds looking on your end?
+
+Li: That's great to hear. The builds are going smoothly so far. I've been testing for bugs and fixing them as I go. Have you encountered any major issues?
+
+Sarah: No major issues yet, just some minor bugs that I've been able to quickly address. I'm confident we can meet the deadline if we stay on track. 
+
+Li: Agreed, I think we're in good shape overall. Let's continue to collaborate closely to ensure everything is deployed successfully on Friday.
+
+Sarah: Definitely, great teamwork so far. I'll keep you updated on my progress and let you know if I run into any roadblocks. 
+
+Li: Sounds good. Let's keep pushing forward and make sure everything is ready for deployment by the end of the week.",1,Li,"['Hey', 'Sarah', ',', 'how', 'are', 'we', 'doing', 'on', 'merging', 'all', 'our', 'code', 'changes', 'for', 'the', 'deployment', 'on', 'Friday', '?']","['INTJ', 'PROPN', 'PUNCT', 'SCONJ', 'AUX', 'PRON', 'VERB', 'ADP', 'VERB', 'DET', 'PRON', 'NOUN', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, how are we doing on merging all our code changes for the deployment on Friday?",1,200,"['Hey', 'Sarah', ',', 'how', 'are', 'we', 'doing', 'on', 'merging', 'all', 'our', 'code', 'changes', 'for', 'the', 'deployment', 'on', 'Friday', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+200,"Hi Li, we're making good progress. I've merged most of the features, just a few more to go. How are the builds looking on your end?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how are we doing on merging all our code changes for the deployment on Friday?
+
+Sarah: Hi Li, we're making good progress. I've merged most of the features, just a few more to go. How are the builds looking on your end?
+
+Li: That's great to hear. The builds are going smoothly so far. I've been testing for bugs and fixing them as I go. Have you encountered any major issues?
+
+Sarah: No major issues yet, just some minor bugs that I've been able to quickly address. I'm confident we can meet the deadline if we stay on track. 
+
+Li: Agreed, I think we're in good shape overall. Let's continue to collaborate closely to ensure everything is deployed successfully on Friday.
+
+Sarah: Definitely, great teamwork so far. I'll keep you updated on my progress and let you know if I run into any roadblocks. 
+
+Li: Sounds good. Let's keep pushing forward and make sure everything is ready for deployment by the end of the week.",2,Sarah,"['Hi', 'Li', ',', 'we', ""'re"", 'making', 'good', 'progress', '.', 'I', ""'ve"", 'merged', 'most', 'of', 'the', 'features', ',', 'just', 'a', 'few', 'more', 'to', 'go', '.', 'How', 'are', 'the', 'builds', 'looking', 'on', 'your', 'end', '?']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADJ', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADJ', 'ADP', 'DET', 'NOUN', 'PUNCT', 'ADV', 'DET', 'ADJ', 'ADJ', 'PART', 'VERB', 'PUNCT', 'SCONJ', 'AUX', 'DET', 'NOUN', 'VERB', 'ADP', 'PRON', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hi Li, we're making good progress. I've merged most of the features, just a few more to go. How are the builds looking on your end?",2,200,"['Hi', 'Li', ',', 'we', ""'re"", 'making', 'good', 'progress', '.', 'I', ""'ve"", 'merged', 'most', 'of', 'the', 'features', ',', 'just', 'a', 'few', 'more', 'to', 'go', '.', 'How', 'are', 'the', 'builds', 'looking', 'on', 'your', 'end', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0,0,False
+200,That's great to hear. The builds are going smoothly so far. I've been testing for bugs and fixing them as I go. Have you encountered any major issues?,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how are we doing on merging all our code changes for the deployment on Friday?
+
+Sarah: Hi Li, we're making good progress. I've merged most of the features, just a few more to go. How are the builds looking on your end?
+
+Li: That's great to hear. The builds are going smoothly so far. I've been testing for bugs and fixing them as I go. Have you encountered any major issues?
+
+Sarah: No major issues yet, just some minor bugs that I've been able to quickly address. I'm confident we can meet the deadline if we stay on track. 
+
+Li: Agreed, I think we're in good shape overall. Let's continue to collaborate closely to ensure everything is deployed successfully on Friday.
+
+Sarah: Definitely, great teamwork so far. I'll keep you updated on my progress and let you know if I run into any roadblocks. 
+
+Li: Sounds good. Let's keep pushing forward and make sure everything is ready for deployment by the end of the week.",3,Li,"['That', ""'s"", 'great', 'to', 'hear', '.', 'The', 'builds', 'are', 'going', 'smoothly', 'so', 'far', '.', 'I', ""'ve"", 'been', 'testing', 'for', 'bugs', 'and', 'fixing', 'them', 'as', 'I', 'go', '.', 'Have', 'you', 'encountered', 'any', 'major', 'issues', '?']","['PRON', 'AUX', 'ADJ', 'PART', 'VERB', 'PUNCT', 'DET', 'NOUN', 'AUX', 'VERB', 'ADV', 'ADV', 'ADV', 'PUNCT', 'PRON', 'AUX', 'AUX', 'VERB', 'ADP', 'NOUN', 'CCONJ', 'VERB', 'PRON', 'SCONJ', 'PRON', 'VERB', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",That's great to hear. The builds are going smoothly so far. I've been testing for bugs and fixing them as I go. Have you encountered any major issues?,3,200,"['That', ""'s"", 'great', 'to', 'hear', '.', 'The', 'builds', 'are', 'going', 'smoothly', 'so', 'far', '.', 'I', ""'ve"", 'been', 'testing', 'for', 'bugs', 'and', 'fixing', 'them', 'as', 'I', 'go', '.', 'Have', 'you', 'encountered', 'any', 'major', 'issues', '?']","['en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0,0,False
+200,"No major issues yet, just some minor bugs that I've been able to quickly address. I'm confident we can meet the deadline if we stay on track.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how are we doing on merging all our code changes for the deployment on Friday?
+
+Sarah: Hi Li, we're making good progress. I've merged most of the features, just a few more to go. How are the builds looking on your end?
+
+Li: That's great to hear. The builds are going smoothly so far. I've been testing for bugs and fixing them as I go. Have you encountered any major issues?
+
+Sarah: No major issues yet, just some minor bugs that I've been able to quickly address. I'm confident we can meet the deadline if we stay on track. 
+
+Li: Agreed, I think we're in good shape overall. Let's continue to collaborate closely to ensure everything is deployed successfully on Friday.
+
+Sarah: Definitely, great teamwork so far. I'll keep you updated on my progress and let you know if I run into any roadblocks. 
+
+Li: Sounds good. Let's keep pushing forward and make sure everything is ready for deployment by the end of the week.",4,Sarah,"['No', 'major', 'issues', 'yet', ',', 'just', 'some', 'minor', 'bugs', 'that', 'I', ""'ve"", 'been', 'able', 'to', 'quickly', 'address', '.', 'I', ""'m"", 'confident', 'we', 'can', 'meet', 'the', 'deadline', 'if', 'we', 'stay', 'on', 'track', '.']","['DET', 'ADJ', 'NOUN', 'ADV', 'PUNCT', 'ADV', 'DET', 'ADJ', 'NOUN', 'PRON', 'PRON', 'AUX', 'AUX', 'ADJ', 'PART', 'ADV', 'VERB', 'PUNCT', 'PRON', 'AUX', 'ADJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","No major issues yet, just some minor bugs that I've been able to quickly address. I'm confident we can meet the deadline if we stay on track.",4,200,"['No', 'major', 'issues', 'yet', ',', 'just', 'some', 'minor', 'bugs', 'that', 'I', ""'ve"", 'been', 'able', 'to', 'quickly', 'address', '.', 'I', ""'m"", 'confident', 'we', 'can', 'meet', 'the', 'deadline', 'if', 'we', 'stay', 'on', 'track', '.']","['en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+200,"Agreed, I think we're in good shape overall. Let's continue to collaborate closely to ensure everything is deployed successfully on Friday.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how are we doing on merging all our code changes for the deployment on Friday?
+
+Sarah: Hi Li, we're making good progress. I've merged most of the features, just a few more to go. How are the builds looking on your end?
+
+Li: That's great to hear. The builds are going smoothly so far. I've been testing for bugs and fixing them as I go. Have you encountered any major issues?
+
+Sarah: No major issues yet, just some minor bugs that I've been able to quickly address. I'm confident we can meet the deadline if we stay on track. 
+
+Li: Agreed, I think we're in good shape overall. Let's continue to collaborate closely to ensure everything is deployed successfully on Friday.
+
+Sarah: Definitely, great teamwork so far. I'll keep you updated on my progress and let you know if I run into any roadblocks. 
+
+Li: Sounds good. Let's keep pushing forward and make sure everything is ready for deployment by the end of the week.",5,Li,"['Agreed', ',', 'I', 'think', 'we', ""'re"", 'in', 'good', 'shape', 'overall', '.', 'Let', ""'s"", 'continue', 'to', 'collaborate', 'closely', 'to', 'ensure', 'everything', 'is', 'deployed', 'successfully', 'on', 'Friday', '.']","['VERB', 'PUNCT', 'PRON', 'VERB', 'PRON', 'AUX', 'ADP', 'ADJ', 'NOUN', 'ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PART', 'VERB', 'ADV', 'PART', 'VERB', 'PRON', 'AUX', 'VERB', 'ADV', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Agreed, I think we're in good shape overall. Let's continue to collaborate closely to ensure everything is deployed successfully on Friday.",5,200,"['Agreed', ',', 'I', 'think', 'we', ""'re"", 'in', 'good', 'shape', 'overall', '.', 'Let', ""'s"", 'continue', 'to', 'collaborate', 'closely', 'to', 'ensure', 'everything', 'is', 'deployed', 'successfully', 'on', 'Friday', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+200,"Definitely, great teamwork so far. I'll keep you updated on my progress and let you know if I run into any roadblocks.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how are we doing on merging all our code changes for the deployment on Friday?
+
+Sarah: Hi Li, we're making good progress. I've merged most of the features, just a few more to go. How are the builds looking on your end?
+
+Li: That's great to hear. The builds are going smoothly so far. I've been testing for bugs and fixing them as I go. Have you encountered any major issues?
+
+Sarah: No major issues yet, just some minor bugs that I've been able to quickly address. I'm confident we can meet the deadline if we stay on track. 
+
+Li: Agreed, I think we're in good shape overall. Let's continue to collaborate closely to ensure everything is deployed successfully on Friday.
+
+Sarah: Definitely, great teamwork so far. I'll keep you updated on my progress and let you know if I run into any roadblocks. 
+
+Li: Sounds good. Let's keep pushing forward and make sure everything is ready for deployment by the end of the week.",6,Sarah,"['Definitely', ',', 'great', 'teamwork', 'so', 'far', '.', 'I', ""'ll"", 'keep', 'you', 'updated', 'on', 'my', 'progress', 'and', 'let', 'you', 'know', 'if', 'I', 'run', 'into', 'any', 'roadblocks', '.']","['ADV', 'PUNCT', 'ADJ', 'NOUN', 'ADV', 'ADV', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'VERB', 'ADP', 'PRON', 'NOUN', 'CCONJ', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Definitely, great teamwork so far. I'll keep you updated on my progress and let you know if I run into any roadblocks.",6,200,"['Definitely', ',', 'great', 'teamwork', 'so', 'far', '.', 'I', ""'ll"", 'keep', 'you', 'updated', 'on', 'my', 'progress', 'and', 'let', 'you', 'know', 'if', 'I', 'run', 'into', 'any', 'roadblocks', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+200,Sounds good. Let's keep pushing forward and make sure everything is ready for deployment by the end of the week.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how are we doing on merging all our code changes for the deployment on Friday?
+
+Sarah: Hi Li, we're making good progress. I've merged most of the features, just a few more to go. How are the builds looking on your end?
+
+Li: That's great to hear. The builds are going smoothly so far. I've been testing for bugs and fixing them as I go. Have you encountered any major issues?
+
+Sarah: No major issues yet, just some minor bugs that I've been able to quickly address. I'm confident we can meet the deadline if we stay on track. 
+
+Li: Agreed, I think we're in good shape overall. Let's continue to collaborate closely to ensure everything is deployed successfully on Friday.
+
+Sarah: Definitely, great teamwork so far. I'll keep you updated on my progress and let you know if I run into any roadblocks. 
+
+Li: Sounds good. Let's keep pushing forward and make sure everything is ready for deployment by the end of the week.",7,Li,"['Sounds', 'good', '.', 'Let', ""'s"", 'keep', 'pushing', 'forward', 'and', 'make', 'sure', 'everything', 'is', 'ready', 'for', 'deployment', 'by', 'the', 'end', 'of', 'the', 'week', '.']","['VERB', 'ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'VERB', 'ADV', 'CCONJ', 'VERB', 'ADJ', 'PRON', 'AUX', 'ADJ', 'ADP', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Sounds good. Let's keep pushing forward and make sure everything is ready for deployment by the end of the week.,7,200,"['Sounds', 'good', '.', 'Let', ""'s"", 'keep', 'pushing', 'forward', 'and', 'make', 'sure', 'everything', 'is', 'ready', 'for', 'deployment', 'by', 'the', 'end', 'of', 'the', 'week', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False

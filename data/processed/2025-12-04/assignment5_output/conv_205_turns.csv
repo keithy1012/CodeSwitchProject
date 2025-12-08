@@ -1,0 +1,85 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+205,"Hey Sarah, how's it going with the latest build?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how's it going with the latest build?  
+Sarah: Hey Li, it's coming along well. Just ironing out a few bugs before we can deploy.  
+Li: Great to hear. I'll finish merging my code with yours to make sure it's all cohesive.  
+Sarah: Sounds good. Let's aim to have everything ready for testing by tomorrow.  
+Li: Agreed, we need to stay on track to meet our deadline on Friday.  
+Sarah: Absolutely, let's push through and get this deployment out smoothly.  
+Li: I have full confidence in our team's ability to make it happen. Let's keep up the good work.",1,Li,"['Hey', 'Sarah', ',', 'how', ""'s"", 'it', 'going', 'with', 'the', 'latest', 'build', '?']","['INTJ', 'PROPN', 'PUNCT', 'SCONJ', 'AUX', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, how's it going with the latest build?",1,205,"['Hey', 'Sarah', ',', 'how', ""'s"", 'it', 'going', 'with', 'the', 'latest', 'build', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,1,0,False
+205,"Hey Li, it's coming along well. Just ironing out a few bugs before we can deploy.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how's it going with the latest build?  
+Sarah: Hey Li, it's coming along well. Just ironing out a few bugs before we can deploy.  
+Li: Great to hear. I'll finish merging my code with yours to make sure it's all cohesive.  
+Sarah: Sounds good. Let's aim to have everything ready for testing by tomorrow.  
+Li: Agreed, we need to stay on track to meet our deadline on Friday.  
+Sarah: Absolutely, let's push through and get this deployment out smoothly.  
+Li: I have full confidence in our team's ability to make it happen. Let's keep up the good work.",2,Sarah,"['Hey', 'Li', ',', 'it', ""'s"", 'coming', 'along', 'well', '.', 'Just', 'ironing', 'out', 'a', 'few', 'bugs', 'before', 'we', 'can', 'deploy', '.']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADP', 'ADV', 'PUNCT', 'ADV', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hey Li, it's coming along well. Just ironing out a few bugs before we can deploy.",2,205,"['Hey', 'Li', ',', 'it', ""'s"", 'coming', 'along', 'well', '.', 'Just', 'ironing', 'out', 'a', 'few', 'bugs', 'before', 'we', 'can', 'deploy', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+205,Great to hear. I'll finish merging my code with yours to make sure it's all cohesive.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how's it going with the latest build?  
+Sarah: Hey Li, it's coming along well. Just ironing out a few bugs before we can deploy.  
+Li: Great to hear. I'll finish merging my code with yours to make sure it's all cohesive.  
+Sarah: Sounds good. Let's aim to have everything ready for testing by tomorrow.  
+Li: Agreed, we need to stay on track to meet our deadline on Friday.  
+Sarah: Absolutely, let's push through and get this deployment out smoothly.  
+Li: I have full confidence in our team's ability to make it happen. Let's keep up the good work.",3,Li,"['Great', 'to', 'hear', '.', 'I', ""'ll"", 'finish', 'merging', 'my', 'code', 'with', 'yours', 'to', 'make', 'sure', 'it', ""'s"", 'all', 'cohesive', '.']","['ADJ', 'PART', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'VERB', 'PRON', 'NOUN', 'ADP', 'NOUN', 'PART', 'VERB', 'ADJ', 'PRON', 'AUX', 'DET', 'ADJ', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Great to hear. I'll finish merging my code with yours to make sure it's all cohesive.,3,205,"['Great', 'to', 'hear', '.', 'I', ""'ll"", 'finish', 'merging', 'my', 'code', 'with', 'yours', 'to', 'make', 'sure', 'it', ""'s"", 'all', 'cohesive', '.']","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+205,Sounds good. Let's aim to have everything ready for testing by tomorrow.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how's it going with the latest build?  
+Sarah: Hey Li, it's coming along well. Just ironing out a few bugs before we can deploy.  
+Li: Great to hear. I'll finish merging my code with yours to make sure it's all cohesive.  
+Sarah: Sounds good. Let's aim to have everything ready for testing by tomorrow.  
+Li: Agreed, we need to stay on track to meet our deadline on Friday.  
+Sarah: Absolutely, let's push through and get this deployment out smoothly.  
+Li: I have full confidence in our team's ability to make it happen. Let's keep up the good work.",4,Sarah,"['Sounds', 'good', '.', 'Let', ""'s"", 'aim', 'to', 'have', 'everything', 'ready', 'for', 'testing', 'by', 'tomorrow', '.']","['VERB', 'ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'ADJ', 'ADP', 'NOUN', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Sounds good. Let's aim to have everything ready for testing by tomorrow.,4,205,"['Sounds', 'good', '.', 'Let', ""'s"", 'aim', 'to', 'have', 'everything', 'ready', 'for', 'testing', 'by', 'tomorrow', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+205,"Agreed, we need to stay on track to meet our deadline on Friday.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how's it going with the latest build?  
+Sarah: Hey Li, it's coming along well. Just ironing out a few bugs before we can deploy.  
+Li: Great to hear. I'll finish merging my code with yours to make sure it's all cohesive.  
+Sarah: Sounds good. Let's aim to have everything ready for testing by tomorrow.  
+Li: Agreed, we need to stay on track to meet our deadline on Friday.  
+Sarah: Absolutely, let's push through and get this deployment out smoothly.  
+Li: I have full confidence in our team's ability to make it happen. Let's keep up the good work.",5,Li,"['Agreed', ',', 'we', 'need', 'to', 'stay', 'on', 'track', 'to', 'meet', 'our', 'deadline', 'on', 'Friday', '.']","['VERB', 'PUNCT', 'PRON', 'VERB', 'PART', 'VERB', 'ADP', 'NOUN', 'PART', 'VERB', 'PRON', 'NOUN', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Agreed, we need to stay on track to meet our deadline on Friday.",5,205,"['Agreed', ',', 'we', 'need', 'to', 'stay', 'on', 'track', 'to', 'meet', 'our', 'deadline', 'on', 'Friday', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+205,"Absolutely, let's push through and get this deployment out smoothly.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how's it going with the latest build?  
+Sarah: Hey Li, it's coming along well. Just ironing out a few bugs before we can deploy.  
+Li: Great to hear. I'll finish merging my code with yours to make sure it's all cohesive.  
+Sarah: Sounds good. Let's aim to have everything ready for testing by tomorrow.  
+Li: Agreed, we need to stay on track to meet our deadline on Friday.  
+Sarah: Absolutely, let's push through and get this deployment out smoothly.  
+Li: I have full confidence in our team's ability to make it happen. Let's keep up the good work.",6,Sarah,"['Absolutely', ',', 'let', ""'s"", 'push', 'through', 'and', 'get', 'this', 'deployment', 'out', 'smoothly', '.']","['ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADV', 'CCONJ', 'VERB', 'DET', 'NOUN', 'ADP', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Absolutely, let's push through and get this deployment out smoothly.",6,205,"['Absolutely', ',', 'let', ""'s"", 'push', 'through', 'and', 'get', 'this', 'deployment', 'out', 'smoothly', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+205,I have full confidence in our team's ability to make it happen. Let's keep up the good work.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","Li: Hey Sarah, how's it going with the latest build?  
+Sarah: Hey Li, it's coming along well. Just ironing out a few bugs before we can deploy.  
+Li: Great to hear. I'll finish merging my code with yours to make sure it's all cohesive.  
+Sarah: Sounds good. Let's aim to have everything ready for testing by tomorrow.  
+Li: Agreed, we need to stay on track to meet our deadline on Friday.  
+Sarah: Absolutely, let's push through and get this deployment out smoothly.  
+Li: I have full confidence in our team's ability to make it happen. Let's keep up the good work.",7,Li,"['I', 'have', 'full', 'confidence', 'in', 'our', 'team', ""'s"", 'ability', 'to', 'make', 'it', 'happen', '.', 'Let', ""'s"", 'keep', 'up', 'the', 'good', 'work', '.']","['PRON', 'VERB', 'ADJ', 'NOUN', 'ADP', 'PRON', 'NOUN', 'PART', 'NOUN', 'PART', 'VERB', 'PRON', 'VERB', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",I have full confidence in our team's ability to make it happen. Let's keep up the good work.,7,205,"['I', 'have', 'full', 'confidence', 'in', 'our', 'team', ""'s"", 'ability', 'to', 'make', 'it', 'happen', '.', 'Let', ""'s"", 'keep', 'up', 'the', 'good', 'work', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False

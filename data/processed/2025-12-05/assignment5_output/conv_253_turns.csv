@@ -1,0 +1,449 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+253,"Hey Sarah, I think we have a bug in our latest deployment.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",1,Li,"['Hey', 'Sarah', ',', 'I', 'think', 'we', 'have', 'a', 'bug', 'in', 'our', 'latest', 'deployment', '.']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'PRON', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hey Sarah, I think we have a bug in our latest deployment.",1,253,"['Hey', 'Sarah', ',', 'I', 'think', 'we', 'have', 'a', 'bug', 'in', 'our', 'latest', 'deployment', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.821,0.768,0.783,2,False
+253,嘿Sarah，我觉得我们最新的部署有个bug。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",2,李,"['嘿', '，', 'Sarah', '我', '觉得', '我们', '最新', '的', '部署', '有个', '。', 'bug']","['e', 'PUNCT', 'PROPN', 'r', 'v', 'r', 'd', 'uj', 'n', 'r', 'PUNCT', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",嘿Sarah，我觉得我们最新的部署有个bug。,2,253,"['嘿', '，', 'Sarah', '我', '觉得', '我们', '最新', '的', '部署', '有个', '。', 'bug']","['zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0.882,0.843,0.846,0,True
+253,"Oh no, that's not good. What seems to be the issue?",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",3,Sarah,"['Oh', 'no', ',', 'that', ""'s"", 'not', 'good', '.', 'What', 'seems', 'to', 'be', 'the', 'issue', '?']","['INTJ', 'INTJ', 'PUNCT', 'PRON', 'AUX', 'PART', 'ADJ', 'PUNCT', 'PRON', 'VERB', 'PART', 'AUX', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Oh no, that's not good. What seems to be the issue?",3,253,"['Oh', 'no', ',', 'that', ""'s"", 'not', 'good', '.', 'What', 'seems', 'to', 'be', 'the', 'issue', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.795,0.794,0.791,0,False
+253,哦不，这不太好。有什么问题？,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",4,萨拉,"['哦', '不', '，', '这', '不太好', '。', '有', '什么', '问题', '？']","['e', 'd', 'PUNCT', 'r', 'v', 'PUNCT', 'v', 'r', 'n', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'punct']",哦不，这不太好。有什么问题？,4,253,"['哦', '不', '，', '这', '不太好', '。', '有', '什么', '问题', '？']","['zh', 'zh', 'other', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'punct']",zh,0.847,0.843,0.851,0,False
+253,It looks like some of the CSS styles aren't loading correctly on the live site.,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",5,Li,"['It', 'looks', 'like', 'some', 'of', 'the', 'CSS', 'styles', 'are', ""n't"", 'loading', 'correctly', 'on', 'the', 'live', 'site', '.']","['PRON', 'VERB', 'SCONJ', 'PRON', 'ADP', 'DET', 'NOUN', 'NOUN', 'AUX', 'PART', 'VERB', 'ADV', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",It looks like some of the CSS styles aren't loading correctly on the live site.,5,253,"['It', 'looks', 'like', 'some', 'of', 'the', 'CSS', 'styles', 'are', ""n't"", 'loading', 'correctly', 'on', 'the', 'live', 'site', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.809,0.774,0.799,0,False
+253,似乎一些CSS样式在现场网站上没有正确加载。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",6,李,"['似乎', '一些', 'CSS', '样式', '在', '现场', '网站', '上', '没有', '正确', '加载', '。']","['d', 'm', 'PROPN', 'n', 'p', 'n', 'n', 'f', 'v', 'ad', 'v', 'PUNCT']","{'en', 'zh', 'punct'}","['zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",似乎一些CSS样式在现场网站上没有正确加载。,6,253,"['似乎', '一些', 'CSS', '样式', '在', '现场', '网站', '上', '没有', '正确', '加载', '。']","['zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.86,0.85,0.856,0,True
+253,"Hmm, let me take a look at the code for that part of the build.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",7,Sarah,"['Hmm', ',', 'let', 'me', 'take', 'a', 'look', 'at', 'the', 'code', 'for', 'that', 'part', 'of', 'the', 'build', '.']","['INTJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hmm, let me take a look at the code for that part of the build.",7,253,"['Hmm', ',', 'let', 'me', 'take', 'a', 'look', 'at', 'the', 'code', 'for', 'that', 'part', 'of', 'the', 'build', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.835,0.793,0.789,2,False
+253,让我看看构建的那部分代码。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",8,萨拉,"['让', '我', '看看', '构建', '的', '那', '部分', '代码', '。']","['v', 'r', 'v', 'v', 'uj', 'r', 'n', 'n', 'PUNCT']","{'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",让我看看构建的那部分代码。,8,253,"['让', '我', '看看', '构建', '的', '那', '部分', '代码', '。']","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.895,0.849,0.854,0,False
+253,"Yeah, it might have been introduced during the merge last night.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",9,Li,"['Yeah', ',', 'it', 'might', 'have', 'been', 'introduced', 'during', 'the', 'merge', 'last', 'night', '.']","['INTJ', 'PUNCT', 'PRON', 'AUX', 'AUX', 'AUX', 'VERB', 'ADP', 'DET', 'NOUN', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, it might have been introduced during the merge last night.",9,253,"['Yeah', ',', 'it', 'might', 'have', 'been', 'introduced', 'during', 'the', 'merge', 'last', 'night', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.811,0.783,0.788,1,False
+253,是的，可能是昨晚合并时引入的。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",10,李,"['是', '的', '，', '可能', '是', '昨晚', '合并', '时', '引入', '的', '。']","['v', 'uj', 'PUNCT', 'v', 'v', 't', 'v', 'n', 'v', 'uj', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",是的，可能是昨晚合并时引入的。,10,253,"['是', '的', '，', '可能', '是', '昨晚', '合并', '时', '引入', '的', '。']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.863,0.846,0.851,0,False
+253,"I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",11,Sarah,"['I', 'see', 'the', 'issue', 'now', ',', 'there', ""'s"", 'a', 'conflict', 'in', 'the', 'CSS', 'classes', '.', 'I', ""'ll"", 'push', 'a', 'fix', 'and', 'deploy', 'it', 'ASAP', '.']","['PRON', 'VERB', 'DET', 'NOUN', 'ADV', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'CCONJ', 'VERB', 'PRON', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.",11,253,"['I', 'see', 'the', 'issue', 'now', ',', 'there', ""'s"", 'a', 'conflict', 'in', 'the', 'CSS', 'classes', '.', 'I', ""'ll"", 'push', 'a', 'fix', 'and', 'deploy', 'it', 'ASAP', '.']","['en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.819,0.765,0.773,1,False
+253,我现在看到问题了，CSS类中有冲突。我会快速修复并部署。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",12,萨拉,"['我', '现在', '看到', '问题', '了', '，', 'CSS', '类', '中', '有', '冲突', '。', '我会', '快速', '修复', '并', '部署', '。']","['r', 't', 'v', 'n', 'ul', 'PUNCT', 'PROPN', 'q', 'f', 'v', 'vn', 'PUNCT', 'n', 'd', 'v', 'c', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",我现在看到问题了，CSS类中有冲突。我会快速修复并部署。,12,253,"['我', '现在', '看到', '问题', '了', '，', 'CSS', '类', '中', '有', '冲突', '。', '我会', '快速', '修复', '并', '部署', '。']","['zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.876,0.844,0.844,0,True
+253,"Great, thanks for catching that! We have a deadline to meet on this feature.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",13,Li,"['Great', ',', 'thanks', 'for', 'catching', 'that', '!', 'We', 'have', 'a', 'deadline', 'to', 'meet', 'on', 'this', 'feature', '.']","['ADJ', 'PUNCT', 'NOUN', 'ADP', 'VERB', 'PRON', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, thanks for catching that! We have a deadline to meet on this feature.",13,253,"['Great', ',', 'thanks', 'for', 'catching', 'that', '!', 'We', 'have', 'a', 'deadline', 'to', 'meet', 'on', 'this', 'feature', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.821,0.796,0.805,2,False
+253,太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",14,李,"['太好了', '，', '谢谢', '你', '发现', '了', '这个', '问题', '！', '我们', '在', '这个', '功能', '上', '有个', '截止', '日期', '。']","['l', 'PUNCT', 'nr', 'r', 'v', 'ul', 'r', 'n', 'PUNCT', 'r', 'p', 'r', 'n', 'f', 'r', 'v', 't', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。,14,253,"['太好了', '，', '谢谢', '你', '发现', '了', '这个', '问题', '！', '我们', '在', '这个', '功能', '上', '有个', '截止', '日期', '。']","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.868,0.852,0.853,0,False
+253,"No problem, we'll get it sorted out in no time.",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",15,Sarah,"['No', 'problem', ',', 'we', ""'ll"", 'get', 'it', 'sorted', 'out', 'in', 'no', 'time', '.']","['DET', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'VERB', 'ADP', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","No problem, we'll get it sorted out in no time.",15,253,"['No', 'problem', ',', 'we', ""'ll"", 'get', 'it', 'sorted', 'out', 'in', 'no', 'time', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.798,0.769,0.768,0,False
+253,没问题，我们很快就会解决。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I think we have a bug in our latest deployment.  
+李：嘿Sarah，我觉得我们最新的部署有个bug。
+
+Sarah: Oh no, that's not good. What seems to be the issue?  
+萨拉：哦不，这不太好。有什么问题？
+
+Li: It looks like some of the CSS styles aren't loading correctly on the live site.  
+李：似乎一些CSS样式在现场网站上没有正确加载。
+
+Sarah: Hmm, let me take a look at the code for that part of the build.  
+萨拉：让我看看构建的那部分代码。
+
+Li: Yeah, it might have been introduced during the merge last night.  
+李：是的，可能是昨晚合并时引入的。
+
+Sarah: I see the issue now, there's a conflict in the CSS classes. I'll push a fix and deploy it ASAP.  
+萨拉：我现在看到问题了，CSS类中有冲突。我会快速修复并部署。
+
+Li: Great, thanks for catching that! We have a deadline to meet on this feature.  
+李：太好了，谢谢你发现了这个问题！我们在这个功能上有个截止日期。
+
+Sarah: No problem, we'll get it sorted out in no time.  
+萨拉：没问题，我们很快就会解决。",16,萨拉,"['没', '问题', '，', '我们', '很快', '就', '会', '解决', '。']","['v', 'n', 'PUNCT', 'r', 'd', 'd', 'v', 'v', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",没问题，我们很快就会解决。,16,253,"['没', '问题', '，', '我们', '很快', '就', '会', '解决', '。']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.853,0.838,0.842,0,False

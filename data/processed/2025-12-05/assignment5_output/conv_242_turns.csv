@@ -1,0 +1,157 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+242,"""Have you merged your changes for the new feature yet?""",LLM,"['few-shot', 'persona-based']",gpt-3.5-turbo-16k,"You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. 
+Act as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, 
+and sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.
+Few-shot examples:
+Example 1:
+A: ""Can you push the latest styles to staging?""
+B: ""可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.""
+Example 2:
+A: ""There's a bug in the login flow after the OAuth change.""
+B: ""看一下 redirect URI, scope 好像没有 properly 设置.""
+Example 3:
+A: ""We need to ship before Friday's deadline.""
+B: ""好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.""
+Now: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.
+Requirements:
+Use **English–Mandarin code-switching** at the **phrase level**.
+Include at least one trigger word: **deploy, build, bug, deadline, merge**.
+Target ~35–50% Mandarin tokens per dialogue.
+Use natural engineering register (issue, PR, deploy, QA, staging, workaround).
+Keep turns short-to-medium.
+Output only the dialogues. Do not repeat the few-shot examples.","Li: ""Have you merged your changes for the new feature yet?""
+Sarah: ""对，我昨天 merge 了，但是 CI build 失败了，看起来有一个 bug.""
+Li: ""Let me take a look. Maybe we can deploy a quick fix to staging for testing.""
+Sarah: ""好主意，我会等你的 PR 然后进行 QA testing before the deadline.""
+Li: ""Sounds good. I'll try to push the fix ASAP so we can meet the deadline.""
+Sarah: ""谢谢！我们还可以准备一个 workaround 以备不时之需.""",1,Li,"['""', 'Have', 'you', 'merged', 'your', 'changes', 'for', 'the', 'new', 'feature', 'yet', '?', '""']","['PUNCT', 'AUX', 'PRON', 'VERB', 'PRON', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADV', 'PUNCT', 'PUNCT']","{'en', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'punct']","""Have you merged your changes for the new feature yet?""",1,242,"['""', 'Have', 'you', 'merged', 'your', 'changes', 'for', 'the', 'new', 'feature', 'yet', '?', '""']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'punct']",en,0.81,0.777,0.784,1,False
+242,"""对，我昨天 merge 了，但是 CI build 失败了，看起来有一个 bug.""",LLM,"['few-shot', 'persona-based']",gpt-3.5-turbo-16k,"You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. 
+Act as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, 
+and sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.
+Few-shot examples:
+Example 1:
+A: ""Can you push the latest styles to staging?""
+B: ""可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.""
+Example 2:
+A: ""There's a bug in the login flow after the OAuth change.""
+B: ""看一下 redirect URI, scope 好像没有 properly 设置.""
+Example 3:
+A: ""We need to ship before Friday's deadline.""
+B: ""好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.""
+Now: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.
+Requirements:
+Use **English–Mandarin code-switching** at the **phrase level**.
+Include at least one trigger word: **deploy, build, bug, deadline, merge**.
+Target ~35–50% Mandarin tokens per dialogue.
+Use natural engineering register (issue, PR, deploy, QA, staging, workaround).
+Keep turns short-to-medium.
+Output only the dialogues. Do not repeat the few-shot examples.","Li: ""Have you merged your changes for the new feature yet?""
+Sarah: ""对，我昨天 merge 了，但是 CI build 失败了，看起来有一个 bug.""
+Li: ""Let me take a look. Maybe we can deploy a quick fix to staging for testing.""
+Sarah: ""好主意，我会等你的 PR 然后进行 QA testing before the deadline.""
+Li: ""Sounds good. I'll try to push the fix ASAP so we can meet the deadline.""
+Sarah: ""谢谢！我们还可以准备一个 workaround 以备不时之需.""",2,Sarah,"['""', '对', '，', '我', '昨天', 'merge', '了', '，', '但是', 'CI', 'build', '失败', '了', '，', '看起来', '有', '一个', '.', '""', 'bug']","['PUNCT', 'p', 'PUNCT', 'r', 't', 'VERB', 'ul', 'PUNCT', 'c', 'PROPN', 'VERB', 'v', 'ul', 'PUNCT', 'v', 'v', 'm', 'PUNCT', 'PUNCT', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['punct', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'en', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'punct', 'en']","""对，我昨天 merge 了，但是 CI build 失败了，看起来有一个 bug.""",2,242,"['""', '对', '，', '我', '昨天', 'merge', '了', '，', '但是', 'CI', 'build', '失败', '了', '，', '看起来', '有', '一个', '.', '""', 'bug']","['punct', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'en', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'punct', 'en']",mix,0.854,0.819,0.82,4,True
+242,"""Let me take a look. Maybe we can deploy a quick fix to staging for testing.""",LLM,"['few-shot', 'persona-based']",gpt-3.5-turbo-16k,"You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. 
+Act as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, 
+and sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.
+Few-shot examples:
+Example 1:
+A: ""Can you push the latest styles to staging?""
+B: ""可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.""
+Example 2:
+A: ""There's a bug in the login flow after the OAuth change.""
+B: ""看一下 redirect URI, scope 好像没有 properly 设置.""
+Example 3:
+A: ""We need to ship before Friday's deadline.""
+B: ""好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.""
+Now: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.
+Requirements:
+Use **English–Mandarin code-switching** at the **phrase level**.
+Include at least one trigger word: **deploy, build, bug, deadline, merge**.
+Target ~35–50% Mandarin tokens per dialogue.
+Use natural engineering register (issue, PR, deploy, QA, staging, workaround).
+Keep turns short-to-medium.
+Output only the dialogues. Do not repeat the few-shot examples.","Li: ""Have you merged your changes for the new feature yet?""
+Sarah: ""对，我昨天 merge 了，但是 CI build 失败了，看起来有一个 bug.""
+Li: ""Let me take a look. Maybe we can deploy a quick fix to staging for testing.""
+Sarah: ""好主意，我会等你的 PR 然后进行 QA testing before the deadline.""
+Li: ""Sounds good. I'll try to push the fix ASAP so we can meet the deadline.""
+Sarah: ""谢谢！我们还可以准备一个 workaround 以备不时之需.""",3,Li,"['""', 'Let', 'me', 'take', 'a', 'look', '.', 'Maybe', 'we', 'can', 'deploy', 'a', 'quick', 'fix', 'to', 'staging', 'for', 'testing', '.', '""']","['PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'ADV', 'PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'VERB', 'ADP', 'NOUN', 'PUNCT', 'PUNCT']","{'en', 'punct'}","['punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']","""Let me take a look. Maybe we can deploy a quick fix to staging for testing.""",3,242,"['""', 'Let', 'me', 'take', 'a', 'look', '.', 'Maybe', 'we', 'can', 'deploy', 'a', 'quick', 'fix', 'to', 'staging', 'for', 'testing', '.', '""']","['punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']",en,0.827,0.783,0.794,2,False
+242,"""好主意，我会等你的 PR 然后进行 QA testing before the deadline.""",LLM,"['few-shot', 'persona-based']",gpt-3.5-turbo-16k,"You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. 
+Act as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, 
+and sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.
+Few-shot examples:
+Example 1:
+A: ""Can you push the latest styles to staging?""
+B: ""可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.""
+Example 2:
+A: ""There's a bug in the login flow after the OAuth change.""
+B: ""看一下 redirect URI, scope 好像没有 properly 设置.""
+Example 3:
+A: ""We need to ship before Friday's deadline.""
+B: ""好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.""
+Now: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.
+Requirements:
+Use **English–Mandarin code-switching** at the **phrase level**.
+Include at least one trigger word: **deploy, build, bug, deadline, merge**.
+Target ~35–50% Mandarin tokens per dialogue.
+Use natural engineering register (issue, PR, deploy, QA, staging, workaround).
+Keep turns short-to-medium.
+Output only the dialogues. Do not repeat the few-shot examples.","Li: ""Have you merged your changes for the new feature yet?""
+Sarah: ""对，我昨天 merge 了，但是 CI build 失败了，看起来有一个 bug.""
+Li: ""Let me take a look. Maybe we can deploy a quick fix to staging for testing.""
+Sarah: ""好主意，我会等你的 PR 然后进行 QA testing before the deadline.""
+Li: ""Sounds good. I'll try to push the fix ASAP so we can meet the deadline.""
+Sarah: ""谢谢！我们还可以准备一个 workaround 以备不时之需.""",4,Sarah,"['""', '好', '主意', '，', '我会', '等', '你', '的', 'PR', '然后', '进行', '.', '""', 'QA', 'testing', 'before', 'the', 'deadline']","['PUNCT', 'a', 'n', 'PUNCT', 'n', 'u', 'r', 'uj', 'NOUN', 'c', 'v', 'PUNCT', 'PUNCT', 'NOUN', 'NOUN', 'ADP', 'DET', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['punct', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en']","""好主意，我会等你的 PR 然后进行 QA testing before the deadline.""",4,242,"['""', '好', '主意', '，', '我会', '等', '你', '的', 'PR', '然后', '进行', '.', '""', 'QA', 'testing', 'before', 'the', 'deadline']","['punct', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en']",mix,0.847,0.832,0.827,3,True
+242,"""Sounds good. I'll try to push the fix ASAP so we can meet the deadline.""",LLM,"['few-shot', 'persona-based']",gpt-3.5-turbo-16k,"You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. 
+Act as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, 
+and sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.
+Few-shot examples:
+Example 1:
+A: ""Can you push the latest styles to staging?""
+B: ""可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.""
+Example 2:
+A: ""There's a bug in the login flow after the OAuth change.""
+B: ""看一下 redirect URI, scope 好像没有 properly 设置.""
+Example 3:
+A: ""We need to ship before Friday's deadline.""
+B: ""好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.""
+Now: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.
+Requirements:
+Use **English–Mandarin code-switching** at the **phrase level**.
+Include at least one trigger word: **deploy, build, bug, deadline, merge**.
+Target ~35–50% Mandarin tokens per dialogue.
+Use natural engineering register (issue, PR, deploy, QA, staging, workaround).
+Keep turns short-to-medium.
+Output only the dialogues. Do not repeat the few-shot examples.","Li: ""Have you merged your changes for the new feature yet?""
+Sarah: ""对，我昨天 merge 了，但是 CI build 失败了，看起来有一个 bug.""
+Li: ""Let me take a look. Maybe we can deploy a quick fix to staging for testing.""
+Sarah: ""好主意，我会等你的 PR 然后进行 QA testing before the deadline.""
+Li: ""Sounds good. I'll try to push the fix ASAP so we can meet the deadline.""
+Sarah: ""谢谢！我们还可以准备一个 workaround 以备不时之需.""",5,Li,"['""', 'Sounds', 'good', '.', 'I', ""'ll"", 'try', 'to', 'push', 'the', 'fix', 'ASAP', 'so', 'we', 'can', 'meet', 'the', 'deadline', '.', '""']","['PUNCT', 'VERB', 'ADJ', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'ADV', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'PUNCT', 'PUNCT']","{'en', 'punct'}","['punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']","""Sounds good. I'll try to push the fix ASAP so we can meet the deadline.""",5,242,"['""', 'Sounds', 'good', '.', 'I', ""'ll"", 'try', 'to', 'push', 'the', 'fix', 'ASAP', 'so', 'we', 'can', 'meet', 'the', 'deadline', '.', '""']","['punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']",en,0.814,0.786,0.795,1,False
+242,"""谢谢！我们还可以准备一个 workaround 以备不时之需.""",LLM,"['few-shot', 'persona-based']",gpt-3.5-turbo-16k,"You are an expert dataset generator for bilingual English–Mandarin code-switched technical dialogues. 
+Act as a frontend engineer from Shanghai now working in San Francisco. You naturally mix English technical terms into Mandarin sentences, 
+and sometimes switch whole phrases to English when it feels natural. Keep the tone pragmatic, casual, like real engineers chatting.
+Few-shot examples:
+Example 1:
+A: ""Can you push the latest styles to staging?""
+B: ""可以，我现在就 push. 不过 header 在 mobile 上看起来有点 weird.""
+Example 2:
+A: ""There's a bug in the login flow after the OAuth change.""
+B: ""看一下 redirect URI, scope 好像没有 properly 设置.""
+Example 3:
+A: ""We need to ship before Friday's deadline.""
+B: ""好，先 prioritize login 和 checkout, 其他功能可以等下个 sprint.""
+Now: produce a dialogue between two engineers (Li and Sarah). Each dialogue should be 5–7 turns.
+Requirements:
+Use **English–Mandarin code-switching** at the **phrase level**.
+Include at least one trigger word: **deploy, build, bug, deadline, merge**.
+Target ~35–50% Mandarin tokens per dialogue.
+Use natural engineering register (issue, PR, deploy, QA, staging, workaround).
+Keep turns short-to-medium.
+Output only the dialogues. Do not repeat the few-shot examples.","Li: ""Have you merged your changes for the new feature yet?""
+Sarah: ""对，我昨天 merge 了，但是 CI build 失败了，看起来有一个 bug.""
+Li: ""Let me take a look. Maybe we can deploy a quick fix to staging for testing.""
+Sarah: ""好主意，我会等你的 PR 然后进行 QA testing before the deadline.""
+Li: ""Sounds good. I'll try to push the fix ASAP so we can meet the deadline.""
+Sarah: ""谢谢！我们还可以准备一个 workaround 以备不时之需.""",6,Sarah,"['""', '谢谢', '！', '我们', '还', '可以', '准备', '一个', 'workaround', '以备', '不时之需', '.', '""']","['PUNCT', 'nr', 'PUNCT', 'r', 'd', 'c', 'v', 'm', 'NOUN', 'v', 'l', 'PUNCT', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['punct', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct', 'punct']","""谢谢！我们还可以准备一个 workaround 以备不时之需.""",6,242,"['""', '谢谢', '！', '我们', '还', '可以', '准备', '一个', 'workaround', '以备', '不时之需', '.', '""']","['punct', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct', 'punct']",mix,0.843,0.816,0.825,0,True

@@ -1,0 +1,91 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+302,"Hey Sarah, have you had a chance to review the PR for the deploy 代码?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy 代码?
+
+Sarah: Yes, I just looked at it. 快速 scan 了一遍, but I noticed a few bugs that need to be fixed before we can merge it.
+
+Li: OK, let me take a look. 我看看能不能 fix them before the deadline.
+
+Sarah: Sounds good. Let me know if you need any help. 我可以帮你 test the build to make sure everything is working properly.
+
+Li: Great, 谢谢你的帮助. I'll work on fixing the bugs and then we can test the build together.
+
+Sarah: No problem, teamwork makes the dream work! 我们一定能够 meet the deadline for this deploy.",1,Li,"[',', 'Hey', 'Sarah', 'have', 'you', 'had', 'a', 'chance', 'to', 'review', 'the', 'PR', 'for', 'the', 'deploy', '代码', '?']","['PUNCT', 'INTJ', 'PROPN', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other']","Hey Sarah, have you had a chance to review the PR for the deploy 代码?",1,302,"[',', 'Hey', 'Sarah', 'have', 'you', 'had', 'a', 'chance', 'to', 'review', 'the', 'PR', 'for', 'the', 'deploy', '代码', '?']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other']",mix,2,0,True
+302,"Yes, I just looked at it. 快速 scan 了一遍, but I noticed a few bugs that need to be fixed before we can merge it.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy 代码?
+
+Sarah: Yes, I just looked at it. 快速 scan 了一遍, but I noticed a few bugs that need to be fixed before we can merge it.
+
+Li: OK, let me take a look. 我看看能不能 fix them before the deadline.
+
+Sarah: Sounds good. Let me know if you need any help. 我可以帮你 test the build to make sure everything is working properly.
+
+Li: Great, 谢谢你的帮助. I'll work on fixing the bugs and then we can test the build together.
+
+Sarah: No problem, teamwork makes the dream work! 我们一定能够 meet the deadline for this deploy.",2,Sarah,"[',', '.', 'Yes', 'I', 'just', 'looked', 'at', 'it', '快速', 'scan', '了', '一遍', ',', '.', 'but', 'I', 'noticed', 'a', 'few', 'bugs', 'that', 'need', 'to', 'be', 'fixed', 'before', 'we', 'can', 'merge', 'it']","['PUNCT', 'PUNCT', 'INTJ', 'PRON', 'ADV', 'VERB', 'ADP', 'PRON', 'd', 'PROPN', 'ul', 'm', 'PUNCT', 'PUNCT', 'CCONJ', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'PRON', 'VERB', 'PART', 'AUX', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PRON']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'en', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Yes, I just looked at it. 快速 scan 了一遍, but I noticed a few bugs that need to be fixed before we can merge it.",2,302,"[',', '.', 'Yes', 'I', 'just', 'looked', 'at', 'it', '快速', 'scan', '了', '一遍', ',', '.', 'but', 'I', 'noticed', 'a', 'few', 'bugs', 'that', 'need', 'to', 'be', 'fixed', 'before', 'we', 'can', 'merge', 'it']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'en', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True
+302,"OK, let me take a look. 我看看能不能 fix them before the deadline.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy 代码?
+
+Sarah: Yes, I just looked at it. 快速 scan 了一遍, but I noticed a few bugs that need to be fixed before we can merge it.
+
+Li: OK, let me take a look. 我看看能不能 fix them before the deadline.
+
+Sarah: Sounds good. Let me know if you need any help. 我可以帮你 test the build to make sure everything is working properly.
+
+Li: Great, 谢谢你的帮助. I'll work on fixing the bugs and then we can test the build together.
+
+Sarah: No problem, teamwork makes the dream work! 我们一定能够 meet the deadline for this deploy.",3,Li,"[',', '.', 'OK', 'let', 'me', 'take', 'a', 'look', '我', '看看', '能', '不能', '.', 'fix', 'them', 'before', 'the', 'deadline']","['PUNCT', 'PUNCT', 'INTJ', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'r', 'v', 'v', 'v', 'PUNCT', 'VERB', 'PRON', 'ADP', 'DET', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en']","OK, let me take a look. 我看看能不能 fix them before the deadline.",3,302,"[',', '.', 'OK', 'let', 'me', 'take', 'a', 'look', '我', '看看', '能', '不能', '.', 'fix', 'them', 'before', 'the', 'deadline']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True
+302,Sounds good. Let me know if you need any help. 我可以帮你 test the build to make sure everything is working properly.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy 代码?
+
+Sarah: Yes, I just looked at it. 快速 scan 了一遍, but I noticed a few bugs that need to be fixed before we can merge it.
+
+Li: OK, let me take a look. 我看看能不能 fix them before the deadline.
+
+Sarah: Sounds good. Let me know if you need any help. 我可以帮你 test the build to make sure everything is working properly.
+
+Li: Great, 谢谢你的帮助. I'll work on fixing the bugs and then we can test the build together.
+
+Sarah: No problem, teamwork makes the dream work! 我们一定能够 meet the deadline for this deploy.",4,Sarah,"['.', '.', 'Sounds', 'good', 'Let', 'me', 'know', 'if', 'you', 'need', 'any', 'help', '我', '可以', '帮', '你', '.', 'test', 'the', 'build', 'to', 'make', 'sure', 'everything', 'is', 'working', 'properly']","['PUNCT', 'PUNCT', 'VERB', 'ADJ', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'r', 'c', 'v', 'r', 'PUNCT', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADJ', 'PRON', 'AUX', 'VERB', 'ADV']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",Sounds good. Let me know if you need any help. 我可以帮你 test the build to make sure everything is working properly.,4,302,"['.', '.', 'Sounds', 'good', 'Let', 'me', 'know', 'if', 'you', 'need', 'any', 'help', '我', '可以', '帮', '你', '.', 'test', 'the', 'build', 'to', 'make', 'sure', 'everything', 'is', 'working', 'properly']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True
+302,"Great, 谢谢你的帮助. I'll work on fixing the bugs and then we can test the build together.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy 代码?
+
+Sarah: Yes, I just looked at it. 快速 scan 了一遍, but I noticed a few bugs that need to be fixed before we can merge it.
+
+Li: OK, let me take a look. 我看看能不能 fix them before the deadline.
+
+Sarah: Sounds good. Let me know if you need any help. 我可以帮你 test the build to make sure everything is working properly.
+
+Li: Great, 谢谢你的帮助. I'll work on fixing the bugs and then we can test the build together.
+
+Sarah: No problem, teamwork makes the dream work! 我们一定能够 meet the deadline for this deploy.",5,Li,"[',', 'Great', '谢谢', '你', '的', '帮助', '.', ""'"", '.', 'I', 'll', 'work', 'on', 'fixing', 'the', 'bugs', 'and', 'then', 'we', 'can', 'test', 'the', 'build', 'together']","['PUNCT', 'ADJ', 'nr', 'r', 'uj', 'v', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADP', 'VERB', 'DET', 'NOUN', 'CCONJ', 'ADV', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADV']","{'en', 'zh', 'punct'}","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Great, 谢谢你的帮助. I'll work on fixing the bugs and then we can test the build together.",5,302,"[',', 'Great', '谢谢', '你', '的', '帮助', '.', ""'"", '.', 'I', 'll', 'work', 'on', 'fixing', 'the', 'bugs', 'and', 'then', 'we', 'can', 'test', 'the', 'build', 'together']","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True
+302,"No problem, teamwork makes the dream work! 我们一定能够 meet the deadline for this deploy.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the deploy 代码?
+
+Sarah: Yes, I just looked at it. 快速 scan 了一遍, but I noticed a few bugs that need to be fixed before we can merge it.
+
+Li: OK, let me take a look. 我看看能不能 fix them before the deadline.
+
+Sarah: Sounds good. Let me know if you need any help. 我可以帮你 test the build to make sure everything is working properly.
+
+Li: Great, 谢谢你的帮助. I'll work on fixing the bugs and then we can test the build together.
+
+Sarah: No problem, teamwork makes the dream work! 我们一定能够 meet the deadline for this deploy.",6,Sarah,"[',', '!', 'No', 'problem', 'teamwork', 'makes', 'the', 'dream', 'work', '我们', '一定', '能够', '.', 'meet', 'the', 'deadline', 'for', 'this', 'deploy']","['PUNCT', 'PUNCT', 'DET', 'NOUN', 'NOUN', 'VERB', 'DET', 'NOUN', 'NOUN', 'r', 'd', 'v', 'PUNCT', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en']","No problem, teamwork makes the dream work! 我们一定能够 meet the deadline for this deploy.",6,302,"[',', '!', 'No', 'problem', 'teamwork', 'makes', 'the', 'dream', 'work', '我们', '一定', '能够', '.', 'meet', 'the', 'deadline', 'for', 'this', 'deploy']","['punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True

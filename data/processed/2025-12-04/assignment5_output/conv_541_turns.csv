@@ -1,0 +1,97 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+541,"Hey Sarah, have you looked at the PR I submitted for our latest feature?",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you looked at the PR I submitted for our latest feature? 
+Sarah: Yeah, I saw it. There's a merge conflict with the master branch. 
+Li: Oh no, let's resolve it quickly. 
+Sarah: I'll create a new branch to fix the conflict. 
+Li: Great idea, I'll review your changes once you push them to GitHub. 
+Sarah: Done. Can you take a look now? 
+Li: Looks good. Let's stage the changes and deploy to production. 
+Sarah: Agreed. We need to meet the deadline for this release.",1,Li,"['Hey', 'Sarah', ',', 'have', 'you', 'looked', 'at', 'the', 'PR', 'I', 'submitted', 'for', 'our', 'latest', 'feature', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'PRON', 'VERB', 'ADP', 'PRON', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, have you looked at the PR I submitted for our latest feature?",1,541,"['Hey', 'Sarah', ',', 'have', 'you', 'looked', 'at', 'the', 'PR', 'I', 'submitted', 'for', 'our', 'latest', 'feature', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+541,"Yeah, I saw it. There's a merge conflict with the master branch.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you looked at the PR I submitted for our latest feature? 
+Sarah: Yeah, I saw it. There's a merge conflict with the master branch. 
+Li: Oh no, let's resolve it quickly. 
+Sarah: I'll create a new branch to fix the conflict. 
+Li: Great idea, I'll review your changes once you push them to GitHub. 
+Sarah: Done. Can you take a look now? 
+Li: Looks good. Let's stage the changes and deploy to production. 
+Sarah: Agreed. We need to meet the deadline for this release.",2,Sarah,"['Yeah', ',', 'I', 'saw', 'it', '.', 'There', ""'s"", 'a', 'merge', 'conflict', 'with', 'the', 'master', 'branch', '.']","['INTJ', 'PUNCT', 'PRON', 'VERB', 'PRON', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, I saw it. There's a merge conflict with the master branch.",2,541,"['Yeah', ',', 'I', 'saw', 'it', '.', 'There', ""'s"", 'a', 'merge', 'conflict', 'with', 'the', 'master', 'branch', '.']","['en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+541,"Oh no, let's resolve it quickly.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you looked at the PR I submitted for our latest feature? 
+Sarah: Yeah, I saw it. There's a merge conflict with the master branch. 
+Li: Oh no, let's resolve it quickly. 
+Sarah: I'll create a new branch to fix the conflict. 
+Li: Great idea, I'll review your changes once you push them to GitHub. 
+Sarah: Done. Can you take a look now? 
+Li: Looks good. Let's stage the changes and deploy to production. 
+Sarah: Agreed. We need to meet the deadline for this release.",3,Li,"['Oh', 'no', ',', 'let', ""'s"", 'resolve', 'it', 'quickly', '.']","['INTJ', 'INTJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct']","Oh no, let's resolve it quickly.",3,541,"['Oh', 'no', ',', 'let', ""'s"", 'resolve', 'it', 'quickly', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+541,I'll create a new branch to fix the conflict.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you looked at the PR I submitted for our latest feature? 
+Sarah: Yeah, I saw it. There's a merge conflict with the master branch. 
+Li: Oh no, let's resolve it quickly. 
+Sarah: I'll create a new branch to fix the conflict. 
+Li: Great idea, I'll review your changes once you push them to GitHub. 
+Sarah: Done. Can you take a look now? 
+Li: Looks good. Let's stage the changes and deploy to production. 
+Sarah: Agreed. We need to meet the deadline for this release.",4,Sarah,"['I', ""'ll"", 'create', 'a', 'new', 'branch', 'to', 'fix', 'the', 'conflict', '.']","['PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'PART', 'VERB', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",I'll create a new branch to fix the conflict.,4,541,"['I', ""'ll"", 'create', 'a', 'new', 'branch', 'to', 'fix', 'the', 'conflict', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+541,"Great idea, I'll review your changes once you push them to GitHub.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you looked at the PR I submitted for our latest feature? 
+Sarah: Yeah, I saw it. There's a merge conflict with the master branch. 
+Li: Oh no, let's resolve it quickly. 
+Sarah: I'll create a new branch to fix the conflict. 
+Li: Great idea, I'll review your changes once you push them to GitHub. 
+Sarah: Done. Can you take a look now? 
+Li: Looks good. Let's stage the changes and deploy to production. 
+Sarah: Agreed. We need to meet the deadline for this release.",5,Li,"['Great', 'idea', ',', 'I', ""'ll"", 'review', 'your', 'changes', 'once', 'you', 'push', 'them', 'to', 'GitHub', '.']","['ADJ', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'PRON', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great idea, I'll review your changes once you push them to GitHub.",5,541,"['Great', 'idea', ',', 'I', ""'ll"", 'review', 'your', 'changes', 'once', 'you', 'push', 'them', 'to', 'GitHub', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+541,Done. Can you take a look now?,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you looked at the PR I submitted for our latest feature? 
+Sarah: Yeah, I saw it. There's a merge conflict with the master branch. 
+Li: Oh no, let's resolve it quickly. 
+Sarah: I'll create a new branch to fix the conflict. 
+Li: Great idea, I'll review your changes once you push them to GitHub. 
+Sarah: Done. Can you take a look now? 
+Li: Looks good. Let's stage the changes and deploy to production. 
+Sarah: Agreed. We need to meet the deadline for this release.",6,Sarah,"['Done', '.', 'Can', 'you', 'take', 'a', 'look', 'now', '?']","['VERB', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'ADV', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",Done. Can you take a look now?,6,541,"['Done', '.', 'Can', 'you', 'take', 'a', 'look', 'now', '?']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0,0,False
+541,Looks good. Let's stage the changes and deploy to production.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you looked at the PR I submitted for our latest feature? 
+Sarah: Yeah, I saw it. There's a merge conflict with the master branch. 
+Li: Oh no, let's resolve it quickly. 
+Sarah: I'll create a new branch to fix the conflict. 
+Li: Great idea, I'll review your changes once you push them to GitHub. 
+Sarah: Done. Can you take a look now? 
+Li: Looks good. Let's stage the changes and deploy to production. 
+Sarah: Agreed. We need to meet the deadline for this release.",7,Li,"['Looks', 'good', '.', 'Let', ""'s"", 'stage', 'the', 'changes', 'and', 'deploy', 'to', 'production', '.']","['VERB', 'ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'CCONJ', 'VERB', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Looks good. Let's stage the changes and deploy to production.,7,541,"['Looks', 'good', '.', 'Let', ""'s"", 'stage', 'the', 'changes', 'and', 'deploy', 'to', 'production', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+541,Agreed. We need to meet the deadline for this release.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you looked at the PR I submitted for our latest feature? 
+Sarah: Yeah, I saw it. There's a merge conflict with the master branch. 
+Li: Oh no, let's resolve it quickly. 
+Sarah: I'll create a new branch to fix the conflict. 
+Li: Great idea, I'll review your changes once you push them to GitHub. 
+Sarah: Done. Can you take a look now? 
+Li: Looks good. Let's stage the changes and deploy to production. 
+Sarah: Agreed. We need to meet the deadline for this release.",8,Sarah,"['Agreed', '.', 'We', 'need', 'to', 'meet', 'the', 'deadline', 'for', 'this', 'release', '.']","['VERB', 'PUNCT', 'PRON', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Agreed. We need to meet the deadline for this release.,8,541,"['Agreed', '.', 'We', 'need', 'to', 'meet', 'the', 'deadline', 'for', 'this', 'release', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False

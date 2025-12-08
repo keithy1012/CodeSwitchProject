@@ -1,0 +1,134 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+411,"** Hey Sarah, have you had a chance to look at that merge conflict on the feature branch? I think it’s blocking our deployment for this week.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","**Li:** Hey Sarah, have you had a chance to look at that merge conflict on the feature branch? I think it’s blocking our deployment for this week.
+
+**Sarah:** I did check it out. It seems like there are a couple of overlapping changes related to the user profile component. We need to resolve those before we can push the staging build.
+
+**Li:** Right, I remember making some adjustments there. Do you want to take the lead on that, or should I dive in first?
+
+**Sarah:** I can handle it. I just need to pull the latest changes and compare. We’re under deadline pressure, so let’s aim to resolve it quickly and then we can focus on testing the hotfix for that bug in the API.
+
+**Li:** Sounds good. If you run into any issues, just ping me. I’ll keep an eye out to make sure it doesn’t hold up the deployment process.
+
+**Sarah:** Will do! I’ll update you once I have the merge sorted out. Let’s make sure we get everything wrapped up in time for the release.
+
+**Li:** Definitely. Thanks for jumping on this. I’m looking forward to getting this build out!",1,**Li,"['*', '*', 'Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'that', 'merge', 'conflict', 'on', 'the', 'feature', 'branch', '?', 'I', 'think', 'it', '’s', 'blocking', 'our', 'deployment', 'for', 'this', 'week', '.']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'DET', 'NOUN', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'PRON', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Hey Sarah, have you had a chance to look at that merge conflict on the feature branch? I think it’s blocking our deployment for this week.",1,411,"['*', '*', 'Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'that', 'merge', 'conflict', 'on', 'the', 'feature', 'branch', '?', 'I', 'think', 'it', '’s', 'blocking', 'our', 'deployment', 'for', 'this', 'week', '.']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,4,0,False
+411,** I did check it out. It seems like there are a couple of overlapping changes related to the user profile component. We need to resolve those before we can push the staging build.,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","**Li:** Hey Sarah, have you had a chance to look at that merge conflict on the feature branch? I think it’s blocking our deployment for this week.
+
+**Sarah:** I did check it out. It seems like there are a couple of overlapping changes related to the user profile component. We need to resolve those before we can push the staging build.
+
+**Li:** Right, I remember making some adjustments there. Do you want to take the lead on that, or should I dive in first?
+
+**Sarah:** I can handle it. I just need to pull the latest changes and compare. We’re under deadline pressure, so let’s aim to resolve it quickly and then we can focus on testing the hotfix for that bug in the API.
+
+**Li:** Sounds good. If you run into any issues, just ping me. I’ll keep an eye out to make sure it doesn’t hold up the deployment process.
+
+**Sarah:** Will do! I’ll update you once I have the merge sorted out. Let’s make sure we get everything wrapped up in time for the release.
+
+**Li:** Definitely. Thanks for jumping on this. I’m looking forward to getting this build out!",2,**Sarah,"['*', '*', 'I', 'did', 'check', 'it', 'out', '.', 'It', 'seems', 'like', 'there', 'are', 'a', 'couple', 'of', 'overlapping', 'changes', 'related', 'to', 'the', 'user', 'profile', 'component', '.', 'We', 'need', 'to', 'resolve', 'those', 'before', 'we', 'can', 'push', 'the', 'staging', 'build', '.']","['PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'ADP', 'PUNCT', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'VERB', 'NOUN', 'VERB', 'ADP', 'DET', 'NOUN', 'NOUN', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** I did check it out. It seems like there are a couple of overlapping changes related to the user profile component. We need to resolve those before we can push the staging build.,2,411,"['*', '*', 'I', 'did', 'check', 'it', 'out', '.', 'It', 'seems', 'like', 'there', 'are', 'a', 'couple', 'of', 'overlapping', 'changes', 'related', 'to', 'the', 'user', 'profile', 'component', '.', 'We', 'need', 'to', 'resolve', 'those', 'before', 'we', 'can', 'push', 'the', 'staging', 'build', '.']","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+411,"** Right, I remember making some adjustments there. Do you want to take the lead on that, or should I dive in first?",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","**Li:** Hey Sarah, have you had a chance to look at that merge conflict on the feature branch? I think it’s blocking our deployment for this week.
+
+**Sarah:** I did check it out. It seems like there are a couple of overlapping changes related to the user profile component. We need to resolve those before we can push the staging build.
+
+**Li:** Right, I remember making some adjustments there. Do you want to take the lead on that, or should I dive in first?
+
+**Sarah:** I can handle it. I just need to pull the latest changes and compare. We’re under deadline pressure, so let’s aim to resolve it quickly and then we can focus on testing the hotfix for that bug in the API.
+
+**Li:** Sounds good. If you run into any issues, just ping me. I’ll keep an eye out to make sure it doesn’t hold up the deployment process.
+
+**Sarah:** Will do! I’ll update you once I have the merge sorted out. Let’s make sure we get everything wrapped up in time for the release.
+
+**Li:** Definitely. Thanks for jumping on this. I’m looking forward to getting this build out!",3,**Li,"['*', '*', 'Right', ',', 'I', 'remember', 'making', 'some', 'adjustments', 'there', '.', 'Do', 'you', 'want', 'to', 'take', 'the', 'lead', 'on', 'that', ',', 'or', 'should', 'I', 'dive', 'in', 'first', '?']","['PUNCT', 'PUNCT', 'INTJ', 'PUNCT', 'PRON', 'VERB', 'VERB', 'DET', 'NOUN', 'ADV', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'PRON', 'PUNCT', 'CCONJ', 'AUX', 'PRON', 'VERB', 'ADP', 'ADV', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","** Right, I remember making some adjustments there. Do you want to take the lead on that, or should I dive in first?",3,411,"['*', '*', 'Right', ',', 'I', 'remember', 'making', 'some', 'adjustments', 'there', '.', 'Do', 'you', 'want', 'to', 'take', 'the', 'lead', 'on', 'that', ',', 'or', 'should', 'I', 'dive', 'in', 'first', '?']","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0,0,False
+411,"** I can handle it. I just need to pull the latest changes and compare. We’re under deadline pressure, so let’s aim to resolve it quickly and then we can focus on testing the hotfix for that bug in the API.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","**Li:** Hey Sarah, have you had a chance to look at that merge conflict on the feature branch? I think it’s blocking our deployment for this week.
+
+**Sarah:** I did check it out. It seems like there are a couple of overlapping changes related to the user profile component. We need to resolve those before we can push the staging build.
+
+**Li:** Right, I remember making some adjustments there. Do you want to take the lead on that, or should I dive in first?
+
+**Sarah:** I can handle it. I just need to pull the latest changes and compare. We’re under deadline pressure, so let’s aim to resolve it quickly and then we can focus on testing the hotfix for that bug in the API.
+
+**Li:** Sounds good. If you run into any issues, just ping me. I’ll keep an eye out to make sure it doesn’t hold up the deployment process.
+
+**Sarah:** Will do! I’ll update you once I have the merge sorted out. Let’s make sure we get everything wrapped up in time for the release.
+
+**Li:** Definitely. Thanks for jumping on this. I’m looking forward to getting this build out!",4,**Sarah,"['*', '*', 'I', 'can', 'handle', 'it', '.', 'I', 'just', 'need', 'to', 'pull', 'the', 'latest', 'changes', 'and', 'compare', '.', 'We', '’re', 'under', 'deadline', 'pressure', ',', 'so', 'let', '’s', 'aim', 'to', 'resolve', 'it', 'quickly', 'and', 'then', 'we', 'can', 'focus', 'on', 'testing', 'the', 'hotfix', 'for', 'that', 'bug', 'in', 'the', 'API', '.']","['PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'PUNCT', 'PRON', 'ADV', 'VERB', 'PART', 'VERB', 'DET', 'ADJ', 'NOUN', 'CCONJ', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'ADP', 'NOUN', 'NOUN', 'PUNCT', 'ADV', 'VERB', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'ADV', 'CCONJ', 'ADV', 'PRON', 'AUX', 'VERB', 'ADP', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'DET', 'PROPN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** I can handle it. I just need to pull the latest changes and compare. We’re under deadline pressure, so let’s aim to resolve it quickly and then we can focus on testing the hotfix for that bug in the API.",4,411,"['*', '*', 'I', 'can', 'handle', 'it', '.', 'I', 'just', 'need', 'to', 'pull', 'the', 'latest', 'changes', 'and', 'compare', '.', 'We', '’re', 'under', 'deadline', 'pressure', ',', 'so', 'let', '’s', 'aim', 'to', 'resolve', 'it', 'quickly', 'and', 'then', 'we', 'can', 'focus', 'on', 'testing', 'the', 'hotfix', 'for', 'that', 'bug', 'in', 'the', 'API', '.']","['other', 'other', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,4,0,False
+411,"** Sounds good. If you run into any issues, just ping me. I’ll keep an eye out to make sure it doesn’t hold up the deployment process.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","**Li:** Hey Sarah, have you had a chance to look at that merge conflict on the feature branch? I think it’s blocking our deployment for this week.
+
+**Sarah:** I did check it out. It seems like there are a couple of overlapping changes related to the user profile component. We need to resolve those before we can push the staging build.
+
+**Li:** Right, I remember making some adjustments there. Do you want to take the lead on that, or should I dive in first?
+
+**Sarah:** I can handle it. I just need to pull the latest changes and compare. We’re under deadline pressure, so let’s aim to resolve it quickly and then we can focus on testing the hotfix for that bug in the API.
+
+**Li:** Sounds good. If you run into any issues, just ping me. I’ll keep an eye out to make sure it doesn’t hold up the deployment process.
+
+**Sarah:** Will do! I’ll update you once I have the merge sorted out. Let’s make sure we get everything wrapped up in time for the release.
+
+**Li:** Definitely. Thanks for jumping on this. I’m looking forward to getting this build out!",5,**Li,"['*', '*', 'Sounds', 'good', '.', 'If', 'you', 'run', 'into', 'any', 'issues', ',', 'just', 'ping', 'me', '.', 'I', '’ll', 'keep', 'an', 'eye', 'out', 'to', 'make', 'sure', 'it', 'does', 'n’t', 'hold', 'up', 'the', 'deployment', 'process', '.']","['PUNCT', 'PUNCT', 'VERB', 'ADJ', 'PUNCT', 'SCONJ', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT', 'ADV', 'VERB', 'PRON', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'PART', 'VERB', 'ADJ', 'PRON', 'AUX', 'PART', 'VERB', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Sounds good. If you run into any issues, just ping me. I’ll keep an eye out to make sure it doesn’t hold up the deployment process.",5,411,"['*', '*', 'Sounds', 'good', '.', 'If', 'you', 'run', 'into', 'any', 'issues', ',', 'just', 'ping', 'me', '.', 'I', '’ll', 'keep', 'an', 'eye', 'out', 'to', 'make', 'sure', 'it', 'does', 'n’t', 'hold', 'up', 'the', 'deployment', 'process', '.']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+411,** Will do! I’ll update you once I have the merge sorted out. Let’s make sure we get everything wrapped up in time for the release.,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","**Li:** Hey Sarah, have you had a chance to look at that merge conflict on the feature branch? I think it’s blocking our deployment for this week.
+
+**Sarah:** I did check it out. It seems like there are a couple of overlapping changes related to the user profile component. We need to resolve those before we can push the staging build.
+
+**Li:** Right, I remember making some adjustments there. Do you want to take the lead on that, or should I dive in first?
+
+**Sarah:** I can handle it. I just need to pull the latest changes and compare. We’re under deadline pressure, so let’s aim to resolve it quickly and then we can focus on testing the hotfix for that bug in the API.
+
+**Li:** Sounds good. If you run into any issues, just ping me. I’ll keep an eye out to make sure it doesn’t hold up the deployment process.
+
+**Sarah:** Will do! I’ll update you once I have the merge sorted out. Let’s make sure we get everything wrapped up in time for the release.
+
+**Li:** Definitely. Thanks for jumping on this. I’m looking forward to getting this build out!",6,**Sarah,"['*', '*', 'Will', 'do', '!', 'I', '’ll', 'update', 'you', 'once', 'I', 'have', 'the', 'merge', 'sorted', 'out', '.', 'Let', '’s', 'make', 'sure', 'we', 'get', 'everything', 'wrapped', 'up', 'in', 'time', 'for', 'the', 'release', '.']","['PUNCT', 'PUNCT', 'AUX', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'VERB', 'ADP', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADJ', 'PRON', 'VERB', 'PRON', 'VERB', 'ADP', 'ADP', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** Will do! I’ll update you once I have the merge sorted out. Let’s make sure we get everything wrapped up in time for the release.,6,411,"['*', '*', 'Will', 'do', '!', 'I', '’ll', 'update', 'you', 'once', 'I', 'have', 'the', 'merge', 'sorted', 'out', '.', 'Let', '’s', 'make', 'sure', 'we', 'get', 'everything', 'wrapped', 'up', 'in', 'time', 'for', 'the', 'release', '.']","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+411,** Definitely. Thanks for jumping on this. I’m looking forward to getting this build out!,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","**Li:** Hey Sarah, have you had a chance to look at that merge conflict on the feature branch? I think it’s blocking our deployment for this week.
+
+**Sarah:** I did check it out. It seems like there are a couple of overlapping changes related to the user profile component. We need to resolve those before we can push the staging build.
+
+**Li:** Right, I remember making some adjustments there. Do you want to take the lead on that, or should I dive in first?
+
+**Sarah:** I can handle it. I just need to pull the latest changes and compare. We’re under deadline pressure, so let’s aim to resolve it quickly and then we can focus on testing the hotfix for that bug in the API.
+
+**Li:** Sounds good. If you run into any issues, just ping me. I’ll keep an eye out to make sure it doesn’t hold up the deployment process.
+
+**Sarah:** Will do! I’ll update you once I have the merge sorted out. Let’s make sure we get everything wrapped up in time for the release.
+
+**Li:** Definitely. Thanks for jumping on this. I’m looking forward to getting this build out!",7,**Li,"['*', '*', 'Definitely', '.', 'Thanks', 'for', 'jumping', 'on', 'this', '.', 'I', '’m', 'looking', 'forward', 'to', 'getting', 'this', 'build', 'out', '!']","['PUNCT', 'PUNCT', 'ADV', 'PUNCT', 'NOUN', 'ADP', 'VERB', 'ADP', 'PRON', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADV', 'ADP', 'VERB', 'DET', 'NOUN', 'ADP', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",** Definitely. Thanks for jumping on this. I’m looking forward to getting this build out!,7,411,"['*', '*', 'Definitely', '.', 'Thanks', 'for', 'jumping', 'on', 'this', '.', 'I', '’m', 'looking', 'forward', 'to', 'getting', 'this', 'build', 'out', '!']","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,1,0,False

@@ -1,0 +1,97 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+703,"Hey Sarah, have you had a chance to look at the QA feedback on the staging site? 你觉得哪里有bug吗？",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback on the staging site? 你觉得哪里有bug吗？
+
+Sarah: Yeah, I noticed a display issue with the new feature we were building. 我们可能需要让开发团队重新测试一下。
+
+Li: Sounds like we might have to delay the deploy deadline. 但是我会尽快解决这个问题。
+
+Sarah: That shouldn't be a problem as long as we merge the updated code soon. 我已经通知了开发团队，希望他们能够马上开始修改。
+
+Li: Great, let's schedule a meeting to discuss the next steps for debugging and deploying the fix. 明天早上你有空吗？
+
+Sarah: Sure, I can make time for that. 我们可以在早上十点之后安排一个会议。",1,Li,"[',', '?', 'Hey', 'Sarah', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'QA', 'feedback', 'on', 'the', 'staging', 'site', '你', '觉得', '哪里', '有', 'bug', '吗', '？']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'DET', 'PROPN', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'r', 'v', 'r', 'v', 'NOUN', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']","Hey Sarah, have you had a chance to look at the QA feedback on the staging site? 你觉得哪里有bug吗？",1,703,"[',', '?', 'Hey', 'Sarah', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'QA', 'feedback', 'on', 'the', 'staging', 'site', '你', '觉得', '哪里', '有', 'bug', '吗', '？']","['punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']",mix,0.832,0.814,0.815,2,True
+703,"Yeah, I noticed a display issue with the new feature we were building. 我们可能需要让开发团队重新测试一下。",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback on the staging site? 你觉得哪里有bug吗？
+
+Sarah: Yeah, I noticed a display issue with the new feature we were building. 我们可能需要让开发团队重新测试一下。
+
+Li: Sounds like we might have to delay the deploy deadline. 但是我会尽快解决这个问题。
+
+Sarah: That shouldn't be a problem as long as we merge the updated code soon. 我已经通知了开发团队，希望他们能够马上开始修改。
+
+Li: Great, let's schedule a meeting to discuss the next steps for debugging and deploying the fix. 明天早上你有空吗？
+
+Sarah: Sure, I can make time for that. 我们可以在早上十点之后安排一个会议。",2,Sarah,"[',', '.', 'Yeah', 'I', 'noticed', 'a', 'display', 'issue', 'with', 'the', 'new', 'feature', 'we', 'were', 'building', '我们', '可能', '需要', '让', '开发', '团队', '重新', '测试', '一下', '。']","['PUNCT', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PRON', 'AUX', 'VERB', 'r', 'v', 'v', 'v', 'v', 'n', 'a', 'vn', 'm', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Yeah, I noticed a display issue with the new feature we were building. 我们可能需要让开发团队重新测试一下。",2,703,"[',', '.', 'Yeah', 'I', 'noticed', 'a', 'display', 'issue', 'with', 'the', 'new', 'feature', 'we', 'were', 'building', '我们', '可能', '需要', '让', '开发', '团队', '重新', '测试', '一下', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.858,0.828,0.839,1,True
+703,Sounds like we might have to delay the deploy deadline. 但是我会尽快解决这个问题。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback on the staging site? 你觉得哪里有bug吗？
+
+Sarah: Yeah, I noticed a display issue with the new feature we were building. 我们可能需要让开发团队重新测试一下。
+
+Li: Sounds like we might have to delay the deploy deadline. 但是我会尽快解决这个问题。
+
+Sarah: That shouldn't be a problem as long as we merge the updated code soon. 我已经通知了开发团队，希望他们能够马上开始修改。
+
+Li: Great, let's schedule a meeting to discuss the next steps for debugging and deploying the fix. 明天早上你有空吗？
+
+Sarah: Sure, I can make time for that. 我们可以在早上十点之后安排一个会议。",3,Li,"['.', 'Sounds', 'like', 'we', 'might', 'have', 'to', 'delay', 'the', 'deploy', 'deadline', '但是', '我会', '尽快', '解决', '这个', '问题', '。']","['PUNCT', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'NOUN', 'c', 'n', 'd', 'v', 'r', 'n', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Sounds like we might have to delay the deploy deadline. 但是我会尽快解决这个问题。,3,703,"['.', 'Sounds', 'like', 'we', 'might', 'have', 'to', 'delay', 'the', 'deploy', 'deadline', '但是', '我会', '尽快', '解决', '这个', '问题', '。']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.853,0.826,0.817,2,True
+703,That shouldn't be a problem as long as we merge the updated code soon. 我已经通知了开发团队，希望他们能够马上开始修改。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback on the staging site? 你觉得哪里有bug吗？
+
+Sarah: Yeah, I noticed a display issue with the new feature we were building. 我们可能需要让开发团队重新测试一下。
+
+Li: Sounds like we might have to delay the deploy deadline. 但是我会尽快解决这个问题。
+
+Sarah: That shouldn't be a problem as long as we merge the updated code soon. 我已经通知了开发团队，希望他们能够马上开始修改。
+
+Li: Great, let's schedule a meeting to discuss the next steps for debugging and deploying the fix. 明天早上你有空吗？
+
+Sarah: Sure, I can make time for that. 我们可以在早上十点之后安排一个会议。",4,Sarah,"[""'"", '.', 'That', 'shouldn', 't', 'be', 'a', 'problem', 'as', 'long', 'as', 'we', 'merge', 'the', 'updated', 'code', 'soon', '我', '已经', '通知', '了', '开发', '团队', '，', '希望', '他们', '能够', '马上', '开始', '修改', '。']","['PUNCT', 'PUNCT', 'DET', 'PROPN', 'NOUN', 'AUX', 'DET', 'NOUN', 'ADV', 'ADV', 'SCONJ', 'PRON', 'VERB', 'DET', 'VERB', 'NOUN', 'ADV', 'r', 'd', 'v', 'ul', 'v', 'n', 'PUNCT', 'v', 'r', 'v', 'd', 'v', 'v', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",That shouldn't be a problem as long as we merge the updated code soon. 我已经通知了开发团队，希望他们能够马上开始修改。,4,703,"[""'"", '.', 'That', 'shouldn', 't', 'be', 'a', 'problem', 'as', 'long', 'as', 'we', 'merge', 'the', 'updated', 'code', 'soon', '我', '已经', '通知', '了', '开发', '团队', '，', '希望', '他们', '能够', '马上', '开始', '修改', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.858,0.821,0.831,2,True
+703,"Great, let's schedule a meeting to discuss the next steps for debugging and deploying the fix. 明天早上你有空吗？",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback on the staging site? 你觉得哪里有bug吗？
+
+Sarah: Yeah, I noticed a display issue with the new feature we were building. 我们可能需要让开发团队重新测试一下。
+
+Li: Sounds like we might have to delay the deploy deadline. 但是我会尽快解决这个问题。
+
+Sarah: That shouldn't be a problem as long as we merge the updated code soon. 我已经通知了开发团队，希望他们能够马上开始修改。
+
+Li: Great, let's schedule a meeting to discuss the next steps for debugging and deploying the fix. 明天早上你有空吗？
+
+Sarah: Sure, I can make time for that. 我们可以在早上十点之后安排一个会议。",5,Li,"[',', ""'"", '.', 'Great', 'let', 's', 'schedule', 'a', 'meeting', 'to', 'discuss', 'the', 'next', 'steps', 'for', 'debugging', 'and', 'deploying', 'the', 'fix', '明天', '早上', '你', '有空', '吗', '？']","['PUNCT', 'PUNCT', 'PUNCT', 'PROPN', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'VERB', 'CCONJ', 'VERB', 'DET', 'NOUN', 't', 't', 'r', 'vn', 'y', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Great, let's schedule a meeting to discuss the next steps for debugging and deploying the fix. 明天早上你有空吗？",5,703,"[',', ""'"", '.', 'Great', 'let', 's', 'schedule', 'a', 'meeting', 'to', 'discuss', 'the', 'next', 'steps', 'for', 'debugging', 'and', 'deploying', 'the', 'fix', '明天', '早上', '你', '有空', '吗', '？']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.872,0.839,0.827,0,True
+703,"Sure, I can make time for that. 我们可以在早上十点之后安排一个会议。",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback on the staging site? 你觉得哪里有bug吗？
+
+Sarah: Yeah, I noticed a display issue with the new feature we were building. 我们可能需要让开发团队重新测试一下。
+
+Li: Sounds like we might have to delay the deploy deadline. 但是我会尽快解决这个问题。
+
+Sarah: That shouldn't be a problem as long as we merge the updated code soon. 我已经通知了开发团队，希望他们能够马上开始修改。
+
+Li: Great, let's schedule a meeting to discuss the next steps for debugging and deploying the fix. 明天早上你有空吗？
+
+Sarah: Sure, I can make time for that. 我们可以在早上十点之后安排一个会议。",6,Sarah,"[',', '.', 'Sure', 'I', 'can', 'make', 'time', 'for', 'that', '我们', '可以', '在', '早上', '十点', '之后', '安排', '一个', '会议', '。']","['PUNCT', 'PUNCT', 'INTJ', 'PRON', 'AUX', 'VERB', 'NOUN', 'ADP', 'PRON', 'r', 'c', 'p', 't', 'm', 'f', 'v', 'm', 'n', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Sure, I can make time for that. 我们可以在早上十点之后安排一个会议。",6,703,"[',', '.', 'Sure', 'I', 'can', 'make', 'time', 'for', 'that', '我们', '可以', '在', '早上', '十点', '之后', '安排', '一个', '会议', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.84,0.821,0.805,0,True

@@ -1,0 +1,61 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+317,"Hey Sarah, are you ready for the Friday deploy?",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo-16k,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the Friday deploy?
+Sarah: 你好！Yeah, I think everything's in place for the build to go smoothly.
+Li: Great, I've been testing the code for bugs all week. Let's merge our changes carefully.
+Sarah: Sounds good. We can't afford any last-minute issues with the deadline approaching.
+Li: 对的，我们需要确保所有测试都通过了。Once we merge, we should run some final checks before deploying.
+Sarah: 没问题，我会 double check everything before we push the code live. Let's aim for a seamless deploy on Friday.",1,Li,"['Hey', 'Sarah', ',', 'are', 'you', 'ready', 'for', 'the', 'Friday', 'deploy', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'ADJ', 'ADP', 'DET', 'PROPN', 'VERB', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, are you ready for the Friday deploy?",1,317,"['Hey', 'Sarah', ',', 'are', 'you', 'ready', 'for', 'the', 'Friday', 'deploy', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.809,0.771,0.777,1,False
+317,"你好！Yeah, I think everything's in place for the build to go smoothly.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo-16k,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the Friday deploy?
+Sarah: 你好！Yeah, I think everything's in place for the build to go smoothly.
+Li: Great, I've been testing the code for bugs all week. Let's merge our changes carefully.
+Sarah: Sounds good. We can't afford any last-minute issues with the deadline approaching.
+Li: 对的，我们需要确保所有测试都通过了。Once we merge, we should run some final checks before deploying.
+Sarah: 没问题，我会 double check everything before we push the code live. Let's aim for a seamless deploy on Friday.",2,Sarah,"['你好', '！', ',', ""'"", '.', 'Yeah', 'I', 'think', 'everything', 's', 'in', 'place', 'for', 'the', 'build', 'to', 'go', 'smoothly']","['l', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'PRON', 'VERB', 'ADP', 'NOUN', 'SCONJ', 'DET', 'NOUN', 'PART', 'VERB', 'ADV']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","你好！Yeah, I think everything's in place for the build to go smoothly.",2,317,"['你好', '！', ',', ""'"", '.', 'Yeah', 'I', 'think', 'everything', 's', 'in', 'place', 'for', 'the', 'build', 'to', 'go', 'smoothly']","['zh', 'other', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.808,0.774,0.783,1,True
+317,"Great, I've been testing the code for bugs all week. Let's merge our changes carefully.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo-16k,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the Friday deploy?
+Sarah: 你好！Yeah, I think everything's in place for the build to go smoothly.
+Li: Great, I've been testing the code for bugs all week. Let's merge our changes carefully.
+Sarah: Sounds good. We can't afford any last-minute issues with the deadline approaching.
+Li: 对的，我们需要确保所有测试都通过了。Once we merge, we should run some final checks before deploying.
+Sarah: 没问题，我会 double check everything before we push the code live. Let's aim for a seamless deploy on Friday.",3,Li,"['Great', ',', 'I', ""'ve"", 'been', 'testing', 'the', 'code', 'for', 'bugs', 'all', 'week', '.', 'Let', ""'s"", 'merge', 'our', 'changes', 'carefully', '.']","['ADJ', 'PUNCT', 'PRON', 'AUX', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'NOUN', 'DET', 'NOUN', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'NOUN', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, I've been testing the code for bugs all week. Let's merge our changes carefully.",3,317,"['Great', ',', 'I', ""'ve"", 'been', 'testing', 'the', 'code', 'for', 'bugs', 'all', 'week', '.', 'Let', ""'s"", 'merge', 'our', 'changes', 'carefully', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.812,0.772,0.79,2,False
+317,Sounds good. We can't afford any last-minute issues with the deadline approaching.,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo-16k,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the Friday deploy?
+Sarah: 你好！Yeah, I think everything's in place for the build to go smoothly.
+Li: Great, I've been testing the code for bugs all week. Let's merge our changes carefully.
+Sarah: Sounds good. We can't afford any last-minute issues with the deadline approaching.
+Li: 对的，我们需要确保所有测试都通过了。Once we merge, we should run some final checks before deploying.
+Sarah: 没问题，我会 double check everything before we push the code live. Let's aim for a seamless deploy on Friday.",4,Sarah,"['Sounds', 'good', '.', 'We', 'ca', ""n't"", 'afford', 'any', 'last', '-', 'minute', 'issues', 'with', 'the', 'deadline', 'approaching', '.']","['VERB', 'ADJ', 'PUNCT', 'PRON', 'AUX', 'PART', 'VERB', 'DET', 'ADJ', 'PUNCT', 'NOUN', 'NOUN', 'ADP', 'DET', 'NOUN', 'VERB', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Sounds good. We can't afford any last-minute issues with the deadline approaching.,4,317,"['Sounds', 'good', '.', 'We', 'ca', ""n't"", 'afford', 'any', 'last', '-', 'minute', 'issues', 'with', 'the', 'deadline', 'approaching', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.809,0.781,0.785,1,False
+317,"对的，我们需要确保所有测试都通过了。Once we merge, we should run some final checks before deploying.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo-16k,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the Friday deploy?
+Sarah: 你好！Yeah, I think everything's in place for the build to go smoothly.
+Li: Great, I've been testing the code for bugs all week. Let's merge our changes carefully.
+Sarah: Sounds good. We can't afford any last-minute issues with the deadline approaching.
+Li: 对的，我们需要确保所有测试都通过了。Once we merge, we should run some final checks before deploying.
+Sarah: 没问题，我会 double check everything before we push the code live. Let's aim for a seamless deploy on Friday.",5,Li,"['对', '的', '，', '我们', '需要', '确保', '所有', '测试', '都', '通过', '了', '。', ',', '.', 'Once', 'we', 'merge', 'we', 'should', 'run', 'some', 'final', 'checks', 'before', 'deploying']","['p', 'uj', 'PUNCT', 'r', 'v', 'v', 'b', 'vn', 'd', 'p', 'ul', 'PUNCT', 'PUNCT', 'PUNCT', 'SCONJ', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'VERB']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","对的，我们需要确保所有测试都通过了。Once we merge, we should run some final checks before deploying.",5,317,"['对', '的', '，', '我们', '需要', '确保', '所有', '测试', '都', '通过', '了', '。', ',', '.', 'Once', 'we', 'merge', 'we', 'should', 'run', 'some', 'final', 'checks', 'before', 'deploying']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.854,0.828,0.824,1,True
+317,没问题，我会 double check everything before we push the code live. Let's aim for a seamless deploy on Friday.,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo-16k,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, are you ready for the Friday deploy?
+Sarah: 你好！Yeah, I think everything's in place for the build to go smoothly.
+Li: Great, I've been testing the code for bugs all week. Let's merge our changes carefully.
+Sarah: Sounds good. We can't afford any last-minute issues with the deadline approaching.
+Li: 对的，我们需要确保所有测试都通过了。Once we merge, we should run some final checks before deploying.
+Sarah: 没问题，我会 double check everything before we push the code live. Let's aim for a seamless deploy on Friday.",6,Sarah,"['没', '问题', '，', '我会', '.', ""'"", '.', 'double', 'check', 'everything', 'before', 'we', 'push', 'the', 'code', 'live', 'Let', 's', 'aim', 'for', 'a', 'seamless', 'deploy', 'on', 'Friday']","['v', 'n', 'PUNCT', 'n', 'PUNCT', 'PUNCT', 'PUNCT', 'ADV', 'VERB', 'PRON', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADV', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADP', 'PROPN']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",没问题，我会 double check everything before we push the code live. Let's aim for a seamless deploy on Friday.,6,317,"['没', '问题', '，', '我会', '.', ""'"", '.', 'double', 'check', 'everything', 'before', 'we', 'push', 'the', 'code', 'live', 'Let', 's', 'aim', 'for', 'a', 'seamless', 'deploy', 'on', 'Friday']","['zh', 'zh', 'other', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.854,0.821,0.823,2,True

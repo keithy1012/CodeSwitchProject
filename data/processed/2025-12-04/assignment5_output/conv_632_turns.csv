@@ -1,0 +1,169 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+632,"Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","Li: Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?
+
+Sarah: Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.
+
+Li: That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.
+
+Sarah: Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?
+
+Li: Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.
+
+Sarah: Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.
+
+Li: Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.
+
+Sarah: Great, thanks for taking care of that. Let me know if you need any help with anything.",1,Li,"['Hey', 'Sarah', ',', 'I', 'saw', 'there', ""'s"", 'a', 'merge', 'conflict', 'in', 'our', 'code', 'base', '.', 'Have', 'you', 'had', 'a', 'chance', 'to', 'take', 'a', 'look', 'at', 'it', '?']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'ADP', 'PRON', 'NOUN', 'NOUN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'PRON', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?",1,632,"['Hey', 'Sarah', ',', 'I', 'saw', 'there', ""'s"", 'a', 'merge', 'conflict', 'in', 'our', 'code', 'base', '.', 'Have', 'you', 'had', 'a', 'chance', 'to', 'take', 'a', 'look', 'at', 'it', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+632,"Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","Li: Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?
+
+Sarah: Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.
+
+Li: That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.
+
+Sarah: Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?
+
+Li: Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.
+
+Sarah: Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.
+
+Li: Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.
+
+Sarah: Great, thanks for taking care of that. Let me know if you need any help with anything.",2,Sarah,"['Yeah', ',', 'I', ""'ve"", 'been', 'trying', 'to', 'resolve', 'it', 'but', 'it', ""'s"", 'a', 'bit', 'tricky', '.', 'I', 'think', 'we', 'might', 'need', 'to', 'coordinate', 'with', 'the', 'other', 'team', 'on', 'this', 'one', '.']","['INTJ', 'PUNCT', 'PRON', 'AUX', 'AUX', 'VERB', 'PART', 'VERB', 'PRON', 'CCONJ', 'PRON', 'AUX', 'DET', 'NOUN', 'ADJ', 'PUNCT', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'PART', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.",2,632,"['Yeah', ',', 'I', ""'ve"", 'been', 'trying', 'to', 'resolve', 'it', 'but', 'it', ""'s"", 'a', 'bit', 'tricky', '.', 'I', 'think', 'we', 'might', 'need', 'to', 'coordinate', 'with', 'the', 'other', 'team', 'on', 'this', 'one', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+632,That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","Li: Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?
+
+Sarah: Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.
+
+Li: That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.
+
+Sarah: Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?
+
+Li: Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.
+
+Sarah: Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.
+
+Li: Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.
+
+Sarah: Great, thanks for taking care of that. Let me know if you need any help with anything.",3,Li,"['That', 'makes', 'sense', '.', 'Hopefully', 'we', 'can', 'get', 'it', 'sorted', 'out', 'quickly', 'so', 'it', 'does', ""n't"", 'hold', 'up', 'the', 'deployment', '.']","['PRON', 'VERB', 'NOUN', 'PUNCT', 'ADV', 'PRON', 'AUX', 'VERB', 'PRON', 'VERB', 'ADP', 'ADV', 'SCONJ', 'PRON', 'AUX', 'PART', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.,3,632,"['That', 'makes', 'sense', '.', 'Hopefully', 'we', 'can', 'get', 'it', 'sorted', 'out', 'quickly', 'so', 'it', 'does', ""n't"", 'hold', 'up', 'the', 'deployment', '.']","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+632,"Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","Li: Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?
+
+Sarah: Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.
+
+Li: That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.
+
+Sarah: Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?
+
+Li: Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.
+
+Sarah: Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.
+
+Li: Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.
+
+Sarah: Great, thanks for taking care of that. Let me know if you need any help with anything.",4,Sarah,"['Agreed', '.', 'Speaking', 'of', 'deployment', ',', 'I', 'heard', 'there', 'are', 'some', 'blockers', 'on', 'the', 'staging', 'build', 'as', 'well', '.', 'Have', 'you', 'looked', 'into', 'those', '?']","['VERB', 'PUNCT', 'VERB', 'ADP', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'ADV', 'ADV', 'PUNCT', 'AUX', 'PRON', 'VERB', 'ADP', 'PRON', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other']","Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?",4,632,"['Agreed', '.', 'Speaking', 'of', 'deployment', ',', 'I', 'heard', 'there', 'are', 'some', 'blockers', 'on', 'the', 'staging', 'build', 'as', 'well', '.', 'Have', 'you', 'looked', 'into', 'those', '?']","['en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other']",en,3,0,False
+632,"Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","Li: Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?
+
+Sarah: Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.
+
+Li: That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.
+
+Sarah: Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?
+
+Li: Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.
+
+Sarah: Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.
+
+Li: Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.
+
+Sarah: Great, thanks for taking care of that. Let me know if you need any help with anything.",5,Li,"['Not', 'yet', ',', 'but', 'I', 'can', 'take', 'a', 'look', 'after', 'I', 'finish', 'up', 'with', 'the', 'merge', 'conflict', '.', 'We', 'definitely', 'do', ""n't"", 'want', 'any', 'issues', 'preventing', 'us', 'from', 'getting', 'our', 'changes', 'out', 'to', 'production', '.']","['PART', 'ADV', 'PUNCT', 'CCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'ADP', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT', 'PRON', 'ADV', 'AUX', 'PART', 'VERB', 'DET', 'NOUN', 'VERB', 'PRON', 'ADP', 'VERB', 'PRON', 'NOUN', 'ADP', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.",5,632,"['Not', 'yet', ',', 'but', 'I', 'can', 'take', 'a', 'look', 'after', 'I', 'finish', 'up', 'with', 'the', 'merge', 'conflict', '.', 'We', 'definitely', 'do', ""n't"", 'want', 'any', 'issues', 'preventing', 'us', 'from', 'getting', 'our', 'changes', 'out', 'to', 'production', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+632,"Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","Li: Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?
+
+Sarah: Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.
+
+Li: That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.
+
+Sarah: Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?
+
+Li: Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.
+
+Sarah: Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.
+
+Li: Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.
+
+Sarah: Great, thanks for taking care of that. Let me know if you need any help with anything.",6,Sarah,"['Absolutely', '.', 'And', 'we', 'also', 'have', 'that', 'deadline', 'coming', 'up', ',', 'so', 'we', 'really', 'need', 'to', 'stay', 'on', 'top', 'of', 'these', 'things', '.']","['ADV', 'PUNCT', 'CCONJ', 'PRON', 'ADV', 'VERB', 'DET', 'NOUN', 'VERB', 'ADP', 'PUNCT', 'SCONJ', 'PRON', 'ADV', 'VERB', 'PART', 'VERB', 'ADP', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.",6,632,"['Absolutely', '.', 'And', 'we', 'also', 'have', 'that', 'deadline', 'coming', 'up', ',', 'so', 'we', 'really', 'need', 'to', 'stay', 'on', 'top', 'of', 'these', 'things', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+632,"Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","Li: Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?
+
+Sarah: Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.
+
+Li: That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.
+
+Sarah: Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?
+
+Li: Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.
+
+Sarah: Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.
+
+Li: Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.
+
+Sarah: Great, thanks for taking care of that. Let me know if you need any help with anything.",7,Li,"['Yeah', ',', 'we', 'ca', ""n't"", 'afford', 'any', 'delays', 'at', 'this', 'point', '.', 'I', ""'ll"", 'prioritize', 'getting', 'these', 'blockers', 'resolved', 'so', 'we', 'can', 'deploy', 'on', 'time', '.']","['INTJ', 'PUNCT', 'PRON', 'AUX', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'VERB', 'DET', 'NOUN', 'VERB', 'ADV', 'PRON', 'AUX', 'VERB', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.",7,632,"['Yeah', ',', 'we', 'ca', ""n't"", 'afford', 'any', 'delays', 'at', 'this', 'point', '.', 'I', ""'ll"", 'prioritize', 'getting', 'these', 'blockers', 'resolved', 'so', 'we', 'can', 'deploy', 'on', 'time', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+632,"Great, thanks for taking care of that. Let me know if you need any help with anything.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"You are a senior software engineer roleplaying natural English workplace chat. 
+Li and Sarah are discussing a merge conflict and deployment blockers. 
+Keep the tone pragmatic and realistic — no Chinese text at all. 
+Use natural conversational phrasing like ""staging build"" or ""hotfix"".
+Each dialogue should be 5–7 turns long and include one of: deploy, build, bug, deadline, merge.
+Output only the conversation.
+","Li: Hey Sarah, I saw there's a merge conflict in our code base. Have you had a chance to take a look at it?
+
+Sarah: Yeah, I've been trying to resolve it but it's a bit tricky. I think we might need to coordinate with the other team on this one.
+
+Li: That makes sense. Hopefully we can get it sorted out quickly so it doesn't hold up the deployment.
+
+Sarah: Agreed. Speaking of deployment, I heard there are some blockers on the staging build as well. Have you looked into those?
+
+Li: Not yet, but I can take a look after I finish up with the merge conflict. We definitely don't want any issues preventing us from getting our changes out to production.
+
+Sarah: Absolutely. And we also have that deadline coming up, so we really need to stay on top of these things.
+
+Li: Yeah, we can't afford any delays at this point. I'll prioritize getting these blockers resolved so we can deploy on time.
+
+Sarah: Great, thanks for taking care of that. Let me know if you need any help with anything.",8,Sarah,"['Great', ',', 'thanks', 'for', 'taking', 'care', 'of', 'that', '.', 'Let', 'me', 'know', 'if', 'you', 'need', 'any', 'help', 'with', 'anything', '.']","['ADJ', 'PUNCT', 'NOUN', 'ADP', 'VERB', 'NOUN', 'ADP', 'PRON', 'PUNCT', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'PRON', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, thanks for taking care of that. Let me know if you need any help with anything.",8,632,"['Great', ',', 'thanks', 'for', 'taking', 'care', 'of', 'that', '.', 'Let', 'me', 'know', 'if', 'you', 'need', 'any', 'help', 'with', 'anything', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False

@@ -1,0 +1,61 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+283,"Hey Sarah, have you resolved the merge conflict on GitHub yet?",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you resolved the merge conflict on GitHub yet?
+Sarah: 还没有, 我正在查看最新的PRs. 
+Li: Ok, 让我们合并并测试。We have a tight deadline to deploy by Friday.
+Sarah: 没问题，我会在staging环境中测试。Hopefully no more bugs!
+Li: Yes, we need to build and deploy quickly. 我们会赶得上的!
+Sarah: I agree, 我们不能再延期了。Let's aim for a smooth deploy by Friday.",1,Li,"['Hey', 'Sarah', ',', 'have', 'you', 'resolved', 'the', 'merge', 'conflict', 'on', 'GitHub', 'yet', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'ADP', 'PROPN', 'ADV', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, have you resolved the merge conflict on GitHub yet?",1,283,"['Hey', 'Sarah', ',', 'have', 'you', 'resolved', 'the', 'merge', 'conflict', 'on', 'GitHub', 'yet', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,1,0,False
+283,"还没有, 我正在查看最新的PRs.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you resolved the merge conflict on GitHub yet?
+Sarah: 还没有, 我正在查看最新的PRs. 
+Li: Ok, 让我们合并并测试。We have a tight deadline to deploy by Friday.
+Sarah: 没问题，我会在staging环境中测试。Hopefully no more bugs!
+Li: Yes, we need to build and deploy quickly. 我们会赶得上的!
+Sarah: I agree, 我们不能再延期了。Let's aim for a smooth deploy by Friday.",2,Sarah,"['还', '没有', ',', '我', '正在', '查看', '最新', '的', '.', 'PRs']","['d', 'v', 'PUNCT', 'r', 't', 'v', 'd', 'uj', 'PUNCT', 'NOUN']","{'en', 'zh', 'punct'}","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']","还没有, 我正在查看最新的PRs.",2,283,"['还', '没有', ',', '我', '正在', '查看', '最新', '的', '.', 'PRs']","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0,0,True
+283,"Ok, 让我们合并并测试。We have a tight deadline to deploy by Friday.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you resolved the merge conflict on GitHub yet?
+Sarah: 还没有, 我正在查看最新的PRs. 
+Li: Ok, 让我们合并并测试。We have a tight deadline to deploy by Friday.
+Sarah: 没问题，我会在staging环境中测试。Hopefully no more bugs!
+Li: Yes, we need to build and deploy quickly. 我们会赶得上的!
+Sarah: I agree, 我们不能再延期了。Let's aim for a smooth deploy by Friday.",3,Li,"[',', 'Ok', '让', '我们', '合并', '并', '测试', '。', '.', 'We', 'have', 'a', 'tight', 'deadline', 'to', 'deploy', 'by', 'Friday']","['PUNCT', 'VERB', 'v', 'r', 'v', 'c', 'vn', 'PUNCT', 'PUNCT', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'PART', 'VERB', 'ADP', 'PROPN']","{'en', 'zh', 'punct'}","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Ok, 让我们合并并测试。We have a tight deadline to deploy by Friday.",3,283,"[',', 'Ok', '让', '我们', '合并', '并', '测试', '。', '.', 'We', 'have', 'a', 'tight', 'deadline', 'to', 'deploy', 'by', 'Friday']","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True
+283,没问题，我会在staging环境中测试。Hopefully no more bugs!,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you resolved the merge conflict on GitHub yet?
+Sarah: 还没有, 我正在查看最新的PRs. 
+Li: Ok, 让我们合并并测试。We have a tight deadline to deploy by Friday.
+Sarah: 没问题，我会在staging环境中测试。Hopefully no more bugs!
+Li: Yes, we need to build and deploy quickly. 我们会赶得上的!
+Sarah: I agree, 我们不能再延期了。Let's aim for a smooth deploy by Friday.",4,Sarah,"['没', '问题', '，', '我会', '在', 'staging', '环境', '中', '测试', '。', '!', 'Hopefully', 'no', 'more', 'bugs']","['v', 'n', 'PUNCT', 'n', 'p', 'VERB', 'n', 'f', 'vn', 'PUNCT', 'PUNCT', 'ADV', 'ADV', 'ADV', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en']",没问题，我会在staging环境中测试。Hopefully no more bugs!,4,283,"['没', '问题', '，', '我会', '在', 'staging', '环境', '中', '测试', '。', '!', 'Hopefully', 'no', 'more', 'bugs']","['zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en']",mix,0,0,True
+283,"Yes, we need to build and deploy quickly. 我们会赶得上的!",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you resolved the merge conflict on GitHub yet?
+Sarah: 还没有, 我正在查看最新的PRs. 
+Li: Ok, 让我们合并并测试。We have a tight deadline to deploy by Friday.
+Sarah: 没问题，我会在staging环境中测试。Hopefully no more bugs!
+Li: Yes, we need to build and deploy quickly. 我们会赶得上的!
+Sarah: I agree, 我们不能再延期了。Let's aim for a smooth deploy by Friday.",5,Li,"[',', '.', 'Yes', 'we', 'need', 'to', 'build', 'and', 'deploy', 'quickly', '我们', '会', '赶得上', '的', '!']","['PUNCT', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'PART', 'VERB', 'CCONJ', 'VERB', 'ADV', 'r', 'v', 'd', 'uj', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'other']","Yes, we need to build and deploy quickly. 我们会赶得上的!",5,283,"[',', '.', 'Yes', 'we', 'need', 'to', 'build', 'and', 'deploy', 'quickly', '我们', '会', '赶得上', '的', '!']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'other']",mix,2,0,True
+283,"I agree, 我们不能再延期了。Let's aim for a smooth deploy by Friday.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, have you resolved the merge conflict on GitHub yet?
+Sarah: 还没有, 我正在查看最新的PRs. 
+Li: Ok, 让我们合并并测试。We have a tight deadline to deploy by Friday.
+Sarah: 没问题，我会在staging环境中测试。Hopefully no more bugs!
+Li: Yes, we need to build and deploy quickly. 我们会赶得上的!
+Sarah: I agree, 我们不能再延期了。Let's aim for a smooth deploy by Friday.",6,Sarah,"[',', 'I', 'agree', '我们', '不能', '再', '延期', '了', '。', ""'"", '.', 'Let', 's', 'aim', 'for', 'a', 'smooth', 'deploy', 'by', 'Friday']","['PUNCT', 'PRON', 'VERB', 'r', 'v', 'd', 'v', 'ul', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADP', 'PROPN']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","I agree, 我们不能再延期了。Let's aim for a smooth deploy by Friday.",6,283,"[',', 'I', 'agree', '我们', '不能', '再', '延期', '了', '。', ""'"", '.', 'Let', 's', 'aim', 'for', 'a', 'smooth', 'deploy', 'by', 'Friday']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True

@@ -1,0 +1,97 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+556,今天我们要review这个PR before we deploy to production.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 今天我们要review这个PR before we deploy to production.
+Sarah: Sounds good. Let me take a look real quick.
+Li: 我有点担心这个bug是不是还在里面.
+Sarah: Don't worry, I'll make sure to double check before we merge it.
+Li: 你觉得我们能在deadline前完成build吗?
+Sarah: I think so, as long as we don't run into any unexpected issues.
+Li: 那就好，我觉得这个feature会对用户很有用.
+Sarah: I agree. Let's get this PR reviewed and deployed as soon as possible.",1,Li,"['今天', '我们', '要', 'review', '这个', '.', 'PR', 'before', 'we', 'deploy', 'to', 'production']","['t', 'r', 'v', 'VERB', 'r', 'PUNCT', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'ADP', 'NOUN']","{'en', 'zh', 'punct'}","['zh', 'zh', 'zh', 'en', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en']",今天我们要review这个PR before we deploy to production.,1,556,"['今天', '我们', '要', 'review', '这个', '.', 'PR', 'before', 'we', 'deploy', 'to', 'production']","['zh', 'zh', 'zh', 'en', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.868,0.834,0.831,2,True
+556,Sounds good. Let me take a look real quick.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 今天我们要review这个PR before we deploy to production.
+Sarah: Sounds good. Let me take a look real quick.
+Li: 我有点担心这个bug是不是还在里面.
+Sarah: Don't worry, I'll make sure to double check before we merge it.
+Li: 你觉得我们能在deadline前完成build吗?
+Sarah: I think so, as long as we don't run into any unexpected issues.
+Li: 那就好，我觉得这个feature会对用户很有用.
+Sarah: I agree. Let's get this PR reviewed and deployed as soon as possible.",2,Sarah,"['Sounds', 'good', '.', 'Let', 'me', 'take', 'a', 'look', 'real', 'quick', '.']","['VERB', 'ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADV', 'ADJ', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Sounds good. Let me take a look real quick.,2,556,"['Sounds', 'good', '.', 'Let', 'me', 'take', 'a', 'look', 'real', 'quick', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.794,0.787,0.787,0,False
+556,我有点担心这个bug是不是还在里面.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 今天我们要review这个PR before we deploy to production.
+Sarah: Sounds good. Let me take a look real quick.
+Li: 我有点担心这个bug是不是还在里面.
+Sarah: Don't worry, I'll make sure to double check before we merge it.
+Li: 你觉得我们能在deadline前完成build吗?
+Sarah: I think so, as long as we don't run into any unexpected issues.
+Li: 那就好，我觉得这个feature会对用户很有用.
+Sarah: I agree. Let's get this PR reviewed and deployed as soon as possible.",3,Li,"['我', '有点', '担心', '这个', 'bug', '是不是', '还', '在', '里面', '.']","['r', 'n', 'v', 'r', 'NOUN', 'l', 'd', 'p', 'f', 'PUNCT']","{'en', 'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",我有点担心这个bug是不是还在里面.,3,556,"['我', '有点', '担心', '这个', 'bug', '是不是', '还', '在', '里面', '.']","['zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.866,0.843,0.856,0,True
+556,"Don't worry, I'll make sure to double check before we merge it.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 今天我们要review这个PR before we deploy to production.
+Sarah: Sounds good. Let me take a look real quick.
+Li: 我有点担心这个bug是不是还在里面.
+Sarah: Don't worry, I'll make sure to double check before we merge it.
+Li: 你觉得我们能在deadline前完成build吗?
+Sarah: I think so, as long as we don't run into any unexpected issues.
+Li: 那就好，我觉得这个feature会对用户很有用.
+Sarah: I agree. Let's get this PR reviewed and deployed as soon as possible.",4,Sarah,"['Do', ""n't"", 'worry', ',', 'I', ""'ll"", 'make', 'sure', 'to', 'double', 'check', 'before', 'we', 'merge', 'it', '.']","['AUX', 'PART', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADJ', 'PART', 'VERB', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'PRON', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Don't worry, I'll make sure to double check before we merge it.",4,556,"['Do', ""n't"", 'worry', ',', 'I', ""'ll"", 'make', 'sure', 'to', 'double', 'check', 'before', 'we', 'merge', 'it', '.']","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.781,0.763,0.776,1,False
+556,你觉得我们能在deadline前完成build吗?,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 今天我们要review这个PR before we deploy to production.
+Sarah: Sounds good. Let me take a look real quick.
+Li: 我有点担心这个bug是不是还在里面.
+Sarah: Don't worry, I'll make sure to double check before we merge it.
+Li: 你觉得我们能在deadline前完成build吗?
+Sarah: I think so, as long as we don't run into any unexpected issues.
+Li: 那就好，我觉得这个feature会对用户很有用.
+Sarah: I agree. Let's get this PR reviewed and deployed as soon as possible.",5,Li,"['你', '觉得', '我们', '能', '在', 'deadline', '前', '完成', 'build', '吗', '?']","['r', 'v', 'r', 'v', 'p', 'NOUN', 'f', 'v', 'VERB', 'y', 'PUNCT']","{'en', 'zh', 'other'}","['zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'en', 'zh', 'other']",你觉得我们能在deadline前完成build吗?,5,556,"['你', '觉得', '我们', '能', '在', 'deadline', '前', '完成', 'build', '吗', '?']","['zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'en', 'zh', 'other']",mix,0.867,0.828,0.827,0,True
+556,"I think so, as long as we don't run into any unexpected issues.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 今天我们要review这个PR before we deploy to production.
+Sarah: Sounds good. Let me take a look real quick.
+Li: 我有点担心这个bug是不是还在里面.
+Sarah: Don't worry, I'll make sure to double check before we merge it.
+Li: 你觉得我们能在deadline前完成build吗?
+Sarah: I think so, as long as we don't run into any unexpected issues.
+Li: 那就好，我觉得这个feature会对用户很有用.
+Sarah: I agree. Let's get this PR reviewed and deployed as soon as possible.",6,Sarah,"['I', 'think', 'so', ',', 'as', 'long', 'as', 'we', 'do', ""n't"", 'run', 'into', 'any', 'unexpected', 'issues', '.']","['PRON', 'VERB', 'ADV', 'PUNCT', 'ADV', 'ADV', 'SCONJ', 'PRON', 'AUX', 'PART', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","I think so, as long as we don't run into any unexpected issues.",6,556,"['I', 'think', 'so', ',', 'as', 'long', 'as', 'we', 'do', ""n't"", 'run', 'into', 'any', 'unexpected', 'issues', '.']","['en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.804,0.785,0.787,0,False
+556,那就好，我觉得这个feature会对用户很有用.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 今天我们要review这个PR before we deploy to production.
+Sarah: Sounds good. Let me take a look real quick.
+Li: 我有点担心这个bug是不是还在里面.
+Sarah: Don't worry, I'll make sure to double check before we merge it.
+Li: 你觉得我们能在deadline前完成build吗?
+Sarah: I think so, as long as we don't run into any unexpected issues.
+Li: 那就好，我觉得这个feature会对用户很有用.
+Sarah: I agree. Let's get this PR reviewed and deployed as soon as possible.",7,Li,"['那就好', '，', '我', '觉得', '这个', 'feature', '会', '对', '用户', '很', '有用', '.']","['l', 'PUNCT', 'r', 'v', 'r', 'NOUN', 'v', 'p', 'n', 'zg', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",那就好，我觉得这个feature会对用户很有用.,7,556,"['那就好', '，', '我', '觉得', '这个', 'feature', '会', '对', '用户', '很', '有用', '.']","['zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.861,0.843,0.857,0,True
+556,I agree. Let's get this PR reviewed and deployed as soon as possible.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 今天我们要review这个PR before we deploy to production.
+Sarah: Sounds good. Let me take a look real quick.
+Li: 我有点担心这个bug是不是还在里面.
+Sarah: Don't worry, I'll make sure to double check before we merge it.
+Li: 你觉得我们能在deadline前完成build吗?
+Sarah: I think so, as long as we don't run into any unexpected issues.
+Li: 那就好，我觉得这个feature会对用户很有用.
+Sarah: I agree. Let's get this PR reviewed and deployed as soon as possible.",8,Sarah,"['I', 'agree', '.', 'Let', ""'s"", 'get', 'this', 'PR', 'reviewed', 'and', 'deployed', 'as', 'soon', 'as', 'possible', '.']","['PRON', 'VERB', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'VERB', 'CCONJ', 'VERB', 'ADV', 'ADV', 'ADP', 'ADJ', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",I agree. Let's get this PR reviewed and deployed as soon as possible.,8,556,"['I', 'agree', '.', 'Let', ""'s"", 'get', 'this', 'PR', 'reviewed', 'and', 'deployed', 'as', 'soon', 'as', 'possible', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.819,0.773,0.782,1,False

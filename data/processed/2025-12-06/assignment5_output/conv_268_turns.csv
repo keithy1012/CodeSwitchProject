@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+268,"Hey Sarah, have you had a chance to look at the QA results for the latest staging build?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA results for the latest staging build?
+Sarah: 是的，我已经看了，有一个bug出现在前端页面上。
+Li: That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。
+Sarah: I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。
+Li: Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。
+Sarah: Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。
+Li: Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。
+Sarah: Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。
+Li: Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。",1,Li,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'QA', 'results', 'for', 'the', 'latest', 'staging', 'build', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'DET', 'PROPN', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, have you had a chance to look at the QA results for the latest staging build?",1,268,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'QA', 'results', 'for', 'the', 'latest', 'staging', 'build', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.804,0.78,0.788,3,False
+268,是的，我已经看了，有一个bug出现在前端页面上。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA results for the latest staging build?
+Sarah: 是的，我已经看了，有一个bug出现在前端页面上。
+Li: That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。
+Sarah: I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。
+Li: Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。
+Sarah: Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。
+Li: Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。
+Sarah: Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。
+Li: Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。",2,Sarah,"['是', '的', '，', '我', '已经', '看', '了', '，', '有', '一个', 'bug', '出现', '在', '前端', '页面', '上', '。']","['v', 'uj', 'PUNCT', 'r', 'd', 'v', 'ul', 'PUNCT', 'v', 'm', 'NOUN', 'v', 'p', 'f', 'n', 'f', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",是的，我已经看了，有一个bug出现在前端页面上。,2,268,"['是', '的', '，', '我', '已经', '看', '了', '，', '有', '一个', 'bug', '出现', '在', '前端', '页面', '上', '。']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.858,0.84,0.844,0,True
+268,That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA results for the latest staging build?
+Sarah: 是的，我已经看了，有一个bug出现在前端页面上。
+Li: That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。
+Sarah: I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。
+Li: Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。
+Sarah: Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。
+Li: Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。
+Sarah: Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。
+Li: Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。",3,Li,"[""'"", '.', ""'"", '.', 'That', 's', 'not', 'good', 'Let', 's', 'debug', 'it', 'together', '我们', '可以', '开始', '检查', '哪些', '页面', '受到', '影响', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'VERB', 'PART', 'ADJ', 'VERB', 'PRON', 'VERB', 'PRON', 'ADV', 'r', 'c', 'v', 'vn', 'r', 'n', 'v', 'vn', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。,3,268,"[""'"", '.', ""'"", '.', 'That', 's', 'not', 'good', 'Let', 's', 'debug', 'it', 'together', '我们', '可以', '开始', '检查', '哪些', '页面', '受到', '影响', '。']","['punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.859,0.84,0.854,1,True
+268,I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA results for the latest staging build?
+Sarah: 是的，我已经看了，有一个bug出现在前端页面上。
+Li: That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。
+Sarah: I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。
+Li: Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。
+Sarah: Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。
+Li: Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。
+Sarah: Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。
+Li: Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。",4,Sarah,"['.', 'I', 'agree', '我们', '应该', '先', '查看', '最近', '一次', '部署', '的', '历史记录', '，', '看看', '有没有', '人', '合并', '了有', '问题', '的', '代码', '。']","['PUNCT', 'PRON', 'VERB', 'r', 'v', 'd', 'v', 'f', 'm', 'n', 'uj', 'n', 'PUNCT', 'v', 'v', 'n', 'v', 'v', 'n', 'uj', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。,4,268,"['.', 'I', 'agree', '我们', '应该', '先', '查看', '最近', '一次', '部署', '的', '历史记录', '，', '看看', '有没有', '人', '合并', '了有', '问题', '的', '代码', '。']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.891,0.838,0.833,0,True
+268,Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA results for the latest staging build?
+Sarah: 是的，我已经看了，有一个bug出现在前端页面上。
+Li: That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。
+Sarah: I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。
+Li: Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。
+Sarah: Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。
+Li: Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。
+Sarah: Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。
+Li: Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。",5,Li,"['.', 'Good', 'idea', '我们', '可以', '看看', '谁', '最后', '一次', '合并', '了', '代码', '，', '然后', '和', '他们', '一起', '解决', '这个', '问题', '。']","['PUNCT', 'ADJ', 'NOUN', 'r', 'c', 'v', 'r', 'f', 'm', 'v', 'ul', 'n', 'PUNCT', 'c', 'c', 'r', 'm', 'v', 'r', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。,5,268,"['.', 'Good', 'idea', '我们', '可以', '看看', '谁', '最后', '一次', '合并', '了', '代码', '，', '然后', '和', '他们', '一起', '解决', '这个', '问题', '。']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.879,0.84,0.83,0,True
+268,Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA results for the latest staging build?
+Sarah: 是的，我已经看了，有一个bug出现在前端页面上。
+Li: That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。
+Sarah: I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。
+Li: Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。
+Sarah: Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。
+Li: Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。
+Sarah: Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。
+Li: Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。",6,Sarah,"['.', 'Sounds', 'like', 'a', 'plan', '我们', '需要', '在', 'deadline', '之前', '解决', '这个', '问题', '，', '否则', '会', '影响', '产品', '的', '部署', '计划', '。']","['PUNCT', 'VERB', 'ADP', 'DET', 'NOUN', 'r', 'v', 'p', 'NOUN', 'f', 'v', 'r', 'n', 'PUNCT', 'c', 'v', 'vn', 'n', 'uj', 'n', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。,6,268,"['.', 'Sounds', 'like', 'a', 'plan', '我们', '需要', '在', 'deadline', '之前', '解决', '这个', '问题', '，', '否则', '会', '影响', '产品', '的', '部署', '计划', '。']","['punct', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.878,0.841,0.838,0,True
+268,Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA results for the latest staging build?
+Sarah: 是的，我已经看了，有一个bug出现在前端页面上。
+Li: That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。
+Sarah: I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。
+Li: Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。
+Sarah: Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。
+Li: Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。
+Sarah: Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。
+Li: Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。",7,Li,"['.', 'Absolutely', '我们', '要', '确保', '在', '下', '一个', '部署', '之前', '修复', '这个', '，', 'bug', '不然', '会', '影响', '用户', '体验', '。']","['PUNCT', 'ADV', 'r', 'v', 'v', 'p', 'f', 'm', 'n', 'f', 'v', 'r', 'PUNCT', 'NOUN', 'c', 'v', 'vn', 'n', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。,7,268,"['.', 'Absolutely', '我们', '要', '确保', '在', '下', '一个', '部署', '之前', '修复', '这个', '，', 'bug', '不然', '会', '影响', '用户', '体验', '。']","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.879,0.838,0.851,0,True
+268,Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA results for the latest staging build?
+Sarah: 是的，我已经看了，有一个bug出现在前端页面上。
+Li: That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。
+Sarah: I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。
+Li: Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。
+Sarah: Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。
+Li: Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。
+Sarah: Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。
+Li: Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。",8,Sarah,"[""'"", '.', 'Let', 's', 'get', 'started', 'right', 'away', '我们', '可以', '先', '部署', '一个', '临时', '的', '修复', '版本', '，', '然后', '继续', 'debug', '这个', '问题', '。']","['PUNCT', 'PUNCT', 'VERB', 'PRON', 'AUX', 'VERB', 'ADV', 'ADV', 'r', 'c', 'd', 'n', 'm', 'b', 'uj', 'v', 'n', 'PUNCT', 'c', 'v', 'VERB', 'r', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。,8,268,"[""'"", '.', 'Let', 's', 'get', 'started', 'right', 'away', '我们', '可以', '先', '部署', '一个', '临时', '的', '修复', '版本', '，', '然后', '继续', 'debug', '这个', '问题', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",mix,0.874,0.841,0.83,0,True
+268,Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA results for the latest staging build?
+Sarah: 是的，我已经看了，有一个bug出现在前端页面上。
+Li: That's not good. Let's debug it together. 我们可以开始检查哪些页面受到影响。
+Sarah: I agree. 我们应该先查看最近一次部署的历史记录，看看有没有人合并了有问题的代码。
+Li: Good idea. 我们可以看看谁最后一次合并了代码，然后和他们一起解决这个问题。
+Sarah: Sounds like a plan. 我们需要在deadline之前解决这个问题，否则会影响产品的部署计划。
+Li: Absolutely. 我们要确保在下一个部署之前修复这个bug，不然会影响用户体验。
+Sarah: Let's get started right away. 我们可以先部署一个临时的修复版本，然后继续debug这个问题。
+Li: Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。",9,Li,"['.', 'Great', 'idea', '我们', '可以', '在', 'debug', '过程', '中', '继续', '建立', '新', '的', '，', 'features', '让', '整个', '产品', '更加', '完善', '。']","['PUNCT', 'ADJ', 'NOUN', 'r', 'c', 'p', 'VERB', 'n', 'f', 'v', 'v', 'a', 'uj', 'PUNCT', 'VERB', 'v', 'b', 'n', 'd', 'v', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Great idea. 我们可以在debug过程中继续建立新的features，让整个产品更加完善。,9,268,"['.', 'Great', 'idea', '我们', '可以', '在', 'debug', '过程', '中', '继续', '建立', '新', '的', '，', 'features', '让', '整个', '产品', '更加', '完善', '。']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.874,0.831,0.832,0,True

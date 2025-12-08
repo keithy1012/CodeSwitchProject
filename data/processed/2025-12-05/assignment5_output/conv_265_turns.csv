@@ -1,0 +1,161 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+265,"Hey Sarah, have you had a chance to look at the bug on our front-end code?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the bug on our front-end code?
+
+Sarah: 是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。
+
+Li: Okay, let me build the latest code and deploy it to the staging environment.
+
+Sarah: Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。
+
+Li: Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。
+
+Sarah: 谢谢你的帮助，我们一起努力解决它吧。
+
+Li: 没问题，我们一起合作一定能搞定这个问题。
+
+Sarah: 谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。",1,Li,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'bug', 'on', 'our', 'front', '-', 'end', 'code', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'DET', 'NOUN', 'ADP', 'PRON', 'ADJ', 'PUNCT', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'other']","Hey Sarah, have you had a chance to look at the bug on our front-end code?",1,265,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'bug', 'on', 'our', 'front', '-', 'end', 'code', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'other']",en,0.814,0.768,0.792,2,False
+265,是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the bug on our front-end code?
+
+Sarah: 是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。
+
+Li: Okay, let me build the latest code and deploy it to the staging environment.
+
+Sarah: Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。
+
+Li: Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。
+
+Sarah: 谢谢你的帮助，我们一起努力解决它吧。
+
+Li: 没问题，我们一起合作一定能搞定这个问题。
+
+Sarah: 谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。",2,Sarah,"['是', '的', '，', '我', '今天', '早上', '在', 'QA', '环境', '中', '发现', '了', '一个', '问题', '。', '我们', '需要', '在', 'staging', '环境', '中', '检查一下', '。']","['v', 'uj', 'PUNCT', 'r', 't', 't', 'p', 'PROPN', 'n', 'f', 'v', 'ul', 'm', 'n', 'PUNCT', 'r', 'v', 'p', 'VERB', 'n', 'f', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']",是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。,2,265,"['是', '的', '，', '我', '今天', '早上', '在', 'QA', '环境', '中', '发现', '了', '一个', '问题', '。', '我们', '需要', '在', 'staging', '环境', '中', '检查一下', '。']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']",mix,0.863,0.832,0.836,2,True
+265,"Okay, let me build the latest code and deploy it to the staging environment.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the bug on our front-end code?
+
+Sarah: 是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。
+
+Li: Okay, let me build the latest code and deploy it to the staging environment.
+
+Sarah: Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。
+
+Li: Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。
+
+Sarah: 谢谢你的帮助，我们一起努力解决它吧。
+
+Li: 没问题，我们一起合作一定能搞定这个问题。
+
+Sarah: 谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。",3,Li,"['Okay', ',', 'let', 'me', 'build', 'the', 'latest', 'code', 'and', 'deploy', 'it', 'to', 'the', 'staging', 'environment', '.']","['INTJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'CCONJ', 'VERB', 'PRON', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Okay, let me build the latest code and deploy it to the staging environment.",3,265,"['Okay', ',', 'let', 'me', 'build', 'the', 'latest', 'code', 'and', 'deploy', 'it', 'to', 'the', 'staging', 'environment', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.848,0.778,0.78,4,False
+265,Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the bug on our front-end code?
+
+Sarah: 是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。
+
+Li: Okay, let me build the latest code and deploy it to the staging environment.
+
+Sarah: Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。
+
+Li: Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。
+
+Sarah: 谢谢你的帮助，我们一起努力解决它吧。
+
+Li: 没问题，我们一起合作一定能搞定这个问题。
+
+Sarah: 谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。",4,Sarah,"['.', 'Sounds', 'good', '让', '我们', '尽快', '做到', '这', '一点', '，', '我们', '的', 'deadline', '很快', '就', '到', '了', '。']","['PUNCT', 'VERB', 'ADJ', 'v', 'r', 'd', 'v', 'r', 'm', 'PUNCT', 'r', 'uj', 'NOUN', 'd', 'd', 'v', 'ul', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。,4,265,"['.', 'Sounds', 'good', '让', '我们', '尽快', '做到', '这', '一点', '，', '我们', '的', 'deadline', '很快', '就', '到', '了', '。']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.846,0.839,0.833,1,True
+265,"Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the bug on our front-end code?
+
+Sarah: 是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。
+
+Li: Okay, let me build the latest code and deploy it to the staging environment.
+
+Sarah: Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。
+
+Li: Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。
+
+Sarah: 谢谢你的帮助，我们一起努力解决它吧。
+
+Li: 没问题，我们一起合作一定能搞定这个问题。
+
+Sarah: 谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。",5,Li,"[',', 'Absolutely', '我会', '尽快', '解决', '这个', '问题', '，', '这样', '我们', '就', '可以', 'merge', '到', '主', '分支', '了', '。']","['PUNCT', 'ADV', 'n', 'd', 'v', 'r', 'n', 'PUNCT', 'r', 'r', 'd', 'c', 'VERB', 'v', 'b', 'n', 'ul', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']","Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。",5,265,"[',', 'Absolutely', '我会', '尽快', '解决', '这个', '问题', '，', '这样', '我们', '就', '可以', 'merge', '到', '主', '分支', '了', '。']","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.855,0.829,0.826,1,True
+265,谢谢你的帮助，我们一起努力解决它吧。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the bug on our front-end code?
+
+Sarah: 是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。
+
+Li: Okay, let me build the latest code and deploy it to the staging environment.
+
+Sarah: Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。
+
+Li: Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。
+
+Sarah: 谢谢你的帮助，我们一起努力解决它吧。
+
+Li: 没问题，我们一起合作一定能搞定这个问题。
+
+Sarah: 谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。",6,Sarah,"['谢谢', '你', '的', '帮助', '，', '我们', '一起', '努力', '解决', '它', '吧', '。']","['nr', 'r', 'uj', 'v', 'PUNCT', 'r', 'm', 'ad', 'v', 'r', 'y', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",谢谢你的帮助，我们一起努力解决它吧。,6,265,"['谢谢', '你', '的', '帮助', '，', '我们', '一起', '努力', '解决', '它', '吧', '。']","['zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.86,0.85,0.856,0,False
+265,没问题，我们一起合作一定能搞定这个问题。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the bug on our front-end code?
+
+Sarah: 是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。
+
+Li: Okay, let me build the latest code and deploy it to the staging environment.
+
+Sarah: Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。
+
+Li: Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。
+
+Sarah: 谢谢你的帮助，我们一起努力解决它吧。
+
+Li: 没问题，我们一起合作一定能搞定这个问题。
+
+Sarah: 谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。",7,Li,"['没', '问题', '，', '我们', '一起', '合作', '一定', '能', '搞定', '这个', '问题', '。']","['v', 'n', 'PUNCT', 'r', 'm', 'vn', 'd', 'v', 'v', 'r', 'n', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",没问题，我们一起合作一定能搞定这个问题。,7,265,"['没', '问题', '，', '我们', '一起', '合作', '一定', '能', '搞定', '这个', '问题', '。']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.862,0.847,0.84,0,False
+265,谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the bug on our front-end code?
+
+Sarah: 是的，我今天早上在 QA 环境中发现了一个问题。我们需要在 staging 环境中检查一下。
+
+Li: Okay, let me build the latest code and deploy it to the staging environment.
+
+Sarah: Sounds good. 让我们尽快做到这一点，我们的 deadline 很快就到了。
+
+Li: Absolutely, 我会尽快解决这个问题，这样我们就可以 merge 到主分支了。
+
+Sarah: 谢谢你的帮助，我们一起努力解决它吧。
+
+Li: 没问题，我们一起合作一定能搞定这个问题。
+
+Sarah: 谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。",8,Sarah,"['谢谢', '，', '我们', '需要', '确保', '这个', 'issue', '在', '下', '一个', 'deploy', '之前', '解决', '。']","['nr', 'PUNCT', 'r', 'v', 'v', 'r', 'NOUN', 'p', 'f', 'm', 'VERB', 'f', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",谢谢，我们需要确保这个 issue 在下一个 deploy 之前解决。,8,265,"['谢谢', '，', '我们', '需要', '确保', '这个', 'issue', '在', '下', '一个', 'deploy', '之前', '解决', '。']","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",mix,0.879,0.847,0.847,1,True

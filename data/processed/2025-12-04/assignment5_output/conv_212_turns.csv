@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+212,"** Hey Sarah, have you finished merging your code with the main branch? I need to test it before we deploy later today.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished merging your code with the main branch? I need to test it before we deploy later today.
+
+**Sarah:** I’m just about done! I ran into a bug while building the last feature, but I think I resolved it. I’ll push the changes in a few minutes.
+
+**Li:** That’s great to hear! Once you push, I’ll do a pull and start testing everything. We really need to ensure everything is stable before the deployment.
+
+**Sarah:** Absolutely! I’ll prioritize that. Do you think we should run a few more tests after the build, just to be on the safe side?
+
+**Li:** Definitely. I’d rather catch any issues now than after we deploy. Let’s aim for a quick review after testing, just in case anything slipped through.
+
+**Sarah:** Sounds like a plan! I’ll wrap this up and ping you once it’s ready for you to test.
+
+**Li:** Perfect! Thanks, Sarah. We’ve got this—Friday deployment is within reach!",1,**Li,"['*', '*', 'Hey', 'Sarah', ',', 'have', 'you', 'finished', 'merging', 'your', 'code', 'with', 'the', 'main', 'branch', '?', 'I', 'need', 'to', 'test', 'it', 'before', 'we', 'deploy', 'later', 'today', '.']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'VERB', 'PRON', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'SCONJ', 'PRON', 'VERB', 'ADV', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Hey Sarah, have you finished merging your code with the main branch? I need to test it before we deploy later today.",1,212,"['*', '*', 'Hey', 'Sarah', ',', 'have', 'you', 'finished', 'merging', 'your', 'code', 'with', 'the', 'main', 'branch', '?', 'I', 'need', 'to', 'test', 'it', 'before', 'we', 'deploy', 'later', 'today', '.']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,4,0,False
+212,"** I’m just about done! I ran into a bug while building the last feature, but I think I resolved it. I’ll push the changes in a few minutes.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished merging your code with the main branch? I need to test it before we deploy later today.
+
+**Sarah:** I’m just about done! I ran into a bug while building the last feature, but I think I resolved it. I’ll push the changes in a few minutes.
+
+**Li:** That’s great to hear! Once you push, I’ll do a pull and start testing everything. We really need to ensure everything is stable before the deployment.
+
+**Sarah:** Absolutely! I’ll prioritize that. Do you think we should run a few more tests after the build, just to be on the safe side?
+
+**Li:** Definitely. I’d rather catch any issues now than after we deploy. Let’s aim for a quick review after testing, just in case anything slipped through.
+
+**Sarah:** Sounds like a plan! I’ll wrap this up and ping you once it’s ready for you to test.
+
+**Li:** Perfect! Thanks, Sarah. We’ve got this—Friday deployment is within reach!",2,**Sarah,"['*', '*', 'I', '’m', 'just', 'about', 'done', '!', 'I', 'ran', 'into', 'a', 'bug', 'while', 'building', 'the', 'last', 'feature', ',', 'but', 'I', 'think', 'I', 'resolved', 'it', '.', 'I', '’ll', 'push', 'the', 'changes', 'in', 'a', 'few', 'minutes', '.']","['PUNCT', 'PUNCT', 'PRON', 'VERB', 'ADV', 'ADV', 'VERB', 'PUNCT', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'SCONJ', 'VERB', 'DET', 'ADJ', 'NOUN', 'PUNCT', 'CCONJ', 'PRON', 'VERB', 'PRON', 'VERB', 'PRON', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** I’m just about done! I ran into a bug while building the last feature, but I think I resolved it. I’ll push the changes in a few minutes.",2,212,"['*', '*', 'I', '’m', 'just', 'about', 'done', '!', 'I', 'ran', 'into', 'a', 'bug', 'while', 'building', 'the', 'last', 'feature', ',', 'but', 'I', 'think', 'I', 'resolved', 'it', '.', 'I', '’ll', 'push', 'the', 'changes', 'in', 'a', 'few', 'minutes', '.']","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+212,"** That’s great to hear! Once you push, I’ll do a pull and start testing everything. We really need to ensure everything is stable before the deployment.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished merging your code with the main branch? I need to test it before we deploy later today.
+
+**Sarah:** I’m just about done! I ran into a bug while building the last feature, but I think I resolved it. I’ll push the changes in a few minutes.
+
+**Li:** That’s great to hear! Once you push, I’ll do a pull and start testing everything. We really need to ensure everything is stable before the deployment.
+
+**Sarah:** Absolutely! I’ll prioritize that. Do you think we should run a few more tests after the build, just to be on the safe side?
+
+**Li:** Definitely. I’d rather catch any issues now than after we deploy. Let’s aim for a quick review after testing, just in case anything slipped through.
+
+**Sarah:** Sounds like a plan! I’ll wrap this up and ping you once it’s ready for you to test.
+
+**Li:** Perfect! Thanks, Sarah. We’ve got this—Friday deployment is within reach!",3,**Li,"['*', '*', 'That', '’s', 'great', 'to', 'hear', '!', 'Once', 'you', 'push', ',', 'I', '’ll', 'do', 'a', 'pull', 'and', 'start', 'testing', 'everything', '.', 'We', 'really', 'need', 'to', 'ensure', 'everything', 'is', 'stable', 'before', 'the', 'deployment', '.']","['PUNCT', 'PUNCT', 'PRON', 'VERB', 'ADJ', 'PART', 'VERB', 'PUNCT', 'SCONJ', 'PRON', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'VERB', 'CCONJ', 'VERB', 'VERB', 'PRON', 'PUNCT', 'PRON', 'ADV', 'VERB', 'PART', 'VERB', 'PRON', 'AUX', 'ADJ', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** That’s great to hear! Once you push, I’ll do a pull and start testing everything. We really need to ensure everything is stable before the deployment.",3,212,"['*', '*', 'That', '’s', 'great', 'to', 'hear', '!', 'Once', 'you', 'push', ',', 'I', '’ll', 'do', 'a', 'pull', 'and', 'start', 'testing', 'everything', '.', 'We', 'really', 'need', 'to', 'ensure', 'everything', 'is', 'stable', 'before', 'the', 'deployment', '.']","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,2,0,False
+212,"** Absolutely! I’ll prioritize that. Do you think we should run a few more tests after the build, just to be on the safe side?",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished merging your code with the main branch? I need to test it before we deploy later today.
+
+**Sarah:** I’m just about done! I ran into a bug while building the last feature, but I think I resolved it. I’ll push the changes in a few minutes.
+
+**Li:** That’s great to hear! Once you push, I’ll do a pull and start testing everything. We really need to ensure everything is stable before the deployment.
+
+**Sarah:** Absolutely! I’ll prioritize that. Do you think we should run a few more tests after the build, just to be on the safe side?
+
+**Li:** Definitely. I’d rather catch any issues now than after we deploy. Let’s aim for a quick review after testing, just in case anything slipped through.
+
+**Sarah:** Sounds like a plan! I’ll wrap this up and ping you once it’s ready for you to test.
+
+**Li:** Perfect! Thanks, Sarah. We’ve got this—Friday deployment is within reach!",4,**Sarah,"['*', '*', 'Absolutely', '!', 'I', '’ll', 'prioritize', 'that', '.', 'Do', 'you', 'think', 'we', 'should', 'run', 'a', 'few', 'more', 'tests', 'after', 'the', 'build', ',', 'just', 'to', 'be', 'on', 'the', 'safe', 'side', '?']","['PUNCT', 'PUNCT', 'ADV', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'ADJ', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT', 'ADV', 'PART', 'AUX', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","** Absolutely! I’ll prioritize that. Do you think we should run a few more tests after the build, just to be on the safe side?",4,212,"['*', '*', 'Absolutely', '!', 'I', '’ll', 'prioritize', 'that', '.', 'Do', 'you', 'think', 'we', 'should', 'run', 'a', 'few', 'more', 'tests', 'after', 'the', 'build', ',', 'just', 'to', 'be', 'on', 'the', 'safe', 'side', '?']","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,1,0,False
+212,"** Definitely. I’d rather catch any issues now than after we deploy. Let’s aim for a quick review after testing, just in case anything slipped through.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished merging your code with the main branch? I need to test it before we deploy later today.
+
+**Sarah:** I’m just about done! I ran into a bug while building the last feature, but I think I resolved it. I’ll push the changes in a few minutes.
+
+**Li:** That’s great to hear! Once you push, I’ll do a pull and start testing everything. We really need to ensure everything is stable before the deployment.
+
+**Sarah:** Absolutely! I’ll prioritize that. Do you think we should run a few more tests after the build, just to be on the safe side?
+
+**Li:** Definitely. I’d rather catch any issues now than after we deploy. Let’s aim for a quick review after testing, just in case anything slipped through.
+
+**Sarah:** Sounds like a plan! I’ll wrap this up and ping you once it’s ready for you to test.
+
+**Li:** Perfect! Thanks, Sarah. We’ve got this—Friday deployment is within reach!",5,**Li,"['*', '*', 'Definitely', '.', 'I', '’d', 'rather', 'catch', 'any', 'issues', 'now', 'than', 'after', 'we', 'deploy', '.', 'Let', '’s', 'aim', 'for', 'a', 'quick', 'review', 'after', 'testing', ',', 'just', 'in', 'case', 'anything', 'slipped', 'through', '.']","['PUNCT', 'PUNCT', 'ADV', 'PUNCT', 'PRON', 'AUX', 'ADV', 'VERB', 'DET', 'NOUN', 'ADV', 'ADP', 'SCONJ', 'PRON', 'VERB', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADP', 'NOUN', 'PUNCT', 'ADV', 'ADP', 'NOUN', 'PRON', 'VERB', 'ADV', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Definitely. I’d rather catch any issues now than after we deploy. Let’s aim for a quick review after testing, just in case anything slipped through.",5,212,"['*', '*', 'Definitely', '.', 'I', '’d', 'rather', 'catch', 'any', 'issues', 'now', 'than', 'after', 'we', 'deploy', '.', 'Let', '’s', 'aim', 'for', 'a', 'quick', 'review', 'after', 'testing', ',', 'just', 'in', 'case', 'anything', 'slipped', 'through', '.']","['other', 'other', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+212,** Sounds like a plan! I’ll wrap this up and ping you once it’s ready for you to test.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished merging your code with the main branch? I need to test it before we deploy later today.
+
+**Sarah:** I’m just about done! I ran into a bug while building the last feature, but I think I resolved it. I’ll push the changes in a few minutes.
+
+**Li:** That’s great to hear! Once you push, I’ll do a pull and start testing everything. We really need to ensure everything is stable before the deployment.
+
+**Sarah:** Absolutely! I’ll prioritize that. Do you think we should run a few more tests after the build, just to be on the safe side?
+
+**Li:** Definitely. I’d rather catch any issues now than after we deploy. Let’s aim for a quick review after testing, just in case anything slipped through.
+
+**Sarah:** Sounds like a plan! I’ll wrap this up and ping you once it’s ready for you to test.
+
+**Li:** Perfect! Thanks, Sarah. We’ve got this—Friday deployment is within reach!",6,**Sarah,"['*', '*', 'Sounds', 'like', 'a', 'plan', '!', 'I', '’ll', 'wrap', 'this', 'up', 'and', 'ping', 'you', 'once', 'it', '’s', 'ready', 'for', 'you', 'to', 'test', '.']","['PUNCT', 'PUNCT', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'ADP', 'CCONJ', 'VERB', 'PRON', 'SCONJ', 'PRON', 'VERB', 'ADJ', 'SCONJ', 'PRON', 'PART', 'VERB', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** Sounds like a plan! I’ll wrap this up and ping you once it’s ready for you to test.,6,212,"['*', '*', 'Sounds', 'like', 'a', 'plan', '!', 'I', '’ll', 'wrap', 'this', 'up', 'and', 'ping', 'you', 'once', 'it', '’s', 'ready', 'for', 'you', 'to', 'test', '.']","['other', 'other', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+212,"** Perfect! Thanks, Sarah. We’ve got this—Friday deployment is within reach!",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"Generate a purely English conversation between Li and Sarah, two engineers working to meet a Friday deployment deadline.
+Keep tone friendly but work-focused.
+Include words like deploy, merge, bug, or build naturally in context.
+Each dialogue should have 5–7 turns.
+Output only the dialogue.
+","**Li:** Hey Sarah, have you finished merging your code with the main branch? I need to test it before we deploy later today.
+
+**Sarah:** I’m just about done! I ran into a bug while building the last feature, but I think I resolved it. I’ll push the changes in a few minutes.
+
+**Li:** That’s great to hear! Once you push, I’ll do a pull and start testing everything. We really need to ensure everything is stable before the deployment.
+
+**Sarah:** Absolutely! I’ll prioritize that. Do you think we should run a few more tests after the build, just to be on the safe side?
+
+**Li:** Definitely. I’d rather catch any issues now than after we deploy. Let’s aim for a quick review after testing, just in case anything slipped through.
+
+**Sarah:** Sounds like a plan! I’ll wrap this up and ping you once it’s ready for you to test.
+
+**Li:** Perfect! Thanks, Sarah. We’ve got this—Friday deployment is within reach!",7,**Li,"['*', '*', 'Perfect', '!', 'Thanks', ',', 'Sarah', '.', 'We', '’ve', 'got', 'this', '—', 'Friday', 'deployment', 'is', 'within', 'reach', '!']","['PUNCT', 'PUNCT', 'ADJ', 'PUNCT', 'NOUN', 'PUNCT', 'PROPN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'PUNCT', 'PROPN', 'NOUN', 'AUX', 'ADP', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'other', 'en', 'punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'other']","** Perfect! Thanks, Sarah. We’ve got this—Friday deployment is within reach!",7,212,"['*', '*', 'Perfect', '!', 'Thanks', ',', 'Sarah', '.', 'We', '’ve', 'got', 'this', '—', 'Friday', 'deployment', 'is', 'within', 'reach', '!']","['other', 'other', 'en', 'other', 'en', 'punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'other']",en,1,0,False

@@ -1,0 +1,91 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+296,"Hey Sarah, did you have a chance to review the PR for the deploy?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, did you have a chance to review the PR for the deploy?
+
+Sarah: Yeah, I took a look. I think we're good to go, just a few minor bugs to address.
+
+Li: Okay, let's build on the feedback and get those fixed before the deadline.
+
+Sarah: Sounds good, I'll make the changes and push for a merge by EOD.
+
+Li: Perfect, thanks for reviewing so quickly. Let's make sure everything is ready for the deploy tomorrow.
+
+Sarah: Absolutely, let's do this!",1,Li,"['Hey', 'Sarah', ',', 'did', 'you', 'have', 'a', 'chance', 'to', 'review', 'the', 'PR', 'for', 'the', 'deploy', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, did you have a chance to review the PR for the deploy?",1,296,"['Hey', 'Sarah', ',', 'did', 'you', 'have', 'a', 'chance', 'to', 'review', 'the', 'PR', 'for', 'the', 'deploy', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.821,0.773,0.773,2,False
+296,"Yeah, I took a look. I think we're good to go, just a few minor bugs to address.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, did you have a chance to review the PR for the deploy?
+
+Sarah: Yeah, I took a look. I think we're good to go, just a few minor bugs to address.
+
+Li: Okay, let's build on the feedback and get those fixed before the deadline.
+
+Sarah: Sounds good, I'll make the changes and push for a merge by EOD.
+
+Li: Perfect, thanks for reviewing so quickly. Let's make sure everything is ready for the deploy tomorrow.
+
+Sarah: Absolutely, let's do this!",2,Sarah,"['Yeah', ',', 'I', 'took', 'a', 'look', '.', 'I', 'think', 'we', ""'re"", 'good', 'to', 'go', ',', 'just', 'a', 'few', 'minor', 'bugs', 'to', 'address', '.']","['INTJ', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'AUX', 'ADJ', 'PART', 'VERB', 'PUNCT', 'ADV', 'DET', 'ADJ', 'ADJ', 'NOUN', 'PART', 'VERB', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, I took a look. I think we're good to go, just a few minor bugs to address.",2,296,"['Yeah', ',', 'I', 'took', 'a', 'look', '.', 'I', 'think', 'we', ""'re"", 'good', 'to', 'go', ',', 'just', 'a', 'few', 'minor', 'bugs', 'to', 'address', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.819,0.785,0.794,0,False
+296,"Okay, let's build on the feedback and get those fixed before the deadline.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, did you have a chance to review the PR for the deploy?
+
+Sarah: Yeah, I took a look. I think we're good to go, just a few minor bugs to address.
+
+Li: Okay, let's build on the feedback and get those fixed before the deadline.
+
+Sarah: Sounds good, I'll make the changes and push for a merge by EOD.
+
+Li: Perfect, thanks for reviewing so quickly. Let's make sure everything is ready for the deploy tomorrow.
+
+Sarah: Absolutely, let's do this!",3,Li,"['Okay', ',', 'let', ""'s"", 'build', 'on', 'the', 'feedback', 'and', 'get', 'those', 'fixed', 'before', 'the', 'deadline', '.']","['INTJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'CCONJ', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Okay, let's build on the feedback and get those fixed before the deadline.",3,296,"['Okay', ',', 'let', ""'s"", 'build', 'on', 'the', 'feedback', 'and', 'get', 'those', 'fixed', 'before', 'the', 'deadline', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.82,0.783,0.786,2,False
+296,"Sounds good, I'll make the changes and push for a merge by EOD.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, did you have a chance to review the PR for the deploy?
+
+Sarah: Yeah, I took a look. I think we're good to go, just a few minor bugs to address.
+
+Li: Okay, let's build on the feedback and get those fixed before the deadline.
+
+Sarah: Sounds good, I'll make the changes and push for a merge by EOD.
+
+Li: Perfect, thanks for reviewing so quickly. Let's make sure everything is ready for the deploy tomorrow.
+
+Sarah: Absolutely, let's do this!",4,Sarah,"['Sounds', 'good', ',', 'I', ""'ll"", 'make', 'the', 'changes', 'and', 'push', 'for', 'a', 'merge', 'by', 'EOD', '.']","['VERB', 'ADJ', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'CCONJ', 'VERB', 'ADP', 'DET', 'NOUN', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Sounds good, I'll make the changes and push for a merge by EOD.",4,296,"['Sounds', 'good', ',', 'I', ""'ll"", 'make', 'the', 'changes', 'and', 'push', 'for', 'a', 'merge', 'by', 'EOD', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.813,0.774,0.778,1,False
+296,"Perfect, thanks for reviewing so quickly. Let's make sure everything is ready for the deploy tomorrow.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, did you have a chance to review the PR for the deploy?
+
+Sarah: Yeah, I took a look. I think we're good to go, just a few minor bugs to address.
+
+Li: Okay, let's build on the feedback and get those fixed before the deadline.
+
+Sarah: Sounds good, I'll make the changes and push for a merge by EOD.
+
+Li: Perfect, thanks for reviewing so quickly. Let's make sure everything is ready for the deploy tomorrow.
+
+Sarah: Absolutely, let's do this!",5,Li,"['Perfect', ',', 'thanks', 'for', 'reviewing', 'so', 'quickly', '.', 'Let', ""'s"", 'make', 'sure', 'everything', 'is', 'ready', 'for', 'the', 'deploy', 'tomorrow', '.']","['ADJ', 'PUNCT', 'NOUN', 'ADP', 'VERB', 'ADV', 'ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADJ', 'PRON', 'AUX', 'ADJ', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Perfect, thanks for reviewing so quickly. Let's make sure everything is ready for the deploy tomorrow.",5,296,"['Perfect', ',', 'thanks', 'for', 'reviewing', 'so', 'quickly', '.', 'Let', ""'s"", 'make', 'sure', 'everything', 'is', 'ready', 'for', 'the', 'deploy', 'tomorrow', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.826,0.766,0.779,1,False
+296,"Absolutely, let's do this!",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, did you have a chance to review the PR for the deploy?
+
+Sarah: Yeah, I took a look. I think we're good to go, just a few minor bugs to address.
+
+Li: Okay, let's build on the feedback and get those fixed before the deadline.
+
+Sarah: Sounds good, I'll make the changes and push for a merge by EOD.
+
+Li: Perfect, thanks for reviewing so quickly. Let's make sure everything is ready for the deploy tomorrow.
+
+Sarah: Absolutely, let's do this!",6,Sarah,"['Absolutely', ',', 'let', ""'s"", 'do', 'this', '!']","['ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'en', 'en', 'other']","Absolutely, let's do this!",6,296,"['Absolutely', ',', 'let', ""'s"", 'do', 'this', '!']","['en', 'punct', 'en', 'en', 'en', 'en', 'other']",en,0.8,0.79,0.818,0,False

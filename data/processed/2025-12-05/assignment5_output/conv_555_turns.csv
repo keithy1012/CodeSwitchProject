@@ -1,0 +1,91 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+555,"Hey Sarah, have you had a chance to review the PR for the new feature we're going to 部署 (deploy) tomorrow?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the new feature we're going to 部署 (deploy) tomorrow?
+
+Sarah: Hi Li, not yet, I've been busy with another pull request that needed some 修复 (bug fixes) before we can merge it.
+
+Li: No worries, I understand. Just make sure you take a look before the 截止日期 (deadline) this afternoon.
+
+Sarah: Of course, I'll get to it right after I finish this build. 
+
+Li: Great, let me know if you see anything that needs to be 调整 (adjusted) before we deploy.
+
+Sarah: Will do, thanks for the heads up! Let's make sure everything is good to go before we merge to master.",1,Li,"[',', ""'"", 'Hey', 'Sarah', 'have', 'you', 'had', 'a', 'chance', 'to', 'review', 'the', 'PR', 'for', 'the', 'new', 'feature', 'we', 're', 'going', 'to', '部署', '(', ')', '?', 'deploy', 'tomorrow']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PRON', 'VERB', 'VERB', 'PART', 'n', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'NOUN']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'other', 'other', 'en', 'en']","Hey Sarah, have you had a chance to review the PR for the new feature we're going to 部署 (deploy) tomorrow?",1,555,"[',', ""'"", 'Hey', 'Sarah', 'have', 'you', 'had', 'a', 'chance', 'to', 'review', 'the', 'PR', 'for', 'the', 'new', 'feature', 'we', 're', 'going', 'to', '部署', '(', ')', '?', 'deploy', 'tomorrow']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'other', 'other', 'en', 'en']",mix,0.835,0.792,0.786,3,True
+555,"Hi Li, not yet, I've been busy with another pull request that needed some 修复 (bug fixes) before we can merge it.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the new feature we're going to 部署 (deploy) tomorrow?
+
+Sarah: Hi Li, not yet, I've been busy with another pull request that needed some 修复 (bug fixes) before we can merge it.
+
+Li: No worries, I understand. Just make sure you take a look before the 截止日期 (deadline) this afternoon.
+
+Sarah: Of course, I'll get to it right after I finish this build. 
+
+Li: Great, let me know if you see anything that needs to be 调整 (adjusted) before we deploy.
+
+Sarah: Will do, thanks for the heads up! Let's make sure everything is good to go before we merge to master.",2,Sarah,"[',', ',', ""'"", 'Hi', 'Li', 'not', 'yet', 'I', 've', 'been', 'busy', 'with', 'another', 'pull', 'request', 'that', 'needed', 'some', '修复', '(', ')', '.', 'bug', 'fixes', 'before', 'we', 'can', 'merge', 'it']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PART', 'ADV', 'PRON', 'AUX', 'AUX', 'ADJ', 'ADP', 'DET', 'ADJ', 'NOUN', 'PRON', 'VERB', 'PRON', 'v', 'PUNCT', 'PUNCT', 'PUNCT', 'NOUN', 'NOUN', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PRON']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Hi Li, not yet, I've been busy with another pull request that needed some 修复 (bug fixes) before we can merge it.",2,555,"[',', ',', ""'"", 'Hi', 'Li', 'not', 'yet', 'I', 've', 'been', 'busy', 'with', 'another', 'pull', 'request', 'that', 'needed', 'some', '修复', '(', ')', '.', 'bug', 'fixes', 'before', 'we', 'can', 'merge', 'it']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.819,0.796,0.805,4,True
+555,"No worries, I understand. Just make sure you take a look before the 截止日期 (deadline) this afternoon.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the new feature we're going to 部署 (deploy) tomorrow?
+
+Sarah: Hi Li, not yet, I've been busy with another pull request that needed some 修复 (bug fixes) before we can merge it.
+
+Li: No worries, I understand. Just make sure you take a look before the 截止日期 (deadline) this afternoon.
+
+Sarah: Of course, I'll get to it right after I finish this build. 
+
+Li: Great, let me know if you see anything that needs to be 调整 (adjusted) before we deploy.
+
+Sarah: Will do, thanks for the heads up! Let's make sure everything is good to go before we merge to master.",3,Li,"[',', '.', 'No', 'worries', 'I', 'understand', 'Just', 'make', 'sure', 'you', 'take', 'a', 'look', 'before', 'the', '截止', '日期', '(', ')', '.', 'deadline', 'this', 'afternoon']","['PUNCT', 'PUNCT', 'DET', 'NOUN', 'PRON', 'VERB', 'ADV', 'VERB', 'ADJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'PRON', 'v', 't', 'PUNCT', 'PUNCT', 'PUNCT', 'NOUN', 'DET', 'NOUN']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'other', 'other', 'punct', 'en', 'en', 'en']","No worries, I understand. Just make sure you take a look before the 截止日期 (deadline) this afternoon.",3,555,"[',', '.', 'No', 'worries', 'I', 'understand', 'Just', 'make', 'sure', 'you', 'take', 'a', 'look', 'before', 'the', '截止', '日期', '(', ')', '.', 'deadline', 'this', 'afternoon']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'other', 'other', 'punct', 'en', 'en', 'en']",mix,0.833,0.817,0.824,1,True
+555,"Of course, I'll get to it right after I finish this build.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the new feature we're going to 部署 (deploy) tomorrow?
+
+Sarah: Hi Li, not yet, I've been busy with another pull request that needed some 修复 (bug fixes) before we can merge it.
+
+Li: No worries, I understand. Just make sure you take a look before the 截止日期 (deadline) this afternoon.
+
+Sarah: Of course, I'll get to it right after I finish this build. 
+
+Li: Great, let me know if you see anything that needs to be 调整 (adjusted) before we deploy.
+
+Sarah: Will do, thanks for the heads up! Let's make sure everything is good to go before we merge to master.",4,Sarah,"['Of', 'course', ',', 'I', ""'ll"", 'get', 'to', 'it', 'right', 'after', 'I', 'finish', 'this', 'build', '.']","['ADV', 'ADV', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADP', 'PRON', 'ADV', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Of course, I'll get to it right after I finish this build.",4,555,"['Of', 'course', ',', 'I', ""'ll"", 'get', 'to', 'it', 'right', 'after', 'I', 'finish', 'this', 'build', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.8,0.761,0.764,1,False
+555,"Great, let me know if you see anything that needs to be 调整 (adjusted) before we deploy.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the new feature we're going to 部署 (deploy) tomorrow?
+
+Sarah: Hi Li, not yet, I've been busy with another pull request that needed some 修复 (bug fixes) before we can merge it.
+
+Li: No worries, I understand. Just make sure you take a look before the 截止日期 (deadline) this afternoon.
+
+Sarah: Of course, I'll get to it right after I finish this build. 
+
+Li: Great, let me know if you see anything that needs to be 调整 (adjusted) before we deploy.
+
+Sarah: Will do, thanks for the heads up! Let's make sure everything is good to go before we merge to master.",5,Li,"[',', 'Great', 'let', 'me', 'know', 'if', 'you', 'see', 'anything', 'that', 'needs', 'to', 'be', '调整', '(', ')', '.', 'adjusted', 'before', 'we', 'deploy']","['PUNCT', 'PROPN', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'PRON', 'PRON', 'VERB', 'PART', 'AUX', 'vn', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'SCONJ', 'PRON', 'VERB']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'other', 'punct', 'en', 'en', 'en', 'en']","Great, let me know if you see anything that needs to be 调整 (adjusted) before we deploy.",5,555,"[',', 'Great', 'let', 'me', 'know', 'if', 'you', 'see', 'anything', 'that', 'needs', 'to', 'be', '调整', '(', ')', '.', 'adjusted', 'before', 'we', 'deploy']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'other', 'punct', 'en', 'en', 'en', 'en']",mix,0.842,0.791,0.803,1,True
+555,"Will do, thanks for the heads up! Let's make sure everything is good to go before we merge to master.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: Hey Sarah, have you had a chance to review the PR for the new feature we're going to 部署 (deploy) tomorrow?
+
+Sarah: Hi Li, not yet, I've been busy with another pull request that needed some 修复 (bug fixes) before we can merge it.
+
+Li: No worries, I understand. Just make sure you take a look before the 截止日期 (deadline) this afternoon.
+
+Sarah: Of course, I'll get to it right after I finish this build. 
+
+Li: Great, let me know if you see anything that needs to be 调整 (adjusted) before we deploy.
+
+Sarah: Will do, thanks for the heads up! Let's make sure everything is good to go before we merge to master.",6,Sarah,"['Will', 'do', ',', 'thanks', 'for', 'the', 'heads', 'up', '!', 'Let', ""'s"", 'make', 'sure', 'everything', 'is', 'good', 'to', 'go', 'before', 'we', 'merge', 'to', 'master', '.']","['AUX', 'VERB', 'PUNCT', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADJ', 'PRON', 'AUX', 'ADJ', 'PART', 'VERB', 'SCONJ', 'PRON', 'VERB', 'ADP', 'PROPN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Will do, thanks for the heads up! Let's make sure everything is good to go before we merge to master.",6,555,"['Will', 'do', ',', 'thanks', 'for', 'the', 'heads', 'up', '!', 'Let', ""'s"", 'make', 'sure', 'everything', 'is', 'good', 'to', 'go', 'before', 'we', 'merge', 'to', 'master', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.814,0.776,0.784,1,False

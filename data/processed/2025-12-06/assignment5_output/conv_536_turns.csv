@@ -1,0 +1,161 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+536,"** Hey Sarah, I noticed a bug in the latest build after our last merge.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after our last merge. 
+
+**Sarah:** 是吗？具体是什么问题？ 
+
+**Li:** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。
+
+**Sarah:** Have you checked the console for any errors during QA testing?
+
+**Li:** Yes, but there are no error messages. 可能是某个组件没有正确渲染。 
+
+**Sarah:** That sounds like it could delay our deploy if we don't find it soon.
+
+**Li:** 我们需要快速定位这个问题，才能在截止日期之前修复。
+
+**Sarah:** Agreed! Let's dive into the code together and see if we can figure it out.",1,**Li,"['*', '*', 'Hey', 'Sarah', ',', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'build', 'after', 'our', 'last', 'merge', '.']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADP', 'PRON', 'ADJ', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Hey Sarah, I noticed a bug in the latest build after our last merge.",1,536,"['*', '*', 'Hey', 'Sarah', ',', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'build', 'after', 'our', 'last', 'merge', '.']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.798,0.76,0.788,3,False
+536,** 是吗？具体是什么问题？,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after our last merge. 
+
+**Sarah:** 是吗？具体是什么问题？ 
+
+**Li:** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。
+
+**Sarah:** Have you checked the console for any errors during QA testing?
+
+**Li:** Yes, but there are no error messages. 可能是某个组件没有正确渲染。 
+
+**Sarah:** That sounds like it could delay our deploy if we don't find it soon.
+
+**Li:** 我们需要快速定位这个问题，才能在截止日期之前修复。
+
+**Sarah:** Agreed! Let's dive into the code together and see if we can figure it out.",2,**Sarah,"['*', '*', '是', '吗', '？', '具体', '是', '什么', '问题', '？']","['PUNCT', 'PUNCT', 'v', 'y', 'PUNCT', 'a', 'v', 'r', 'n', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'punct']",** 是吗？具体是什么问题？,2,536,"['*', '*', '是', '吗', '？', '具体', '是', '什么', '问题', '？']","['other', 'other', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.856,0.85,0.85,0,False
+536,** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after our last merge. 
+
+**Sarah:** 是吗？具体是什么问题？ 
+
+**Li:** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。
+
+**Sarah:** Have you checked the console for any errors during QA testing?
+
+**Li:** Yes, but there are no error messages. 可能是某个组件没有正确渲染。 
+
+**Sarah:** That sounds like it could delay our deploy if we don't find it soon.
+
+**Li:** 我们需要快速定位这个问题，才能在截止日期之前修复。
+
+**Sarah:** Agreed! Let's dive into the code together and see if we can figure it out.",3,**Li,"['*', '*', ""'"", '.', 'The', 'button', 'isn', 't', 'responsive', 'on', 'the', 'staging', 'environment', '我', '觉得', '可能', '是', 'CSS', '有', '问题', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'DET', 'NOUN', 'PROPN', 'NOUN', 'ADJ', 'ADP', 'DET', 'NOUN', 'NOUN', 'r', 'v', 'v', 'v', 'PROPN', 'v', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。,3,536,"['*', '*', ""'"", '.', 'The', 'button', 'isn', 't', 'responsive', 'on', 'the', 'staging', 'environment', '我', '觉得', '可能', '是', 'CSS', '有', '问题', '。']","['other', 'other', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",mix,0.844,0.824,0.831,1,True
+536,** Have you checked the console for any errors during QA testing?,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after our last merge. 
+
+**Sarah:** 是吗？具体是什么问题？ 
+
+**Li:** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。
+
+**Sarah:** Have you checked the console for any errors during QA testing?
+
+**Li:** Yes, but there are no error messages. 可能是某个组件没有正确渲染。 
+
+**Sarah:** That sounds like it could delay our deploy if we don't find it soon.
+
+**Li:** 我们需要快速定位这个问题，才能在截止日期之前修复。
+
+**Sarah:** Agreed! Let's dive into the code together and see if we can figure it out.",4,**Sarah,"['*', '*', 'Have', 'you', 'checked', 'the', 'console', 'for', 'any', 'errors', 'during', 'QA', 'testing', '?']","['PUNCT', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'PROPN', 'NOUN', 'PUNCT']","{'other', 'en'}","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",** Have you checked the console for any errors during QA testing?,4,536,"['*', '*', 'Have', 'you', 'checked', 'the', 'console', 'for', 'any', 'errors', 'during', 'QA', 'testing', '?']","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.82,0.779,0.81,1,False
+536,"** Yes, but there are no error messages. 可能是某个组件没有正确渲染。",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after our last merge. 
+
+**Sarah:** 是吗？具体是什么问题？ 
+
+**Li:** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。
+
+**Sarah:** Have you checked the console for any errors during QA testing?
+
+**Li:** Yes, but there are no error messages. 可能是某个组件没有正确渲染。 
+
+**Sarah:** That sounds like it could delay our deploy if we don't find it soon.
+
+**Li:** 我们需要快速定位这个问题，才能在截止日期之前修复。
+
+**Sarah:** Agreed! Let's dive into the code together and see if we can figure it out.",5,**Li,"['*', '*', ',', '.', 'Yes', 'but', 'there', 'are', 'no', 'error', 'messages', '可能', '是', '某个', '组件', '没有', '正确', '渲染', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'CCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'v', 'v', 'r', 'n', 'v', 'ad', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","** Yes, but there are no error messages. 可能是某个组件没有正确渲染。",5,536,"['*', '*', ',', '.', 'Yes', 'but', 'there', 'are', 'no', 'error', 'messages', '可能', '是', '某个', '组件', '没有', '正确', '渲染', '。']","['other', 'other', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.856,0.828,0.843,0,True
+536,** That sounds like it could delay our deploy if we don't find it soon.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after our last merge. 
+
+**Sarah:** 是吗？具体是什么问题？ 
+
+**Li:** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。
+
+**Sarah:** Have you checked the console for any errors during QA testing?
+
+**Li:** Yes, but there are no error messages. 可能是某个组件没有正确渲染。 
+
+**Sarah:** That sounds like it could delay our deploy if we don't find it soon.
+
+**Li:** 我们需要快速定位这个问题，才能在截止日期之前修复。
+
+**Sarah:** Agreed! Let's dive into the code together and see if we can figure it out.",6,**Sarah,"['*', '*', 'That', 'sounds', 'like', 'it', 'could', 'delay', 'our', 'deploy', 'if', 'we', 'do', ""n't"", 'find', 'it', 'soon', '.']","['PUNCT', 'PUNCT', 'PRON', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PRON', 'NOUN', 'SCONJ', 'PRON', 'AUX', 'PART', 'VERB', 'PRON', 'ADV', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** That sounds like it could delay our deploy if we don't find it soon.,6,536,"['*', '*', 'That', 'sounds', 'like', 'it', 'could', 'delay', 'our', 'deploy', 'if', 'we', 'do', ""n't"", 'find', 'it', 'soon', '.']","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.824,0.776,0.781,1,False
+536,** 我们需要快速定位这个问题，才能在截止日期之前修复。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after our last merge. 
+
+**Sarah:** 是吗？具体是什么问题？ 
+
+**Li:** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。
+
+**Sarah:** Have you checked the console for any errors during QA testing?
+
+**Li:** Yes, but there are no error messages. 可能是某个组件没有正确渲染。 
+
+**Sarah:** That sounds like it could delay our deploy if we don't find it soon.
+
+**Li:** 我们需要快速定位这个问题，才能在截止日期之前修复。
+
+**Sarah:** Agreed! Let's dive into the code together and see if we can figure it out.",7,**Li,"['*', '*', '我们', '需要', '快速', '定位', '这个', '问题', '，', '才能', '在', '截止', '日期', '之前', '修复', '。']","['PUNCT', 'PUNCT', 'r', 'v', 'd', 'n', 'r', 'n', 'PUNCT', 'v', 'p', 'v', 't', 'f', 'v', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 我们需要快速定位这个问题，才能在截止日期之前修复。,7,536,"['*', '*', '我们', '需要', '快速', '定位', '这个', '问题', '，', '才能', '在', '截止', '日期', '之前', '修复', '。']","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.845,0.825,0.825,0,False
+536,** Agreed! Let's dive into the code together and see if we can figure it out.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after our last merge. 
+
+**Sarah:** 是吗？具体是什么问题？ 
+
+**Li:** The button isn't responsive on the staging environment. 我觉得可能是 CSS 有问题。
+
+**Sarah:** Have you checked the console for any errors during QA testing?
+
+**Li:** Yes, but there are no error messages. 可能是某个组件没有正确渲染。 
+
+**Sarah:** That sounds like it could delay our deploy if we don't find it soon.
+
+**Li:** 我们需要快速定位这个问题，才能在截止日期之前修复。
+
+**Sarah:** Agreed! Let's dive into the code together and see if we can figure it out.",8,**Sarah,"['*', '*', 'Agreed', '!', 'Let', ""'s"", 'dive', 'into', 'the', 'code', 'together', 'and', 'see', 'if', 'we', 'can', 'figure', 'it', 'out', '.']","['PUNCT', 'PUNCT', 'VERB', 'PUNCT', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'ADV', 'CCONJ', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PRON', 'ADP', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** Agreed! Let's dive into the code together and see if we can figure it out.,8,536,"['*', '*', 'Agreed', '!', 'Let', ""'s"", 'dive', 'into', 'the', 'code', 'together', 'and', 'see', 'if', 'we', 'can', 'figure', 'it', 'out', '.']","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.829,0.804,0.808,1,False

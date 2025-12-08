@@ -1,0 +1,97 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+543,"Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging. 
+Sarah: Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict. 
+Li: That sounds like a good plan. 我可以创建一个新的分支并处理这个问题. 
+Sarah: Great idea. Once we resolve the conflict, we can test it on staging before the deadline. 
+Li: 绝对没问题. Let's aim to deploy to staging by tomorrow afternoon. 
+Sarah: Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug. 
+Li: Exactly. 我们不能让任何bug通过，否则会影响deadline. 
+Sarah: Agreed. Let's build our code carefully and thoroughly before deployment.",1,Li,"[',', '.', 'Hey', 'Sarah', 'I', 'noticed', 'a', 'merge', 'conflict', 'in', 'our', 'latest', 'PR', '我', '建议', '我们', '尽快', '解决', '这个', '问题', '.', 'before', 'we', 'deploy', 'to', 'staging']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'ADP', 'PRON', 'ADJ', 'NOUN', 'r', 'n', 'r', 'd', 'v', 'r', 'n', 'PUNCT', 'SCONJ', 'PRON', 'VERB', 'ADP', 'VERB']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en']","Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging.",1,543,"[',', '.', 'Hey', 'Sarah', 'I', 'noticed', 'a', 'merge', 'conflict', 'in', 'our', 'latest', 'PR', '我', '建议', '我们', '尽快', '解决', '这个', '问题', '.', 'before', 'we', 'deploy', 'to', 'staging']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en']",mix,4,0,True
+543,"Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging. 
+Sarah: Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict. 
+Li: That sounds like a good plan. 我可以创建一个新的分支并处理这个问题. 
+Sarah: Great idea. Once we resolve the conflict, we can test it on staging before the deadline. 
+Li: 绝对没问题. Let's aim to deploy to staging by tomorrow afternoon. 
+Sarah: Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug. 
+Li: Exactly. 我们不能让任何bug通过，否则会影响deadline. 
+Sarah: Agreed. Let's build our code carefully and thoroughly before deployment.",2,Sarah,"['Oh', ',', 'really', '?', 'Let', 'me', 'take', 'a', 'look', '.', 'Maybe', 'we', 'can', 'rebase', 'and', 'resolve', 'the', 'conflict', '.']","['INTJ', 'PUNCT', 'ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'ADV', 'PRON', 'AUX', 'VERB', 'CCONJ', 'VERB', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict.",2,543,"['Oh', ',', 'really', '?', 'Let', 'me', 'take', 'a', 'look', '.', 'Maybe', 'we', 'can', 'rebase', 'and', 'resolve', 'the', 'conflict', '.']","['en', 'punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0,0,False
+543,That sounds like a good plan. 我可以创建一个新的分支并处理这个问题.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging. 
+Sarah: Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict. 
+Li: That sounds like a good plan. 我可以创建一个新的分支并处理这个问题. 
+Sarah: Great idea. Once we resolve the conflict, we can test it on staging before the deadline. 
+Li: 绝对没问题. Let's aim to deploy to staging by tomorrow afternoon. 
+Sarah: Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug. 
+Li: Exactly. 我们不能让任何bug通过，否则会影响deadline. 
+Sarah: Agreed. Let's build our code carefully and thoroughly before deployment.",3,Li,"['.', 'That', 'sounds', 'like', 'a', 'good', 'plan', '我', '可以', '创建', '一个', '新', '的', '分支', '并', '处理', '这个', '问题', '.']","['PUNCT', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'r', 'c', 'v', 'm', 'a', 'uj', 'n', 'c', 'v', 'r', 'n', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",That sounds like a good plan. 我可以创建一个新的分支并处理这个问题.,3,543,"['.', 'That', 'sounds', 'like', 'a', 'good', 'plan', '我', '可以', '创建', '一个', '新', '的', '分支', '并', '处理', '这个', '问题', '.']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+543,"Great idea. Once we resolve the conflict, we can test it on staging before the deadline.",LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging. 
+Sarah: Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict. 
+Li: That sounds like a good plan. 我可以创建一个新的分支并处理这个问题. 
+Sarah: Great idea. Once we resolve the conflict, we can test it on staging before the deadline. 
+Li: 绝对没问题. Let's aim to deploy to staging by tomorrow afternoon. 
+Sarah: Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug. 
+Li: Exactly. 我们不能让任何bug通过，否则会影响deadline. 
+Sarah: Agreed. Let's build our code carefully and thoroughly before deployment.",4,Sarah,"['Great', 'idea', '.', 'Once', 'we', 'resolve', 'the', 'conflict', ',', 'we', 'can', 'test', 'it', 'on', 'staging', 'before', 'the', 'deadline', '.']","['ADJ', 'NOUN', 'PUNCT', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'ADP', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great idea. Once we resolve the conflict, we can test it on staging before the deadline.",4,543,"['Great', 'idea', '.', 'Once', 'we', 'resolve', 'the', 'conflict', ',', 'we', 'can', 'test', 'it', 'on', 'staging', 'before', 'the', 'deadline', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,3,0,False
+543,绝对没问题. Let's aim to deploy to staging by tomorrow afternoon.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging. 
+Sarah: Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict. 
+Li: That sounds like a good plan. 我可以创建一个新的分支并处理这个问题. 
+Sarah: Great idea. Once we resolve the conflict, we can test it on staging before the deadline. 
+Li: 绝对没问题. Let's aim to deploy to staging by tomorrow afternoon. 
+Sarah: Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug. 
+Li: Exactly. 我们不能让任何bug通过，否则会影响deadline. 
+Sarah: Agreed. Let's build our code carefully and thoroughly before deployment.",5,Li,"['绝对', '没', '问题', '.', ""'"", '.', 'Let', 's', 'aim', 'to', 'deploy', 'to', 'staging', 'by', 'tomorrow', 'afternoon']","['d', 'v', 'n', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PART', 'VERB', 'ADP', 'VERB', 'ADP', 'NOUN', 'NOUN']","{'en', 'zh', 'punct'}","['zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",绝对没问题. Let's aim to deploy to staging by tomorrow afternoon.,5,543,"['绝对', '没', '问题', '.', ""'"", '.', 'Let', 's', 'aim', 'to', 'deploy', 'to', 'staging', 'by', 'tomorrow', 'afternoon']","['zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True
+543,Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging. 
+Sarah: Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict. 
+Li: That sounds like a good plan. 我可以创建一个新的分支并处理这个问题. 
+Sarah: Great idea. Once we resolve the conflict, we can test it on staging before the deadline. 
+Li: 绝对没问题. Let's aim to deploy to staging by tomorrow afternoon. 
+Sarah: Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug. 
+Li: Exactly. 我们不能让任何bug通过，否则会影响deadline. 
+Sarah: Agreed. Let's build our code carefully and thoroughly before deployment.",6,Sarah,"['.', 'Sounds', 'like', 'a', 'plan', '我们', '可以', '在', '那', '之前', '进行', '一些', '端', '到', '端的', '测试', '来', '确保', '没有', '任何', '.', 'bug']","['PUNCT', 'VERB', 'ADP', 'DET', 'NOUN', 'r', 'c', 'p', 'r', 'f', 'v', 'm', 'v', 'v', 'z', 'vn', 'v', 'v', 'v', 'r', 'PUNCT', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug.,6,543,"['.', 'Sounds', 'like', 'a', 'plan', '我们', '可以', '在', '那', '之前', '进行', '一些', '端', '到', '端的', '测试', '来', '确保', '没有', '任何', '.', 'bug']","['punct', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0,0,True
+543,Exactly. 我们不能让任何bug通过，否则会影响deadline.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging. 
+Sarah: Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict. 
+Li: That sounds like a good plan. 我可以创建一个新的分支并处理这个问题. 
+Sarah: Great idea. Once we resolve the conflict, we can test it on staging before the deadline. 
+Li: 绝对没问题. Let's aim to deploy to staging by tomorrow afternoon. 
+Sarah: Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug. 
+Li: Exactly. 我们不能让任何bug通过，否则会影响deadline. 
+Sarah: Agreed. Let's build our code carefully and thoroughly before deployment.",7,Li,"['.', 'Exactly', '我们', '不能', '让', '任何', 'bug', '通过', '，', '否则', '会', '影响', '.', 'deadline']","['PUNCT', 'ADV', 'r', 'v', 'v', 'r', 'NOUN', 'p', 'PUNCT', 'c', 'v', 'vn', 'PUNCT', 'NOUN']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'en']",Exactly. 我们不能让任何bug通过，否则会影响deadline.,7,543,"['.', 'Exactly', '我们', '不能', '让', '任何', 'bug', '通过', '，', '否则', '会', '影响', '.', 'deadline']","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0,0,True
+543,Agreed. Let's build our code carefully and thoroughly before deployment.,LLM,"['persona-based', 'chain-of-thought']",gpt-3.5-turbo-16k,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","Li: Hey Sarah, I noticed a merge conflict in our latest PR. 我建议我们尽快解决这个问题 before we deploy to staging. 
+Sarah: Oh, really? Let me take a look. Maybe we can rebase and resolve the conflict. 
+Li: That sounds like a good plan. 我可以创建一个新的分支并处理这个问题. 
+Sarah: Great idea. Once we resolve the conflict, we can test it on staging before the deadline. 
+Li: 绝对没问题. Let's aim to deploy to staging by tomorrow afternoon. 
+Sarah: Sounds like a plan. 我们可以在那之前进行一些端到端的测试来确保没有任何bug. 
+Li: Exactly. 我们不能让任何bug通过，否则会影响deadline. 
+Sarah: Agreed. Let's build our code carefully and thoroughly before deployment.",8,Sarah,"['Agreed', '.', 'Let', ""'s"", 'build', 'our', 'code', 'carefully', 'and', 'thoroughly', 'before', 'deployment', '.']","['VERB', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'NOUN', 'ADV', 'CCONJ', 'ADV', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Agreed. Let's build our code carefully and thoroughly before deployment.,8,543,"['Agreed', '.', 'Let', ""'s"", 'build', 'our', 'code', 'carefully', 'and', 'thoroughly', 'before', 'deployment', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,3,0,False

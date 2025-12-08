@@ -1,0 +1,127 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+530,"Hey Sarah, have you had a chance to look at the front-end bug on QA? 你有看到QA上的前端问题吗？",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the front-end bug on QA? 你有看到QA上的前端问题吗？
+
+Sarah: Yeah, I noticed the issue when testing the staging environment. 我在测试staging环境时发现了这个问题。
+
+Li: I think we can fix it quickly and deploy the updated code. 我们可以很快修复它，然后部署更新的代码。
+
+Sarah: Agreed, let's merge the changes to the master branch once the fix is ready. 好的，等修复好后我们就将修改合并到主分支。
+
+Li: Sounds like a plan. Let's aim to have it done before the deadline. 让我们在截止日期之前完成它。
+
+Sarah: I'll build the code locally and test it again before we deploy it. 我会在本地构建代码，然后再次测试，在部署之前。
+
+Li: Great, I'll keep an eye on the staging environment while you work on the fix. 太好了，你开始修复问题时我会留意staging环境。",1,Li,"[',', '-', '?', 'Hey', 'Sarah', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'front', 'end', 'bug', 'on', 'QA', '你', '有', '看到', 'QA', '上', '的', '前端', '问题', '吗', '？']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'NOUN', 'ADP', 'PROPN', 'r', 'v', 'v', 'PROPN', 'f', 'uj', 'f', 'n', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['punct', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Hey Sarah, have you had a chance to look at the front-end bug on QA? 你有看到QA上的前端问题吗？",1,530,"[',', '-', '?', 'Hey', 'Sarah', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'front', 'end', 'bug', 'on', 'QA', '你', '有', '看到', 'QA', '上', '的', '前端', '问题', '吗', '？']","['punct', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.847,0.82,0.815,2,True
+530,"Yeah, I noticed the issue when testing the staging environment. 我在测试staging环境时发现了这个问题。",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the front-end bug on QA? 你有看到QA上的前端问题吗？
+
+Sarah: Yeah, I noticed the issue when testing the staging environment. 我在测试staging环境时发现了这个问题。
+
+Li: I think we can fix it quickly and deploy the updated code. 我们可以很快修复它，然后部署更新的代码。
+
+Sarah: Agreed, let's merge the changes to the master branch once the fix is ready. 好的，等修复好后我们就将修改合并到主分支。
+
+Li: Sounds like a plan. Let's aim to have it done before the deadline. 让我们在截止日期之前完成它。
+
+Sarah: I'll build the code locally and test it again before we deploy it. 我会在本地构建代码，然后再次测试，在部署之前。
+
+Li: Great, I'll keep an eye on the staging environment while you work on the fix. 太好了，你开始修复问题时我会留意staging环境。",2,Sarah,"[',', '.', 'Yeah', 'I', 'noticed', 'the', 'issue', 'when', 'testing', 'the', 'staging', 'environment', '我', '在', '测试', 'staging', '环境', '时', '发现', '了', '这个', '问题', '。']","['PUNCT', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'DET', 'NOUN', 'SCONJ', 'VERB', 'DET', 'NOUN', 'NOUN', 'r', 'p', 'vn', 'VERB', 'n', 'n', 'v', 'ul', 'r', 'n', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Yeah, I noticed the issue when testing the staging environment. 我在测试staging环境时发现了这个问题。",2,530,"[',', '.', 'Yeah', 'I', 'noticed', 'the', 'issue', 'when', 'testing', 'the', 'staging', 'environment', '我', '在', '测试', 'staging', '环境', '时', '发现', '了', '这个', '问题', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.85,0.823,0.83,1,True
+530,I think we can fix it quickly and deploy the updated code. 我们可以很快修复它，然后部署更新的代码。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the front-end bug on QA? 你有看到QA上的前端问题吗？
+
+Sarah: Yeah, I noticed the issue when testing the staging environment. 我在测试staging环境时发现了这个问题。
+
+Li: I think we can fix it quickly and deploy the updated code. 我们可以很快修复它，然后部署更新的代码。
+
+Sarah: Agreed, let's merge the changes to the master branch once the fix is ready. 好的，等修复好后我们就将修改合并到主分支。
+
+Li: Sounds like a plan. Let's aim to have it done before the deadline. 让我们在截止日期之前完成它。
+
+Sarah: I'll build the code locally and test it again before we deploy it. 我会在本地构建代码，然后再次测试，在部署之前。
+
+Li: Great, I'll keep an eye on the staging environment while you work on the fix. 太好了，你开始修复问题时我会留意staging环境。",3,Li,"['.', 'I', 'think', 'we', 'can', 'fix', 'it', 'quickly', 'and', 'deploy', 'the', 'updated', 'code', '我们', '可以', '很快', '修复', '它', '，', '然后', '部署', '更新', '的', '代码', '。']","['PUNCT', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'PRON', 'ADV', 'CCONJ', 'VERB', 'DET', 'VERB', 'NOUN', 'r', 'c', 'd', 'v', 'r', 'PUNCT', 'c', 'n', 'd', 'uj', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",I think we can fix it quickly and deploy the updated code. 我们可以很快修复它，然后部署更新的代码。,3,530,"['.', 'I', 'think', 'we', 'can', 'fix', 'it', 'quickly', 'and', 'deploy', 'the', 'updated', 'code', '我们', '可以', '很快', '修复', '它', '，', '然后', '部署', '更新', '的', '代码', '。']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.867,0.824,0.823,2,True
+530,"Agreed, let's merge the changes to the master branch once the fix is ready. 好的，等修复好后我们就将修改合并到主分支。",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the front-end bug on QA? 你有看到QA上的前端问题吗？
+
+Sarah: Yeah, I noticed the issue when testing the staging environment. 我在测试staging环境时发现了这个问题。
+
+Li: I think we can fix it quickly and deploy the updated code. 我们可以很快修复它，然后部署更新的代码。
+
+Sarah: Agreed, let's merge the changes to the master branch once the fix is ready. 好的，等修复好后我们就将修改合并到主分支。
+
+Li: Sounds like a plan. Let's aim to have it done before the deadline. 让我们在截止日期之前完成它。
+
+Sarah: I'll build the code locally and test it again before we deploy it. 我会在本地构建代码，然后再次测试，在部署之前。
+
+Li: Great, I'll keep an eye on the staging environment while you work on the fix. 太好了，你开始修复问题时我会留意staging环境。",4,Sarah,"[',', ""'"", '.', 'Agreed', 'let', 's', 'merge', 'the', 'changes', 'to', 'the', 'master', 'branch', 'once', 'the', 'fix', 'is', 'ready', '好', '的', '，', '等', '修复', '好', '后', '我们', '就', '将', '修改', '合并', '到', '主', '分支', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PROPN', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'SCONJ', 'DET', 'NOUN', 'AUX', 'ADJ', 'a', 'uj', 'PUNCT', 'u', 'v', 'a', 'f', 'r', 'd', 'd', 'v', 'v', 'v', 'b', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Agreed, let's merge the changes to the master branch once the fix is ready. 好的，等修复好后我们就将修改合并到主分支。",4,530,"[',', ""'"", '.', 'Agreed', 'let', 's', 'merge', 'the', 'changes', 'to', 'the', 'master', 'branch', 'once', 'the', 'fix', 'is', 'ready', '好', '的', '，', '等', '修复', '好', '后', '我们', '就', '将', '修改', '合并', '到', '主', '分支', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.849,0.82,0.818,2,True
+530,Sounds like a plan. Let's aim to have it done before the deadline. 让我们在截止日期之前完成它。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the front-end bug on QA? 你有看到QA上的前端问题吗？
+
+Sarah: Yeah, I noticed the issue when testing the staging environment. 我在测试staging环境时发现了这个问题。
+
+Li: I think we can fix it quickly and deploy the updated code. 我们可以很快修复它，然后部署更新的代码。
+
+Sarah: Agreed, let's merge the changes to the master branch once the fix is ready. 好的，等修复好后我们就将修改合并到主分支。
+
+Li: Sounds like a plan. Let's aim to have it done before the deadline. 让我们在截止日期之前完成它。
+
+Sarah: I'll build the code locally and test it again before we deploy it. 我会在本地构建代码，然后再次测试，在部署之前。
+
+Li: Great, I'll keep an eye on the staging environment while you work on the fix. 太好了，你开始修复问题时我会留意staging环境。",5,Li,"['.', ""'"", '.', 'Sounds', 'like', 'a', 'plan', 'Let', 's', 'aim', 'to', 'have', 'it', 'done', 'before', 'the', 'deadline', '让', '我们', '在', '截止', '日期', '之前', '完成', '它', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'ADP', 'DET', 'NOUN', 'VERB', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'v', 'r', 'p', 'v', 't', 'f', 'v', 'r', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Sounds like a plan. Let's aim to have it done before the deadline. 让我们在截止日期之前完成它。,5,530,"['.', ""'"", '.', 'Sounds', 'like', 'a', 'plan', 'Let', 's', 'aim', 'to', 'have', 'it', 'done', 'before', 'the', 'deadline', '让', '我们', '在', '截止', '日期', '之前', '完成', '它', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.85,0.836,0.831,1,True
+530,I'll build the code locally and test it again before we deploy it. 我会在本地构建代码，然后再次测试，在部署之前。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the front-end bug on QA? 你有看到QA上的前端问题吗？
+
+Sarah: Yeah, I noticed the issue when testing the staging environment. 我在测试staging环境时发现了这个问题。
+
+Li: I think we can fix it quickly and deploy the updated code. 我们可以很快修复它，然后部署更新的代码。
+
+Sarah: Agreed, let's merge the changes to the master branch once the fix is ready. 好的，等修复好后我们就将修改合并到主分支。
+
+Li: Sounds like a plan. Let's aim to have it done before the deadline. 让我们在截止日期之前完成它。
+
+Sarah: I'll build the code locally and test it again before we deploy it. 我会在本地构建代码，然后再次测试，在部署之前。
+
+Li: Great, I'll keep an eye on the staging environment while you work on the fix. 太好了，你开始修复问题时我会留意staging环境。",6,Sarah,"[""'"", '.', 'I', 'll', 'build', 'the', 'code', 'locally', 'and', 'test', 'it', 'again', 'before', 'we', 'deploy', 'it', '我会', '在', '本地', '构建', '代码', '，', '然后', '再次', '测试', '，', '在', '部署', '之前', '。']","['PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADV', 'CCONJ', 'VERB', 'PRON', 'ADV', 'SCONJ', 'PRON', 'VERB', 'PRON', 'n', 'p', 'r', 'v', 'n', 'PUNCT', 'c', 'd', 'vn', 'PUNCT', 'p', 'n', 'f', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",I'll build the code locally and test it again before we deploy it. 我会在本地构建代码，然后再次测试，在部署之前。,6,530,"[""'"", '.', 'I', 'll', 'build', 'the', 'code', 'locally', 'and', 'test', 'it', 'again', 'before', 'we', 'deploy', 'it', '我会', '在', '本地', '构建', '代码', '，', '然后', '再次', '测试', '，', '在', '部署', '之前', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",mix,0.869,0.827,0.825,4,True
+530,"Great, I'll keep an eye on the staging environment while you work on the fix. 太好了，你开始修复问题时我会留意staging环境。",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the front-end bug on QA? 你有看到QA上的前端问题吗？
+
+Sarah: Yeah, I noticed the issue when testing the staging environment. 我在测试staging环境时发现了这个问题。
+
+Li: I think we can fix it quickly and deploy the updated code. 我们可以很快修复它，然后部署更新的代码。
+
+Sarah: Agreed, let's merge the changes to the master branch once the fix is ready. 好的，等修复好后我们就将修改合并到主分支。
+
+Li: Sounds like a plan. Let's aim to have it done before the deadline. 让我们在截止日期之前完成它。
+
+Sarah: I'll build the code locally and test it again before we deploy it. 我会在本地构建代码，然后再次测试，在部署之前。
+
+Li: Great, I'll keep an eye on the staging environment while you work on the fix. 太好了，你开始修复问题时我会留意staging环境。",7,Li,"[',', ""'"", '.', 'Great', 'I', 'll', 'keep', 'an', 'eye', 'on', 'the', 'staging', 'environment', 'while', 'you', 'work', 'on', 'the', 'fix', '太好了', '，', '你', '开始', '修复', '问题', '时', '我会', '留意', 'staging', '环境', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'ADJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'l', 'PUNCT', 'r', 'v', 'v', 'n', 'n', 'n', 'v', 'VERB', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']","Great, I'll keep an eye on the staging environment while you work on the fix. 太好了，你开始修复问题时我会留意staging环境。",7,530,"[',', ""'"", '.', 'Great', 'I', 'll', 'keep', 'an', 'eye', 'on', 'the', 'staging', 'environment', 'while', 'you', 'work', 'on', 'the', 'fix', '太好了', '，', '你', '开始', '修复', '问题', '时', '我会', '留意', 'staging', '环境', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']",mix,0.851,0.823,0.828,1,True

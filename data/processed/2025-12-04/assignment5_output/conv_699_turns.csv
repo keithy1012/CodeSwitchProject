@@ -1,0 +1,85 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+699,"Hey Sarah, I noticed a bug on the staging 网站. Can you take a look?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the staging 网站. Can you take a look?
+Sarah: Sure, 我会查一下。Let me pull the latest code changes from QA first.
+Li: Great idea, we need to make sure everything is up to date before deploying 到 production.
+Sarah: Definitely, 我刚build 了最新版本。我现在会deploy 到 staging. 
+Li: Sounds good, once it's deployed 到 staging, we can test it thoroughly before merging 到 master.
+Sarah: Right, we don't want any issues slipping through to the final deadline. 
+Li: Exactly, 我们要确保网站在deadline之前没有问题。 Let's get this fixed ASAP.",1,Li,"[',', 'Hey', 'Sarah', 'I', 'noticed', 'a', 'bug', 'on', 'the', 'staging', '网站', '.', '?', 'Can', 'you', 'take', 'a', 'look']","['PUNCT', 'INTJ', 'PROPN', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'n', 'PUNCT', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en']","Hey Sarah, I noticed a bug on the staging 网站. Can you take a look?",1,699,"[',', 'Hey', 'Sarah', 'I', 'noticed', 'a', 'bug', 'on', 'the', 'staging', '网站', '.', '?', 'Can', 'you', 'take', 'a', 'look']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True
+699,"Sure, 我会查一下。Let me pull the latest code changes from QA first.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the staging 网站. Can you take a look?
+Sarah: Sure, 我会查一下。Let me pull the latest code changes from QA first.
+Li: Great idea, we need to make sure everything is up to date before deploying 到 production.
+Sarah: Definitely, 我刚build 了最新版本。我现在会deploy 到 staging. 
+Li: Sounds good, once it's deployed 到 staging, we can test it thoroughly before merging 到 master.
+Sarah: Right, we don't want any issues slipping through to the final deadline. 
+Li: Exactly, 我们要确保网站在deadline之前没有问题。 Let's get this fixed ASAP.",2,Sarah,"[',', 'Sure', '我会', '查', '一下', '。', '.', 'Let', 'me', 'pull', 'the', 'latest', 'code', 'changes', 'from', 'QA', 'first']","['PUNCT', 'INTJ', 'n', 'v', 'm', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'NOUN', 'ADP', 'PROPN', 'ADV']","{'en', 'zh', 'punct'}","['punct', 'en', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Sure, 我会查一下。Let me pull the latest code changes from QA first.",2,699,"[',', 'Sure', '我会', '查', '一下', '。', '.', 'Let', 'me', 'pull', 'the', 'latest', 'code', 'changes', 'from', 'QA', 'first']","['punct', 'en', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,3,0,True
+699,"Great idea, we need to make sure everything is up to date before deploying 到 production.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the staging 网站. Can you take a look?
+Sarah: Sure, 我会查一下。Let me pull the latest code changes from QA first.
+Li: Great idea, we need to make sure everything is up to date before deploying 到 production.
+Sarah: Definitely, 我刚build 了最新版本。我现在会deploy 到 staging. 
+Li: Sounds good, once it's deployed 到 staging, we can test it thoroughly before merging 到 master.
+Sarah: Right, we don't want any issues slipping through to the final deadline. 
+Li: Exactly, 我们要确保网站在deadline之前没有问题。 Let's get this fixed ASAP.",3,Li,"[',', 'Great', 'idea', 'we', 'need', 'to', 'make', 'sure', 'everything', 'is', 'up', 'to', 'date', 'before', 'deploying', '到', '.', 'production']","['PUNCT', 'ADJ', 'NOUN', 'PRON', 'VERB', 'PART', 'VERB', 'ADJ', 'PRON', 'AUX', 'ADP', 'ADP', 'NOUN', 'ADP', 'VERB', 'v', 'PUNCT', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'en']","Great idea, we need to make sure everything is up to date before deploying 到 production.",3,699,"[',', 'Great', 'idea', 'we', 'need', 'to', 'make', 'sure', 'everything', 'is', 'up', 'to', 'date', 'before', 'deploying', '到', '.', 'production']","['punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'en']",mix,1,0,True
+699,"Definitely, 我刚build 了最新版本。我现在会deploy 到 staging.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the staging 网站. Can you take a look?
+Sarah: Sure, 我会查一下。Let me pull the latest code changes from QA first.
+Li: Great idea, we need to make sure everything is up to date before deploying 到 production.
+Sarah: Definitely, 我刚build 了最新版本。我现在会deploy 到 staging. 
+Li: Sounds good, once it's deployed 到 staging, we can test it thoroughly before merging 到 master.
+Sarah: Right, we don't want any issues slipping through to the final deadline. 
+Li: Exactly, 我们要确保网站在deadline之前没有问题。 Let's get this fixed ASAP.",4,Sarah,"[',', 'Definitely', '我', '刚', 'build', '了', '最新', '版本', '。', '我', '现在', '会', 'deploy', '到', '.', 'staging']","['PUNCT', 'ADV', 'r', 'd', 'VERB', 'ul', 'd', 'n', 'PUNCT', 'r', 't', 'v', 'VERB', 'v', 'PUNCT', 'VERB']","{'en', 'zh', 'punct'}","['punct', 'en', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'punct', 'en']","Definitely, 我刚build 了最新版本。我现在会deploy 到 staging.",4,699,"[',', 'Definitely', '我', '刚', 'build', '了', '最新', '版本', '。', '我', '现在', '会', 'deploy', '到', '.', 'staging']","['punct', 'en', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'punct', 'en']",mix,1,0,True
+699,"Sounds good, once it's deployed 到 staging, we can test it thoroughly before merging 到 master.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the staging 网站. Can you take a look?
+Sarah: Sure, 我会查一下。Let me pull the latest code changes from QA first.
+Li: Great idea, we need to make sure everything is up to date before deploying 到 production.
+Sarah: Definitely, 我刚build 了最新版本。我现在会deploy 到 staging. 
+Li: Sounds good, once it's deployed 到 staging, we can test it thoroughly before merging 到 master.
+Sarah: Right, we don't want any issues slipping through to the final deadline. 
+Li: Exactly, 我们要确保网站在deadline之前没有问题。 Let's get this fixed ASAP.",5,Li,"[',', ""'"", 'Sounds', 'good', 'once', 'it', 's', 'deployed', '到', ',', 'staging', 'we', 'can', 'test', 'it', 'thoroughly', 'before', 'merging', '到', '.', 'master']","['PUNCT', 'PUNCT', 'VERB', 'ADJ', 'SCONJ', 'PRON', 'AUX', 'VERB', 'v', 'PUNCT', 'VERB', 'PRON', 'AUX', 'VERB', 'PRON', 'ADV', 'ADP', 'VERB', 'v', 'PUNCT', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'en']","Sounds good, once it's deployed 到 staging, we can test it thoroughly before merging 到 master.",5,699,"[',', ""'"", 'Sounds', 'good', 'once', 'it', 's', 'deployed', '到', ',', 'staging', 'we', 'can', 'test', 'it', 'thoroughly', 'before', 'merging', '到', '.', 'master']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'en']",mix,2,0,True
+699,"Right, we don't want any issues slipping through to the final deadline.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the staging 网站. Can you take a look?
+Sarah: Sure, 我会查一下。Let me pull the latest code changes from QA first.
+Li: Great idea, we need to make sure everything is up to date before deploying 到 production.
+Sarah: Definitely, 我刚build 了最新版本。我现在会deploy 到 staging. 
+Li: Sounds good, once it's deployed 到 staging, we can test it thoroughly before merging 到 master.
+Sarah: Right, we don't want any issues slipping through to the final deadline. 
+Li: Exactly, 我们要确保网站在deadline之前没有问题。 Let's get this fixed ASAP.",6,Sarah,"['Right', ',', 'we', 'do', ""n't"", 'want', 'any', 'issues', 'slipping', 'through', 'to', 'the', 'final', 'deadline', '.']","['INTJ', 'PUNCT', 'PRON', 'AUX', 'PART', 'VERB', 'DET', 'NOUN', 'VERB', 'ADP', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Right, we don't want any issues slipping through to the final deadline.",6,699,"['Right', ',', 'we', 'do', ""n't"", 'want', 'any', 'issues', 'slipping', 'through', 'to', 'the', 'final', 'deadline', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,1,0,False
+699,"Exactly, 我们要确保网站在deadline之前没有问题。 Let's get this fixed ASAP.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I noticed a bug on the staging 网站. Can you take a look?
+Sarah: Sure, 我会查一下。Let me pull the latest code changes from QA first.
+Li: Great idea, we need to make sure everything is up to date before deploying 到 production.
+Sarah: Definitely, 我刚build 了最新版本。我现在会deploy 到 staging. 
+Li: Sounds good, once it's deployed 到 staging, we can test it thoroughly before merging 到 master.
+Sarah: Right, we don't want any issues slipping through to the final deadline. 
+Li: Exactly, 我们要确保网站在deadline之前没有问题。 Let's get this fixed ASAP.",7,Li,"[',', 'Exactly', '我们', '要', '确保', '网站', '在', 'deadline', '之前', '没有', '问题', '。', ""'"", '.', 'Let', 's', 'get', 'this', 'fixed', 'ASAP']","['PUNCT', 'ADV', 'r', 'v', 'v', 'n', 'p', 'NOUN', 'f', 'v', 'n', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'VERB', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en']","Exactly, 我们要确保网站在deadline之前没有问题。 Let's get this fixed ASAP.",7,699,"[',', 'Exactly', '我们', '要', '确保', '网站', '在', 'deadline', '之前', '没有', '问题', '。', ""'"", '.', 'Let', 's', 'get', 'this', 'fixed', 'ASAP']","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0,0,True

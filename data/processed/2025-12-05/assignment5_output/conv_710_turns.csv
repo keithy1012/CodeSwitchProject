@@ -1,0 +1,97 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+710,"** Hey Sarah, have you looked at the latest build? 我在 QA 环节发现了一个 bug。",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, have you looked at the latest build? 我在 QA 环节发现了一个 bug。
+
+**Sarah:** Yeah, I noticed that too. It seems the styling is off in the staging environment. 我们需要尽快解决这个问题，因为有一个 deadline 要赶。
+
+**Li:** Right! 我在想，我们需要检查一下最近的 merge。Maybe something got messed up during the last update.
+
+**Sarah:** Good idea. 我会回去看看 commit history. We can't afford any issues before the deploy.
+
+**Li:** Exactly! 而且如果我们能在今天修复这个 bug，那就可以顺利推进到下一个阶段。
+
+**Sarah:** 完全同意！Let's prioritize this and get it done before the meeting this afternoon.",1,**Li,"['*', '*', ',', '?', 'Hey', 'Sarah', 'have', 'you', 'looked', 'at', 'the', 'latest', 'build', '我', '在', 'QA', '环节', '发现', '了', '一个', '。', 'bug']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'AUX', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'r', 'p', 'PROPN', 'n', 'v', 'ul', 'm', 'PUNCT', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']","** Hey Sarah, have you looked at the latest build? 我在 QA 环节发现了一个 bug。",1,710,"['*', '*', ',', '?', 'Hey', 'Sarah', 'have', 'you', 'looked', 'at', 'the', 'latest', 'build', '我', '在', 'QA', '环节', '发现', '了', '一个', '。', 'bug']","['other', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0.847,0.821,0.816,3,True
+710,"** Yeah, I noticed that too. It seems the styling is off in the staging environment. 我们需要尽快解决这个问题，因为有一个 deadline 要赶。",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, have you looked at the latest build? 我在 QA 环节发现了一个 bug。
+
+**Sarah:** Yeah, I noticed that too. It seems the styling is off in the staging environment. 我们需要尽快解决这个问题，因为有一个 deadline 要赶。
+
+**Li:** Right! 我在想，我们需要检查一下最近的 merge。Maybe something got messed up during the last update.
+
+**Sarah:** Good idea. 我会回去看看 commit history. We can't afford any issues before the deploy.
+
+**Li:** Exactly! 而且如果我们能在今天修复这个 bug，那就可以顺利推进到下一个阶段。
+
+**Sarah:** 完全同意！Let's prioritize this and get it done before the meeting this afternoon.",2,**Sarah,"['*', '*', ',', '.', '.', 'Yeah', 'I', 'noticed', 'that', 'too', 'It', 'seems', 'the', 'styling', 'is', 'off', 'in', 'the', 'staging', 'environment', '我们', '需要', '尽快', '解决', '这个', '问题', '，', '因为', '有', '一个', 'deadline', '要', '赶', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'SCONJ', 'ADV', 'PRON', 'VERB', 'DET', 'NOUN', 'AUX', 'ADV', 'ADP', 'DET', 'NOUN', 'NOUN', 'r', 'v', 'd', 'v', 'r', 'n', 'PUNCT', 'c', 'v', 'm', 'NOUN', 'v', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']","** Yeah, I noticed that too. It seems the styling is off in the staging environment. 我们需要尽快解决这个问题，因为有一个 deadline 要赶。",2,710,"['*', '*', ',', '.', '.', 'Yeah', 'I', 'noticed', 'that', 'too', 'It', 'seems', 'the', 'styling', 'is', 'off', 'in', 'the', 'staging', 'environment', '我们', '需要', '尽快', '解决', '这个', '问题', '，', '因为', '有', '一个', 'deadline', '要', '赶', '。']","['other', 'other', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",mix,0.837,0.819,0.837,2,True
+710,** Right! 我在想，我们需要检查一下最近的 merge。Maybe something got messed up during the last update.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, have you looked at the latest build? 我在 QA 环节发现了一个 bug。
+
+**Sarah:** Yeah, I noticed that too. It seems the styling is off in the staging environment. 我们需要尽快解决这个问题，因为有一个 deadline 要赶。
+
+**Li:** Right! 我在想，我们需要检查一下最近的 merge。Maybe something got messed up during the last update.
+
+**Sarah:** Good idea. 我会回去看看 commit history. We can't afford any issues before the deploy.
+
+**Li:** Exactly! 而且如果我们能在今天修复这个 bug，那就可以顺利推进到下一个阶段。
+
+**Sarah:** 完全同意！Let's prioritize this and get it done before the meeting this afternoon.",3,**Li,"['*', '*', '!', 'Right', '我', '在', '想', '，', '我们', '需要', '检查一下', '最近', '的', '。', '.', 'merge', 'Maybe', 'something', 'got', 'messed', 'up', 'during', 'the', 'last', 'update']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'r', 'p', 'v', 'PUNCT', 'r', 'v', 'n', 'f', 'uj', 'PUNCT', 'PUNCT', 'VERB', 'ADV', 'PRON', 'AUX', 'VERB', 'ADP', 'ADP', 'DET', 'ADJ', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'other', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",** Right! 我在想，我们需要检查一下最近的 merge。Maybe something got messed up during the last update.,3,710,"['*', '*', '!', 'Right', '我', '在', '想', '，', '我们', '需要', '检查一下', '最近', '的', '。', '.', 'merge', 'Maybe', 'something', 'got', 'messed', 'up', 'during', 'the', 'last', 'update']","['other', 'other', 'other', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.856,0.832,0.832,1,True
+710,** Good idea. 我会回去看看 commit history. We can't afford any issues before the deploy.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, have you looked at the latest build? 我在 QA 环节发现了一个 bug。
+
+**Sarah:** Yeah, I noticed that too. It seems the styling is off in the staging environment. 我们需要尽快解决这个问题，因为有一个 deadline 要赶。
+
+**Li:** Right! 我在想，我们需要检查一下最近的 merge。Maybe something got messed up during the last update.
+
+**Sarah:** Good idea. 我会回去看看 commit history. We can't afford any issues before the deploy.
+
+**Li:** Exactly! 而且如果我们能在今天修复这个 bug，那就可以顺利推进到下一个阶段。
+
+**Sarah:** 完全同意！Let's prioritize this and get it done before the meeting this afternoon.",4,**Sarah,"['*', '*', '.', 'Good', 'idea', '我会', '回去', '看看', '.', ""'"", '.', 'commit', 'history', 'We', 'can', 't', 'afford', 'any', 'issues', 'before', 'the', 'deploy']","['PUNCT', 'PUNCT', 'PUNCT', 'ADJ', 'NOUN', 'n', 'v', 'v', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'NOUN', 'PRON', 'AUX', 'VERB', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",** Good idea. 我会回去看看 commit history. We can't afford any issues before the deploy.,4,710,"['*', '*', '.', 'Good', 'idea', '我会', '回去', '看看', '.', ""'"", '.', 'commit', 'history', 'We', 'can', 't', 'afford', 'any', 'issues', 'before', 'the', 'deploy']","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.862,0.828,0.82,2,True
+710,** Exactly! 而且如果我们能在今天修复这个 bug，那就可以顺利推进到下一个阶段。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, have you looked at the latest build? 我在 QA 环节发现了一个 bug。
+
+**Sarah:** Yeah, I noticed that too. It seems the styling is off in the staging environment. 我们需要尽快解决这个问题，因为有一个 deadline 要赶。
+
+**Li:** Right! 我在想，我们需要检查一下最近的 merge。Maybe something got messed up during the last update.
+
+**Sarah:** Good idea. 我会回去看看 commit history. We can't afford any issues before the deploy.
+
+**Li:** Exactly! 而且如果我们能在今天修复这个 bug，那就可以顺利推进到下一个阶段。
+
+**Sarah:** 完全同意！Let's prioritize this and get it done before the meeting this afternoon.",5,**Li,"['*', '*', '!', 'Exactly', '而且', '如果', '我们', '能', '在', '今天', '修复', '这个', '，', 'bug', '那', '就', '可以', '顺利', '推进', '到', '下', '一个', '阶段', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'ADV', 'c', 'c', 'r', 'v', 'p', 't', 'v', 'r', 'PUNCT', 'NOUN', 'r', 'd', 'c', 'ad', 'v', 'v', 'f', 'm', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** Exactly! 而且如果我们能在今天修复这个 bug，那就可以顺利推进到下一个阶段。,5,710,"['*', '*', '!', 'Exactly', '而且', '如果', '我们', '能', '在', '今天', '修复', '这个', '，', 'bug', '那', '就', '可以', '顺利', '推进', '到', '下', '一个', '阶段', '。']","['other', 'other', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.857,0.829,0.836,1,True
+710,** 完全同意！Let's prioritize this and get it done before the meeting this afternoon.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, have you looked at the latest build? 我在 QA 环节发现了一个 bug。
+
+**Sarah:** Yeah, I noticed that too. It seems the styling is off in the staging environment. 我们需要尽快解决这个问题，因为有一个 deadline 要赶。
+
+**Li:** Right! 我在想，我们需要检查一下最近的 merge。Maybe something got messed up during the last update.
+
+**Sarah:** Good idea. 我会回去看看 commit history. We can't afford any issues before the deploy.
+
+**Li:** Exactly! 而且如果我们能在今天修复这个 bug，那就可以顺利推进到下一个阶段。
+
+**Sarah:** 完全同意！Let's prioritize this and get it done before the meeting this afternoon.",6,**Sarah,"['*', '*', '完全同意', '！', ""'"", '.', 'Let', 's', 'prioritize', 'this', 'and', 'get', 'it', 'done', 'before', 'the', 'meeting', 'this', 'afternoon']","['PUNCT', 'PUNCT', 'i', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'CCONJ', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'DET', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'other', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",** 完全同意！Let's prioritize this and get it done before the meeting this afternoon.,6,710,"['*', '*', '完全同意', '！', ""'"", '.', 'Let', 's', 'prioritize', 'this', 'and', 'get', 'it', 'done', 'before', 'the', 'meeting', 'this', 'afternoon']","['other', 'other', 'zh', 'other', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.838,0.827,0.819,0,True

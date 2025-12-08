@@ -1,0 +1,161 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+693,"** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.
+
+**Sarah:** Got it. What’s the issue? Is it related to the recent merge?
+
+**Li:** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.
+
+**Sarah:** 让我们先确认一下代码。Did you test it locally before deploying?
+
+**Li:** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.
+
+**Sarah:** That makes sense. Maybe we should check the environment variables and logs?
+
+**Li:** 好主意! 时间不多，我们得在 deadline 前解决这个问题. 
+
+**Sarah:** Absolutely! Let’s tackle it together. I'll start looking at the logs now.",1,**Li,"['*', '*', ',', 'Hi', 'Sarah', '我们', '的', '最新', 'build', '有个', 'bug', '我们', '需要', '解决', '.']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'r', 'uj', 'd', 'VERB', 'r', 'NOUN', 'r', 'v', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']","** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.",1,693,"['*', '*', ',', 'Hi', 'Sarah', '我们', '的', '最新', 'build', '有个', 'bug', '我们', '需要', '解决', '.']","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']",mix,0.847,0.82,0.817,2,True
+693,** Got it. What’s the issue? Is it related to the recent merge?,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.
+
+**Sarah:** Got it. What’s the issue? Is it related to the recent merge?
+
+**Li:** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.
+
+**Sarah:** 让我们先确认一下代码。Did you test it locally before deploying?
+
+**Li:** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.
+
+**Sarah:** That makes sense. Maybe we should check the environment variables and logs?
+
+**Li:** 好主意! 时间不多，我们得在 deadline 前解决这个问题. 
+
+**Sarah:** Absolutely! Let’s tackle it together. I'll start looking at the logs now.",2,**Sarah,"['*', '*', 'Got', 'it', '.', 'What', '’s', 'the', 'issue', '?', 'Is', 'it', 'related', 'to', 'the', 'recent', 'merge', '?']","['PUNCT', 'PUNCT', 'VERB', 'PRON', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",** Got it. What’s the issue? Is it related to the recent merge?,2,693,"['*', '*', 'Got', 'it', '.', 'What', '’s', 'the', 'issue', '?', 'Is', 'it', 'related', 'to', 'the', 'recent', 'merge', '?']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.811,0.778,0.789,1,False
+693,"** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.
+
+**Sarah:** Got it. What’s the issue? Is it related to the recent merge?
+
+**Li:** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.
+
+**Sarah:** 让我们先确认一下代码。Did you test it locally before deploying?
+
+**Li:** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.
+
+**Sarah:** That makes sense. Maybe we should check the environment variables and logs?
+
+**Li:** 好主意! 时间不多，我们得在 deadline 前解决这个问题. 
+
+**Sarah:** Absolutely! Let’s tackle it together. I'll start looking at the logs now.",3,**Li,"['*', '*', '对', ',', '是', '的', '。', 'Deployment', '出现', '了', '错误', '提示', '，', '显示', 'API', '有', '问题', '.']","['PUNCT', 'PUNCT', 'p', 'PUNCT', 'v', 'uj', 'PUNCT', 'NOUN', 'v', 'ul', 'n', 'v', 'PUNCT', 'v', 'PROPN', 'v', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'punct', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'en', 'zh', 'zh', 'punct']","** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.",3,693,"['*', '*', '对', ',', '是', '的', '。', 'Deployment', '出现', '了', '错误', '提示', '，', '显示', 'API', '有', '问题', '.']","['other', 'other', 'zh', 'punct', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'en', 'zh', 'zh', 'punct']",mix,0.88,0.823,0.831,2,True
+693,** 让我们先确认一下代码。Did you test it locally before deploying?,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.
+
+**Sarah:** Got it. What’s the issue? Is it related to the recent merge?
+
+**Li:** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.
+
+**Sarah:** 让我们先确认一下代码。Did you test it locally before deploying?
+
+**Li:** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.
+
+**Sarah:** That makes sense. Maybe we should check the environment variables and logs?
+
+**Li:** 好主意! 时间不多，我们得在 deadline 前解决这个问题. 
+
+**Sarah:** Absolutely! Let’s tackle it together. I'll start looking at the logs now.",4,**Sarah,"['*', '*', '让', '我们', '先', '确认', '一下', '代码', '。', '?', 'Did', 'you', 'test', 'it', 'locally', 'before', 'deploying']","['PUNCT', 'PUNCT', 'v', 'r', 'd', 'v', 'm', 'n', 'PUNCT', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PRON', 'ADV', 'ADP', 'VERB']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",** 让我们先确认一下代码。Did you test it locally before deploying?,4,693,"['*', '*', '让', '我们', '先', '确认', '一下', '代码', '。', '?', 'Did', 'you', 'test', 'it', 'locally', 'before', 'deploying']","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.86,0.834,0.831,1,True
+693,** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.
+
+**Sarah:** Got it. What’s the issue? Is it related to the recent merge?
+
+**Li:** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.
+
+**Sarah:** 让我们先确认一下代码。Did you test it locally before deploying?
+
+**Li:** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.
+
+**Sarah:** That makes sense. Maybe we should check the environment variables and logs?
+
+**Li:** 好主意! 时间不多，我们得在 deadline 前解决这个问题. 
+
+**Sarah:** Absolutely! Let’s tackle it together. I'll start looking at the logs now.",5,**Li,"['*', '*', '我', '测试', '过', '，', '但', '好像', '在', '生产', '环境', '下', '出', '问题', '了', '.', '我', '想', '可能', '是', '环境', '配置', '不', '一样', '.']","['PUNCT', 'PUNCT', 'r', 'vn', 'ug', 'PUNCT', 'c', 'v', 'p', 'vn', 'n', 'f', 'v', 'n', 'ul', 'PUNCT', 'r', 'v', 'v', 'v', 'n', 'v', 'd', 'r', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.,5,693,"['*', '*', '我', '测试', '过', '，', '但', '好像', '在', '生产', '环境', '下', '出', '问题', '了', '.', '我', '想', '可能', '是', '环境', '配置', '不', '一样', '.']","['other', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.861,0.837,0.832,0,False
+693,** That makes sense. Maybe we should check the environment variables and logs?,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.
+
+**Sarah:** Got it. What’s the issue? Is it related to the recent merge?
+
+**Li:** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.
+
+**Sarah:** 让我们先确认一下代码。Did you test it locally before deploying?
+
+**Li:** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.
+
+**Sarah:** That makes sense. Maybe we should check the environment variables and logs?
+
+**Li:** 好主意! 时间不多，我们得在 deadline 前解决这个问题. 
+
+**Sarah:** Absolutely! Let’s tackle it together. I'll start looking at the logs now.",6,**Sarah,"['*', '*', 'That', 'makes', 'sense', '.', 'Maybe', 'we', 'should', 'check', 'the', 'environment', 'variables', 'and', 'logs', '?']","['PUNCT', 'PUNCT', 'PRON', 'VERB', 'NOUN', 'PUNCT', 'ADV', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'NOUN', 'CCONJ', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",** That makes sense. Maybe we should check the environment variables and logs?,6,693,"['*', '*', 'That', 'makes', 'sense', '.', 'Maybe', 'we', 'should', 'check', 'the', 'environment', 'variables', 'and', 'logs', '?']","['other', 'other', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.83,0.788,0.798,0,False
+693,** 好主意! 时间不多，我们得在 deadline 前解决这个问题.,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.
+
+**Sarah:** Got it. What’s the issue? Is it related to the recent merge?
+
+**Li:** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.
+
+**Sarah:** 让我们先确认一下代码。Did you test it locally before deploying?
+
+**Li:** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.
+
+**Sarah:** That makes sense. Maybe we should check the environment variables and logs?
+
+**Li:** 好主意! 时间不多，我们得在 deadline 前解决这个问题. 
+
+**Sarah:** Absolutely! Let’s tackle it together. I'll start looking at the logs now.",7,**Li,"['*', '*', '好', '主意', '!', '时间', '不', '多', '，', '我们', '得', '在', 'deadline', '前', '解决', '这个', '问题', '.']","['PUNCT', 'PUNCT', 'a', 'n', 'PUNCT', 'n', 'd', 'm', 'PUNCT', 'r', 'ud', 'p', 'NOUN', 'f', 'v', 'r', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",** 好主意! 时间不多，我们得在 deadline 前解决这个问题.,7,693,"['*', '*', '好', '主意', '!', '时间', '不', '多', '，', '我们', '得', '在', 'deadline', '前', '解决', '这个', '问题', '.']","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.861,0.844,0.842,1,True
+693,** Absolutely! Let’s tackle it together. I'll start looking at the logs now.,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","**Li:** Hi Sarah, 我们的最新 build 有个 bug 我们需要解决.
+
+**Sarah:** Got it. What’s the issue? Is it related to the recent merge?
+
+**Li:** 对, 是的。Deployment 出现了错误提示，显示 API 有问题.
+
+**Sarah:** 让我们先确认一下代码。Did you test it locally before deploying?
+
+**Li:** 我测试过，但好像在生产环境下出问题了. 我想可能是环境配置不一样.
+
+**Sarah:** That makes sense. Maybe we should check the environment variables and logs?
+
+**Li:** 好主意! 时间不多，我们得在 deadline 前解决这个问题. 
+
+**Sarah:** Absolutely! Let’s tackle it together. I'll start looking at the logs now.",8,**Sarah,"['*', '*', 'Absolutely', '!', 'Let', '’s', 'tackle', 'it', 'together', '.', 'I', ""'ll"", 'start', 'looking', 'at', 'the', 'logs', 'now', '.']","['PUNCT', 'PUNCT', 'ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PRON', 'ADV', 'PUNCT', 'PRON', 'AUX', 'VERB', 'VERB', 'ADP', 'DET', 'NOUN', 'ADV', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** Absolutely! Let’s tackle it together. I'll start looking at the logs now.,8,693,"['*', '*', 'Absolutely', '!', 'Let', '’s', 'tackle', 'it', 'together', '.', 'I', ""'ll"", 'start', 'looking', 'at', 'the', 'logs', 'now', '.']","['other', 'other', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.814,0.786,0.791,0,False

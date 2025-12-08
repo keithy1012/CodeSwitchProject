@@ -1,0 +1,153 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+322,"Hey Sarah, have you checked the latest build before the deploy today?",LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, have you checked the latest build before the deploy today?
+
+Sarah: Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。
+
+Li: Really? What did you find? We need to resolve it before the deadline.
+
+Sarah: It’s a small issue with the API response time. 我们可以快速修复吗？
+
+Li: Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.
+
+Sarah: Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？
+
+Li: Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？
+
+Sarah: Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！",1,Li,"['Hey', 'Sarah', ',', 'have', 'you', 'checked', 'the', 'latest', 'build', 'before', 'the', 'deploy', 'today', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, have you checked the latest build before the deploy today?",1,322,"['Hey', 'Sarah', ',', 'have', 'you', 'checked', 'the', 'latest', 'build', 'before', 'the', 'deploy', 'today', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.837,0.772,0.79,2,False
+322,"Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。",LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, have you checked the latest build before the deploy today?
+
+Sarah: Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。
+
+Li: Really? What did you find? We need to resolve it before the deadline.
+
+Sarah: It’s a small issue with the API response time. 我们可以快速修复吗？
+
+Li: Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.
+
+Sarah: Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？
+
+Li: Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？
+
+Sarah: Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！",2,Sarah,"[',', '-', '.', 'Yeah', 'I', 'did', 'a', 'quick', 'run', 'through', '但是', '我', '发现', '有', '一个', 'bug', '在', '新', '功能', '里面', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'c', 'r', 'v', 'v', 'm', 'NOUN', 'p', 'a', 'n', 'f', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']","Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。",2,322,"[',', '-', '.', 'Yeah', 'I', 'did', 'a', 'quick', 'run', 'through', '但是', '我', '发现', '有', '一个', 'bug', '在', '新', '功能', '里面', '。']","['punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.847,0.825,0.835,1,True
+322,Really? What did you find? We need to resolve it before the deadline.,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, have you checked the latest build before the deploy today?
+
+Sarah: Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。
+
+Li: Really? What did you find? We need to resolve it before the deadline.
+
+Sarah: It’s a small issue with the API response time. 我们可以快速修复吗？
+
+Li: Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.
+
+Sarah: Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？
+
+Li: Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？
+
+Sarah: Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！",3,Li,"['Really', '?', 'What', 'did', 'you', 'find', '?', 'We', 'need', 'to', 'resolve', 'it', 'before', 'the', 'deadline', '.']","['ADV', 'PUNCT', 'PRON', 'AUX', 'PRON', 'VERB', 'PUNCT', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'other', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Really? What did you find? We need to resolve it before the deadline.,3,322,"['Really', '?', 'What', 'did', 'you', 'find', '?', 'We', 'need', 'to', 'resolve', 'it', 'before', 'the', 'deadline', '.']","['en', 'other', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.81,0.795,0.79,1,False
+322,It’s a small issue with the API response time. 我们可以快速修复吗？,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, have you checked the latest build before the deploy today?
+
+Sarah: Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。
+
+Li: Really? What did you find? We need to resolve it before the deadline.
+
+Sarah: It’s a small issue with the API response time. 我们可以快速修复吗？
+
+Li: Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.
+
+Sarah: Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？
+
+Li: Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？
+
+Sarah: Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！",4,Sarah,"['’', '.', 'It', 's', 'a', 'small', 'issue', 'with', 'the', 'API', 'response', 'time', '我们', '可以', '快速', '修复', '吗', '？']","['PUNCT', 'PUNCT', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'PROPN', 'NOUN', 'NOUN', 'r', 'c', 'd', 'v', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",It’s a small issue with the API response time. 我们可以快速修复吗？,4,322,"['’', '.', 'It', 's', 'a', 'small', 'issue', 'with', 'the', 'API', 'response', 'time', '我们', '可以', '快速', '修复', '吗', '？']","['other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.854,0.817,0.817,1,True
+322,Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, have you checked the latest build before the deploy today?
+
+Sarah: Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。
+
+Li: Really? What did you find? We need to resolve it before the deadline.
+
+Sarah: It’s a small issue with the API response time. 我们可以快速修复吗？
+
+Li: Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.
+
+Sarah: Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？
+
+Li: Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？
+
+Sarah: Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！",5,Li,"['Should', ""n't"", 'be', 'too', 'hard', '.', 'Let', '’s', 'merge', 'the', 'latest', 'changes', 'after', 'we', 'fix', 'it', ';', 'we', 'do', ""n't"", 'want', 'to', 'delay', 'the', 'deploy', '.']","['AUX', 'PART', 'AUX', 'ADV', 'ADJ', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'PRON', 'PUNCT', 'PRON', 'AUX', 'PART', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.,5,322,"['Should', ""n't"", 'be', 'too', 'hard', '.', 'Let', '’s', 'merge', 'the', 'latest', 'changes', 'after', 'we', 'fix', 'it', ';', 'we', 'do', ""n't"", 'want', 'to', 'delay', 'the', 'deploy', '.']","['en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.823,0.76,0.769,2,False
+322,Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, have you checked the latest build before the deploy today?
+
+Sarah: Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。
+
+Li: Really? What did you find? We need to resolve it before the deadline.
+
+Sarah: It’s a small issue with the API response time. 我们可以快速修复吗？
+
+Li: Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.
+
+Sarah: Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？
+
+Li: Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？
+
+Sarah: Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！",6,Sarah,"['.', 'Good', 'call', '你', '觉得', '我们', '需要', '添加', '一些', '测试用例', '来', '确保', '没', '问题', '吗', '？']","['PUNCT', 'ADJ', 'NOUN', 'r', 'v', 'r', 'v', 'v', 'm', 'n', 'v', 'v', 'v', 'n', 'y', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？,6,322,"['.', 'Good', 'call', '你', '觉得', '我们', '需要', '添加', '一些', '测试用例', '来', '确保', '没', '问题', '吗', '？']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.848,0.837,0.836,0,True
+322,Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, have you checked the latest build before the deploy today?
+
+Sarah: Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。
+
+Li: Really? What did you find? We need to resolve it before the deadline.
+
+Sarah: It’s a small issue with the API response time. 我们可以快速修复吗？
+
+Li: Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.
+
+Sarah: Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？
+
+Li: Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？
+
+Sarah: Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！",7,Li,"['.', '’', '.', 'Definitely', 'I', 'll', 'write', 'a', 'couple', 'of', 'tests', 'after', 'we', 'fix', 'the', 'bug', '你', '可以', '在', '这', '段时间', '里', '准备', '部署', '文档', '吗', '？']","['PUNCT', 'PUNCT', 'PUNCT', 'ADV', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'r', 'c', 'p', 'r', 'nr', 'f', 'v', 'n', 'n', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？,7,322,"['.', '’', '.', 'Definitely', 'I', 'll', 'write', 'a', 'couple', 'of', 'tests', 'after', 'we', 'fix', 'the', 'bug', '你', '可以', '在', '这', '段时间', '里', '准备', '部署', '文档', '吗', '？']","['punct', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.859,0.81,0.817,1,True
+322,Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, have you checked the latest build before the deploy today?
+
+Sarah: Yeah, I did a quick run-through. 但是我发现有一个 bug 在新功能里面。
+
+Li: Really? What did you find? We need to resolve it before the deadline.
+
+Sarah: It’s a small issue with the API response time. 我们可以快速修复吗？
+
+Li: Shouldn't be too hard. Let’s merge the latest changes after we fix it; we don't want to delay the deploy.
+
+Sarah: Good call. 你觉得我们需要添加一些测试用例来确保没问题吗？
+
+Li: Definitely. I’ll write a couple of tests after we fix the bug. 你可以在这段时间里准备部署文档吗？
+
+Sarah: Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！",8,Sarah,"['!', '’', '.', 'Sure', 'thing', 'I', 'll', 'get', 'that', 'done', 'while', 'you', 'work', 'on', 'the', 'fix', '让', '我们', '确保', '今天', '能', '顺利', '上线', '！']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'NOUN', 'PRON', 'AUX', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'v', 'r', 'v', 't', 'v', 'ad', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other']",Sure thing! I’ll get that done while you work on the fix. 让我们确保今天能顺利上线！,8,322,"['!', '’', '.', 'Sure', 'thing', 'I', 'll', 'get', 'that', 'done', 'while', 'you', 'work', 'on', 'the', 'fix', '让', '我们', '确保', '今天', '能', '顺利', '上线', '！']","['other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other']",mix,0.84,0.816,0.821,0,True

@@ -1,0 +1,97 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+518,"Hey Sarah, 你看到我们上次部署的那个 bug 吗? It’s causing some issues.",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 你看到我们上次部署的那个 bug 吗? It’s causing some issues.
+
+Sarah: Yeah, I noticed. 代码合并后好像没测试完全. When do we need to fix this?
+
+Li: 我们的 deadline 是后天, 所以越快越好. 我们需要重新 build 一下。
+
+Sarah: Agreed. We should run a full test after we fix the bug. Do you want to take a look at the logs together?
+
+Li: 好主意! 我们可以在 calls 上 share screen. Let’s see what’s causing this.
+
+Sarah: Perfect! 先检查一下 error 信息，之后一起解决!",1,Li,"[',', 'Hey', 'Sarah', '你', '看到', '我们', '上次', '部署', '的', '那个', 'bug', '吗', '?', '’', '.', 'It', 's', 'causing', 'some', 'issues']","['PUNCT', 'INTJ', 'PROPN', 'r', 'v', 'r', 't', 'n', 'uj', 'r', 'NOUN', 'y', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en']","Hey Sarah, 你看到我们上次部署的那个 bug 吗? It’s causing some issues.",1,518,"[',', 'Hey', 'Sarah', '你', '看到', '我们', '上次', '部署', '的', '那个', 'bug', '吗', '?', '’', '.', 'It', 's', 'causing', 'some', 'issues']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en']",mix,1,0,True
+518,"Yeah, I noticed. 代码合并后好像没测试完全. When do we need to fix this?",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 你看到我们上次部署的那个 bug 吗? It’s causing some issues.
+
+Sarah: Yeah, I noticed. 代码合并后好像没测试完全. When do we need to fix this?
+
+Li: 我们的 deadline 是后天, 所以越快越好. 我们需要重新 build 一下。
+
+Sarah: Agreed. We should run a full test after we fix the bug. Do you want to take a look at the logs together?
+
+Li: 好主意! 我们可以在 calls 上 share screen. Let’s see what’s causing this.
+
+Sarah: Perfect! 先检查一下 error 信息，之后一起解决!",2,Sarah,"[',', '.', 'Yeah', 'I', 'noticed', '代码', '合并', '后', '好像', '没', '测试', '完全', '.', '?', 'When', 'do', 'we', 'need', 'to', 'fix', 'this']","['PUNCT', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'n', 'v', 'f', 'v', 'v', 'vn', 'ad', 'PUNCT', 'PUNCT', 'SCONJ', 'AUX', 'PRON', 'VERB', 'PART', 'VERB', 'PRON']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en']","Yeah, I noticed. 代码合并后好像没测试完全. When do we need to fix this?",2,518,"[',', '.', 'Yeah', 'I', 'noticed', '代码', '合并', '后', '好像', '没', '测试', '完全', '.', '?', 'When', 'do', 'we', 'need', 'to', 'fix', 'this']","['punct', 'punct', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0,0,True
+518,"我们的 deadline 是后天, 所以越快越好. 我们需要重新 build 一下。",LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 你看到我们上次部署的那个 bug 吗? It’s causing some issues.
+
+Sarah: Yeah, I noticed. 代码合并后好像没测试完全. When do we need to fix this?
+
+Li: 我们的 deadline 是后天, 所以越快越好. 我们需要重新 build 一下。
+
+Sarah: Agreed. We should run a full test after we fix the bug. Do you want to take a look at the logs together?
+
+Li: 好主意! 我们可以在 calls 上 share screen. Let’s see what’s causing this.
+
+Sarah: Perfect! 先检查一下 error 信息，之后一起解决!",3,Li,"['我们', '的', 'deadline', '是', '后天', ',', '所以', '越快越好', '.', '我们', '需要', '重新', 'build', '一下', '。']","['r', 'uj', 'NOUN', 'v', 't', 'PUNCT', 'c', 'l', 'PUNCT', 'r', 'v', 'a', 'VERB', 'm', 'PUNCT']","{'en', 'zh', 'punct'}","['zh', 'zh', 'en', 'zh', 'zh', 'punct', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']","我们的 deadline 是后天, 所以越快越好. 我们需要重新 build 一下。",3,518,"['我们', '的', 'deadline', '是', '后天', ',', '所以', '越快越好', '.', '我们', '需要', '重新', 'build', '一下', '。']","['zh', 'zh', 'en', 'zh', 'zh', 'punct', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']",mix,2,0,True
+518,Agreed. We should run a full test after we fix the bug. Do you want to take a look at the logs together?,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 你看到我们上次部署的那个 bug 吗? It’s causing some issues.
+
+Sarah: Yeah, I noticed. 代码合并后好像没测试完全. When do we need to fix this?
+
+Li: 我们的 deadline 是后天, 所以越快越好. 我们需要重新 build 一下。
+
+Sarah: Agreed. We should run a full test after we fix the bug. Do you want to take a look at the logs together?
+
+Li: 好主意! 我们可以在 calls 上 share screen. Let’s see what’s causing this.
+
+Sarah: Perfect! 先检查一下 error 信息，之后一起解决!",4,Sarah,"['Agreed', '.', 'We', 'should', 'run', 'a', 'full', 'test', 'after', 'we', 'fix', 'the', 'bug', '.', 'Do', 'you', 'want', 'to', 'take', 'a', 'look', 'at', 'the', 'logs', 'together', '?']","['VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADV', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",Agreed. We should run a full test after we fix the bug. Do you want to take a look at the logs together?,4,518,"['Agreed', '.', 'We', 'should', 'run', 'a', 'full', 'test', 'after', 'we', 'fix', 'the', 'bug', '.', 'Do', 'you', 'want', 'to', 'take', 'a', 'look', 'at', 'the', 'logs', 'together', '?']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+518,好主意! 我们可以在 calls 上 share screen. Let’s see what’s causing this.,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 你看到我们上次部署的那个 bug 吗? It’s causing some issues.
+
+Sarah: Yeah, I noticed. 代码合并后好像没测试完全. When do we need to fix this?
+
+Li: 我们的 deadline 是后天, 所以越快越好. 我们需要重新 build 一下。
+
+Sarah: Agreed. We should run a full test after we fix the bug. Do you want to take a look at the logs together?
+
+Li: 好主意! 我们可以在 calls 上 share screen. Let’s see what’s causing this.
+
+Sarah: Perfect! 先检查一下 error 信息，之后一起解决!",5,Li,"['好', '主意', '!', '我们', '可以', '在', 'calls', '上', '.', '’', '’', '.', 'share', 'screen', 'Let', 's', 'see', 'what', 's', 'causing', 'this']","['a', 'n', 'PUNCT', 'r', 'c', 'p', 'NOUN', 'f', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'NOUN', 'NOUN', 'VERB', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'PRON']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'punct', 'other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",好主意! 我们可以在 calls 上 share screen. Let’s see what’s causing this.,5,518,"['好', '主意', '!', '我们', '可以', '在', 'calls', '上', '.', '’', '’', '.', 'share', 'screen', 'Let', 's', 'see', 'what', 's', 'causing', 'this']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'punct', 'other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0,0,True
+518,Perfect! 先检查一下 error 信息，之后一起解决!,LLM,"['chain-of-thought', 'persona-based']",gpt-4o-mini,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, 你看到我们上次部署的那个 bug 吗? It’s causing some issues.
+
+Sarah: Yeah, I noticed. 代码合并后好像没测试完全. When do we need to fix this?
+
+Li: 我们的 deadline 是后天, 所以越快越好. 我们需要重新 build 一下。
+
+Sarah: Agreed. We should run a full test after we fix the bug. Do you want to take a look at the logs together?
+
+Li: 好主意! 我们可以在 calls 上 share screen. Let’s see what’s causing this.
+
+Sarah: Perfect! 先检查一下 error 信息，之后一起解决!",6,Sarah,"['!', 'Perfect', '先', '检查一下', 'error', '信息', '，', '之后', '一起', '解决', '!']","['PUNCT', 'VERB', 'd', 'n', 'NOUN', 'n', 'PUNCT', 'f', 'm', 'v', 'PUNCT']","{'other', 'en', 'zh'}","['other', 'en', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'other']",Perfect! 先检查一下 error 信息，之后一起解决!,6,518,"['!', 'Perfect', '先', '检查一下', 'error', '信息', '，', '之后', '一起', '解决', '!']","['other', 'en', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'other']",mix,0,0,True

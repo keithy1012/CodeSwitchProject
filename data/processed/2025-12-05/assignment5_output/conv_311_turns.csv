@@ -1,0 +1,78 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+311,你好，Sarah。我们星期五要上线了，你觉得我们的代码可以准时部署吗？,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: 你好，Sarah。我们星期五要上线了，你觉得我们的代码可以准时部署吗？
+Sarah: Hi Li. 我觉得我们的代码还需要一些调试。有一个bug我们还没解决。
+Li: 对的，我也发现了。我们得尽快修复它，以确保部署顺利进行。
+Sarah: 我们还需要合并一些分支。我可以负责这个任务。
+Li: 好的，我会继续构建我们的代码。我们必须在截止日期前完成所有工作。
+Sarah: 明白。我会尽快合并分支，然后测试代码以确保没有其他bug。
+Li: 谢谢你的帮助，Sarah。让我们一起努力，确保这次部署顺利完成。",1,Li,"['你好', '，', '。', 'Sarah', '我们', '星期五', '要', '上线', '了', '，', '你', '觉得', '我们', '的', '代码', '可以', '准时', '部署', '吗', '？']","['l', 'PUNCT', 'PUNCT', 'PROPN', 'r', 't', 'v', 'n', 'ul', 'PUNCT', 'r', 'v', 'r', 'uj', 'n', 'c', 'v', 'n', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",你好，Sarah。我们星期五要上线了，你觉得我们的代码可以准时部署吗？,1,311,"['你好', '，', '。', 'Sarah', '我们', '星期五', '要', '上线', '了', '，', '你', '觉得', '我们', '的', '代码', '可以', '准时', '部署', '吗', '？']","['zh', 'other', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.875,0.828,0.827,0,True
+311,Hi Li. 我觉得我们的代码还需要一些调试。有一个bug我们还没解决。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: 你好，Sarah。我们星期五要上线了，你觉得我们的代码可以准时部署吗？
+Sarah: Hi Li. 我觉得我们的代码还需要一些调试。有一个bug我们还没解决。
+Li: 对的，我也发现了。我们得尽快修复它，以确保部署顺利进行。
+Sarah: 我们还需要合并一些分支。我可以负责这个任务。
+Li: 好的，我会继续构建我们的代码。我们必须在截止日期前完成所有工作。
+Sarah: 明白。我会尽快合并分支，然后测试代码以确保没有其他bug。
+Li: 谢谢你的帮助，Sarah。让我们一起努力，确保这次部署顺利完成。",2,Sarah,"['.', 'Hi', 'Li', '我', '觉得', '我们', '的', '代码', '还', '需要', '一些', '调试', '。', '有', '一个', 'bug', '我们', '还', '没', '解决', '。']","['PUNCT', 'INTJ', 'PROPN', 'r', 'v', 'r', 'uj', 'n', 'd', 'v', 'm', 'vn', 'PUNCT', 'v', 'm', 'NOUN', 'r', 'd', 'v', 'v', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",Hi Li. 我觉得我们的代码还需要一些调试。有一个bug我们还没解决。,2,311,"['.', 'Hi', 'Li', '我', '觉得', '我们', '的', '代码', '还', '需要', '一些', '调试', '。', '有', '一个', 'bug', '我们', '还', '没', '解决', '。']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.872,0.847,0.847,0,True
+311,对的，我也发现了。我们得尽快修复它，以确保部署顺利进行。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: 你好，Sarah。我们星期五要上线了，你觉得我们的代码可以准时部署吗？
+Sarah: Hi Li. 我觉得我们的代码还需要一些调试。有一个bug我们还没解决。
+Li: 对的，我也发现了。我们得尽快修复它，以确保部署顺利进行。
+Sarah: 我们还需要合并一些分支。我可以负责这个任务。
+Li: 好的，我会继续构建我们的代码。我们必须在截止日期前完成所有工作。
+Sarah: 明白。我会尽快合并分支，然后测试代码以确保没有其他bug。
+Li: 谢谢你的帮助，Sarah。让我们一起努力，确保这次部署顺利完成。",3,Li,"['对', '的', '，', '我', '也', '发现', '了', '。', '我们', '得', '尽快', '修复', '它', '，', '以', '确保', '部署', '顺利进行', '。']","['p', 'uj', 'PUNCT', 'r', 'd', 'v', 'ul', 'PUNCT', 'r', 'ud', 'd', 'v', 'r', 'PUNCT', 'p', 'v', 'n', 'n', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",对的，我也发现了。我们得尽快修复它，以确保部署顺利进行。,3,311,"['对', '的', '，', '我', '也', '发现', '了', '。', '我们', '得', '尽快', '修复', '它', '，', '以', '确保', '部署', '顺利进行', '。']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.875,0.836,0.843,0,False
+311,我们还需要合并一些分支。我可以负责这个任务。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: 你好，Sarah。我们星期五要上线了，你觉得我们的代码可以准时部署吗？
+Sarah: Hi Li. 我觉得我们的代码还需要一些调试。有一个bug我们还没解决。
+Li: 对的，我也发现了。我们得尽快修复它，以确保部署顺利进行。
+Sarah: 我们还需要合并一些分支。我可以负责这个任务。
+Li: 好的，我会继续构建我们的代码。我们必须在截止日期前完成所有工作。
+Sarah: 明白。我会尽快合并分支，然后测试代码以确保没有其他bug。
+Li: 谢谢你的帮助，Sarah。让我们一起努力，确保这次部署顺利完成。",4,Sarah,"['我们', '还', '需要', '合并', '一些', '分支', '。', '我', '可以', '负责', '这个', '任务', '。']","['r', 'd', 'v', 'v', 'm', 'n', 'PUNCT', 'r', 'c', 'v', 'r', 'n', 'PUNCT']","{'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",我们还需要合并一些分支。我可以负责这个任务。,4,311,"['我们', '还', '需要', '合并', '一些', '分支', '。', '我', '可以', '负责', '这个', '任务', '。']","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.857,0.835,0.838,0,False
+311,好的，我会继续构建我们的代码。我们必须在截止日期前完成所有工作。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: 你好，Sarah。我们星期五要上线了，你觉得我们的代码可以准时部署吗？
+Sarah: Hi Li. 我觉得我们的代码还需要一些调试。有一个bug我们还没解决。
+Li: 对的，我也发现了。我们得尽快修复它，以确保部署顺利进行。
+Sarah: 我们还需要合并一些分支。我可以负责这个任务。
+Li: 好的，我会继续构建我们的代码。我们必须在截止日期前完成所有工作。
+Sarah: 明白。我会尽快合并分支，然后测试代码以确保没有其他bug。
+Li: 谢谢你的帮助，Sarah。让我们一起努力，确保这次部署顺利完成。",5,Li,"['好', '的', '，', '我会', '继续', '构建', '我们', '的', '代码', '。', '我们', '必须', '在', '截止', '日期', '前', '完成', '所有', '工作', '。']","['a', 'uj', 'PUNCT', 'n', 'v', 'v', 'r', 'uj', 'n', 'PUNCT', 'r', 'd', 'p', 'v', 't', 'f', 'v', 'b', 'vn', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",好的，我会继续构建我们的代码。我们必须在截止日期前完成所有工作。,5,311,"['好', '的', '，', '我会', '继续', '构建', '我们', '的', '代码', '。', '我们', '必须', '在', '截止', '日期', '前', '完成', '所有', '工作', '。']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.863,0.829,0.838,0,False
+311,明白。我会尽快合并分支，然后测试代码以确保没有其他bug。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: 你好，Sarah。我们星期五要上线了，你觉得我们的代码可以准时部署吗？
+Sarah: Hi Li. 我觉得我们的代码还需要一些调试。有一个bug我们还没解决。
+Li: 对的，我也发现了。我们得尽快修复它，以确保部署顺利进行。
+Sarah: 我们还需要合并一些分支。我可以负责这个任务。
+Li: 好的，我会继续构建我们的代码。我们必须在截止日期前完成所有工作。
+Sarah: 明白。我会尽快合并分支，然后测试代码以确保没有其他bug。
+Li: 谢谢你的帮助，Sarah。让我们一起努力，确保这次部署顺利完成。",6,Sarah,"['明白', '。', '我会', '尽快', '合并', '分支', '，', '然后', '测试代码', '以', '确保', '没有', '其他', '。', 'bug']","['nr', 'PUNCT', 'n', 'd', 'v', 'n', 'PUNCT', 'c', 'n', 'p', 'v', 'v', 'r', 'PUNCT', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",明白。我会尽快合并分支，然后测试代码以确保没有其他bug。,6,311,"['明白', '。', '我会', '尽快', '合并', '分支', '，', '然后', '测试代码', '以', '确保', '没有', '其他', '。', 'bug']","['zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0.871,0.839,0.85,0,True
+311,谢谢你的帮助，Sarah。让我们一起努力，确保这次部署顺利完成。,LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: 你好，Sarah。我们星期五要上线了，你觉得我们的代码可以准时部署吗？
+Sarah: Hi Li. 我觉得我们的代码还需要一些调试。有一个bug我们还没解决。
+Li: 对的，我也发现了。我们得尽快修复它，以确保部署顺利进行。
+Sarah: 我们还需要合并一些分支。我可以负责这个任务。
+Li: 好的，我会继续构建我们的代码。我们必须在截止日期前完成所有工作。
+Sarah: 明白。我会尽快合并分支，然后测试代码以确保没有其他bug。
+Li: 谢谢你的帮助，Sarah。让我们一起努力，确保这次部署顺利完成。",7,Li,"['谢谢', '你', '的', '帮助', '，', '。', 'Sarah', '让', '我们', '一起', '努力', '，', '确保', '这次', '部署', '顺利完成', '。']","['nr', 'r', 'uj', 'v', 'PUNCT', 'PUNCT', 'PROPN', 'v', 'r', 'm', 'ad', 'PUNCT', 'v', 'r', 'n', 'l', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'other', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",谢谢你的帮助，Sarah。让我们一起努力，确保这次部署顺利完成。,7,311,"['谢谢', '你', '的', '帮助', '，', '。', 'Sarah', '让', '我们', '一起', '努力', '，', '确保', '这次', '部署', '顺利完成', '。']","['zh', 'zh', 'zh', 'zh', 'other', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.855,0.834,0.835,0,True

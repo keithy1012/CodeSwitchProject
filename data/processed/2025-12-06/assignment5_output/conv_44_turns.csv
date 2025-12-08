@@ -1,0 +1,161 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+44,"** Hey Sarah, I noticed a bug in the latest build after the last merge.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after the last merge.  
+
+**Sarah:** 真的吗？What issue are you seeing?
+
+**Li:** The QA environment is displaying an empty state on the dashboard.  
+
+**Sarah:** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?  
+
+**Li:** Yes, I did. I think it might be related to our latest deploy.  
+
+**Sarah:** 那我们仔细检查一下，看看是不是其中一个新组件有问题。  
+
+**Li:** Good idea! Let's pull the latest staging to see if we can replicate the issue.  
+
+**Sarah:** 好的，我们的deadline快到了，我们得快速解决这个问题！",1,**Li,"['*', '*', 'Hey', 'Sarah', ',', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'build', 'after', 'the', 'last', 'merge', '.']","['PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Hey Sarah, I noticed a bug in the latest build after the last merge.",1,44,"['*', '*', 'Hey', 'Sarah', ',', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'latest', 'build', 'after', 'the', 'last', 'merge', '.']","['other', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.796,0.757,0.787,3,False
+44,** 真的吗？What issue are you seeing?,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after the last merge.  
+
+**Sarah:** 真的吗？What issue are you seeing?
+
+**Li:** The QA environment is displaying an empty state on the dashboard.  
+
+**Sarah:** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?  
+
+**Li:** Yes, I did. I think it might be related to our latest deploy.  
+
+**Sarah:** 那我们仔细检查一下，看看是不是其中一个新组件有问题。  
+
+**Li:** Good idea! Let's pull the latest staging to see if we can replicate the issue.  
+
+**Sarah:** 好的，我们的deadline快到了，我们得快速解决这个问题！",2,**Sarah,"['*', '*', '真的', '吗', '？', '?', 'What', 'issue', 'are', 'you', 'seeing']","['PUNCT', 'PUNCT', 'd', 'y', 'PUNCT', 'PUNCT', 'DET', 'NOUN', 'AUX', 'PRON', 'VERB']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en']",** 真的吗？What issue are you seeing?,2,44,"['*', '*', '真的', '吗', '？', '?', 'What', 'issue', 'are', 'you', 'seeing']","['other', 'other', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en']",mix,0.837,0.83,0.834,0,True
+44,** The QA environment is displaying an empty state on the dashboard.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after the last merge.  
+
+**Sarah:** 真的吗？What issue are you seeing?
+
+**Li:** The QA environment is displaying an empty state on the dashboard.  
+
+**Sarah:** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?  
+
+**Li:** Yes, I did. I think it might be related to our latest deploy.  
+
+**Sarah:** 那我们仔细检查一下，看看是不是其中一个新组件有问题。  
+
+**Li:** Good idea! Let's pull the latest staging to see if we can replicate the issue.  
+
+**Sarah:** 好的，我们的deadline快到了，我们得快速解决这个问题！",3,**Li,"['*', '*', 'The', 'QA', 'environment', 'is', 'displaying', 'an', 'empty', 'state', 'on', 'the', 'dashboard', '.']","['PUNCT', 'PUNCT', 'DET', 'PROPN', 'NOUN', 'AUX', 'VERB', 'DET', 'ADJ', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** The QA environment is displaying an empty state on the dashboard.,3,44,"['*', '*', 'The', 'QA', 'environment', 'is', 'displaying', 'an', 'empty', 'state', 'on', 'the', 'dashboard', '.']","['other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.791,0.759,0.811,1,False
+44,** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after the last merge.  
+
+**Sarah:** 真的吗？What issue are you seeing?
+
+**Li:** The QA environment is displaying an empty state on the dashboard.  
+
+**Sarah:** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?  
+
+**Li:** Yes, I did. I think it might be related to our latest deploy.  
+
+**Sarah:** 那我们仔细检查一下，看看是不是其中一个新组件有问题。  
+
+**Li:** Good idea! Let's pull the latest staging to see if we can replicate the issue.  
+
+**Sarah:** 好的，我们的deadline快到了，我们得快速解决这个问题！",4,**Sarah,"['*', '*', '我', '刚刚', '在', 'staging', '检查', '了', '代码', '，', '应该', '没有', '问题', '。', '?', 'Did', 'you', 'clear', 'the', 'cache']","['PUNCT', 'PUNCT', 'r', 'd', 'p', 'VERB', 'vn', 'ul', 'n', 'PUNCT', 'v', 'v', 'n', 'PUNCT', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en']",** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?,4,44,"['*', '*', '我', '刚刚', '在', 'staging', '检查', '了', '代码', '，', '应该', '没有', '问题', '。', '?', 'Did', 'you', 'clear', 'the', 'cache']","['other', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en']",mix,0.853,0.825,0.832,1,True
+44,"** Yes, I did. I think it might be related to our latest deploy.",LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after the last merge.  
+
+**Sarah:** 真的吗？What issue are you seeing?
+
+**Li:** The QA environment is displaying an empty state on the dashboard.  
+
+**Sarah:** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?  
+
+**Li:** Yes, I did. I think it might be related to our latest deploy.  
+
+**Sarah:** 那我们仔细检查一下，看看是不是其中一个新组件有问题。  
+
+**Li:** Good idea! Let's pull the latest staging to see if we can replicate the issue.  
+
+**Sarah:** 好的，我们的deadline快到了，我们得快速解决这个问题！",5,**Li,"['*', '*', 'Yes', ',', 'I', 'did', '.', 'I', 'think', 'it', 'might', 'be', 'related', 'to', 'our', 'latest', 'deploy', '.']","['PUNCT', 'PUNCT', 'INTJ', 'PUNCT', 'PRON', 'VERB', 'PUNCT', 'PRON', 'VERB', 'PRON', 'AUX', 'AUX', 'VERB', 'ADP', 'PRON', 'ADJ', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","** Yes, I did. I think it might be related to our latest deploy.",5,44,"['*', '*', 'Yes', ',', 'I', 'did', '.', 'I', 'think', 'it', 'might', 'be', 'related', 'to', 'our', 'latest', 'deploy', '.']","['other', 'other', 'en', 'punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.823,0.778,0.798,1,False
+44,** 那我们仔细检查一下，看看是不是其中一个新组件有问题。,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after the last merge.  
+
+**Sarah:** 真的吗？What issue are you seeing?
+
+**Li:** The QA environment is displaying an empty state on the dashboard.  
+
+**Sarah:** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?  
+
+**Li:** Yes, I did. I think it might be related to our latest deploy.  
+
+**Sarah:** 那我们仔细检查一下，看看是不是其中一个新组件有问题。  
+
+**Li:** Good idea! Let's pull the latest staging to see if we can replicate the issue.  
+
+**Sarah:** 好的，我们的deadline快到了，我们得快速解决这个问题！",6,**Sarah,"['*', '*', '那', '我们', '仔细检查', '一下', '，', '看看', '是不是', '其中', '一个', '新', '组件', '有', '问题', '。']","['PUNCT', 'PUNCT', 'r', 'r', 'n', 'm', 'PUNCT', 'v', 'l', 'r', 'm', 'a', 'n', 'v', 'n', 'PUNCT']","{'other', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 那我们仔细检查一下，看看是不是其中一个新组件有问题。,6,44,"['*', '*', '那', '我们', '仔细检查', '一下', '，', '看看', '是不是', '其中', '一个', '新', '组件', '有', '问题', '。']","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.861,0.836,0.832,0,False
+44,** Good idea! Let's pull the latest staging to see if we can replicate the issue.,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after the last merge.  
+
+**Sarah:** 真的吗？What issue are you seeing?
+
+**Li:** The QA environment is displaying an empty state on the dashboard.  
+
+**Sarah:** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?  
+
+**Li:** Yes, I did. I think it might be related to our latest deploy.  
+
+**Sarah:** 那我们仔细检查一下，看看是不是其中一个新组件有问题。  
+
+**Li:** Good idea! Let's pull the latest staging to see if we can replicate the issue.  
+
+**Sarah:** 好的，我们的deadline快到了，我们得快速解决这个问题！",7,**Li,"['*', '*', 'Good', 'idea', '!', 'Let', ""'s"", 'pull', 'the', 'latest', 'staging', 'to', 'see', 'if', 'we', 'can', 'replicate', 'the', 'issue', '.']","['PUNCT', 'PUNCT', 'ADJ', 'NOUN', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'PART', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'PUNCT']","{'other', 'en', 'punct'}","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",** Good idea! Let's pull the latest staging to see if we can replicate the issue.,7,44,"['*', '*', 'Good', 'idea', '!', 'Let', ""'s"", 'pull', 'the', 'latest', 'staging', 'to', 'see', 'if', 'we', 'can', 'replicate', 'the', 'issue', '.']","['other', 'other', 'en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.817,0.785,0.795,2,False
+44,** 好的，我们的deadline快到了，我们得快速解决这个问题！,LLM,"['few-shot', 'chain-of-thought']",gpt-4o-mini,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","**Li:** Hey Sarah, I noticed a bug in the latest build after the last merge.  
+
+**Sarah:** 真的吗？What issue are you seeing?
+
+**Li:** The QA environment is displaying an empty state on the dashboard.  
+
+**Sarah:** 我刚刚在staging检查了代码，应该没有问题。Did you clear the cache?  
+
+**Li:** Yes, I did. I think it might be related to our latest deploy.  
+
+**Sarah:** 那我们仔细检查一下，看看是不是其中一个新组件有问题。  
+
+**Li:** Good idea! Let's pull the latest staging to see if we can replicate the issue.  
+
+**Sarah:** 好的，我们的deadline快到了，我们得快速解决这个问题！",8,**Sarah,"['*', '*', '好', '的', '，', '我们', '的', 'deadline', '快', '到', '了', '，', '我们', '得', '快速', '解决', '这个', '问题', '！']","['PUNCT', 'PUNCT', 'a', 'uj', 'PUNCT', 'r', 'uj', 'NOUN', 'a', 'v', 'ul', 'PUNCT', 'r', 'ud', 'd', 'v', 'r', 'n', 'PUNCT']","{'other', 'en', 'zh'}","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other']",** 好的，我们的deadline快到了，我们得快速解决这个问题！,8,44,"['*', '*', '好', '的', '，', '我们', '的', 'deadline', '快', '到', '了', '，', '我们', '得', '快速', '解决', '这个', '问题', '！']","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other']",mix,0.857,0.84,0.839,0,True

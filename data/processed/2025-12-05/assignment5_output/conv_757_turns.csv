@@ -1,0 +1,145 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+757,"Hey Li, are you working on merging the feature branch today?",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, are you working on merging the feature branch today?
+Li: Yeah, I'm almost done with fixing the merge conflicts.
+Sarah: Great, once you're done, I can help test the deployment process.
+Li: Sounds good, I'll give you a heads up before I deploy to production.
+Sarah: Perfect, we can't miss the deadline for this release.
+Li: Agreed, I'll make sure all the bugs are ironed out before we go live.
+Sarah: Awesome, let me know if you need any assistance with the deployment script.
+Li: Will do, thanks for the offer, Sarah.",1,Sarah,"['Hey', 'Li', ',', 'are', 'you', 'working', 'on', 'merging', 'the', 'feature', 'branch', 'today', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'ADP', 'VERB', 'DET', 'NOUN', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Li, are you working on merging the feature branch today?",1,757,"['Hey', 'Li', ',', 'are', 'you', 'working', 'on', 'merging', 'the', 'feature', 'branch', 'today', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,0.823,0.786,0.791,2,False
+757,"Yeah, I'm almost done with fixing the merge conflicts.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, are you working on merging the feature branch today?
+Li: Yeah, I'm almost done with fixing the merge conflicts.
+Sarah: Great, once you're done, I can help test the deployment process.
+Li: Sounds good, I'll give you a heads up before I deploy to production.
+Sarah: Perfect, we can't miss the deadline for this release.
+Li: Agreed, I'll make sure all the bugs are ironed out before we go live.
+Sarah: Awesome, let me know if you need any assistance with the deployment script.
+Li: Will do, thanks for the offer, Sarah.",2,Li,"['Yeah', ',', 'I', ""'m"", 'almost', 'done', 'with', 'fixing', 'the', 'merge', 'conflicts', '.']","['INTJ', 'PUNCT', 'PRON', 'AUX', 'ADV', 'VERB', 'ADP', 'VERB', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, I'm almost done with fixing the merge conflicts.",2,757,"['Yeah', ',', 'I', ""'m"", 'almost', 'done', 'with', 'fixing', 'the', 'merge', 'conflicts', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.795,0.77,0.758,1,False
+757,"Great, once you're done, I can help test the deployment process.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, are you working on merging the feature branch today?
+Li: Yeah, I'm almost done with fixing the merge conflicts.
+Sarah: Great, once you're done, I can help test the deployment process.
+Li: Sounds good, I'll give you a heads up before I deploy to production.
+Sarah: Perfect, we can't miss the deadline for this release.
+Li: Agreed, I'll make sure all the bugs are ironed out before we go live.
+Sarah: Awesome, let me know if you need any assistance with the deployment script.
+Li: Will do, thanks for the offer, Sarah.",3,Sarah,"['Great', ',', 'once', 'you', ""'re"", 'done', ',', 'I', 'can', 'help', 'test', 'the', 'deployment', 'process', '.']","['ADJ', 'PUNCT', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'VERB', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Great, once you're done, I can help test the deployment process.",3,757,"['Great', ',', 'once', 'you', ""'re"", 'done', ',', 'I', 'can', 'help', 'test', 'the', 'deployment', 'process', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.832,0.777,0.784,2,False
+757,"Sounds good, I'll give you a heads up before I deploy to production.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, are you working on merging the feature branch today?
+Li: Yeah, I'm almost done with fixing the merge conflicts.
+Sarah: Great, once you're done, I can help test the deployment process.
+Li: Sounds good, I'll give you a heads up before I deploy to production.
+Sarah: Perfect, we can't miss the deadline for this release.
+Li: Agreed, I'll make sure all the bugs are ironed out before we go live.
+Sarah: Awesome, let me know if you need any assistance with the deployment script.
+Li: Will do, thanks for the offer, Sarah.",4,Li,"['Sounds', 'good', ',', 'I', ""'ll"", 'give', 'you', 'a', 'heads', 'up', 'before', 'I', 'deploy', 'to', 'production', '.']","['VERB', 'ADJ', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'DET', 'NOUN', 'ADV', 'SCONJ', 'PRON', 'VERB', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Sounds good, I'll give you a heads up before I deploy to production.",4,757,"['Sounds', 'good', ',', 'I', ""'ll"", 'give', 'you', 'a', 'heads', 'up', 'before', 'I', 'deploy', 'to', 'production', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.823,0.77,0.778,2,False
+757,"Perfect, we can't miss the deadline for this release.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, are you working on merging the feature branch today?
+Li: Yeah, I'm almost done with fixing the merge conflicts.
+Sarah: Great, once you're done, I can help test the deployment process.
+Li: Sounds good, I'll give you a heads up before I deploy to production.
+Sarah: Perfect, we can't miss the deadline for this release.
+Li: Agreed, I'll make sure all the bugs are ironed out before we go live.
+Sarah: Awesome, let me know if you need any assistance with the deployment script.
+Li: Will do, thanks for the offer, Sarah.",5,Sarah,"['Perfect', ',', 'we', 'ca', ""n't"", 'miss', 'the', 'deadline', 'for', 'this', 'release', '.']","['ADJ', 'PUNCT', 'PRON', 'AUX', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Perfect, we can't miss the deadline for this release.",5,757,"['Perfect', ',', 'we', 'ca', ""n't"", 'miss', 'the', 'deadline', 'for', 'this', 'release', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.797,0.774,0.782,2,False
+757,"Agreed, I'll make sure all the bugs are ironed out before we go live.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, are you working on merging the feature branch today?
+Li: Yeah, I'm almost done with fixing the merge conflicts.
+Sarah: Great, once you're done, I can help test the deployment process.
+Li: Sounds good, I'll give you a heads up before I deploy to production.
+Sarah: Perfect, we can't miss the deadline for this release.
+Li: Agreed, I'll make sure all the bugs are ironed out before we go live.
+Sarah: Awesome, let me know if you need any assistance with the deployment script.
+Li: Will do, thanks for the offer, Sarah.",6,Li,"['Agreed', ',', 'I', ""'ll"", 'make', 'sure', 'all', 'the', 'bugs', 'are', 'ironed', 'out', 'before', 'we', 'go', 'live', '.']","['VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADJ', 'DET', 'DET', 'NOUN', 'AUX', 'VERB', 'ADP', 'SCONJ', 'PRON', 'VERB', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Agreed, I'll make sure all the bugs are ironed out before we go live.",6,757,"['Agreed', ',', 'I', ""'ll"", 'make', 'sure', 'all', 'the', 'bugs', 'are', 'ironed', 'out', 'before', 'we', 'go', 'live', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.797,0.762,0.778,0,False
+757,"Awesome, let me know if you need any assistance with the deployment script.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, are you working on merging the feature branch today?
+Li: Yeah, I'm almost done with fixing the merge conflicts.
+Sarah: Great, once you're done, I can help test the deployment process.
+Li: Sounds good, I'll give you a heads up before I deploy to production.
+Sarah: Perfect, we can't miss the deadline for this release.
+Li: Agreed, I'll make sure all the bugs are ironed out before we go live.
+Sarah: Awesome, let me know if you need any assistance with the deployment script.
+Li: Will do, thanks for the offer, Sarah.",7,Sarah,"['Awesome', ',', 'let', 'me', 'know', 'if', 'you', 'need', 'any', 'assistance', 'with', 'the', 'deployment', 'script', '.']","['ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Awesome, let me know if you need any assistance with the deployment script.",7,757,"['Awesome', ',', 'let', 'me', 'know', 'if', 'you', 'need', 'any', 'assistance', 'with', 'the', 'deployment', 'script', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.85,0.776,0.793,1,False
+757,"Will do, thanks for the offer, Sarah.",LLM,"['persona-based', 'few-shot']",gpt-3.5-turbo,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","Sarah: Hey Li, are you working on merging the feature branch today?
+Li: Yeah, I'm almost done with fixing the merge conflicts.
+Sarah: Great, once you're done, I can help test the deployment process.
+Li: Sounds good, I'll give you a heads up before I deploy to production.
+Sarah: Perfect, we can't miss the deadline for this release.
+Li: Agreed, I'll make sure all the bugs are ironed out before we go live.
+Sarah: Awesome, let me know if you need any assistance with the deployment script.
+Li: Will do, thanks for the offer, Sarah.",8,Li,"['Will', 'do', ',', 'thanks', 'for', 'the', 'offer', ',', 'Sarah', '.']","['AUX', 'VERB', 'PUNCT', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT', 'PROPN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'punct']","Will do, thanks for the offer, Sarah.",8,757,"['Will', 'do', ',', 'thanks', 'for', 'the', 'offer', ',', 'Sarah', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'punct']",en,0.803,0.786,0.79,0,False

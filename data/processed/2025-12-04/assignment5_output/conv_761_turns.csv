@@ -1,0 +1,120 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+761,"“Hey Li, did you see the bug in the API response on the dashboard?”",LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","A: “Hey Li, did you see the bug in the API response on the dashboard?”
+B: “Yeah, I noticed that yesterday. I think it’s due to the new merge we did.”
+A: “That makes sense. Can you roll back that change while I debug the frontend?”
+B: “Sure, I can revert the merge. Do you need it done by the deadline?”
+A: “If possible, that would be great. I’m close to finishing the fix on my end.”
+B: “Got it. I’ll deploy the rollback right now and update you.”
+A: “Thanks! I’ll test it once it’s deployed.”",1,A,"['“', 'Hey', 'Li', ',', 'did', 'you', 'see', 'the', 'bug', 'in', 'the', 'API', 'response', 'on', 'the', 'dashboard', '?', '”']","['PUNCT', 'INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'PROPN', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT', 'PUNCT']","{'en', 'punct', 'other'}","['punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'punct']","“Hey Li, did you see the bug in the API response on the dashboard?”",1,761,"['“', 'Hey', 'Li', ',', 'did', 'you', 'see', 'the', 'bug', 'in', 'the', 'API', 'response', 'on', 'the', 'dashboard', '?', '”']","['punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'punct']",en,2,0,False
+761,"“Yeah, I noticed that yesterday. I think it’s due to the new merge we did.”",LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","A: “Hey Li, did you see the bug in the API response on the dashboard?”
+B: “Yeah, I noticed that yesterday. I think it’s due to the new merge we did.”
+A: “That makes sense. Can you roll back that change while I debug the frontend?”
+B: “Sure, I can revert the merge. Do you need it done by the deadline?”
+A: “If possible, that would be great. I’m close to finishing the fix on my end.”
+B: “Got it. I’ll deploy the rollback right now and update you.”
+A: “Thanks! I’ll test it once it’s deployed.”",2,B,"['“', 'Yeah', ',', 'I', 'noticed', 'that', 'yesterday', '.', 'I', 'think', 'it', '’s', 'due', 'to', 'the', 'new', 'merge', 'we', 'did', '.', '”']","['PUNCT', 'INTJ', 'PUNCT', 'PRON', 'VERB', 'SCONJ', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'VERB', 'ADP', 'ADP', 'DET', 'ADJ', 'NOUN', 'PRON', 'VERB', 'PUNCT', 'PUNCT']","{'en', 'punct'}","['punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']","“Yeah, I noticed that yesterday. I think it’s due to the new merge we did.”",2,761,"['“', 'Yeah', ',', 'I', 'noticed', 'that', 'yesterday', '.', 'I', 'think', 'it', '’s', 'due', 'to', 'the', 'new', 'merge', 'we', 'did', '.', '”']","['punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']",en,1,0,False
+761,“That makes sense. Can you roll back that change while I debug the frontend?”,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","A: “Hey Li, did you see the bug in the API response on the dashboard?”
+B: “Yeah, I noticed that yesterday. I think it’s due to the new merge we did.”
+A: “That makes sense. Can you roll back that change while I debug the frontend?”
+B: “Sure, I can revert the merge. Do you need it done by the deadline?”
+A: “If possible, that would be great. I’m close to finishing the fix on my end.”
+B: “Got it. I’ll deploy the rollback right now and update you.”
+A: “Thanks! I’ll test it once it’s deployed.”",3,A,"['“', 'That', 'makes', 'sense', '.', 'Can', 'you', 'roll', 'back', 'that', 'change', 'while', 'I', 'debug', 'the', 'frontend', '?', '”']","['PUNCT', 'PRON', 'VERB', 'NOUN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'PUNCT', 'PUNCT']","{'en', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'punct']",“That makes sense. Can you roll back that change while I debug the frontend?”,3,761,"['“', 'That', 'makes', 'sense', '.', 'Can', 'you', 'roll', 'back', 'that', 'change', 'while', 'I', 'debug', 'the', 'frontend', '?', '”']","['punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'punct']",en,1,0,False
+761,"“Sure, I can revert the merge. Do you need it done by the deadline?”",LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","A: “Hey Li, did you see the bug in the API response on the dashboard?”
+B: “Yeah, I noticed that yesterday. I think it’s due to the new merge we did.”
+A: “That makes sense. Can you roll back that change while I debug the frontend?”
+B: “Sure, I can revert the merge. Do you need it done by the deadline?”
+A: “If possible, that would be great. I’m close to finishing the fix on my end.”
+B: “Got it. I’ll deploy the rollback right now and update you.”
+A: “Thanks! I’ll test it once it’s deployed.”",4,B,"['“', 'Sure', ',', 'I', 'can', 'revert', 'the', 'merge', '.', 'Do', 'you', 'need', 'it', 'done', 'by', 'the', 'deadline', '?', '”']","['PUNCT', 'INTJ', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'PUNCT', 'PUNCT']","{'en', 'punct', 'other'}","['punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'punct']","“Sure, I can revert the merge. Do you need it done by the deadline?”",4,761,"['“', 'Sure', ',', 'I', 'can', 'revert', 'the', 'merge', '.', 'Do', 'you', 'need', 'it', 'done', 'by', 'the', 'deadline', '?', '”']","['punct', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'punct']",en,2,0,False
+761,"“If possible, that would be great. I’m close to finishing the fix on my end.”",LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","A: “Hey Li, did you see the bug in the API response on the dashboard?”
+B: “Yeah, I noticed that yesterday. I think it’s due to the new merge we did.”
+A: “That makes sense. Can you roll back that change while I debug the frontend?”
+B: “Sure, I can revert the merge. Do you need it done by the deadline?”
+A: “If possible, that would be great. I’m close to finishing the fix on my end.”
+B: “Got it. I’ll deploy the rollback right now and update you.”
+A: “Thanks! I’ll test it once it’s deployed.”",5,A,"['“', 'If', 'possible', ',', 'that', 'would', 'be', 'great', '.', 'I', '’m', 'close', 'to', 'finishing', 'the', 'fix', 'on', 'my', 'end', '.', '”']","['PUNCT', 'SCONJ', 'ADJ', 'PUNCT', 'PRON', 'AUX', 'AUX', 'ADJ', 'PUNCT', 'PRON', 'VERB', 'ADJ', 'ADP', 'VERB', 'DET', 'NOUN', 'ADP', 'PRON', 'NOUN', 'PUNCT', 'PUNCT']","{'en', 'punct'}","['punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']","“If possible, that would be great. I’m close to finishing the fix on my end.”",5,761,"['“', 'If', 'possible', ',', 'that', 'would', 'be', 'great', '.', 'I', '’m', 'close', 'to', 'finishing', 'the', 'fix', 'on', 'my', 'end', '.', '”']","['punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']",en,0,0,False
+761,“Got it. I’ll deploy the rollback right now and update you.”,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","A: “Hey Li, did you see the bug in the API response on the dashboard?”
+B: “Yeah, I noticed that yesterday. I think it’s due to the new merge we did.”
+A: “That makes sense. Can you roll back that change while I debug the frontend?”
+B: “Sure, I can revert the merge. Do you need it done by the deadline?”
+A: “If possible, that would be great. I’m close to finishing the fix on my end.”
+B: “Got it. I’ll deploy the rollback right now and update you.”
+A: “Thanks! I’ll test it once it’s deployed.”",6,B,"['“', 'Got', 'it', '.', 'I', '’ll', 'deploy', 'the', 'rollback', 'right', 'now', 'and', 'update', 'you', '.', '”']","['PUNCT', 'VERB', 'PRON', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADV', 'ADV', 'CCONJ', 'VERB', 'PRON', 'PUNCT', 'PUNCT']","{'en', 'punct'}","['punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']",“Got it. I’ll deploy the rollback right now and update you.”,6,761,"['“', 'Got', 'it', '.', 'I', '’ll', 'deploy', 'the', 'rollback', 'right', 'now', 'and', 'update', 'you', '.', '”']","['punct', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']",en,1,0,False
+761,“Thanks! I’ll test it once it’s deployed.”,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"You are an expert dataset generator for workplace English dialogues between software engineers. 
+Act as Sarah, a frontend engineer in San Francisco, chatting with Li, a backend engineer from Shanghai who speaks fluent English. 
+Keep the entire conversation in English (no Chinese characters). 
+The tone should sound like Slack or hallway conversation — short, technical turns about debugging, deploying, or merging code.
+Include at least one of these trigger words: deploy, build, bug, deadline, merge.
+Few-shot examples:
+A: “Can you push the fix to staging?”
+B: “Yeah, I’ll deploy right after lunch.”
+A: “Cool, I’ll run QA on the build then.”
+Now: produce a 5–7 turn dialogue between Li and Sarah, fully in English.
+Output only the dialogue.","A: “Hey Li, did you see the bug in the API response on the dashboard?”
+B: “Yeah, I noticed that yesterday. I think it’s due to the new merge we did.”
+A: “That makes sense. Can you roll back that change while I debug the frontend?”
+B: “Sure, I can revert the merge. Do you need it done by the deadline?”
+A: “If possible, that would be great. I’m close to finishing the fix on my end.”
+B: “Got it. I’ll deploy the rollback right now and update you.”
+A: “Thanks! I’ll test it once it’s deployed.”",7,A,"['“', 'Thanks', '!', 'I', '’ll', 'test', 'it', 'once', 'it', '’s', 'deployed', '.', '”']","['PUNCT', 'NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PUNCT', 'PUNCT']","{'en', 'punct', 'other'}","['punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']",“Thanks! I’ll test it once it’s deployed.”,7,761,"['“', 'Thanks', '!', 'I', '’ll', 'test', 'it', 'once', 'it', '’s', 'deployed', '.', '”']","['punct', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'punct']",en,1,0,False

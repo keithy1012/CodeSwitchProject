@@ -1,0 +1,105 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+20,"Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Sarah: Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?
+Li: 有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。
+Sarah: Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。
+Li: Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。
+Sarah: Absolutely. 我会看看修复后是否需要重新部署，然后通知你。
+Li: Sounds good. 谢谢你的合作，我们工作配合得很好。
+Sarah: No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。
+Li: 没错，let's get this deployment bug fixed and deployed asap!",1,Sarah,"['Hey', 'Li', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'deployment', 'bug', 'we', 'encountered', 'yesterday', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'DET', 'NOUN', 'NOUN', 'PRON', 'VERB', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?",1,20,"['Hey', 'Li', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'deployment', 'bug', 'we', 'encountered', 'yesterday', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+20,有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Sarah: Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?
+Li: 有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。
+Sarah: Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。
+Li: Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。
+Sarah: Absolutely. 我会看看修复后是否需要重新部署，然后通知你。
+Li: Sounds good. 谢谢你的合作，我们工作配合得很好。
+Sarah: No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。
+Li: 没错，let's get this deployment bug fixed and deployed asap!",2,Li,"['有', '啊', '，', '我', '昨晚', '做', '了', '一些', '测试', '，', '发现', '问题', '可能', '出', '在', '我们', '最新', '的', '合并', '代码', '上', '。']","['v', 'y', 'PUNCT', 'r', 't', 'v', 'ul', 'm', 'vn', 'PUNCT', 'v', 'n', 'v', 'v', 'p', 'r', 'd', 'uj', 'v', 'n', 'f', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。,2,20,"['有', '啊', '，', '我', '昨晚', '做', '了', '一些', '测试', '，', '发现', '问题', '可能', '出', '在', '我们', '最新', '的', '合并', '代码', '上', '。']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0,0,False
+20,"Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Sarah: Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?
+Li: 有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。
+Sarah: Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。
+Li: Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。
+Sarah: Absolutely. 我会看看修复后是否需要重新部署，然后通知你。
+Li: Sounds good. 谢谢你的合作，我们工作配合得很好。
+Sarah: No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。
+Li: 没错，let's get this deployment bug fixed and deployed asap!",3,Sarah,"[',', '.', 'Oh', 'got', 'it', '我', '今天', '早上', '也', '在', '查看', '，', '看看', '能否', '解决', '这个', '。', 'bug', '或许', '我们', '需要', '重新', '建立', '一次', '代码', '。']","['PUNCT', 'PUNCT', 'INTJ', 'VERB', 'PRON', 'r', 't', 't', 'd', 'p', 'v', 'PUNCT', 'v', 'v', 'v', 'r', 'PUNCT', 'NOUN', 'd', 'r', 'v', 'a', 'v', 'm', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。",3,20,"[',', '.', 'Oh', 'got', 'it', '我', '今天', '早上', '也', '在', '查看', '，', '看看', '能否', '解决', '这个', '。', 'bug', '或许', '我们', '需要', '重新', '建立', '一次', '代码', '。']","['punct', 'punct', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+20,"Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Sarah: Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?
+Li: 有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。
+Sarah: Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。
+Li: Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。
+Sarah: Absolutely. 我会看看修复后是否需要重新部署，然后通知你。
+Li: Sounds good. 谢谢你的合作，我们工作配合得很好。
+Sarah: No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。
+Li: 没错，let's get this deployment bug fixed and deployed asap!",4,Li,"[',', 'Yeah', '我', '同意', '，', '我们', '应该', '尽快', '解决', '这个', '问题', '，', '因为', '我们', '的', 'deadline', '就', '在', '眼前', '。']","['PUNCT', 'INTJ', 'r', 'd', 'PUNCT', 'r', 'v', 'd', 'v', 'r', 'n', 'PUNCT', 'c', 'r', 'uj', 'NOUN', 'd', 'p', 't', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']","Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。",4,20,"[',', 'Yeah', '我', '同意', '，', '我们', '应该', '尽快', '解决', '这个', '问题', '，', '因为', '我们', '的', 'deadline', '就', '在', '眼前', '。']","['punct', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+20,Absolutely. 我会看看修复后是否需要重新部署，然后通知你。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Sarah: Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?
+Li: 有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。
+Sarah: Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。
+Li: Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。
+Sarah: Absolutely. 我会看看修复后是否需要重新部署，然后通知你。
+Li: Sounds good. 谢谢你的合作，我们工作配合得很好。
+Sarah: No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。
+Li: 没错，let's get this deployment bug fixed and deployed asap!",5,Sarah,"['.', 'Absolutely', '我会', '看看', '修复', '后', '是否', '需要', '重新部署', '，', '然后', '通知', '你', '。']","['PUNCT', 'ADV', 'n', 'v', 'v', 'f', 'v', 'v', 'n', 'PUNCT', 'c', 'v', 'r', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",Absolutely. 我会看看修复后是否需要重新部署，然后通知你。,5,20,"['.', 'Absolutely', '我会', '看看', '修复', '后', '是否', '需要', '重新部署', '，', '然后', '通知', '你', '。']","['punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+20,Sounds good. 谢谢你的合作，我们工作配合得很好。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Sarah: Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?
+Li: 有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。
+Sarah: Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。
+Li: Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。
+Sarah: Absolutely. 我会看看修复后是否需要重新部署，然后通知你。
+Li: Sounds good. 谢谢你的合作，我们工作配合得很好。
+Sarah: No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。
+Li: 没错，let's get this deployment bug fixed and deployed asap!",6,Li,"['.', 'Sounds', 'good', '谢谢', '你', '的', '合作', '，', '我们', '工作', '配合', '得', '很', '好', '。']","['PUNCT', 'VERB', 'ADJ', 'nr', 'r', 'uj', 'vn', 'PUNCT', 'r', 'vn', 'v', 'ud', 'd', 'a', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Sounds good. 谢谢你的合作，我们工作配合得很好。,6,20,"['.', 'Sounds', 'good', '谢谢', '你', '的', '合作', '，', '我们', '工作', '配合', '得', '很', '好', '。']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+20,"No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Sarah: Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?
+Li: 有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。
+Sarah: Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。
+Li: Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。
+Sarah: Absolutely. 我会看看修复后是否需要重新部署，然后通知你。
+Li: Sounds good. 谢谢你的合作，我们工作配合得很好。
+Sarah: No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。
+Li: 没错，let's get this deployment bug fixed and deployed asap!",7,Sarah,"[',', '!', 'No', 'problem', 'teamwork', 'makes', 'the', 'dream', 'work', '我们', '一起', '努力', '，', '很快', '就', '能', '解决', '这个', '。', 'bug']","['PUNCT', 'PUNCT', 'DET', 'NOUN', 'NOUN', 'VERB', 'DET', 'NOUN', 'NOUN', 'r', 'm', 'ad', 'PUNCT', 'd', 'd', 'v', 'v', 'r', 'PUNCT', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']","No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。",7,20,"[',', '!', 'No', 'problem', 'teamwork', 'makes', 'the', 'dream', 'work', '我们', '一起', '努力', '，', '很快', '就', '能', '解决', '这个', '。', 'bug']","['punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0,0,True
+20,没错，let's get this deployment bug fixed and deployed asap!,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Sarah: Hey Li, have you had a chance to look at the deployment bug we encountered yesterday?
+Li: 有啊，我昨晚做了一些测试，发现问题可能出在我们最新的合并代码上。
+Sarah: Oh, got it. 我今天早上也在查看，看看能否解决这个bug。或许我们需要重新建立一次代码。
+Li: Yeah, 我同意，我们应该尽快解决这个问题，因为我们的deadline就在眼前。
+Sarah: Absolutely. 我会看看修复后是否需要重新部署，然后通知你。
+Li: Sounds good. 谢谢你的合作，我们工作配合得很好。
+Sarah: No problem, teamwork makes the dream work! 我们一起努力，很快就能解决这个bug。
+Li: 没错，let's get this deployment bug fixed and deployed asap!",8,Li,"['没错', '，', ""'"", '!', 'let', 's', 'get', 'this', 'deployment', 'bug', 'fixed', 'and', 'deployed', 'asap']","['v', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'VERB', 'CCONJ', 'VERB', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",没错，let's get this deployment bug fixed and deployed asap!,8,20,"['没错', '，', ""'"", '!', 'let', 's', 'get', 'this', 'deployment', 'bug', 'fixed', 'and', 'deployed', 'asap']","['zh', 'other', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,2,0,True

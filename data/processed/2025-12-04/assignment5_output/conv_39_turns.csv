@@ -1,0 +1,145 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+39,"Hey Sarah, have you had a chance to look at the QA feedback for our latest build?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback for our latest build? 
+李：嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？
+
+Sarah: Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。
+
+Li: Oh no, that's not good. Do you think we can fix it before the deadline? 
+李：噢，那不好。 你觉得我们能在截止日期前修复它吗？
+
+Sarah: I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。
+
+Li: Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。
+
+Sarah: Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。",1,Li,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'QA', 'feedback', 'for', 'our', 'latest', 'build', '?']","['INTJ', 'PROPN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'DET', 'NOUN', 'PART', 'VERB', 'ADP', 'DET', 'PROPN', 'NOUN', 'ADP', 'PRON', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, have you had a chance to look at the QA feedback for our latest build?",1,39,"['Hey', 'Sarah', ',', 'have', 'you', 'had', 'a', 'chance', 'to', 'look', 'at', 'the', 'QA', 'feedback', 'for', 'our', 'latest', 'build', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,2,0,False
+39,嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback for our latest build? 
+李：嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？
+
+Sarah: Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。
+
+Li: Oh no, that's not good. Do you think we can fix it before the deadline? 
+李：噢，那不好。 你觉得我们能在截止日期前修复它吗？
+
+Sarah: I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。
+
+Li: Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。
+
+Sarah: Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。",2,李,"['嘿', '，', 'Sarah', '你', '有', '时间', '看', '我们', '最新', '构建', '的', 'QA', '反馈', '吗', '？']","['e', 'PUNCT', 'PROPN', 'r', 'v', 'n', 'v', 'r', 'd', 'v', 'uj', 'PROPN', 'v', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？,2,39,"['嘿', '，', 'Sarah', '你', '有', '时间', '看', '我们', '最新', '构建', '的', 'QA', '反馈', '吗', '？']","['zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",mix,1,0,True
+39,"Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback for our latest build? 
+李：嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？
+
+Sarah: Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。
+
+Li: Oh no, that's not good. Do you think we can fix it before the deadline? 
+李：噢，那不好。 你觉得我们能在截止日期前修复它吗？
+
+Sarah: I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。
+
+Li: Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。
+
+Sarah: Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。",3,Sarah,"[',', ""'"", '.', 'Yes', 'I', 'noticed', 'a', 'bug', 'on', 'the', 'staging', 'site', 'that', 's', 'causing', 'some', 'display', 'issues', '我', '注意', '到', '了', '一个', '在', 'staging', '网站', '上', '导致', '显示', '问题', '的', '。', 'bug']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'NOUN', 'r', 'v', 'v', 'ul', 'm', 'p', 'VERB', 'n', 'f', 'v', 'v', 'n', 'uj', 'PUNCT', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']","Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。",3,39,"[',', ""'"", '.', 'Yes', 'I', 'noticed', 'a', 'bug', 'on', 'the', 'staging', 'site', 'that', 's', 'causing', 'some', 'display', 'issues', '我', '注意', '到', '了', '一个', '在', 'staging', '网站', '上', '导致', '显示', '问题', '的', '。', 'bug']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,4,0,True
+39,"Oh no, that's not good. Do you think we can fix it before the deadline?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback for our latest build? 
+李：嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？
+
+Sarah: Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。
+
+Li: Oh no, that's not good. Do you think we can fix it before the deadline? 
+李：噢，那不好。 你觉得我们能在截止日期前修复它吗？
+
+Sarah: I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。
+
+Li: Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。
+
+Sarah: Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。",4,Li,"['Oh', 'no', ',', 'that', ""'s"", 'not', 'good', '.', 'Do', 'you', 'think', 'we', 'can', 'fix', 'it', 'before', 'the', 'deadline', '?']","['INTJ', 'INTJ', 'PUNCT', 'PRON', 'AUX', 'PART', 'ADJ', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PRON', 'AUX', 'VERB', 'PRON', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']","Oh no, that's not good. Do you think we can fix it before the deadline?",4,39,"['Oh', 'no', ',', 'that', ""'s"", 'not', 'good', '.', 'Do', 'you', 'think', 'we', 'can', 'fix', 'it', 'before', 'the', 'deadline', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other']",en,1,0,False
+39,噢，那不好。 你觉得我们能在截止日期前修复它吗？,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback for our latest build? 
+李：嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？
+
+Sarah: Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。
+
+Li: Oh no, that's not good. Do you think we can fix it before the deadline? 
+李：噢，那不好。 你觉得我们能在截止日期前修复它吗？
+
+Sarah: I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。
+
+Li: Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。
+
+Sarah: Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。",5,李,"['噢', '，', '那', '不好', '。', '你', '觉得', '我们', '能', '在', '截止', '日期', '前', '修复', '它', '吗', '？']","['e', 'PUNCT', 'r', 'd', 'PUNCT', 'r', 'v', 'r', 'v', 'p', 'v', 't', 'f', 'v', 'r', 'y', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",噢，那不好。 你觉得我们能在截止日期前修复它吗？,5,39,"['噢', '，', '那', '不好', '。', '你', '觉得', '我们', '能', '在', '截止', '日期', '前', '修复', '它', '吗', '？']","['zh', 'other', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0,0,False
+39,I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback for our latest build? 
+李：嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？
+
+Sarah: Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。
+
+Li: Oh no, that's not good. Do you think we can fix it before the deadline? 
+李：噢，那不好。 你觉得我们能在截止日期前修复它吗？
+
+Sarah: I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。
+
+Li: Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。
+
+Sarah: Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。",6,Sarah,"['.', ""'"", '.', 'I', 'believe', 'so', 'I', 'll', 'start', 'debugging', 'it', 'now', 'and', 'hopefully', 'have', 'a', 'solution', 'soon', '我', '相信', '可以', '。', '我', '现在', '开始', '调试', '，', '希望', '很快', '能', '有', '解决方案', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'VERB', 'ADV', 'PRON', 'AUX', 'VERB', 'VERB', 'PRON', 'ADV', 'CCONJ', 'ADV', 'VERB', 'DET', 'NOUN', 'ADV', 'r', 'v', 'c', 'PUNCT', 'r', 't', 'v', 'vn', 'PUNCT', 'v', 'd', 'v', 'v', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。,6,39,"['.', ""'"", '.', 'I', 'believe', 'so', 'I', 'll', 'start', 'debugging', 'it', 'now', 'and', 'hopefully', 'have', 'a', 'solution', 'soon', '我', '相信', '可以', '。', '我', '现在', '开始', '调试', '，', '希望', '很快', '能', '有', '解决方案', '。']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+39,"Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback for our latest build? 
+李：嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？
+
+Sarah: Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。
+
+Li: Oh no, that's not good. Do you think we can fix it before the deadline? 
+李：噢，那不好。 你觉得我们能在截止日期前修复它吗？
+
+Sarah: I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。
+
+Li: Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。
+
+Sarah: Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。",7,Li,"[',', ""'"", '.', '.', 'Great', 'let', 's', 'work', 'together', 'to', 'get', 'it', 'resolved', 'and', 'ready', 'for', 'deployment', 'That', 'way', 'we', 'can', 'merge', 'the', 'changes', 'as', 'soon', 'as', 'possible', '太好了', '，', '让', '我们', '一起', '努力', '解决问题', '，', '并', '准备', '进行', '部署', '。', '这样', '我们', '就', '可以', '尽快', '进行', '合并', '变更', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'ADJ', 'VERB', 'PRON', 'VERB', 'ADV', 'PART', 'VERB', 'PRON', 'VERB', 'CCONJ', 'ADJ', 'ADP', 'NOUN', 'DET', 'NOUN', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADV', 'ADV', 'ADP', 'ADJ', 'l', 'PUNCT', 'v', 'r', 'm', 'ad', 'n', 'PUNCT', 'c', 'v', 'v', 'n', 'PUNCT', 'r', 'r', 'd', 'c', 'd', 'v', 'v', 'v', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。",7,39,"[',', ""'"", '.', '.', 'Great', 'let', 's', 'work', 'together', 'to', 'get', 'it', 'resolved', 'and', 'ready', 'for', 'deployment', 'That', 'way', 'we', 'can', 'merge', 'the', 'changes', 'as', 'soon', 'as', 'possible', '太好了', '，', '让', '我们', '一起', '努力', '解决问题', '，', '并', '准备', '进行', '部署', '。', '这样', '我们', '就', '可以', '尽快', '进行', '合并', '变更', '。']","['punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,2,0,True
+39,Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo-16k,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, have you had a chance to look at the QA feedback for our latest build? 
+李：嘿 Sarah， 你有时间看我们最新构建的 QA 反馈吗？
+
+Sarah: Yes, I noticed a bug on the staging site that's causing some display issues. 我注意到了一个在 staging 网站上导致显示问题的 bug。
+
+Li: Oh no, that's not good. Do you think we can fix it before the deadline? 
+李：噢，那不好。 你觉得我们能在截止日期前修复它吗？
+
+Sarah: I believe so. I'll start debugging it now and hopefully have a solution soon. 我相信可以。 我现在开始调试，希望很快能有解决方案。
+
+Li: Great, let's work together to get it resolved and ready for deployment. That way we can merge the changes as soon as possible. 太好了，让我们一起努力解决问题 ，并准备进行部署。 这样我们就可以尽快进行合并变更。
+
+Sarah: Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。",8,Sarah,"['.', ""'"", '.', ""'"", '.', 'Agreed', 'I', 'll', 'keep', 'you', 'updated', 'on', 'my', 'progress', 'It', 's', 'crucial', 'to', 'have', 'a', 'smooth', 'deployment', 'process', '同意', '。', '我会', '随时', '通知', '你', '我', '的', '进展', '。', '顺利进行', '部署', '过程', '是', '至关重要', '的', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'AUX', 'VERB', 'PRON', 'VERB', 'ADP', 'PRON', 'NOUN', 'PRON', 'VERB', 'ADJ', 'PART', 'VERB', 'DET', 'ADJ', 'NOUN', 'NOUN', 'd', 'PUNCT', 'n', 'd', 'v', 'r', 'r', 'uj', 'vn', 'PUNCT', 'n', 'n', 'n', 'v', 'l', 'uj', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Agreed. I'll keep you updated on my progress. It's crucial to have a smooth deployment process. 同意。 我会随时通知你我的进展。 顺利进行部署过程是至关重要的。,8,39,"['.', ""'"", '.', ""'"", '.', 'Agreed', 'I', 'll', 'keep', 'you', 'updated', 'on', 'my', 'progress', 'It', 's', 'crucial', 'to', 'have', 'a', 'smooth', 'deployment', 'process', '同意', '。', '我会', '随时', '通知', '你', '我', '的', '进展', '。', '顺利进行', '部署', '过程', '是', '至关重要', '的', '。']","['punct', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,1,0,True

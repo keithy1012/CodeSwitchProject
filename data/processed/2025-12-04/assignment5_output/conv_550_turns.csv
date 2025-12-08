@@ -1,0 +1,120 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score,cult_score,is_mixed_turn
+550,"** Hey Sarah, 有个关于PR的merge conflict，我刚刚在GitHub上看到。",LLM,"['persona-based', 'chain-of-thought']",gpt-4o-mini,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","**Li:** Hey Sarah, 有个关于PR的merge conflict，我刚刚在GitHub上看到。
+
+**Sarah:** Oh no, 你在什么地方遇到问题？我们得赶在deadline之前解决这个。
+
+**Li:** 我改了几个组件的样式，但好像和你的changes冲突了。你觉得我们应该怎样处理？
+
+**Sarah:** 让我先去看一下，那边的staging应该有最新的build。也许我们可以在本地解决这个问题。
+
+**Li:** 好主意! 我先pull最新的代码，然后来个rebase。这样可以保持历史干净。
+
+**Sarah:** 对，rebasing会更好！如果一切顺利，我们就可以直接deploy到服务器上。
+
+**Li:** 太好了！希望这个merge没有bug，不然我们就完蛋了。",1,**Li,"['*', '*', ',', 'Hey', 'Sarah', '有个', '关于', 'PR', '的', '，', 'merge', 'conflict', '我', '刚刚', '在', 'GitHub', '上', '看到', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'r', 'p', 'NOUN', 'uj', 'PUNCT', 'VERB', 'NOUN', 'r', 'd', 'p', 'PROPN', 'f', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'en', 'zh', 'other', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']","** Hey Sarah, 有个关于PR的merge conflict，我刚刚在GitHub上看到。",1,550,"['*', '*', ',', 'Hey', 'Sarah', '有个', '关于', 'PR', '的', '，', 'merge', 'conflict', '我', '刚刚', '在', 'GitHub', '上', '看到', '。']","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'en', 'zh', 'other', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct']",mix,0,0,True
+550,"** Oh no, 你在什么地方遇到问题？我们得赶在deadline之前解决这个。",LLM,"['persona-based', 'chain-of-thought']",gpt-4o-mini,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","**Li:** Hey Sarah, 有个关于PR的merge conflict，我刚刚在GitHub上看到。
+
+**Sarah:** Oh no, 你在什么地方遇到问题？我们得赶在deadline之前解决这个。
+
+**Li:** 我改了几个组件的样式，但好像和你的changes冲突了。你觉得我们应该怎样处理？
+
+**Sarah:** 让我先去看一下，那边的staging应该有最新的build。也许我们可以在本地解决这个问题。
+
+**Li:** 好主意! 我先pull最新的代码，然后来个rebase。这样可以保持历史干净。
+
+**Sarah:** 对，rebasing会更好！如果一切顺利，我们就可以直接deploy到服务器上。
+
+**Li:** 太好了！希望这个merge没有bug，不然我们就完蛋了。",2,**Sarah,"['*', '*', ',', 'Oh', 'no', '你', '在', '什么', '地方', '遇到', '问题', '？', '我们', '得', '赶在', 'deadline', '之前', '解决', '这个', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'INTJ', 'r', 'p', 'r', 'n', 'v', 'n', 'PUNCT', 'r', 'ud', 'd', 'NOUN', 'f', 'v', 'r', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']","** Oh no, 你在什么地方遇到问题？我们得赶在deadline之前解决这个。",2,550,"['*', '*', ',', 'Oh', 'no', '你', '在', '什么', '地方', '遇到', '问题', '？', '我们', '得', '赶在', 'deadline', '之前', '解决', '这个', '。']","['other', 'other', 'punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+550,** 我改了几个组件的样式，但好像和你的changes冲突了。你觉得我们应该怎样处理？,LLM,"['persona-based', 'chain-of-thought']",gpt-4o-mini,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","**Li:** Hey Sarah, 有个关于PR的merge conflict，我刚刚在GitHub上看到。
+
+**Sarah:** Oh no, 你在什么地方遇到问题？我们得赶在deadline之前解决这个。
+
+**Li:** 我改了几个组件的样式，但好像和你的changes冲突了。你觉得我们应该怎样处理？
+
+**Sarah:** 让我先去看一下，那边的staging应该有最新的build。也许我们可以在本地解决这个问题。
+
+**Li:** 好主意! 我先pull最新的代码，然后来个rebase。这样可以保持历史干净。
+
+**Sarah:** 对，rebasing会更好！如果一切顺利，我们就可以直接deploy到服务器上。
+
+**Li:** 太好了！希望这个merge没有bug，不然我们就完蛋了。",3,**Li,"['*', '*', '我', '改', '了', '几个', '组件', '的', '样式', '，', '但', '好像', '和', '你', '的', 'changes', '冲突', '了', '。', '你', '觉得', '我们', '应该', '怎样', '处理', '？']","['PUNCT', 'PUNCT', 'r', 'v', 'ul', 'm', 'n', 'uj', 'n', 'PUNCT', 'c', 'v', 'c', 'r', 'uj', 'NOUN', 'vn', 'ul', 'PUNCT', 'r', 'v', 'r', 'v', 'r', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 我改了几个组件的样式，但好像和你的changes冲突了。你觉得我们应该怎样处理？,3,550,"['*', '*', '我', '改', '了', '几个', '组件', '的', '样式', '，', '但', '好像', '和', '你', '的', 'changes', '冲突', '了', '。', '你', '觉得', '我们', '应该', '怎样', '处理', '？']","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+550,** 让我先去看一下，那边的staging应该有最新的build。也许我们可以在本地解决这个问题。,LLM,"['persona-based', 'chain-of-thought']",gpt-4o-mini,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","**Li:** Hey Sarah, 有个关于PR的merge conflict，我刚刚在GitHub上看到。
+
+**Sarah:** Oh no, 你在什么地方遇到问题？我们得赶在deadline之前解决这个。
+
+**Li:** 我改了几个组件的样式，但好像和你的changes冲突了。你觉得我们应该怎样处理？
+
+**Sarah:** 让我先去看一下，那边的staging应该有最新的build。也许我们可以在本地解决这个问题。
+
+**Li:** 好主意! 我先pull最新的代码，然后来个rebase。这样可以保持历史干净。
+
+**Sarah:** 对，rebasing会更好！如果一切顺利，我们就可以直接deploy到服务器上。
+
+**Li:** 太好了！希望这个merge没有bug，不然我们就完蛋了。",4,**Sarah,"['*', '*', '让', '我', '先', '去', '看', '一下', '，', '那边', '的', 'staging', '应该', '有', '最新', '的', '。', 'build', '也许', '我们', '可以', '在', '本地', '解决', '这个', '问题', '。']","['PUNCT', 'PUNCT', 'v', 'r', 'd', 'v', 'v', 'm', 'PUNCT', 'r', 'uj', 'VERB', 'v', 'v', 'd', 'uj', 'PUNCT', 'VERB', 'd', 'r', 'c', 'p', 'r', 'v', 'r', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 让我先去看一下，那边的staging应该有最新的build。也许我们可以在本地解决这个问题。,4,550,"['*', '*', '让', '我', '先', '去', '看', '一下', '，', '那边', '的', 'staging', '应该', '有', '最新', '的', '。', 'build', '也许', '我们', '可以', '在', '本地', '解决', '这个', '问题', '。']","['other', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+550,** 好主意! 我先pull最新的代码，然后来个rebase。这样可以保持历史干净。,LLM,"['persona-based', 'chain-of-thought']",gpt-4o-mini,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","**Li:** Hey Sarah, 有个关于PR的merge conflict，我刚刚在GitHub上看到。
+
+**Sarah:** Oh no, 你在什么地方遇到问题？我们得赶在deadline之前解决这个。
+
+**Li:** 我改了几个组件的样式，但好像和你的changes冲突了。你觉得我们应该怎样处理？
+
+**Sarah:** 让我先去看一下，那边的staging应该有最新的build。也许我们可以在本地解决这个问题。
+
+**Li:** 好主意! 我先pull最新的代码，然后来个rebase。这样可以保持历史干净。
+
+**Sarah:** 对，rebasing会更好！如果一切顺利，我们就可以直接deploy到服务器上。
+
+**Li:** 太好了！希望这个merge没有bug，不然我们就完蛋了。",5,**Li,"['*', '*', '好', '主意', '!', '我', '先', 'pull', '最新', '的', '代码', '，', '然后', '来', '个', '。', 'rebase', '这样', '可以', '保持', '历史', '干净', '。']","['PUNCT', 'PUNCT', 'a', 'n', 'PUNCT', 'r', 'd', 'VERB', 'd', 'uj', 'n', 'PUNCT', 'c', 'v', 'q', 'PUNCT', 'VERB', 'r', 'c', 'v', 'n', 'a', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 好主意! 我先pull最新的代码，然后来个rebase。这样可以保持历史干净。,5,550,"['*', '*', '好', '主意', '!', '我', '先', 'pull', '最新', '的', '代码', '，', '然后', '来', '个', '。', 'rebase', '这样', '可以', '保持', '历史', '干净', '。']","['other', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'punct', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+550,** 对，rebasing会更好！如果一切顺利，我们就可以直接deploy到服务器上。,LLM,"['persona-based', 'chain-of-thought']",gpt-4o-mini,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","**Li:** Hey Sarah, 有个关于PR的merge conflict，我刚刚在GitHub上看到。
+
+**Sarah:** Oh no, 你在什么地方遇到问题？我们得赶在deadline之前解决这个。
+
+**Li:** 我改了几个组件的样式，但好像和你的changes冲突了。你觉得我们应该怎样处理？
+
+**Sarah:** 让我先去看一下，那边的staging应该有最新的build。也许我们可以在本地解决这个问题。
+
+**Li:** 好主意! 我先pull最新的代码，然后来个rebase。这样可以保持历史干净。
+
+**Sarah:** 对，rebasing会更好！如果一切顺利，我们就可以直接deploy到服务器上。
+
+**Li:** 太好了！希望这个merge没有bug，不然我们就完蛋了。",6,**Sarah,"['*', '*', '对', '，', 'rebasing', '会', '更好', '！', '如果', '一切顺利', '，', '我们', '就', '可以', '直接', 'deploy', '到', '服务器', '上', '。']","['PUNCT', 'PUNCT', 'p', 'PUNCT', 'VERB', 'v', 'd', 'PUNCT', 'c', 'i', 'PUNCT', 'r', 'd', 'c', 'ad', 'VERB', 'v', 'n', 'f', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'other', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']",** 对，rebasing会更好！如果一切顺利，我们就可以直接deploy到服务器上。,6,550,"['*', '*', '对', '，', 'rebasing', '会', '更好', '！', '如果', '一切顺利', '，', '我们', '就', '可以', '直接', 'deploy', '到', '服务器', '上', '。']","['other', 'other', 'zh', 'other', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True
+550,** 太好了！希望这个merge没有bug，不然我们就完蛋了。,LLM,"['persona-based', 'chain-of-thought']",gpt-4o-mini,"Adopt the persona of two full-stack developers (Li and Sarah). You’re casually discussing 
+a merge conflict and upcoming deadline. Use English–Mandarin code-switching naturally and fluently. 
+Reference tools like GitHub, PRs, staging, and deploy. 
+Include one trigger word: deploy, build, bug, deadline, or merge. 
+Keep turns concise (5–7 exchanges total). Output only the dialogue.","**Li:** Hey Sarah, 有个关于PR的merge conflict，我刚刚在GitHub上看到。
+
+**Sarah:** Oh no, 你在什么地方遇到问题？我们得赶在deadline之前解决这个。
+
+**Li:** 我改了几个组件的样式，但好像和你的changes冲突了。你觉得我们应该怎样处理？
+
+**Sarah:** 让我先去看一下，那边的staging应该有最新的build。也许我们可以在本地解决这个问题。
+
+**Li:** 好主意! 我先pull最新的代码，然后来个rebase。这样可以保持历史干净。
+
+**Sarah:** 对，rebasing会更好！如果一切顺利，我们就可以直接deploy到服务器上。
+
+**Li:** 太好了！希望这个merge没有bug，不然我们就完蛋了。",7,**Li,"['*', '*', '太好了', '！', '希望', '这个', 'merge', '没有', '，', 'bug', '不然', '我们', '就', '完蛋', '了', '。']","['PUNCT', 'PUNCT', 'l', 'PUNCT', 'v', 'r', 'VERB', 'v', 'PUNCT', 'NOUN', 'c', 'r', 'd', 'v', 'ul', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",** 太好了！希望这个merge没有bug，不然我们就完蛋了。,7,550,"['*', '*', '太好了', '！', '希望', '这个', 'merge', '没有', '，', 'bug', '不然', '我们', '就', '完蛋', '了', '。']","['other', 'other', 'zh', 'other', 'zh', 'zh', 'en', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0,0,True

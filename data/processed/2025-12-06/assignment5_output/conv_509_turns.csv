@@ -1,0 +1,161 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+509,"Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？
+
+Sarah: Sure! 我会尽快检查。Which environment is the bug happening in?
+
+Li: It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。
+
+Sarah: Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？
+
+Li: 我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。
+
+Sarah: Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？
+
+Li: 我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。
+
+Sarah: 不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.",1,Li,"[',', ""'"", '.', 'Hey', 'Sarah', 'I', 'noticed', 'there', 's', 'a', 'bug', 'in', 'the', 'latest', 'deployment', '你', '能', '不能', '帮', '我', '看', '一下', '？']","['PUNCT', 'PUNCT', 'PUNCT', 'INTJ', 'PROPN', 'PRON', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'r', 'v', 'v', 'v', 'r', 'v', 'm', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']","Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？",1,509,"[',', ""'"", '.', 'Hey', 'Sarah', 'I', 'noticed', 'there', 's', 'a', 'bug', 'in', 'the', 'latest', 'deployment', '你', '能', '不能', '帮', '我', '看', '一下', '？']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.847,0.819,0.823,2,True
+509,Sure! 我会尽快检查。Which environment is the bug happening in?,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？
+
+Sarah: Sure! 我会尽快检查。Which environment is the bug happening in?
+
+Li: It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。
+
+Sarah: Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？
+
+Li: 我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。
+
+Sarah: Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？
+
+Li: 我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。
+
+Sarah: 不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.",2,Sarah,"['!', 'Sure', '我会', '尽快', '检查', '。', '?', 'Which', 'environment', 'is', 'the', 'bug', 'happening', 'in']","['PUNCT', 'INTJ', 'n', 'd', 'vn', 'PUNCT', 'PUNCT', 'DET', 'NOUN', 'AUX', 'DET', 'NOUN', 'VERB', 'ADP']","{'other', 'en', 'zh', 'punct'}","['other', 'en', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",Sure! 我会尽快检查。Which environment is the bug happening in?,2,509,"['!', 'Sure', '我会', '尽快', '检查', '。', '?', 'Which', 'environment', 'is', 'the', 'bug', 'happening', 'in']","['other', 'en', 'zh', 'zh', 'zh', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.855,0.828,0.832,1,True
+509,It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？
+
+Sarah: Sure! 我会尽快检查。Which environment is the bug happening in?
+
+Li: It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。
+
+Sarah: Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？
+
+Li: 我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。
+
+Sarah: Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？
+
+Li: 我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。
+
+Sarah: 不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.",3,Li,"[""'"", '.', 'It', 's', 'happening', 'in', 'the', 'staging', 'environment', '我', '已经', '回滚', '了', '代码', '到', '上', '一个', '版本', '，', '但是', '问题', '还是', '存在', '。']","['PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADP', 'DET', 'NOUN', 'NOUN', 'r', 'd', 'v', 'ul', 'n', 'v', 'f', 'm', 'n', 'PUNCT', 'c', 'n', 'c', 'v', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。,3,509,"[""'"", '.', 'It', 's', 'happening', 'in', 'the', 'staging', 'environment', '我', '已经', '回滚', '了', '代码', '到', '上', '一个', '版本', '，', '但是', '问题', '还是', '存在', '。']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.871,0.833,0.841,1,True
+509,"Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？",LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？
+
+Sarah: Sure! 我会尽快检查。Which environment is the bug happening in?
+
+Li: It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。
+
+Sarah: Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？
+
+Li: 我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。
+
+Sarah: Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？
+
+Li: 我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。
+
+Sarah: 不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.",4,Sarah,"[',', '.', 'Okay', 'let', 'me', 'take', 'a', 'look', 'at', 'the', 'logs', 'and', 'see', 'if', 'I', 'can', 'spot', 'the', 'issue', '你们', '有', '什么', 'deadline', '吗', '？']","['PUNCT', 'PUNCT', 'INTJ', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'CCONJ', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'r', 'v', 'r', 'NOUN', 'y', 'PUNCT']","{'en', 'zh', 'punct'}","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']","Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？",4,509,"[',', '.', 'Okay', 'let', 'me', 'take', 'a', 'look', 'at', 'the', 'logs', 'and', 'see', 'if', 'I', 'can', 'spot', 'the', 'issue', '你们', '有', '什么', 'deadline', '吗', '？']","['punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'punct']",mix,0.853,0.839,0.828,1,True
+509,我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？
+
+Sarah: Sure! 我会尽快检查。Which environment is the bug happening in?
+
+Li: It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。
+
+Sarah: Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？
+
+Li: 我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。
+
+Sarah: Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？
+
+Li: 我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。
+
+Sarah: 不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.",5,Li,"['我们', '原定', '的', 'deadline', '是', '明天', '，', '所以', '我们', '还有', '一点', '时间', '来', '修复', '问题', '。']","['r', 'd', 'uj', 'NOUN', 'v', 't', 'PUNCT', 'c', 'r', 'v', 'm', 'n', 'v', 'v', 'n', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['zh', 'zh', 'zh', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。,5,509,"['我们', '原定', '的', 'deadline', '是', '明天', '，', '所以', '我们', '还有', '一点', '时间', '来', '修复', '问题', '。']","['zh', 'zh', 'zh', 'en', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.856,0.84,0.831,1,True
+509,Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？
+
+Sarah: Sure! 我会尽快检查。Which environment is the bug happening in?
+
+Li: It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。
+
+Sarah: Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？
+
+Li: 我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。
+
+Sarah: Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？
+
+Li: 我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。
+
+Sarah: 不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.",6,Sarah,"['.', ""'"", '.', 'Got', 'it', 'I', 'll', 'dive', 'into', 'the', 'code', 'and', 'see', 'if', 'I', 'can', 'find', 'the', 'bug', 'before', 'then', '你', '在', '哪个', 'branch', '上', '做', '了', '？', 'merge']","['PUNCT', 'PUNCT', 'PUNCT', 'VERB', 'PRON', 'PRON', 'AUX', 'VERB', 'ADP', 'DET', 'NOUN', 'CCONJ', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'ADV', 'r', 'p', 'r', 'NOUN', 'f', 'v', 'ul', 'PUNCT', 'VERB']","{'en', 'zh', 'punct'}","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'en']",Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？,6,509,"['.', ""'"", '.', 'Got', 'it', 'I', 'll', 'dive', 'into', 'the', 'code', 'and', 'see', 'if', 'I', 'can', 'find', 'the', 'bug', 'before', 'then', '你', '在', '哪个', 'branch', '上', '做', '了', '？', 'merge']","['punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'en', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0.859,0.826,0.82,4,True
+509,我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？
+
+Sarah: Sure! 我会尽快检查。Which environment is the bug happening in?
+
+Li: It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。
+
+Sarah: Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？
+
+Li: 我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。
+
+Sarah: Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？
+
+Li: 我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。
+
+Sarah: 不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.",7,Li,"['我', '在', 'feature', 'branch', '上', '做', '了', '，', 'merge', '然后', '将', '代码', '部署', '到', 'staging', '环境', '。', '希望', '你', '能', '找到', '问题所在', '。']","['r', 'p', 'NOUN', 'NOUN', 'f', 'v', 'ul', 'PUNCT', 'VERB', 'c', 'd', 'n', 'n', 'v', 'VERB', 'n', 'PUNCT', 'v', 'r', 'v', 'v', 'i', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['zh', 'zh', 'en', 'en', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。,7,509,"['我', '在', 'feature', 'branch', '上', '做', '了', '，', 'merge', '然后', '将', '代码', '部署', '到', 'staging', '环境', '。', '希望', '你', '能', '找到', '问题所在', '。']","['zh', 'zh', 'en', 'en', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'en', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.869,0.826,0.83,4,True
+509,不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.,LLM,"['chain-of-thought', 'persona-based']",gpt-3.5-turbo,"Simulate two bilingual software engineers (Li and Sarah) working remotely across time zones. 
+Use reasoning (chain of thought) to plan a natural English–Mandarin dialogue about resolving a deployment bug, 
+then output only the conversation (5–7 turns). 
+Mix Mandarin and English at the phrase level, like real bilingual speech.
+Include at least one of: deploy, build, bug, deadline, merge.
+Use casual engineering tone, short to medium turns, 35–50% Mandarin content.","Li: Hey Sarah, I noticed there's a bug in the latest deployment. 你能不能帮我看一下？
+
+Sarah: Sure! 我会尽快检查。Which environment is the bug happening in?
+
+Li: It's happening in the staging environment. 我已经回滚了代码到上一个版本，但是问题还是存在。
+
+Sarah: Okay, let me take a look at the logs and see if I can spot the issue. 你们有什么 deadline 吗？
+
+Li: 我们原定的 deadline 是明天，所以我们还有一点时间来修复问题。
+
+Sarah: Got it. I'll dive into the code and see if I can find the bug before then. 你在哪个 branch 上做了 merge ？
+
+Li: 我在 feature branch 上做了 merge，然后将代码部署到 staging 环境。希望你能找到问题所在。
+
+Sarah: 不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.",8,Sarah,"['不用', '担心', '，', '我会', '尽快', '解决', '的', '。', ""'"", ""'"", '.', 'I', 'll', 'let', 'you', 'know', 'once', 'I', 've', 'identified', 'the', 'root', 'cause', 'of', 'the', 'bug']","['v', 'v', 'PUNCT', 'n', 'd', 'v', 'uj', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PRON', 'VERB', 'ADV', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'NOUN', 'ADP', 'DET', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",不用担心，我会尽快解决的。I'll let you know once I've identified the root cause of the bug.,8,509,"['不用', '担心', '，', '我会', '尽快', '解决', '的', '。', ""'"", ""'"", '.', 'I', 'll', 'let', 'you', 'know', 'once', 'I', 've', 'identified', 'the', 'root', 'cause', 'of', 'the', 'bug']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.847,0.824,0.83,1,True

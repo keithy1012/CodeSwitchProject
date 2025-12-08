@@ -1,0 +1,265 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+525,"Hey Sarah, I think there's a bug in the front-end code, did you notice it?",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",1,Li,"['Hey', 'Sarah', ',', 'I', 'think', 'there', ""'s"", 'a', 'bug', 'in', 'the', 'front', '-', 'end', 'code', ',', 'did', 'you', 'notice', 'it', '?']","['INTJ', 'PROPN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'PUNCT', 'NOUN', 'NOUN', 'PUNCT', 'AUX', 'PRON', 'VERB', 'PRON', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']","Hey Sarah, I think there's a bug in the front-end code, did you notice it?",1,525,"['Hey', 'Sarah', ',', 'I', 'think', 'there', ""'s"", 'a', 'bug', 'in', 'the', 'front', '-', 'end', 'code', ',', 'did', 'you', 'notice', 'it', '?']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'other', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'other']",en,0.813,0.769,0.793,2,False
+525,嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",2,,"['嗨', '，', 'Sarah', '我', '觉得', '前端', '代码', '有', '一个', '，', 'bug', '你', '有', '注意', '到', '吗', '？']","['e', 'PUNCT', 'PROPN', 'r', 'v', 'f', 'n', 'v', 'm', 'PUNCT', 'NOUN', 'r', 'v', 'v', 'v', 'y', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？,2,525,"['嗨', '，', 'Sarah', '我', '觉得', '前端', '代码', '有', '一个', '，', 'bug', '你', '有', '注意', '到', '吗', '？']","['zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.861,0.842,0.839,0,True
+525,"Yeah, I saw it too. Let's first check the QA environment to see if it's there.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",3,Sarah,"['Yeah', ',', 'I', 'saw', 'it', 'too', '.', 'Let', ""'s"", 'first', 'check', 'the', 'QA', 'environment', 'to', 'see', 'if', 'it', ""'s"", 'there', '.']","['INTJ', 'PUNCT', 'PRON', 'VERB', 'PRON', 'ADV', 'PUNCT', 'VERB', 'PRON', 'ADV', 'VERB', 'DET', 'PROPN', 'NOUN', 'PART', 'VERB', 'SCONJ', 'PRON', 'AUX', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Yeah, I saw it too. Let's first check the QA environment to see if it's there.",3,525,"['Yeah', ',', 'I', 'saw', 'it', 'too', '.', 'Let', ""'s"", 'first', 'check', 'the', 'QA', 'environment', 'to', 'see', 'if', 'it', ""'s"", 'there', '.']","['en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.813,0.781,0.792,1,False
+525,是的，我也看到了。我们先检查一下QA环境，看看是否在那里。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",4,,"['是', '的', '，', '我', '也', '看到', '了', '。', '我们', '先', '检查一下', 'QA', '环境', '，', '看看', '是否', '在', '那里', '。']","['v', 'uj', 'PUNCT', 'r', 'd', 'v', 'ul', 'PUNCT', 'r', 'd', 'n', 'PROPN', 'n', 'PUNCT', 'v', 'v', 'p', 'r', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",是的，我也看到了。我们先检查一下QA环境，看看是否在那里。,4,525,"['是', '的', '，', '我', '也', '看到', '了', '。', '我们', '先', '检查一下', 'QA', '环境', '，', '看看', '是否', '在', '那里', '。']","['zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'en', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.864,0.834,0.841,0,True
+525,"Good idea. If it's there, we can merge the fix and deploy it to staging.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",5,Li,"['Good', 'idea', '.', 'If', 'it', ""'s"", 'there', ',', 'we', 'can', 'merge', 'the', 'fix', 'and', 'deploy', 'it', 'to', 'staging', '.']","['ADJ', 'NOUN', 'PUNCT', 'SCONJ', 'PRON', 'AUX', 'ADV', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'CCONJ', 'VERB', 'PRON', 'ADP', 'VERB', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Good idea. If it's there, we can merge the fix and deploy it to staging.",5,525,"['Good', 'idea', '.', 'If', 'it', ""'s"", 'there', ',', 'we', 'can', 'merge', 'the', 'fix', 'and', 'deploy', 'it', 'to', 'staging', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.823,0.762,0.777,3,False
+525,好主意。如果在那里找到了，我们就可以合并修复并部署到staging。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",6,,"['好', '主意', '。', '如果', '在', '那里', '找到', '了', '，', '我们', '就', '可以', '合并', '修复', '并', '部署', '到', '。', 'staging']","['a', 'n', 'PUNCT', 'c', 'p', 'r', 'v', 'ul', 'PUNCT', 'r', 'd', 'c', 'v', 'v', 'c', 'n', 'v', 'PUNCT', 'VERB']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",好主意。如果在那里找到了，我们就可以合并修复并部署到staging。,6,525,"['好', '主意', '。', '如果', '在', '那里', '找到', '了', '，', '我们', '就', '可以', '合并', '修复', '并', '部署', '到', '。', 'staging']","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'en']",mix,0.866,0.834,0.838,0,True
+525,"I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",7,Sarah,"['I', 'agree', '.', 'Once', 'it', ""'s"", 'deployed', 'to', 'staging', ',', 'we', 'can', 'run', 'more', 'tests', 'to', 'make', 'sure', 'the', 'issue', 'is', 'resolved', '.']","['PRON', 'VERB', 'PUNCT', 'SCONJ', 'PRON', 'AUX', 'VERB', 'ADP', 'VERB', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADJ', 'NOUN', 'PART', 'VERB', 'ADJ', 'DET', 'NOUN', 'AUX', 'VERB', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.",7,525,"['I', 'agree', '.', 'Once', 'it', ""'s"", 'deployed', 'to', 'staging', ',', 'we', 'can', 'run', 'more', 'tests', 'to', 'make', 'sure', 'the', 'issue', 'is', 'resolved', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.829,0.775,0.785,1,False
+525,我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",8,,"['我', '同意', '。', '一旦', '部署', '到', '，', 'staging', '我们', '可以', '运行', '更多', '的', '测试', '，', '以', '确保', '问题', '得到', '解决', '。']","['r', 'd', 'PUNCT', 'd', 'n', 'v', 'PUNCT', 'VERB', 'r', 'c', 'v', 'd', 'uj', 'vn', 'PUNCT', 'p', 'v', 'n', 'v', 'v', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。,8,525,"['我', '同意', '。', '一旦', '部署', '到', '，', 'staging', '我们', '可以', '运行', '更多', '的', '测试', '，', '以', '确保', '问题', '得到', '解决', '。']","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'other', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.868,0.837,0.841,0,True
+525,"After that, we can finally deploy it to production before the deadline.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",9,Li,"['After', 'that', ',', 'we', 'can', 'finally', 'deploy', 'it', 'to', 'production', 'before', 'the', 'deadline', '.']","['ADP', 'PRON', 'PUNCT', 'PRON', 'AUX', 'ADV', 'VERB', 'PRON', 'ADP', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","After that, we can finally deploy it to production before the deadline.",9,525,"['After', 'that', ',', 'we', 'can', 'finally', 'deploy', 'it', 'to', 'production', 'before', 'the', 'deadline', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.825,0.761,0.774,3,False
+525,之后，我们可以在截止日期前最终部署到生产环境。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",10,,"['之后', '，', '我们', '可以', '在', '截止', '日期', '前', '最终', '部署', '到', '生产', '环境', '。']","['f', 'PUNCT', 'r', 'c', 'p', 'v', 't', 'f', 'd', 'n', 'v', 'vn', 'n', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",之后，我们可以在截止日期前最终部署到生产环境。,10,525,"['之后', '，', '我们', '可以', '在', '截止', '日期', '前', '最终', '部署', '到', '生产', '环境', '。']","['zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.859,0.826,0.822,0,False
+525,Sounds like a plan. Let's build the new package and get it ready for deployment.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",11,Sarah,"['Sounds', 'like', 'a', 'plan', '.', 'Let', ""'s"", 'build', 'the', 'new', 'package', 'and', 'get', 'it', 'ready', 'for', 'deployment', '.']","['VERB', 'ADP', 'DET', 'NOUN', 'PUNCT', 'VERB', 'PRON', 'VERB', 'DET', 'ADJ', 'NOUN', 'CCONJ', 'VERB', 'PRON', 'ADJ', 'ADP', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",Sounds like a plan. Let's build the new package and get it ready for deployment.,11,525,"['Sounds', 'like', 'a', 'plan', '.', 'Let', ""'s"", 'build', 'the', 'new', 'package', 'and', 'get', 'it', 'ready', 'for', 'deployment', '.']","['en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.829,0.773,0.772,3,False
+525,听起来不错。让我们构建新包，并准备好部署。,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are an expert bilingual dialogue writer. Use a few-shot reasoning approach to write 
+a 5–7 turn English–Mandarin code-switched conversation between Li and Sarah debugging a front-end issue. 
+Reference QA, staging, and deploy naturally.
+Include at least one trigger word (deploy, build, bug, deadline, merge).
+Switch languages mid-sentence, around technical phrases. 
+Output only the dialogue.","Li: Hey Sarah, I think there's a bug in the front-end code, did you notice it?
+嗨Sarah，我觉得前端代码有一个bug，你有注意到吗？
+
+Sarah: Yeah, I saw it too. Let's first check the QA environment to see if it's there.
+是的，我也看到了。我们先检查一下QA环境，看看是否在那里。
+
+Li: Good idea. If it's there, we can merge the fix and deploy it to staging.
+好主意。如果在那里找到了，我们就可以合并修复并部署到staging。
+
+Sarah: I agree. Once it's deployed to staging, we can run more tests to make sure the issue is resolved.
+我同意。一旦部署到staging，我们可以运行更多的测试，以确保问题得到解决。
+
+Li: After that, we can finally deploy it to production before the deadline.
+之后，我们可以在截止日期前最终部署到生产环境。
+
+Sarah: Sounds like a plan. Let's build the new package and get it ready for deployment.
+听起来不错。让我们构建新包，并准备好部署。",12,,"['听', '起来', '不错', '。', '让', '我们', '构建', '新', '包', '，', '并', '准备', '好', '部署', '。']","['v', 'v', 'a', 'PUNCT', 'v', 'r', 'v', 'a', 'v', 'PUNCT', 'c', 'v', 'a', 'n', 'PUNCT']","{'other', 'zh', 'punct'}","['zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",听起来不错。让我们构建新包，并准备好部署。,12,525,"['听', '起来', '不错', '。', '让', '我们', '构建', '新', '包', '，', '并', '准备', '好', '部署', '。']","['zh', 'zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.887,0.845,0.847,0,False

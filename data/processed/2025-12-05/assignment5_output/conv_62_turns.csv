@@ -1,0 +1,120 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+62,你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?
+
+Sarah: Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.
+
+Li: 好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?
+
+Sarah: The deadline is tomorrow at noon, so we need to get it fixed and merged before then.
+
+Li: 好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?
+
+Sarah: I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.
+
+Li: Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",1,Li,"['你好', '，', '!', '?', 'Sarah', 'Have', 'you', 'finished', 'reviewing', 'the', 'PR', 'for', 'the', 'deploy', 'tomorrow']","['l', 'PUNCT', 'PUNCT', 'PUNCT', 'PROPN', 'AUX', 'PRON', 'VERB', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'NOUN']","{'other', 'en', 'zh'}","['zh', 'other', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?,1,62,"['你好', '，', '!', '?', 'Sarah', 'Have', 'you', 'finished', 'reviewing', 'the', 'PR', 'for', 'the', 'deploy', 'tomorrow']","['zh', 'other', 'other', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.834,0.816,0.806,2,True
+62,"Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?
+
+Sarah: Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.
+
+Li: 好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?
+
+Sarah: The deadline is tomorrow at noon, so we need to get it fixed and merged before then.
+
+Li: 好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?
+
+Sarah: I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.
+
+Li: Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",2,Sarah,"['Hi', 'Li', '!', 'Yes', ',', 'I', 'just', 'finished', '.', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'code', 'that', 'needs', 'to', 'be', 'fixed', 'before', 'we', 'can', 'merge', 'it', '.']","['INTJ', 'PROPN', 'PUNCT', 'INTJ', 'PUNCT', 'PRON', 'ADV', 'VERB', 'PUNCT', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PRON', 'VERB', 'PART', 'AUX', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'PRON', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'other', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.",2,62,"['Hi', 'Li', '!', 'Yes', ',', 'I', 'just', 'finished', '.', 'I', 'noticed', 'a', 'bug', 'in', 'the', 'code', 'that', 'needs', 'to', 'be', 'fixed', 'before', 'we', 'can', 'merge', 'it', '.']","['en', 'en', 'other', 'en', 'punct', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.798,0.767,0.782,3,False
+62,好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?
+
+Sarah: Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.
+
+Li: 好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?
+
+Sarah: The deadline is tomorrow at noon, so we need to get it fixed and merged before then.
+
+Li: 好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?
+
+Sarah: I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.
+
+Li: Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",3,Li,"['好', '的', '，', '.', ""'"", '?', 'I', 'will', 'take', 'a', 'look', 'at', 'that', 'bug', 'and', 'make', 'the', 'necessary', 'changes', 'What', 's', 'the', 'deadline', 'for', 'the', 'deploy', 'again']","['a', 'uj', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'CCONJ', 'VERB', 'DET', 'ADJ', 'NOUN', 'PRON', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADV']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'punct', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?,3,62,"['好', '的', '，', '.', ""'"", '?', 'I', 'will', 'take', 'a', 'look', 'at', 'that', 'bug', 'and', 'make', 'the', 'necessary', 'changes', 'What', 's', 'the', 'deadline', 'for', 'the', 'deploy', 'again']","['zh', 'zh', 'other', 'punct', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.838,0.815,0.813,3,True
+62,"The deadline is tomorrow at noon, so we need to get it fixed and merged before then.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?
+
+Sarah: Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.
+
+Li: 好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?
+
+Sarah: The deadline is tomorrow at noon, so we need to get it fixed and merged before then.
+
+Li: 好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?
+
+Sarah: I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.
+
+Li: Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",4,Sarah,"['The', 'deadline', 'is', 'tomorrow', 'at', 'noon', ',', 'so', 'we', 'need', 'to', 'get', 'it', 'fixed', 'and', 'merged', 'before', 'then', '.']","['DET', 'NOUN', 'AUX', 'NOUN', 'ADP', 'NOUN', 'PUNCT', 'ADV', 'PRON', 'VERB', 'PART', 'VERB', 'PRON', 'VERB', 'CCONJ', 'VERB', 'ADP', 'ADV', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","The deadline is tomorrow at noon, so we need to get it fixed and merged before then.",4,62,"['The', 'deadline', 'is', 'tomorrow', 'at', 'noon', ',', 'so', 'we', 'need', 'to', 'get', 'it', 'fixed', 'and', 'merged', 'before', 'then', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.8,0.766,0.771,1,False
+62,好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?
+
+Sarah: Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.
+
+Li: 好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?
+
+Sarah: The deadline is tomorrow at noon, so we need to get it fixed and merged before then.
+
+Li: 好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?
+
+Sarah: I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.
+
+Li: Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",5,Li,"['好', '的', '，', ""'"", '.', '?', 'I', 'will', 'work', 'on', 'fixing', 'the', 'bug', 'right', 'away', 'and', 'let', 'you', 'know', 'once', 'it', 's', 'done', 'Do', 'you', 'think', 'we', 'have', 'enough', 'time', 'to', 'build', 'and', 'test', 'before', 'the', 'deadline']","['a', 'uj', 'PUNCT', 'PUNCT', 'PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'ADP', 'VERB', 'DET', 'NOUN', 'ADV', 'ADV', 'CCONJ', 'VERB', 'PRON', 'VERB', 'SCONJ', 'PRON', 'AUX', 'VERB', 'AUX', 'PRON', 'VERB', 'PRON', 'VERB', 'ADJ', 'NOUN', 'PART', 'VERB', 'CCONJ', 'NOUN', 'ADP', 'DET', 'NOUN']","{'other', 'en', 'zh', 'punct'}","['zh', 'zh', 'other', 'punct', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?,5,62,"['好', '的', '，', ""'"", '.', '?', 'I', 'will', 'work', 'on', 'fixing', 'the', 'bug', 'right', 'away', 'and', 'let', 'you', 'know', 'once', 'it', 's', 'done', 'Do', 'you', 'think', 'we', 'have', 'enough', 'time', 'to', 'build', 'and', 'test', 'before', 'the', 'deadline']","['zh', 'zh', 'other', 'punct', 'punct', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.841,0.818,0.821,4,True
+62,I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.,LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?
+
+Sarah: Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.
+
+Li: 好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?
+
+Sarah: The deadline is tomorrow at noon, so we need to get it fixed and merged before then.
+
+Li: 好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?
+
+Sarah: I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.
+
+Li: Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",6,Sarah,"['I', 'think', 'we', 'should', 'be', 'okay', 'as', 'long', 'as', 'we', 'start', 'the', 'build', 'process', 'soon', '.', 'Let', ""'s"", 'aim', 'to', 'merge', 'the', 'code', 'by', 'the', 'end', 'of', 'the', 'day', '.']","['PRON', 'VERB', 'PRON', 'AUX', 'AUX', 'ADJ', 'ADV', 'ADV', 'SCONJ', 'PRON', 'VERB', 'DET', 'NOUN', 'NOUN', 'ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.,6,62,"['I', 'think', 'we', 'should', 'be', 'okay', 'as', 'long', 'as', 'we', 'start', 'the', 'build', 'process', 'soon', '.', 'Let', ""'s"", 'aim', 'to', 'merge', 'the', 'code', 'by', 'the', 'end', 'of', 'the', 'day', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.833,0.78,0.785,3,False
+62,"Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",LLM,"['few-shot', 'chain-of-thought']",gpt-3.5-turbo,"You are creating realistic bilingual training data. Generate a short 5–7 turn dialogue between 
+Li and Sarah, two engineers reviewing a PR before a deploy. 
+Use code-switching between Mandarin and English at phrase level (within sentences).
+At least one of these words must appear: deploy, build, bug, deadline, merge. 
+Follow a few-shot reasoning mindset and make tone authentic, like teammates chatting over Slack.","Li: 你好，Sarah! Have you finished reviewing the PR for the deploy tomorrow?
+
+Sarah: Hi Li! Yes, I just finished. I noticed a bug in the code that needs to be fixed before we can merge it.
+
+Li: 好的，I will take a look at that bug and make the necessary changes. What's the deadline for the deploy again?
+
+Sarah: The deadline is tomorrow at noon, so we need to get it fixed and merged before then.
+
+Li: 好的，I will work on fixing the bug right away and let you know once it's done. Do you think we have enough time to build and test before the deadline?
+
+Sarah: I think we should be okay as long as we start the build process soon. Let's aim to merge the code by the end of the day.
+
+Li: Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",7,Li,"['Sounds', 'good', '!', 'I', ""'ll"", 'get', 'started', 'on', 'fixing', 'the', 'bug', 'and', 'building', 'the', 'code', '.', 'Thanks', 'for', 'catching', 'that', 'issue', ',', 'Sarah', '.']","['VERB', 'ADJ', 'PUNCT', 'PRON', 'AUX', 'AUX', 'VERB', 'ADP', 'VERB', 'DET', 'NOUN', 'CCONJ', 'VERB', 'DET', 'NOUN', 'PUNCT', 'NOUN', 'ADP', 'VERB', 'DET', 'NOUN', 'PUNCT', 'PROPN', 'PUNCT']","{'en', 'punct', 'other'}","['en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'punct']","Sounds good! I'll get started on fixing the bug and building the code. Thanks for catching that issue, Sarah.",7,62,"['Sounds', 'good', '!', 'I', ""'ll"", 'get', 'started', 'on', 'fixing', 'the', 'bug', 'and', 'building', 'the', 'code', '.', 'Thanks', 'for', 'catching', 'that', 'issue', ',', 'Sarah', '.']","['en', 'en', 'other', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'punct']",en,0.815,0.765,0.784,2,False

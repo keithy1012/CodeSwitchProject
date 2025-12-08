@@ -1,0 +1,153 @@
+id,utterance,source,generation_strategy,model_name,prompt_text,dialogue_text,turn_index,speaker,tokens,pos_tags,labels,Language,text,turn,conv_id,tokens_list,token_langs,lang,tech_score_semantic,cultural_score_semantic,affective_score_semantic,tech_score_keyword,is_mixed_turn
+90,"Hey Sarah, the build looks good, but I just found a bug in the latest merge.",LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, the build looks good, but I just found a bug in the latest merge.
+
+Sarah: 是吗？在哪个模块发现的？ 
+
+Li: It’s in the authentication module. I think it’s related to the new features we added last week.
+
+Sarah: 我们还有时间在周五发布之前修复吗？
+
+Li: I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。
+
+Sarah: Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.
+
+Li: That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。 
+
+Sarah: Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。",1,Li,"['Hey', 'Sarah', ',', 'the', 'build', 'looks', 'good', ',', 'but', 'I', 'just', 'found', 'a', 'bug', 'in', 'the', 'latest', 'merge', '.']","['INTJ', 'PROPN', 'PUNCT', 'DET', 'NOUN', 'VERB', 'ADJ', 'PUNCT', 'CCONJ', 'PRON', 'ADV', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']","Hey Sarah, the build looks good, but I just found a bug in the latest merge.",1,90,"['Hey', 'Sarah', ',', 'the', 'build', 'looks', 'good', ',', 'but', 'I', 'just', 'found', 'a', 'bug', 'in', 'the', 'latest', 'merge', '.']","['en', 'en', 'punct', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.799,0.757,0.785,3,False
+90,是吗？在哪个模块发现的？,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, the build looks good, but I just found a bug in the latest merge.
+
+Sarah: 是吗？在哪个模块发现的？ 
+
+Li: It’s in the authentication module. I think it’s related to the new features we added last week.
+
+Sarah: 我们还有时间在周五发布之前修复吗？
+
+Li: I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。
+
+Sarah: Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.
+
+Li: That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。 
+
+Sarah: Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。",2,Sarah,"['是', '吗', '？', '在', '哪个', '模块', '发现', '的', '？']","['v', 'y', 'PUNCT', 'p', 'r', 'n', 'v', 'uj', 'PUNCT']","{'zh', 'punct'}","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",是吗？在哪个模块发现的？,2,90,"['是', '吗', '？', '在', '哪个', '模块', '发现', '的', '？']","['zh', 'zh', 'punct', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.872,0.843,0.86,0,False
+90,It’s in the authentication module. I think it’s related to the new features we added last week.,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, the build looks good, but I just found a bug in the latest merge.
+
+Sarah: 是吗？在哪个模块发现的？ 
+
+Li: It’s in the authentication module. I think it’s related to the new features we added last week.
+
+Sarah: 我们还有时间在周五发布之前修复吗？
+
+Li: I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。
+
+Sarah: Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.
+
+Li: That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。 
+
+Sarah: Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。",3,Li,"['It', '’s', 'in', 'the', 'authentication', 'module', '.', 'I', 'think', 'it', '’s', 'related', 'to', 'the', 'new', 'features', 'we', 'added', 'last', 'week', '.']","['PRON', 'VERB', 'ADP', 'DET', 'NOUN', 'NOUN', 'PUNCT', 'PRON', 'VERB', 'PRON', 'VERB', 'VERB', 'ADP', 'DET', 'ADJ', 'NOUN', 'PRON', 'VERB', 'ADJ', 'NOUN', 'PUNCT']","{'en', 'punct'}","['en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",It’s in the authentication module. I think it’s related to the new features we added last week.,3,90,"['It', '’s', 'in', 'the', 'authentication', 'module', '.', 'I', 'think', 'it', '’s', 'related', 'to', 'the', 'new', 'features', 'we', 'added', 'last', 'week', '.']","['en', 'en', 'en', 'en', 'en', 'en', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'punct']",en,0.821,0.795,0.808,2,False
+90,我们还有时间在周五发布之前修复吗？,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, the build looks good, but I just found a bug in the latest merge.
+
+Sarah: 是吗？在哪个模块发现的？ 
+
+Li: It’s in the authentication module. I think it’s related to the new features we added last week.
+
+Sarah: 我们还有时间在周五发布之前修复吗？
+
+Li: I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。
+
+Sarah: Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.
+
+Li: That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。 
+
+Sarah: Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。",4,Sarah,"['我们', '还有', '时间', '在', '周五', '发布', '之前', '修复', '吗', '？']","['r', 'v', 'n', 'p', 't', 'v', 'f', 'v', 'y', 'PUNCT']","{'zh', 'punct'}","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",我们还有时间在周五发布之前修复吗？,4,90,"['我们', '还有', '时间', '在', '周五', '发布', '之前', '修复', '吗', '？']","['zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",zh,0.857,0.836,0.835,0,False
+90,I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, the build looks good, but I just found a bug in the latest merge.
+
+Sarah: 是吗？在哪个模块发现的？ 
+
+Li: It’s in the authentication module. I think it’s related to the new features we added last week.
+
+Sarah: 我们还有时间在周五发布之前修复吗？
+
+Li: I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。
+
+Sarah: Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.
+
+Li: That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。 
+
+Sarah: Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。",5,Li,"['.', 'I', 'hope', 'so', '我们', '的', '截止', '日期', '是', '周五', '，', '如果', '我们', '能', '今晚', '搞定', '就', '不错', '了', '。']","['PUNCT', 'PRON', 'VERB', 'ADV', 'r', 'uj', 'v', 't', 'v', 't', 'PUNCT', 'c', 'r', 'v', 't', 'v', 'd', 'a', 'ul', 'PUNCT']","{'en', 'zh', 'punct', 'other'}","['punct', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。,5,90,"['.', 'I', 'hope', 'so', '我们', '的', '截止', '日期', '是', '周五', '，', '如果', '我们', '能', '今晚', '搞定', '就', '不错', '了', '。']","['punct', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.849,0.844,0.833,0,True
+90,Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, the build looks good, but I just found a bug in the latest merge.
+
+Sarah: 是吗？在哪个模块发现的？ 
+
+Li: It’s in the authentication module. I think it’s related to the new features we added last week.
+
+Sarah: 我们还有时间在周五发布之前修复吗？
+
+Li: I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。
+
+Sarah: Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.
+
+Li: That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。 
+
+Sarah: Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。",6,Sarah,"['.', 'Got', 'it', '你', '觉得', '我', '能', '帮忙', '检查', '代码', '吗', '？', '.', 'I', 'can', 'take', 'a', 'look', 'at', 'it', 'after', 'lunch']","['PUNCT', 'VERB', 'PRON', 'r', 'v', 'r', 'v', 'v', 'vn', 'n', 'y', 'PUNCT', 'PUNCT', 'PRON', 'AUX', 'VERB', 'DET', 'NOUN', 'ADP', 'PRON', 'ADP', 'NOUN']","{'en', 'zh', 'punct'}","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.,6,90,"['.', 'Got', 'it', '你', '觉得', '我', '能', '帮忙', '检查', '代码', '吗', '？', '.', 'I', 'can', 'take', 'a', 'look', 'at', 'it', 'after', 'lunch']","['punct', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en']",mix,0.852,0.818,0.819,0,True
+90,That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, the build looks good, but I just found a bug in the latest merge.
+
+Sarah: 是吗？在哪个模块发现的？ 
+
+Li: It’s in the authentication module. I think it’s related to the new features we added last week.
+
+Sarah: 我们还有时间在周五发布之前修复吗？
+
+Li: I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。
+
+Sarah: Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.
+
+Li: That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。 
+
+Sarah: Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。",7,Li,"['!', 'That', 'would', 'be', 'great', '我们', '可以', '一起', '做到', '，', '这样', '可以', '确保', '在', '最后', '时刻', '不会', '出', '问题', '。']","['PUNCT', 'PRON', 'AUX', 'AUX', 'ADJ', 'r', 'c', 'm', 'v', 'PUNCT', 'r', 'c', 'v', 'p', 'f', 'n', 'v', 'v', 'n', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。,7,90,"['!', 'That', 'would', 'be', 'great', '我们', '可以', '一起', '做到', '，', '这样', '可以', '确保', '在', '最后', '时刻', '不会', '出', '问题', '。']","['other', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'other', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.85,0.841,0.848,0,True
+90,Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。,LLM,"['persona-based', 'few-shot']",gpt-4o-mini,"Write a natural bilingual (English–Mandarin) conversation between two engineers (Li and Sarah) 
+preparing for a Friday deploy. You are a persona-based dataset creator focused on realistic technical speech. 
+Include at least one of: deploy, build, bug, deadline, merge.
+Target ~40% Mandarin content, switch languages mid-sentence around technical terms.
+Each dialogue should be 5–7 turns. Keep the tone informal but technical. Output only the dialogue.","Li: Hey Sarah, the build looks good, but I just found a bug in the latest merge.
+
+Sarah: 是吗？在哪个模块发现的？ 
+
+Li: It’s in the authentication module. I think it’s related to the new features we added last week.
+
+Sarah: 我们还有时间在周五发布之前修复吗？
+
+Li: I hope so. 我们的截止日期是周五，如果我们能今晚搞定就不错了。
+
+Sarah: Got it. 你觉得我能帮忙检查代码吗？ I can take a look at it after lunch.
+
+Li: That would be great! 我们可以一起做到，这样可以确保在最后时刻不会出问题。 
+
+Sarah: Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。",8,Sarah,"['!', '’', '.', 'Perfect', 'Let', 's', 'sync', 'up', 'again', 'in', 'a', 'couple', 'of', 'hours', '这样', '我们', '可以', '看到', '进展', '如何', '。']","['PUNCT', 'PUNCT', 'PUNCT', 'PROPN', 'VERB', 'PRON', 'VERB', 'ADP', 'ADV', 'ADP', 'DET', 'NOUN', 'ADP', 'NOUN', 'r', 'r', 'c', 'v', 'vn', 'r', 'PUNCT']","{'other', 'en', 'zh', 'punct'}","['other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",Perfect! Let’s sync up again in a couple of hours. 这样我们可以看到进展如何。,8,90,"['!', '’', '.', 'Perfect', 'Let', 's', 'sync', 'up', 'again', 'in', 'a', 'couple', 'of', 'hours', '这样', '我们', '可以', '看到', '进展', '如何', '。']","['other', 'other', 'punct', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'en', 'zh', 'zh', 'zh', 'zh', 'zh', 'zh', 'punct']",mix,0.849,0.836,0.843,0,True
