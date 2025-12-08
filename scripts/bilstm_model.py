@@ -11,6 +11,7 @@ import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+from datetime import date
 
 # Simple tokenizer that builds vocab from context strings (space-separated tokens)
 class SimpleTokenizer:
@@ -149,7 +150,7 @@ def flatten_examples(data):
     return contexts, np.array(labels, dtype=np.int64)
 
 # ====== CONFUSION MATRIX & HEATMAP ======
-def plot_confusion_matrix_heatmap(y_true, y_pred, model_name="BiLSTM", save_dir="figures"):
+def plot_confusion_matrix_heatmap(y_true, y_pred, model_name="BiLSTM", save_dir=f"data/processed/{date.today().strftime('%Y-%m-%d')}/figures"):
     """Generate and save confusion matrix heatmap."""
     
     os.makedirs(save_dir, exist_ok=True)
@@ -200,7 +201,7 @@ def plot_confusion_matrix_heatmap(y_true, y_pred, model_name="BiLSTM", save_dir=
     
     return cm, tn, fp, fn, tp, specificity, sensitivity
 
-def print_confusion_matrix_report(y_true, y_pred, model_name="BiLSTM", save_dir="figures"):
+def print_confusion_matrix_report(y_true, y_pred, model_name="BiLSTM", save_dir=f"data/processed/{date.today().strftime('%Y-%m-%d')}/figures"):
     """Print detailed confusion matrix analysis."""
     
     cm, tn, fp, fn, tp, specificity, sensitivity = plot_confusion_matrix_heatmap(
@@ -375,7 +376,7 @@ def train_bilstm_model(csv_path, device=None, epochs=30, batch_size=256, embed_d
 
     # Generate confusion matrix heatmap
     print("\nGenerating confusion matrix heatmap...")
-    print_confusion_matrix_report(all_labels, all_preds, model_name="BiLSTM", save_dir="figures")
+    print_confusion_matrix_report(all_labels, all_preds, model_name="BiLSTM")
 
     # wrapper and return
     wrapper = TorchClassifierWrapper(model, device=device, batch_size=batch_size)
